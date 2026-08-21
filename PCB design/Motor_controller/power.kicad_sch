@@ -4998,6 +4998,18 @@
 		(uuid "0079c974-51f6-4d4a-a42b-9364146a2dfd")
 	)
 	(junction
+		(at 74.93 163.195)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02af496b-9a29-4417-b938-eadaf886fcac")
+	)
+	(junction
+		(at 149.225 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03845283-754e-4ef5-a8af-747fbc60fafa")
+	)
+	(junction
 		(at 79.375 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5026,6 +5038,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e742777-bc45-4530-9403-34fd292ee81c")
+	)
+	(junction
+		(at 73.025 131.445)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21f8b074-e679-4250-b560-7a4388892810")
 	)
 	(junction
 		(at 92.075 26.035)
@@ -5092,6 +5110,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67b1cbd6-c75d-4d8b-aab6-847838454ada")
+	)
+	(junction
+		(at 149.225 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c0d22c9-6d4b-4047-9ed3-393d2316972b")
 	)
 	(junction
 		(at 101.6 43.815)
@@ -5261,6 +5285,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 172.085) (xy 152.4 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044c40b3-3fa6-4e03-8aed-ff14cc1ec8ea")
+	)
+	(wire
+		(pts
 			(xy 92.71 52.705) (xy 92.71 53.975)
 		)
 		(stroke
@@ -5288,6 +5322,16 @@
 			(type default)
 		)
 		(uuid "07a20192-6e72-4cef-86a3-07e9e340d7e9")
+	)
+	(wire
+		(pts
+			(xy 149.225 136.525) (xy 149.225 139.065)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0849d3f3-4be7-4f10-914f-cbe95d2d0e1b")
 	)
 	(wire
 		(pts
@@ -5338,6 +5382,16 @@
 			(type default)
 		)
 		(uuid "0c73888b-52f0-4d50-99ab-7f8c0c57b9b7")
+	)
+	(wire
+		(pts
+			(xy 152.4 129.54) (xy 152.4 130.175)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c766a8-41e1-4d8e-9668-0b6fd31553d8")
 	)
 	(wire
 		(pts
@@ -5441,6 +5495,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 172.085) (xy 78.74 173.355)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2686f358-bf9c-42dd-a24a-e046a22b624f")
+	)
+	(wire
+		(pts
 			(xy 23.495 46.355) (xy 39.37 46.355)
 		)
 		(stroke
@@ -5461,7 +5525,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 168.275) (xy 74.93 169.545)
+			(xy 74.93 162.56) (xy 74.93 163.195)
 		)
 		(stroke
 			(width 0)
@@ -5551,7 +5615,17 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 169.545) (xy 148.59 169.545)
+			(xy 78.74 163.195) (xy 74.93 163.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37ffac43-83f4-4804-a5a1-095d7e359a3c")
+	)
+	(wire
+		(pts
+			(xy 147.32 169.545) (xy 149.225 169.545)
 		)
 		(stroke
 			(width 0)
@@ -5608,6 +5682,26 @@
 			(type default)
 		)
 		(uuid "414f1d4b-7e77-4d1a-a33f-4aeb90ddde00")
+	)
+	(wire
+		(pts
+			(xy 145.415 137.16) (xy 145.415 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4223161a-cafd-4576-b8ee-c790d58e7efd")
+	)
+	(wire
+		(pts
+			(xy 77.47 132.715) (xy 77.47 131.445)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42311f62-8344-4a50-8462-ecc3b206ab95")
 	)
 	(wire
 		(pts
@@ -5691,6 +5785,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 164.465) (xy 78.74 163.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f2da531-5799-4654-b6b8-33a722043b9e")
+	)
+	(wire
+		(pts
 			(xy 101.6 37.465) (xy 101.6 43.815)
 		)
 		(stroke
@@ -5738,6 +5842,16 @@
 			(type default)
 		)
 		(uuid "55cb3841-84c7-4d5d-837c-db4c1ce286ed")
+	)
+	(wire
+		(pts
+			(xy 73.025 131.445) (xy 73.025 135.255)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "560fe525-90d4-4364-b300-c7e7f1fdd052")
 	)
 	(wire
 		(pts
@@ -5831,6 +5945,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.755 137.16) (xy 74.295 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d68049-18bf-40f4-8794-d58525f8a5ae")
+	)
+	(wire
+		(pts
 			(xy 18.415 73.66) (xy 25.4 73.66)
 		)
 		(stroke
@@ -5848,6 +5972,26 @@
 			(type default)
 		)
 		(uuid "63dfeaa6-fb49-4c35-b7a6-8723f5e22b5c")
+	)
+	(wire
+		(pts
+			(xy 149.225 139.065) (xy 152.4 139.065)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6446bfab-ee7c-455f-923a-5c454e64be7c")
+	)
+	(wire
+		(pts
+			(xy 152.4 139.065) (xy 152.4 137.795)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d93271-5587-4e1d-be5a-59c011b12a6c")
 	)
 	(wire
 		(pts
@@ -5908,6 +6052,16 @@
 			(type default)
 		)
 		(uuid "6c06cb61-d092-4c6c-9366-0872ae8f7009")
+	)
+	(wire
+		(pts
+			(xy 149.225 163.83) (xy 149.225 169.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c5d4ddf-f406-4a1a-981b-14b53856ce4f")
 	)
 	(wire
 		(pts
@@ -6021,7 +6175,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 135.255) (xy 72.39 135.255)
+			(xy 71.12 135.255) (xy 73.025 135.255)
 		)
 		(stroke
 			(width 0)
@@ -6081,6 +6235,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.225 129.54) (xy 152.4 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8495d8ba-f74f-4c1f-be5f-947ae3e1a478")
+	)
+	(wire
+		(pts
 			(xy 105.41 170.815) (xy 105.41 169.545)
 		)
 		(stroke
@@ -6098,6 +6262,16 @@
 			(type default)
 		)
 		(uuid "865044e8-46ed-4034-83a9-307b7e9a96a2")
+	)
+	(wire
+		(pts
+			(xy 74.295 137.16) (xy 74.295 140.335)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86f83708-aec0-4b54-8a5c-64346571658c")
 	)
 	(wire
 		(pts
@@ -6201,7 +6375,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 133.35) (xy 72.39 135.255)
+			(xy 73.025 130.175) (xy 73.025 131.445)
 		)
 		(stroke
 			(width 0)
@@ -6278,6 +6452,16 @@
 			(type default)
 		)
 		(uuid "99a4ee41-7cdc-466e-8f5a-e0925e2b21fa")
+	)
+	(wire
+		(pts
+			(xy 74.295 140.335) (xy 77.47 140.335)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dbf30f8-1ca6-4955-8a3e-2bac49c55f35")
 	)
 	(wire
 		(pts
@@ -6471,7 +6655,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 168.275) (xy 148.59 169.545)
+			(xy 152.4 164.465) (xy 152.4 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6afe1d-401d-4e96-b082-55fb422bf582")
+	)
+	(wire
+		(pts
+			(xy 149.225 163.195) (xy 149.225 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6518,6 +6712,16 @@
 			(type default)
 		)
 		(uuid "c38f99ad-f759-4aa8-8964-fc1d0210459a")
+	)
+	(wire
+		(pts
+			(xy 149.225 129.54) (xy 149.225 135.255)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3be7376-89c5-4ec9-a025-324623579a64")
 	)
 	(wire
 		(pts
@@ -6601,7 +6805,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.225 133.985) (xy 149.225 135.255)
+			(xy 149.225 128.905) (xy 149.225 129.54)
 		)
 		(stroke
 			(width 0)
@@ -6701,6 +6905,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 131.445) (xy 73.025 131.445)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9cf56b3-db91-42a6-916c-ffb8d87f7a1d")
+	)
+	(wire
+		(pts
 			(xy 16.51 34.925) (xy 16.51 36.83)
 		)
 		(stroke
@@ -6731,6 +6945,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 163.195) (xy 74.93 169.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed04e7ad-170b-4fbf-aff6-34c1cfbe8fff")
+	)
+	(wire
+		(pts
 			(xy 101.6 26.035) (xy 109.22 26.035)
 		)
 		(stroke
@@ -6738,6 +6962,16 @@
 			(type default)
 		)
 		(uuid "ed416950-a46c-41fa-bed4-2aaa64d7f68f")
+	)
+	(wire
+		(pts
+			(xy 71.755 137.795) (xy 71.755 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee053371-84c4-4df1-81db-c4947316c9a5")
 	)
 	(wire
 		(pts
@@ -6778,6 +7012,26 @@
 			(type default)
 		)
 		(uuid "f85d3d60-ed26-4eba-9eef-c945a2eee95a")
+	)
+	(wire
+		(pts
+			(xy 145.415 136.525) (xy 149.225 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc03ddf3-8a73-49c1-b7bd-c7f0e5e57663")
+	)
+	(wire
+		(pts
+			(xy 152.4 163.83) (xy 149.225 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd223e6e-9fdc-42d5-9cf2-3fadfb576f08")
 	)
 	(wire
 		(pts
@@ -7194,6 +7448,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 152.4 168.275 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "215d5267-a10c-4866-b611-1d46511f03c7")
+		(property "Reference" "R62"
+			(at 153.67 167.005 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 153.67 169.291 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 150.622 168.275 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 168.275 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.4 168.275 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" ">3W"
+			(at 154.94 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ea302486-ab80-4408-be58-0fbf42151305")
+		)
+		(pin "1"
+			(uuid "87575d70-1a27-421c-8283-e16af24a4c4d")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 73.66 86.36 270)
 		(unit 1)
@@ -7276,7 +7621,7 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 149.225 133.985 0)
+		(at 149.225 128.905 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7286,7 +7631,7 @@
 		(dnp no)
 		(uuid "285b4161-7776-4b97-b4f4-0d746a252f02")
 		(property "Reference" "#PWR067"
-			(at 149.225 137.795 0)
+			(at 149.225 132.715 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7297,7 +7642,7 @@
 			)
 		)
 		(property "Value" "VServo"
-			(at 149.352 130.048 0)
+			(at 149.352 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7307,7 +7652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.225 133.985 0)
+			(at 149.225 128.905 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7318,7 +7663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.225 133.985 0)
+			(at 149.225 128.905 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7329,7 +7674,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 149.225 133.985 0)
+			(at 149.225 128.905 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7585,7 +7930,7 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 74.93 168.275 0)
+		(at 74.93 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7595,7 +7940,7 @@
 		(dnp no)
 		(uuid "33ae506a-4263-46bc-a677-5e743bb293ed")
 		(property "Reference" "#PWR072"
-			(at 74.93 172.085 0)
+			(at 74.93 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7606,7 +7951,7 @@
 			)
 		)
 		(property "Value" "VBLDC"
-			(at 75.057 164.338 0)
+			(at 75.057 158.623 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7616,7 +7961,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 168.275 0)
+			(at 74.93 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7627,7 +7972,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 168.275 0)
+			(at 74.93 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7638,7 +7983,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 74.93 168.275 0)
+			(at 74.93 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7655,6 +8000,83 @@
 			(project "Motor_controller"
 				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
 					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.755 137.795 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36bc7a23-0646-4bef-9f30-fcb1853f00ab")
+		(property "Reference" "#PWR0119"
+			(at 71.755 144.145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.755 141.351 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.755 137.795 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.755 137.795 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.755 137.795 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aff135ab-6ade-4e86-bc2b-511b60bb6220")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -7988,6 +8410,97 @@
 			(project "Motor_controller"
 				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 78.74 168.275 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3da96b15-0e87-43b8-8647-e6879bed2af7")
+		(property "Reference" "R60"
+			(at 80.01 167.005 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 80.01 169.291 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 76.962 168.275 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 168.275 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 168.275 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" ">3W"
+			(at 81.28 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1cdb99ac-1cf6-4be8-822f-5ff6357f180d")
+		)
+		(pin "1"
+			(uuid "81c22448-2387-4a1b-99b6-2b6551c1e870")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -8922,6 +9435,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 152.4 133.985 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "535c526b-8a83-4641-ba3e-90603b6901cd")
+		(property "Reference" "R56"
+			(at 153.67 132.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 153.67 135.001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 150.622 133.985 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.4 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" ">3W"
+			(at 154.94 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e06fbb03-0519-457f-9ab5-e4a387fa5613")
+		)
+		(pin "1"
+			(uuid "fe765992-9b69-4886-af9a-5280d4a5abd9")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 18.415 72.39 0)
 		(unit 1)
@@ -9541,6 +10145,83 @@
 			(project "Motor_controller"
 				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 145.415 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72aa77c5-f631-4047-8f4e-ea0cab4f727c")
+		(property "Reference" "#PWR0123"
+			(at 145.415 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 145.415 140.843 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 145.415 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 145.415 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 145.415 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "559d2d37-3fb9-4759-ab4e-a415e534ed79")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -10167,7 +10848,7 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 72.39 133.35 0)
+		(at 73.025 130.175 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10177,7 +10858,7 @@
 		(dnp no)
 		(uuid "817f0cba-57f3-4889-9615-7f1a6029bc0f")
 		(property "Reference" "#PWR066"
-			(at 72.39 137.16 0)
+			(at 73.025 133.985 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10188,7 +10869,7 @@
 			)
 		)
 		(property "Value" "VSM"
-			(at 72.517 129.413 0)
+			(at 73.152 126.238 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10198,7 +10879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 133.35 0)
+			(at 73.025 130.175 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10209,7 +10890,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 133.35 0)
+			(at 73.025 130.175 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10220,7 +10901,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 72.39 133.35 0)
+			(at 73.025 130.175 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10493,7 +11174,7 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 148.59 168.275 0)
+		(at 149.225 163.195 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10503,7 +11184,7 @@
 		(dnp no)
 		(uuid "85db00a6-f251-41ef-9d72-4fc9186ead56")
 		(property "Reference" "#PWR073"
-			(at 148.59 172.085 0)
+			(at 149.225 167.005 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10514,7 +11195,7 @@
 			)
 		)
 		(property "Value" "VPM"
-			(at 148.717 164.338 0)
+			(at 149.352 159.258 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10524,7 +11205,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 168.275 0)
+			(at 149.225 163.195 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10535,7 +11216,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 168.275 0)
+			(at 149.225 163.195 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10546,7 +11227,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 148.59 168.275 0)
+			(at 149.225 163.195 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12463,6 +13144,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 77.47 136.525 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8ec0dc2-51a0-43cc-b53c-68ee0fce21a4")
+		(property "Reference" "R57"
+			(at 78.74 135.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 78.74 137.541 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 75.692 136.525 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 136.525 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 77.47 136.525 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" ">3W"
+			(at 80.01 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b1248dc2-7039-4a59-82ec-ce1c38c693a8")
+		)
+		(pin "1"
+			(uuid "d5f1bbad-1eeb-4ba0-8e2c-359678329bc1")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:A768EB226M1HLAE048")
 		(at 18.415 78.74 270)
 		(unit 1)
@@ -12762,6 +13534,160 @@
 			(project "Motor_controller"
 				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4d1291d-6716-46ed-a9a0-290d037c9961")
+		(property "Reference" "#PWR0128"
+			(at 152.4 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 176.276 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa43e7f1-ebdc-4bc4-bcd5-e225e192c793")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74 173.355 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e917f2da-5c3f-4138-adc7-88bf78cca45a")
+		(property "Reference" "#PWR0125"
+			(at 78.74 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 176.911 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fe45b95-7ba5-42e2-abb1-ab1033ae336c")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/b2788ec7-3638-4a56-b8d3-cc3db611283b"
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)

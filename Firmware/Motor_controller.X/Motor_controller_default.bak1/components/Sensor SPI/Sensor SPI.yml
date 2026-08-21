@@ -1,0 +1,46 @@
+configVersion: 1.0.0
+componentName: Group0
+coreVersion: 5.9.1
+device: ATSAMD51N20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyGroupModule
+  name: Group0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: FreeRTOS-Kernel
+  type: package
+  version: V11.3.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.17.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: Group0
+          x: '23'
+          y: '244'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    GroupName:
+      attributes:
+        id: GroupName
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Sensor SPI
+          type: User
+        type: Values
+      type: String
+  userData: {}
