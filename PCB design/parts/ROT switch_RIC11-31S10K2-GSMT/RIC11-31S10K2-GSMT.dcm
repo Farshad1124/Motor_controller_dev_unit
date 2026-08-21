@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RIC11-31S10K2-GSMT
+D 12 mm, 5 Vdc, 15 PPR, Surface Mount, Mechanical Panel Mount Encoder
+K
+F https://www.sameskydevices.com/product/resource/ric11.pdf
+$ENDCMP
+#
+#End Doc Library

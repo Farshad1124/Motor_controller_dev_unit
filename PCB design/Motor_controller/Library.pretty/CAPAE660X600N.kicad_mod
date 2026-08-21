@@ -1,0 +1,240 @@
+(footprint "CAPAE660X600N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.5 -4.635 0)
+		(layer "F.SilkS")
+		(uuid "21d97e00-44e8-4c20-97bb-6322574781a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAPAE660X600N"
+		(at 0 4.635 0)
+		(layer "F.Fab")
+		(uuid "855fa39b-8146-43f3-b053-e9e8ca71facc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f355945-c9ad-4566-aeef-b56b95750345")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae91e622-c90f-4c2f-bd4c-e7a91b01e366")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.3 -3.3)
+		(end 3.3 -3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "48d5e6b1-0693-4e08-929c-73b0e943132f")
+	)
+	(fp_line
+		(start -3.3 -1.13)
+		(end -3.3 -3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "14b55d6c-7ff6-46ed-a9ca-a3899deb9f12")
+	)
+	(fp_line
+		(start -3.3 3.3)
+		(end -3.3 1.13)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c92436f-7ca3-43ae-b555-43edb6b4a802")
+	)
+	(fp_line
+		(start 3.3 -3.3)
+		(end 3.3 -1.13)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f277b3a-0764-4245-9b67-a394e32c995a")
+	)
+	(fp_line
+		(start 3.3 3.3)
+		(end -3.3 3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8de7ed6a-52c4-4668-b715-6af567e51c6a")
+	)
+	(fp_line
+		(start 3.3 3.3)
+		(end 3.3 1.13)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ce83af88-c8d6-41e8-a9d5-c817094cc924")
+	)
+	(fp_circle
+		(center -5 0)
+		(end -4.9 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bf492274-5511-4171-88a5-f47f1558f5a4")
+	)
+	(fp_line
+		(start -4.505 -3.55)
+		(end -4.505 3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "289fb3d0-5e4b-445e-80b7-da91a7c2196d")
+	)
+	(fp_line
+		(start -4.505 3.55)
+		(end 4.505 3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dc0aa60c-c4eb-4400-825d-3fb1150b23f6")
+	)
+	(fp_line
+		(start 4.505 -3.55)
+		(end -4.505 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c36c97b3-3ab1-471f-a53b-e3099239b229")
+	)
+	(fp_line
+		(start 4.505 3.55)
+		(end 4.505 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5595902d-2944-4a5d-a7d0-29028df64ba1")
+	)
+	(fp_line
+		(start -3.3 -3.3)
+		(end 3.3 -3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "423c761a-2709-4836-a19c-1bde14fb91d9")
+	)
+	(fp_line
+		(start -3.3 3.3)
+		(end -3.3 -3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b9940708-73d8-4d85-b2aa-e8a2ad914bc3")
+	)
+	(fp_line
+		(start 3.3 -3.3)
+		(end 3.3 3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b715494-95f3-42af-876c-0b8a2069c6a6")
+	)
+	(fp_line
+		(start 3.3 3.3)
+		(end -3.3 3.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6e5ee51d-f962-4a8e-9e81-8e092940f5e0")
+	)
+	(fp_circle
+		(center -5 0)
+		(end -4.9 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "921df3bf-188f-4717-953c-3b387a0ccf13")
+	)
+	(pad "1" smd rect
+		(at -2.65 0)
+		(size 3.21 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "78177331-111e-4204-a6a1-752914c0f1f0")
+	)
+	(pad "2" smd rect
+		(at 2.65 0)
+		(size 3.21 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "4ade39c2-b246-4eab-ad91-7132d088f4a1")
+	)
+	(embedded_fonts no)
+	(model "C:/LOCAL_DOCS/my_Project/Motor controller/PCB design/parts/CAP_A768EB226M1HLAE048/A768EB226M1HLAE048.step"
+		(offset
+			(xyz 3 3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 180)
+		)
+	)
+)

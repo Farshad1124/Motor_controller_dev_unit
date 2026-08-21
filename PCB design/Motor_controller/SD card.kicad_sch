@@ -1,0 +1,2801 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "750d2f7c-6008-4c68-97a1-68d0abde13b0")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Library:10067099-200LF"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -7.62 18.542 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "10067099-200LF"
+				(at -7.62 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Library:AMPHENOL_10067099-200LF"
+				(at 3.048 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PARTREV" "H"
+				(at 0.254 34.036 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 2.032 25.908 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "3.05mm"
+				(at 0.762 30.734 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Amphenol"
+				(at 0.762 28.448 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "10067099-200LF_0_0"
+				(rectangle
+					(start -7.62 -20.32)
+					(end 7.62 17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "DET_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "DET_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "DET_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "DET_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -17.78 0)
+					(length 5.08)
+					(name "SHIELD__1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "10067099-200LF_1_0"
+				(pin passive line
+					(at -12.7 15.24 0)
+					(length 5.08)
+					(name "DAT2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "DAT3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "CMD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "DAT0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "DAT1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Capacitor_AKL:C_0603"
+			(body_styles demorgan)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_0603"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor ceramic chip mlcc smd 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0603_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -0.381 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -0.508) (xy -1.651 0.635)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -0.508) (xy 0.635 -1.651)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 0.381) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0.508) (xy -0.635 1.651)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0.508) (xy 1.651 -0.635)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "C_0603_1_2"
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Resistor_AKL:R_0603"
+			(body_styles demorgan)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_0603"
+				(at 2.54 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor eu SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0603_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -1.524 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.524) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.524) (xy 0.889 2.159) (xy -2.159 -0.889) (xy -0.889 -2.159) (xy 2.159 0.889) (xy 1.524 1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_0603_1_2"
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 57.15 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03a4c099-f9c2-42e2-b314-0c428cc1381b")
+	)
+	(junction
+		(at 99.695 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08b00fbe-55c7-4791-bd28-870c808d2f01")
+	)
+	(junction
+		(at 86.36 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "096c1276-c744-4b6a-b56d-a39bfd1405e1")
+	)
+	(junction
+		(at 86.36 88.265)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f184e05-5fc2-4435-a816-e12271de5ccb")
+	)
+	(junction
+		(at 79.375 85.725)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29105f02-b01e-4835-9007-22646518f733")
+	)
+	(junction
+		(at 72.39 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67da4ef5-6bb9-4b8c-b37f-349acf073311")
+	)
+	(junction
+		(at 71.755 106.045)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6966bf54-1227-4b5a-9af6-19a81c82efc9")
+	)
+	(junction
+		(at 65.405 113.665)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "724cbfdc-c2f1-46fb-9f11-d19e4edb725a")
+	)
+	(junction
+		(at 65.405 108.585)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75f92cb8-1c84-4418-9f98-a04cba783055")
+	)
+	(junction
+		(at 66.675 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a359095a-6ba7-4c75-91c8-67f083f1d550")
+	)
+	(junction
+		(at 92.71 98.425)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a39a8150-48bf-4f48-b351-4595f46f5aa2")
+	)
+	(junction
+		(at 106.68 106.045)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1246de1-28b4-4522-a75b-8c96669994f4")
+	)
+	(junction
+		(at 79.375 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0469c2d-7b8a-4ae1-a3d6-40e892b43ee0")
+	)
+	(junction
+		(at 65.405 116.205)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3d30e72-992b-431b-bad3-f039608a4ca0")
+	)
+	(junction
+		(at 92.71 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efbf056c-1218-4a98-b09b-c4030582a51a")
+	)
+	(junction
+		(at 99.695 100.965)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6e50ce9-eabc-464b-8012-2bc1f04b7438")
+	)
+	(junction
+		(at 72.39 83.185)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f70f1ed3-f3e5-44db-ba2f-cd8b1a282a3f")
+	)
+	(wire
+		(pts
+			(xy 64.135 93.345) (xy 109.22 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0240c682-d2a7-4df1-b7e1-f77adc8405d1")
+	)
+	(wire
+		(pts
+			(xy 64.135 100.965) (xy 99.695 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e18fbe-a0d2-428d-b443-3a3cfda5c795")
+	)
+	(wire
+		(pts
+			(xy 86.36 88.265) (xy 109.22 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04d2f562-f010-420d-8867-29f9036b415e")
+	)
+	(wire
+		(pts
+			(xy 99.695 73.025) (xy 99.695 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b6cc440-89d2-4974-889d-a27843fd6b31")
+	)
+	(wire
+		(pts
+			(xy 92.71 73.025) (xy 92.71 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbb3795-25d1-4f6e-a629-a580f196921d")
+	)
+	(wire
+		(pts
+			(xy 64.135 98.425) (xy 92.71 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112c822b-2ccd-44b7-b67f-5397b02fd6c9")
+	)
+	(wire
+		(pts
+			(xy 57.15 67.31) (xy 57.15 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1608e6d1-6ceb-4c89-836f-554d10136110")
+	)
+	(wire
+		(pts
+			(xy 106.68 73.025) (xy 106.68 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1babdba3-8acf-4db6-8aec-e78636385776")
+	)
+	(wire
+		(pts
+			(xy 99.695 100.965) (xy 109.22 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbb9992-4f07-410e-ac42-97c3178203c6")
+	)
+	(wire
+		(pts
+			(xy 64.135 108.585) (xy 65.405 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e7adcf6-7121-4976-b2f1-bd92cfc5b07c")
+	)
+	(wire
+		(pts
+			(xy 71.755 116.205) (xy 65.405 116.205)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7a1be8-6a29-42c5-ae05-c711d4edb732")
+	)
+	(wire
+		(pts
+			(xy 86.36 58.42) (xy 92.71 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff848e8-f31f-46fd-b3f4-568ecc7ce699")
+	)
+	(wire
+		(pts
+			(xy 71.755 114.935) (xy 71.755 116.205)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "205b6940-56dd-468a-8fec-43f3c7501b2e")
+	)
+	(wire
+		(pts
+			(xy 57.15 54.61) (xy 57.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25efad0b-1fda-46ab-b45f-31a1771ec719")
+	)
+	(wire
+		(pts
+			(xy 65.405 116.205) (xy 65.405 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ce76c5-8e43-4b68-a13d-166f1d5f716e")
+	)
+	(wire
+		(pts
+			(xy 92.71 58.42) (xy 92.71 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2995cd8e-35f6-40c2-9000-54260749fee8")
+	)
+	(wire
+		(pts
+			(xy 79.375 58.42) (xy 79.375 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2de516d5-a6f3-478e-a3dc-b264305f4b13")
+	)
+	(wire
+		(pts
+			(xy 64.135 90.805) (xy 66.675 90.805)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "333e830d-73c1-472e-988c-7f3b911c7daa")
+	)
+	(wire
+		(pts
+			(xy 57.15 58.42) (xy 66.675 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3373ca97-9b0c-4618-aaf0-c636fa0f3fa0")
+	)
+	(wire
+		(pts
+			(xy 79.375 85.725) (xy 109.22 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34588d6f-ace6-4e76-8f86-173e217642d6")
+	)
+	(wire
+		(pts
+			(xy 92.71 58.42) (xy 99.695 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352de448-e10e-4510-ac18-748b8ddb4d87")
+	)
+	(wire
+		(pts
+			(xy 92.71 98.425) (xy 109.22 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e5d149-ce7b-4ab8-8422-b5de04b5eb4e")
+	)
+	(wire
+		(pts
+			(xy 65.405 116.205) (xy 65.405 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4af8b28c-0146-4000-8d21-fc00093881fc")
+	)
+	(wire
+		(pts
+			(xy 72.39 73.025) (xy 72.39 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50cfea80-234d-410a-954f-a531307d2a02")
+	)
+	(wire
+		(pts
+			(xy 66.675 58.42) (xy 72.39 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6741c3ec-5036-4c2d-aa60-222e0f047b55")
+	)
+	(wire
+		(pts
+			(xy 64.135 88.265) (xy 86.36 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c4870b8-d536-4aa1-aae4-3233bf1251b3")
+	)
+	(wire
+		(pts
+			(xy 71.755 106.045) (xy 106.68 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7531b970-3775-492f-9a1e-85eb2455cdc5")
+	)
+	(wire
+		(pts
+			(xy 64.135 85.725) (xy 79.375 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7937985e-746c-45f7-909b-ae89733f2b89")
+	)
+	(wire
+		(pts
+			(xy 65.405 113.665) (xy 64.135 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86521dd1-f6b8-4bca-a3df-3921d49a7290")
+	)
+	(wire
+		(pts
+			(xy 65.405 95.885) (xy 65.405 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "895e96d8-cbd3-4d09-b012-bd207867a2d2")
+	)
+	(wire
+		(pts
+			(xy 71.755 106.045) (xy 71.755 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d77a545-2324-4502-8a8e-551216306f03")
+	)
+	(wire
+		(pts
+			(xy 106.68 58.42) (xy 106.68 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4baae40-0511-48c6-b9f0-023a0029ab35")
+	)
+	(wire
+		(pts
+			(xy 72.39 83.185) (xy 109.22 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af6f4835-3431-4337-945c-508a56ec5dd4")
+	)
+	(wire
+		(pts
+			(xy 64.135 106.045) (xy 71.755 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af80aa18-eadc-4076-af2f-f1967012f448")
+	)
+	(wire
+		(pts
+			(xy 65.405 108.585) (xy 65.405 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b20fd5fa-f527-4705-80ae-a6707304bc4b")
+	)
+	(wire
+		(pts
+			(xy 79.375 58.42) (xy 86.36 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b21ab1d1-c798-4583-87f7-42cf19b09201")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.025) (xy 86.36 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7d3482-1a35-49b4-b9ef-447c3a43ada8")
+	)
+	(wire
+		(pts
+			(xy 86.36 58.42) (xy 86.36 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7f00448-948a-4929-beb3-6c8ffbd5d015")
+	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 72.39 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0562e16-fa7d-4d4b-89cc-135e2ec3dc69")
+	)
+	(wire
+		(pts
+			(xy 99.695 58.42) (xy 99.695 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0569015-7f81-4a3c-a796-2bd01e555d93")
+	)
+	(wire
+		(pts
+			(xy 106.68 106.045) (xy 109.22 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10e4439-9f94-46de-b21a-4f60d58009ac")
+	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 79.375 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4efcb90-3fb1-4968-9489-924403fefe4d")
+	)
+	(wire
+		(pts
+			(xy 57.15 59.69) (xy 57.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9af409b-6472-4f07-a39a-c5e2552dddad")
+	)
+	(wire
+		(pts
+			(xy 66.675 58.42) (xy 66.675 90.805)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df9a5c1a-8ac2-4ce1-a745-8218c3a9364d")
+	)
+	(wire
+		(pts
+			(xy 64.135 95.885) (xy 65.405 95.885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3c24e32-21d0-4ff7-9f47-f53710ad8f43")
+	)
+	(wire
+		(pts
+			(xy 79.375 73.025) (xy 79.375 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5afc3e5-1b11-46ec-bcff-4eafac9f60d9")
+	)
+	(wire
+		(pts
+			(xy 64.135 116.205) (xy 65.405 116.205)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef8bf7aa-1b96-427d-870b-e1bd06e3a3ed")
+	)
+	(wire
+		(pts
+			(xy 64.135 83.185) (xy 72.39 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f080b076-b16f-4cc5-9a91-d69dd2db98b8")
+	)
+	(wire
+		(pts
+			(xy 99.695 58.42) (xy 106.68 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4600335-273b-457b-ae93-c9c734a8bce2")
+	)
+	(hierarchical_label "SD_DAT3"
+		(shape bidirectional)
+		(at 109.22 85.725 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "28b62555-07aa-4d4c-bcde-67b3562a10b3")
+	)
+	(hierarchical_label "SD_DAT2"
+		(shape bidirectional)
+		(at 109.22 83.185 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f7092d0-b8f1-4bd4-aab3-f2c82da2c35d")
+	)
+	(hierarchical_label "SD_CMD"
+		(shape input)
+		(at 109.22 88.265 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57acf325-0cb5-4d47-98f2-314834b8e019")
+	)
+	(hierarchical_label "SD_DAT0"
+		(shape bidirectional)
+		(at 109.22 98.425 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66faa763-4503-4540-b04b-06b9f48d31b7")
+	)
+	(hierarchical_label "SD_DAT1"
+		(shape bidirectional)
+		(at 109.22 100.965 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d3739b8-06a8-4c16-ac0c-aa4fef6e7ec7")
+	)
+	(hierarchical_label "SD_SCLK"
+		(shape input)
+		(at 109.22 93.345 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7238aa96-41b0-4e09-bd2e-3be64fae035f")
+	)
+	(hierarchical_label "SD_CD"
+		(shape output)
+		(at 109.22 106.045 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "987f55cf-51bf-4777-8bfb-4d208826d7d2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e8fc29a-75d5-4454-98cb-4aa44170899f")
+		(property "Reference" "#PWR0107"
+			(at 57.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 72.136 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "973ff645-04d7-4038-9b3f-2fd8cdf307d6")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 57.15 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1629a5e2-cb50-4cdf-b84e-c1c4e20496d9")
+		(property "Reference" "#PWR0106"
+			(at 57.15 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 57.023 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 57.15 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f30d6e6-f312-4fb8-bdf1-65b70f25ad49")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Capacitor_AKL:C_0603")
+		(at 71.755 111.125 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23d1fbd8-9eab-41c9-b9f4-84b2655a5a35")
+		(property "Reference" "C44"
+			(at 76.2 109.982 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 76.962 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 70.7898 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.755 111.125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
+			(at 71.755 111.125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7725f33d-1e55-4920-a737-0b4bca201941")
+		)
+		(pin "2"
+			(uuid "cc5121d1-ed25-490a-bbff-6218cc26ff2c")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "C44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 72.39 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e96cc4f-fee1-4ee0-8ede-b46d9964b206")
+		(property "Reference" "R46"
+			(at 77.216 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 78.105 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 72.39 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 72.39 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f0168270-5a19-4bed-b031-de6b1eb56d01")
+		)
+		(pin "1"
+			(uuid "b0f2aabc-875b-4daf-a03b-5b14f33b24d7")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:10067099-200LF")
+		(at 51.435 98.425 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "31e6f444-09f3-4f9a-bc20-2f3392b9e573")
+		(property "Reference" "J14"
+			(at 59.436 76.708 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10067099-200LF"
+			(at 59.436 79.248 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:AMPHENOL_10067099-200LF"
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" "H"
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.05mm"
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Amphenol"
+			(at 51.435 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "4"
+			(uuid "1ec1def5-080a-4092-8385-25fa3fe44484")
+		)
+		(pin "5"
+			(uuid "080bb1c6-40df-483d-8fc5-b751822ae5c3")
+		)
+		(pin "6"
+			(uuid "fd5d130f-05c9-4fb6-86aa-573c0aebecab")
+		)
+		(pin "1"
+			(uuid "7940483a-d0e4-4864-b1ba-443253039761")
+		)
+		(pin "2"
+			(uuid "8c26eee0-55da-4927-91f5-608be1d2cef6")
+		)
+		(pin "3"
+			(uuid "fd114e91-522b-44db-9bf9-6810370a3110")
+		)
+		(pin "7"
+			(uuid "dd68bfa0-bb7c-4a51-a56c-b591288a0719")
+		)
+		(pin "8"
+			(uuid "c4a3bf25-16ae-444f-9e58-f3421985bd46")
+		)
+		(pin "DET_1"
+			(uuid "e7ae497b-4166-4490-9992-55659af90a13")
+		)
+		(pin "DET_2"
+			(uuid "a835fc57-32c3-492f-88ac-cd16490404e4")
+		)
+		(pin "S1"
+			(uuid "1efc3d1b-7759-40fc-95c2-ea923df08485")
+		)
+		(pin "S2"
+			(uuid "5b3e7093-cd40-4d5e-a887-89fba2c61464")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 79.375 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4614f877-d8b0-46bd-a6ee-d3044fdf7c98")
+		(property "Reference" "R47"
+			(at 84.201 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 85.09 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 79.375 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 79.375 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 79.375 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ef001bc7-d5d6-41d1-ab48-53716e7e120b")
+		)
+		(pin "1"
+			(uuid "b03fc6a0-9e87-466a-871d-1a9557853368")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 92.71 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4aa21fab-c743-4c88-a39c-98d59d1984cb")
+		(property "Reference" "R49"
+			(at 97.536 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 98.425 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 92.71 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 92.71 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b98196c3-9764-4a08-8030-42c4c47a66c2")
+		)
+		(pin "1"
+			(uuid "525ced9f-0b4a-4ed8-adc4-bf3bd44d7dc5")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 106.68 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "544545ef-07d5-4c66-99ad-8d7ed5b407c7")
+		(property "Reference" "R51"
+			(at 111.506 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 111.506 69.469 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 106.68 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 106.68 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "16759cc8-b57b-44f2-9944-8829973903ea")
+		)
+		(pin "1"
+			(uuid "e74fe9e6-7d2a-4a8f-9572-533d930cac72")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 86.36 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "58912691-ceaa-4477-a0f8-b7bb32cada65")
+		(property "Reference" "R48"
+			(at 91.186 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 91.44 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 86.36 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 86.36 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f86bdfaa-0846-4428-9251-22b792334419")
+		)
+		(pin "1"
+			(uuid "8cf6bbd3-91d1-4fad-b4c1-65180b580057")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Resistor_AKL:R_0603")
+		(at 99.695 69.215 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e21b4ee-3337-4ecd-ade5-faf9e303f608")
+		(property "Reference" "R50"
+			(at 104.521 67.691 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 105.41 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 99.695 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.695 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 99.695 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83934f35-955b-4dd8-ac40-199a38506d06")
+		)
+		(pin "1"
+			(uuid "3cc272fb-b322-4e07-a44d-b48966416f56")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 65.405 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee73761c-2f6a-4cf7-bf3c-53be77a92ed3")
+		(property "Reference" "#PWR0108"
+			(at 65.405 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 65.405 121.666 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 65.405 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 65.405 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 65.405 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e48eddeb-c642-4117-8dde-c68a48008d82")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Capacitor_AKL:C_0603")
+		(at 57.15 63.5 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8415a34-8083-40bc-b519-9b3059d73132")
+		(property "Reference" "C43"
+			(at 61.595 62.357 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 62.357 64.135 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 56.1848 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
+			(at 57.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31e3e910-0ed2-4b56-9e31-baf188d0f476")
+		)
+		(pin "2"
+			(uuid "03824827-874b-4d3a-8b22-128d15158f80")
+		)
+		(instances
+			(project "Motor_controller"
+				(path "/2eb5ae6f-0c4d-4db9-9feb-48946f419422/1af795ef-6bba-45ff-a867-1823be231c4f"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

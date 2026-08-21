@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MPLCV0654L220
+#/1604122/1005088/2.50/2/2/Inductor
+DEF MPLCV0654L220 L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "MPLCV0654L220" 650 150 50 H V L CNN
+F2 "INDPM7967X540N" 650 50 50 H I L CNN
+F3 "https://www.yageogroup.com/content/datasheet/asset/file/KEM_L9009_MPLCV" 650 -50 50 H I L CNN
+F4 "Surface Mount Inductor" 650 -150 50 H I L CNN "Description"
+F5 "5.4" 650 -250 50 H I L CNN "Height"
+F6 "80-MPLCV0654L220" 650 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/KEMET/MPLCV0654L220?qs=%252BEew9%252B0nqrAo4Gv2SdxSYQ%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Yageo Group" 650 -550 50 H I L CNN "Manufacturer_Name"
+F9 "MPLCV0654L220" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+ENDDRAW
+ENDDEF
+#
+#End Library

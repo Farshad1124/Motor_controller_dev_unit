@@ -1,0 +1,225 @@
+(footprint "PHOENIX_1984617"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.1 -4.3 0)
+		(layer "F.SilkS")
+		(uuid "25a30af8-1c45-47e1-9d92-e907bd4a570b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PHOENIX_1984617"
+		(at 2.7 4.715 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf4e3cab-a127-4e27-a4ca-14bc6f71e50c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef1135c4-432b-4a45-8054-2bd80c78225f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cbd39863-1607-4edd-a90b-43650d7c8b52")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.4 -3.55)
+		(end -3.4 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4f14eeec-13a1-4b03-9997-3705e81cb8a5")
+	)
+	(fp_line
+		(start -3.4 -3.55)
+		(end 3.6 -3.55)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c9cc6b67-f4f0-4759-a586-1b9de3fca712")
+	)
+	(fp_line
+		(start -3.4 3.5)
+		(end 3.6 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2fc534d8-08c8-41e4-b14b-ff72c151ce90")
+	)
+	(fp_line
+		(start 3.6 -3.55)
+		(end 3.6 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38288bb9-c720-4b7e-8805-ec6ff4534480")
+	)
+	(fp_circle
+		(center -4.15 -0.5)
+		(end -4.05 -0.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4d6db56b-3959-4a66-a004-351d5941000d")
+	)
+	(fp_line
+		(start -3.5 -3.6)
+		(end -3.5 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c86e6aa4-37fb-4642-87e4-4831787099b3")
+	)
+	(fp_line
+		(start -3.5 3.6)
+		(end 3.7 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a08434c4-877b-4732-853a-68b66eb51dc6")
+	)
+	(fp_line
+		(start 3.7 -3.6)
+		(end -3.5 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a091b8a4-d62a-4ae8-bc0b-dd198f93f06a")
+	)
+	(fp_line
+		(start 3.7 3.6)
+		(end 3.7 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7fcff98d-a843-4cfb-bfeb-0115ff8d1aab")
+	)
+	(fp_line
+		(start -3.4 -3.55)
+		(end -3.4 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2a41bdc0-948f-4c18-b3f9-6877e1e57ab1")
+	)
+	(fp_line
+		(start -3.4 -3.55)
+		(end 3.6 -3.55)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a6be6e35-f292-41ec-b420-816585f61520")
+	)
+	(fp_line
+		(start -3.4 3.5)
+		(end 3.6 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "94b0cbee-d4bd-4e8c-9c68-3c4e9b1b2910")
+	)
+	(fp_line
+		(start 3.6 -3.55)
+		(end 3.6 3.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "835f966e-6dd6-4a11-8d8a-d937f2d5cbed")
+	)
+	(fp_circle
+		(center -4.15 -0.5)
+		(end -4.05 -0.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9b3009ce-c357-4ef2-8341-97d5643b7e0c")
+	)
+	(pad "1" thru_hole rect
+		(at -1.65 -0.5)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "eeff86ac-dfa2-4057-a5d9-8c976e08f0d3")
+	)
+	(pad "2" thru_hole circle
+		(at 1.85 -0.5)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "187d605e-f7df-476d-8ad0-bcb8082c65d1")
+	)
+	(embedded_fonts no)
+	(model "C:/LOCAL_DOCS/my_Project/Motor controller/PCB design/parts/Terminal_2pin_1984617/1984617.STEP"
+		(offset
+			(xyz -3.4 -3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

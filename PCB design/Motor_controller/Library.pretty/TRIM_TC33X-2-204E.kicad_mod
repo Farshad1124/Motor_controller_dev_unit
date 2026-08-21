@@ -1,0 +1,228 @@
+(footprint "TRIM_TC33X-2-204E"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "<b>TC33X-2</b><br>")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "a167523a-d23e-4fb6-9510-17ec57936df9")
+		(effects
+			(font
+				(size 1.000165 1.000165)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TRIM_TC33X-2-204E"
+		(at 0 2.99722 0)
+		(layer "F.Fab")
+		(uuid "fd29ff23-ee28-40ec-b901-2761e76a70ce")
+		(effects
+			(font
+				(size 1.00074 1.00074)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3898287b-5c4b-4ceb-9337-58485a95b331")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0511aed6-72e2-4c09-8a3d-c48740ddc561")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.85 -1.8)
+		(end 1.8 -1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc4e9993-a860-4a57-a3b2-8b82ba164079")
+	)
+	(fp_line
+		(start -0.85 1.8)
+		(end 1.8 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5a4b4aba-59fd-43f4-99b1-0027e92b114f")
+	)
+	(fp_line
+		(start 1.8 -1.8)
+		(end 1.8 -1.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc139970-c4ef-422d-b08f-cc394eeef20d")
+	)
+	(fp_line
+		(start 1.8 1.8)
+		(end 1.8 1.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "80a34a07-32e4-4bbe-83b1-7c6b08582f77")
+	)
+	(fp_circle
+		(center -2.94567 -1.558)
+		(end -2.82567 -1.558)
+		(stroke
+			(width 0.24)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "747b62ea-c796-4d1d-af6e-8a32dbf88225")
+	)
+	(fp_line
+		(start -2.65 -2.05)
+		(end 2.45 -2.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "12fa038c-266a-4cde-abdb-c4a4103c5584")
+	)
+	(fp_line
+		(start -2.65 2.05)
+		(end -2.65 -2.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "45e0afe2-de3c-4ee5-a9b8-e5e3f4a98cbf")
+	)
+	(fp_line
+		(start 2.45 -2.05)
+		(end 2.45 2.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5766129e-048d-4f99-a2e6-bd834bca8be4")
+	)
+	(fp_line
+		(start 2.45 2.05)
+		(end -2.65 2.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cd010df0-7583-4253-84f5-ecca073743d5")
+	)
+	(fp_line
+		(start -2 -1.8)
+		(end 1.8 -1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "10c65fe6-b41b-423b-9ed2-a7f351d36ea1")
+	)
+	(fp_line
+		(start -2 1.8)
+		(end -2 -1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f91ce056-0b42-4603-be68-627250fad95f")
+	)
+	(fp_line
+		(start 1.8 -1.8)
+		(end 1.8 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe715c9c-ebf1-4353-898e-8e30b59a7518")
+	)
+	(fp_line
+		(start 1.8 1.8)
+		(end -2 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "916cfcc8-4c25-45ab-9c08-7cfe1d2ec2a3")
+	)
+	(fp_circle
+		(center -2.94567 -1.558)
+		(end -2.82567 -1.558)
+		(stroke
+			(width 0.24)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3ea64c7d-f293-473d-8857-d5dc416a7874")
+	)
+	(pad "1" smd rect
+		(at -1.8 -1)
+		(size 1.2 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "fbc059b9-04fd-4f7b-8f17-bf401aaf6aff")
+	)
+	(pad "2" smd rect
+		(at 1.45 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "c46eec76-9118-41c3-afbe-e38f3ed5a16c")
+	)
+	(pad "3" smd rect
+		(at -1.8 1)
+		(size 1.2 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "fedd7df0-0b91-464c-b532-178a46468bf7")
+	)
+	(embedded_fonts no)
+	(model "C:/LOCAL_DOCS/my_Project/Motor controller/PCB design/parts/Potentio_TC33X_2_204E/TC33X-2-204E.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

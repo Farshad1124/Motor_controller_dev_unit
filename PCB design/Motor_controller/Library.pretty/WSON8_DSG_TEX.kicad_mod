@@ -1,0 +1,315 @@
+(footprint "WSON8_DSG_TEX"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(tags "DRV8231ADSGR ")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4d9b0f9d-efe2-4208-a6f9-a56a3e5b4298")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WSON8_DSG_TEX"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a02656e-d07b-48f4-8c09-4c73edf32a3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36671800-888a-4e48-a9be-3f3bd987a6f7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88df9e63-b09a-4832-83ea-50f3fd1e66c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -1.909826 -0.750189)
+		(end -1.808226 -0.750189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "525ade69-499f-48ab-bc14-efac113629cf")
+	)
+	(fp_line
+		(start -1.6129 -1.131189)
+		(end -1.3081 -1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d8ed1515-9416-47bc-a384-9839a634be7e")
+	)
+	(fp_line
+		(start -1.6129 1.131189)
+		(end -1.6129 -1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cf40df2d-cc88-497e-bb9c-f8023796cbcc")
+	)
+	(fp_line
+		(start -1.6129 1.131189)
+		(end -1.3081 1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c7999dc2-5801-4e27-983e-2c389307ca9e")
+	)
+	(fp_line
+		(start -1.3081 -1.3081)
+		(end 1.3081 -1.3081)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "153a5750-0f7f-4d27-9bda-10d78fdbdfca")
+	)
+	(fp_line
+		(start -1.3081 -1.131189)
+		(end -1.3081 -1.3081)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f690c026-a4cb-4597-9135-539a0459def6")
+	)
+	(fp_line
+		(start -1.3081 1.3081)
+		(end -1.3081 1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "beb43029-76a5-4c47-b436-91d0d8d115a8")
+	)
+	(fp_line
+		(start 1.3081 -1.3081)
+		(end 1.3081 -1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "343d6db1-b3bd-4f33-a9bb-c059215f1102")
+	)
+	(fp_line
+		(start 1.3081 1.131189)
+		(end 1.3081 1.3081)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5dae6386-e1a7-4c1a-ae12-22d02582bb3a")
+	)
+	(fp_line
+		(start 1.3081 1.3081)
+		(end -1.3081 1.3081)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "74258a8d-b23f-4db3-b62d-473d5c856f90")
+	)
+	(fp_line
+		(start 1.6129 -1.131189)
+		(end 1.3081 -1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "260422ac-a3e7-41c1-b2a6-4b50d9ba3cd1")
+	)
+	(fp_line
+		(start 1.6129 -1.131189)
+		(end 1.6129 1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fe5a8cce-7fec-41cf-bd5b-342f1d1d7a2a")
+	)
+	(fp_line
+		(start 1.6129 1.131189)
+		(end 1.3081 1.131189)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "379357df-1c53-4c51-a185-5b3bcea0f95f")
+	)
+	(fp_line
+		(start -1.0541 -1.0541)
+		(end -1.0541 1.0541)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3a1bd368-f9cd-4781-9a85-78571f6e1016")
+	)
+	(fp_line
+		(start -1.0541 1.0541)
+		(end 1.0541 1.0541)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85b3e8a5-e88c-4181-b6c4-b1eb8dc23b67")
+	)
+	(fp_line
+		(start 1.0541 -1.0541)
+		(end -1.0541 -1.0541)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1673ecdb-9cea-405f-9a1d-348c377dd6df")
+	)
+	(fp_line
+		(start 1.0541 1.0541)
+		(end 1.0541 -1.0541)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "28e2ccae-2086-4ada-b4f4-1a6efe43249c")
+	)
+	(fp_arc
+		(start 0.3048 -1.0541)
+		(mid 0 -0.7493)
+		(end -0.3048 -1.0541)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "746a0952-d005-453f-a81a-c2abbad416b4")
+	)
+	(fp_circle
+		(center -0.6477 -0.750189)
+		(end -0.5715 -0.750189)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "abe06809-0858-42cc-b8dd-11f18697edd2")
+	)
+	(pad "1" smd rect
+		(at -1.0033 -0.750189)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2c7339f6-4a1b-4840-bc28-2c82dc93932d")
+	)
+	(pad "2" smd rect
+		(at -1.0033 -0.250063)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "19ff984e-3bfd-4fea-9dab-4ac947c0031f")
+	)
+	(pad "3" smd rect
+		(at -1.0033 0.250063)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34585545-9445-4766-866a-a3052a37d10a")
+	)
+	(pad "4" smd rect
+		(at -1.0033 0.750189)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e772805a-aede-40eb-bf7a-04b994c3f1c5")
+	)
+	(pad "5" smd rect
+		(at 1.0033 0.750189)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8fa38679-9afb-48e6-8f2a-f622d84ae39b")
+	)
+	(pad "6" smd rect
+		(at 1.0033 0.250063)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c1be4400-229d-47d3-b983-10462cb9edd3")
+	)
+	(pad "7" smd rect
+		(at 1.0033 -0.250063)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6e8b585f-a271-431a-8eb5-c9661a7b3344")
+	)
+	(pad "8" smd rect
+		(at 1.0033 -0.750189)
+		(size 0.7112 0.254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23c81724-7a2e-4eb1-a014-e80ef4964ac1")
+	)
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.9906 1.7018)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c5ab84aa-6489-47d4-aa27-d601c6b879c6")
+	)
+	(embedded_fonts no)
+	(model "C:/LOCAL_DOCS/my_Project/Motor controller/PCB design/parts/PM_DRV8231ADSGR/DSG0008A.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

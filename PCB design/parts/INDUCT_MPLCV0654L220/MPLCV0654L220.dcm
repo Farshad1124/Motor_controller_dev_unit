@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MPLCV0654L220
+D Surface Mount Inductor
+K
+F https://www.yageogroup.com/content/datasheet/asset/file/KEM_L9009_MPLCV
+$ENDCMP
+#
+#End Doc Library
