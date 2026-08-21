@@ -1,0 +1,31 @@
+# ninja log v7
+25	409	8085654412384097	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/freertos_hooks.c.o	d6862a6488e0cede
+9	457	8085654412223141	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/exceptions.c.o	47ef96ac62226dac
+36	476	8085654412494068	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/initialization.c.o	e1162f2b0f9d1659
+46	492	8085654412604167	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/interrupts.c.o	cfd2e96e87bff899
+55	518	8085654412684758	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/libc_syscalls.c.o	e150f7e28284f8c4
+63	601	8085654412776355	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/clock/plib_clock.c.o	2a1c333d3aca5909
+73	550	8085654412867185	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/cmcc/plib_cmcc.c.o	4b08882f16cde5ca
+94	575	8085654413072171	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/evsys/plib_evsys.c.o	2a6097d4453ef276
+167	670	8085654413806585	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/stdio/xc32_monitor.c.o	10f301f3555bde1f
+106	630	8085654413193469	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/nvic/plib_nvic.c.o	ff6a449686ba5c59
+152	663	8085654413659004	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/startup_xc32.c.o	8abbf15f2a2a05b9
+128	653	8085654413415218	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/port/plib_port.c.o	6acc0d960702eac1
+212	656	8085654414259721	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c.o	338b66fb630f201f
+9	291	8085654631036072	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/main.c.o	1f8bec496cf61145
+458	798	8085654416712497	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/list.c.o	cc13f79b21014dda
+116	658	8085654413302921	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/nvmctrl/plib_nvmctrl.c.o	1bb448aea7ead1aa
+410	812	8085654416236301	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c.o	47996c333b05c6b9
+476	832	8085654416902605	CMakeFiles/Firmware_default_default_XC32_compile.dir/a573b5520b7b409640defe423dfe1fcf/Firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/port.c.o	32f8b9ab7eb46ace
+493	850	8085654417062623	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c.o	160fef02a674a2d5
+197	897	8085654414102760	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c.o	a7b3e74b7d6f4cc5
+575	867	8085654417884393	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/timers.c.o	22c283b7a74f6aa5
+550	933	8085654417645534	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c.o	8d48a4cf8d972c2b
+518	929	8085654417315880	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/third_party/rtos/FreeRTOS/Source/queue.c.o	5d5ad1490c6823fd
+291	573	8085654633859948	C:/LOCAL_DOCS/my_Project/Motor controller/Firmware/out/Firmware/default.elf	51c59b37684ad2b0
+573	634	8085654636675647	CMakeFiles/Firmware_default_Bin2Hex	a4e6ba5a24f40e51
+573	634	8085654636675647	C:/LOCAL_DOCS/my_Project/Motor controller/Firmware/out/Firmware/default.hex	a4e6ba5a24f40e51
+573	634	8085654636675647	C:/LOCAL_DOCS/my_Project/Motor controller/Firmware/_build/Firmware/default/CMakeFiles/Firmware_default_Bin2Hex	a4e6ba5a24f40e51
+140	690	8085654413537234	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/sercom/usart/plib_sercom5_usart.c.o	22333745026cc18c
+6	33	8085641653390441	clean	782c8f3638462c51
+84	592	8085654412972140	CMakeFiles/Firmware_default_default_XC32_compile.dir/C_/LOCAL_DOCS/my_Project/Motor_controller/Firmware/src/config/default/peripheral/eic/plib_eic.c.o	a968e4866cbe957f

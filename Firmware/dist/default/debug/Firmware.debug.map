@@ -1,0 +1,1660 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                              build/default/debug/_ext/1171490990/startup_xc32.o (__pic32c_data_initialization)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+                              build/default/debug/_ext/1593096446/plib_nvmctrl.o (memcpy)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+                              build/default/debug/_ext/404212886/FreeRTOS_tasks.o (memset)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+                              build/default/debug/_ext/1171490990/startup_xc32.o (__libc_init_array)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+                              C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o) (__progname_full)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+                              C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o) (__environ)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+                              (__dinit_clear_needed)
+C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+                              (__dinit_copy_needed)
+
+Microchip PIC32 Memory-Usage Report
+
+ROM Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.vectors                         0          0x264         612   
+.text                        0x264           0x20          32  App's exec code 
+.text.xTaskIncrementTic      0x284          0x19c         412   
+.text.CLOCK_Initialize       0x420           0xbc         188   
+.text.vTaskSwitchContex      0x4dc           0xb8         184   
+.dinit                       0x594           0x90         144   
+.text.Reset_Handler          0x624           0x88         136   
+.text.xPortPendSVHandle      0x6ac           0x60          96   
+.text.__libc_start_init      0x70c           0x5c          92   
+.text.NVIC_Initialize        0x768           0x48          72   
+.text                        0x7b0           0x40          64  App's exec code 
+.text.__pic32c_data_ini      0x7f0           0x34          52   
+.text.xPortSysTickHandl      0x824           0x2c          44   
+.text.prvResetNextTaskU      0x850           0x28          40   
+.text.vPortSVCHandler        0x878           0x20          32   
+.text.__dinit_copy           0x898           0x1e          30   
+.text.SYS_Initialize         0x8b6           0x14          20   
+.text.EVSYS_Initialize       0x8ca            0x2           2   
+.rodata                      0x8cc           0x14          20  Read-only const 
+.text.vApplicationStack      0x8e0           0x12          18   
+.text.__dinit_clear          0x8f2           0x12          18   
+.text.NVMCTRL_Initializ      0x904           0x10          16   
+.text.main                   0x914            0xa          10   
+.text.Dummy_Handler          0x91e            0x4           4   
+.text.NonMaskableInt_Ha      0x922            0x4           4   
+.text.HardFault_Handler      0x926            0x4           4   
+.text.DebugMonitor_Hand      0x92a            0x4           4   
+.text.MemoryManagement_      0x92e            0x4           4   
+.text.BusFault_Handler       0x932            0x4           4   
+.text.UsageFault_Handle      0x936            0x4           4   
+.text.__dummy_decompres      0x93a            0x4           4   
+.text.Dummy_App_Func         0x93e            0x2           2   
+.text.__dummy_init_tls       0x940            0x2           2   
+.text.__dummy                0x942            0x2           2   
+      Total ROM used  :       0x944        2372  0.2% of 0x100000
+        --------------------------------------------------------------------------
+         Total Program Memory used  :       0x944        2372  0.2% of 0x100000
+        --------------------------------------------------------------------------
+
+
+RAM Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.bss.pxReadyTasksLists  0x20000000           0x64         100   
+.bss                    0x20000064           0x50          80  Uninitialized data 
+.bss                    0x200000b4           0x1c          28  Uninitialized data 
+.bss.uxSchedulerSuspend 0x200000d0            0x4           4   
+.bss.xNextTaskUnblockTi 0x200000d4            0x4           4   
+.bss.xNumOfOverflows    0x200000d8            0x4           4   
+.bss.xYieldPendings     0x200000dc            0x4           4   
+.bss.xPendedTicks       0x200000e0            0x4           4   
+.bss.uxTopReadyPriority 0x200000e4            0x4           4   
+.bss.xTickCount         0x200000e8            0x4           4   
+.bss.pxOverflowDelayedT 0x200000ec            0x4           4   
+.bss.pxDelayedTaskList  0x200000f0            0x4           4   
+.bss.pxCurrentTCB       0x200000f4            0x4           4   
+.bss                    0x200000f8            0x4           4  Uninitialized data 
+.bss                    0x200000fc            0x4           4  Uninitialized data 
+         Total RAM used  :       0x100         256  0.1% of 0x40000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :       0x100         256  0.1% of 0x40000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0x20000108          0x200         512  Reserved for heap 
+stack                   0x20000320        0x3fcd8      261336  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Microchip PIC32 Memory-Usage Report By Module
+
+        text        data         bss         dec         hex    basename                   filename
+--------------------------------------------------------------------------------
+         636           0         140         776         308    FreeRTOS_tasks.o       build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+         616           0           0         616         268    interrupts.o           build/default/debug/_ext/1171490990/interrupts.o
+         188           0           0         188          bc    plib_clock.o           build/default/debug/_ext/1984496892/plib_clock.o
+         172           0           0         172          ac    port.o                 build/default/debug/_ext/246609638/port.o
+         144           0           0         144          90    data_init              data_init
+         138           0           0         138          8a    startup_xc32.o         build/default/debug/_ext/1171490990/startup_xc32.o
+          64           8          28         100          64    crtbegin.o             C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+          94           0           0          94          5e    __libc_start_main.o    libg-musl.a
+          78           0           4          82          52    data_init.o            libpic32c.a
+           0           0          80          80          50    libc.o                 libg-musl.a
+          72           0           0          72          48    plib_nvic.o            build/default/debug/_ext/1865468468/plib_nvic.o
+          32           0           0          32          20    initialization.o       build/default/debug/_ext/1171490990/initialization.o
+          30           0           0          30          1e    pic32_data_init_copy.o libpic32c.a
+          24           0           0          24          18    exceptions.o           build/default/debug/_ext/1171490990/exceptions.o
+          18           0           0          18          12    pic32_data_init_clear.olibpic32c.a
+          18           0           0          18          12    freertos_hooks.o       build/default/debug/_ext/1171490990/freertos_hooks.o
+          16           0           0          16          10    crtn.o                 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+          16           0           0          16          10    plib_nvmctrl.o         build/default/debug/_ext/1593096446/plib_nvmctrl.o
+          10           0           0          10           a    main.o                 build/default/debug/_ext/1360937237/main.o
+           8           0           0           8           8    crti.o                 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+           0           0           4           4           4    __environ.o            libg-musl.a
+           2           0           0           2           2    plib_evsys.o           build/default/debug/_ext/1986646378/plib_evsys.o
+--------------------------------------------------------------------------------
+        2376           8         256        2640         a50    dist/default/debug/Firmware.debug.elf
+
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .xc_stack_usage
+                0x00000000       0x26 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x00000000       0x24 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .xc_stack_usage
+                0x00000000       0x3c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_Read
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SetWriteMode
+                0x00000000       0x14 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_QuadWordWrite
+                0x00000000       0x4c build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_DoubleWordWrite
+                0x00000000       0x40 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_PageBufferWrite
+                0x00000000       0x24 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_PageBufferCommit
+                0x00000000       0x28 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_PageWrite
+                0x00000000       0x3c build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_BlockErase
+                0x00000000       0x1c build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_USER_ROW_RowErase
+                0x00000000       0x30 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_ErrorGet
+                0x00000000       0x24 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_StatusGet
+                0x00000000        0xc build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_IsBusy
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_USER_ROW_PageWrite
+                0x00000000       0x6c build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_RegionLock
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_RegionUnlock
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_RegionLockStatusGet
+                0x00000000        0xc build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SecurityBitSet
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SmartEEPROM_IsBusy
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SmartEEPROMStatusGet
+                0x00000000        0xc build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SmartEEPROM_IsActiveSectorFull
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_BankSwap
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SmartEEPROMSectorReallocate
+                0x00000000       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text.NVMCTRL_SmartEEPROMFlushPageBuffer
+                0x00000000       0x18 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .bss.nvm_error
+                0x00000000        0x2 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1986646378/plib_evsys.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1986646378/plib_evsys.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1986646378/plib_evsys.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1360937237/main.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1360937237/main.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1360937237/main.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/initialization.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/initialization.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/initialization.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/interrupts.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/interrupts.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/interrupts.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/exceptions.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/exceptions.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/exceptions.o
+ .text          0x00000000        0x0 build/default/debug/_ext/163028504/xc32_monitor.o
+ .data          0x00000000        0x0 build/default/debug/_ext/163028504/xc32_monitor.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/163028504/xc32_monitor.o
+ .text.read     0x00000000        0x6 build/default/debug/_ext/163028504/xc32_monitor.o
+ .text.write    0x00000000        0x6 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_info    0x00000000       0xf5 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_abbrev  0x00000000       0xb2 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_loc     0x00000000       0x56 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_aranges
+                0x00000000       0x28 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_ranges  0x00000000       0x18 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_line    0x00000000       0xcd build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_str     0x00000000      0x27e build/default/debug/_ext/163028504/xc32_monitor.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/163028504/xc32_monitor.o
+ .debug_frame   0x00000000       0x30 build/default/debug/_ext/163028504/xc32_monitor.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/163028504/xc32_monitor.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1865521619/plib_port.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1865521619/plib_port.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupRead
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupWrite
+                0x00000000        0xc build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupLatchRead
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupSet
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupClear
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupToggle
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupInputEnable
+                0x00000000       0x2a build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_GroupOutputEnable
+                0x00000000        0x4 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_PinPeripheralFunctionConfig
+                0x00000000       0x50 build/default/debug/_ext/1865521619/plib_port.o
+ .text.PORT_PinGPIOConfig
+                0x00000000       0x20 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_info    0x00000000      0x74e build/default/debug/_ext/1865521619/plib_port.o
+ .debug_abbrev  0x00000000      0x1cc build/default/debug/_ext/1865521619/plib_port.o
+ .debug_loc     0x00000000      0x207 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_aranges
+                0x00000000       0x68 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_ranges  0x00000000       0x58 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_line    0x00000000      0x291 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_str     0x00000000      0xa5f build/default/debug/_ext/1865521619/plib_port.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/1865521619/plib_port.o
+ .debug_frame   0x00000000       0xb8 build/default/debug/_ext/1865521619/plib_port.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/1865521619/plib_port.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1984496892/plib_clock.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1984496892/plib_clock.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1984496892/plib_clock.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1865468468/plib_nvic.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1865468468/plib_nvic.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Enable
+                0x00000000        0x8 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Disable
+                0x00000000       0x12 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Restore
+                0x00000000       0x12 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_SourceDisable
+                0x00000000       0x40 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_SourceRestore
+                0x00000000       0x20 build/default/debug/_ext/1865468468/plib_nvic.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_Disable
+                0x00000000       0x18 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_EnableICache
+                0x00000000       0x28 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_DisableICache
+                0x00000000       0x28 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_EnableDCache
+                0x00000000       0x28 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_DisableDCache
+                0x00000000       0x28 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_InvalidateAll
+                0x00000000       0x20 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_info    0x00000000      0x213 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_abbrev  0x00000000       0xa4 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_aranges
+                0x00000000       0x48 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_ranges  0x00000000       0x38 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_line    0x00000000      0x27f build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_str     0x00000000      0x3b7 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .debug_frame   0x00000000       0x70 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/startup_xc32.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/startup_xc32.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/startup_xc32.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .text._exit    0x00000000        0x4 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_info    0x00000000       0xa4 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_abbrev  0x00000000       0x5a build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_aranges
+                0x00000000       0x20 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_ranges  0x00000000       0x10 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_line    0x00000000       0x5f build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_str     0x00000000      0x2b2 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .debug_frame   0x00000000       0x20 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .text.vApplicationMallocFailedHook
+                0x00000000       0x12 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .text.vApplicationIdleHook
+                0x00000000        0x2 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .text.vApplicationTickHook
+                0x00000000        0x2 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .text.vAssertCalled
+                0x00000000       0x1c build/default/debug/_ext/1171490990/freertos_hooks.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/croutine.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/croutine.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/croutine.o
+ .debug_info    0x00000000       0x79 build/default/debug/_ext/404212886/croutine.o
+ .debug_abbrev  0x00000000       0x26 build/default/debug/_ext/404212886/croutine.o
+ .debug_aranges
+                0x00000000       0x18 build/default/debug/_ext/404212886/croutine.o
+ .debug_line    0x00000000       0x53 build/default/debug/_ext/404212886/croutine.o
+ .debug_str     0x00000000      0x2be build/default/debug/_ext/404212886/croutine.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/croutine.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/croutine.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/list.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/list.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/list.o
+ .text.vListInitialise
+                0x00000000       0x16 build/default/debug/_ext/404212886/list.o
+ .text.vListInitialiseItem
+                0x00000000        0x6 build/default/debug/_ext/404212886/list.o
+ .text.vListInsertEnd
+                0x00000000       0x16 build/default/debug/_ext/404212886/list.o
+ .text.vListInsert
+                0x00000000       0x32 build/default/debug/_ext/404212886/list.o
+ .text.uxListRemove
+                0x00000000       0x22 build/default/debug/_ext/404212886/list.o
+ .debug_info    0x00000000      0x2ff build/default/debug/_ext/404212886/list.o
+ .debug_abbrev  0x00000000      0x12c build/default/debug/_ext/404212886/list.o
+ .debug_loc     0x00000000       0xde build/default/debug/_ext/404212886/list.o
+ .debug_aranges
+                0x00000000       0x40 build/default/debug/_ext/404212886/list.o
+ .debug_ranges  0x00000000       0x30 build/default/debug/_ext/404212886/list.o
+ .debug_line    0x00000000      0x30c build/default/debug/_ext/404212886/list.o
+ .debug_str     0x00000000      0x3fd build/default/debug/_ext/404212886/list.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/list.o
+ .debug_frame   0x00000000       0x70 build/default/debug/_ext/404212886/list.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/list.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/queue.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/queue.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/queue.o
+ .text.prvIsQueueEmpty
+                0x00000000       0x16 build/default/debug/_ext/404212886/queue.o
+ .text.prvCopyDataToQueue
+                0x00000000       0x76 build/default/debug/_ext/404212886/queue.o
+ .text.prvCopyDataFromQueue
+                0x00000000       0x24 build/default/debug/_ext/404212886/queue.o
+ .text.prvUnlockQueue
+                0x00000000       0x76 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueGenericReset
+                0x00000000       0x8e build/default/debug/_ext/404212886/queue.o
+ .text.xQueueGenericCreate
+                0x00000000       0x4a build/default/debug/_ext/404212886/queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x00000000       0x20 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueGenericSend
+                0x00000000      0x124 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueCreateMutex
+                0x00000000       0x24 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000000       0x7e build/default/debug/_ext/404212886/queue.o
+ .text.xQueueGiveFromISR
+                0x00000000       0x72 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueReceive
+                0x00000000      0x10e build/default/debug/_ext/404212886/queue.o
+ .text.xQueueSemaphoreTake
+                0x00000000      0x148 build/default/debug/_ext/404212886/queue.o
+ .text.xQueuePeek
+                0x00000000      0x10a build/default/debug/_ext/404212886/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000       0x7e build/default/debug/_ext/404212886/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0x30 build/default/debug/_ext/404212886/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x12 build/default/debug/_ext/404212886/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x16 build/default/debug/_ext/404212886/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x4 build/default/debug/_ext/404212886/queue.o
+ .text.vQueueDelete
+                0x00000000        0x8 build/default/debug/_ext/404212886/queue.o
+ .text.uxQueueGetQueueItemSize
+                0x00000000        0x4 build/default/debug/_ext/404212886/queue.o
+ .text.uxQueueGetQueueLength
+                0x00000000        0x4 build/default/debug/_ext/404212886/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0xa build/default/debug/_ext/404212886/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000        0xe build/default/debug/_ext/404212886/queue.o
+ .debug_info    0x00000000     0x1c3d build/default/debug/_ext/404212886/queue.o
+ .debug_abbrev  0x00000000      0x394 build/default/debug/_ext/404212886/queue.o
+ .debug_loc     0x00000000     0x1a1b build/default/debug/_ext/404212886/queue.o
+ .debug_aranges
+                0x00000000       0xd8 build/default/debug/_ext/404212886/queue.o
+ .debug_ranges  0x00000000      0x188 build/default/debug/_ext/404212886/queue.o
+ .debug_line    0x00000000     0x10e6 build/default/debug/_ext/404212886/queue.o
+ .debug_str     0x00000000      0xaf4 build/default/debug/_ext/404212886/queue.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/queue.o
+ .debug_frame   0x00000000      0x2bc build/default/debug/_ext/404212886/queue.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/queue.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00000000       0x4c build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.prvIdleTask
+                0x00000000       0x28 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x00000000       0xd8 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskCreate
+                0x00000000      0x1d8 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskDelete
+                0x00000000       0xd4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000       0x20 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x00000000       0x28 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskBasePriorityGet
+                0x00000000       0x20 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskBasePriorityGetFromISR
+                0x00000000       0x28 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskPrioritySet
+                0x00000000       0xf0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskResume
+                0x00000000       0xb0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .rodata.vTaskStartScheduler.str1.4
+                0x00000000        0x5 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskStartScheduler
+                0x00000000       0x90 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x34 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskSuspendAll
+                0x00000000       0x10 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGetTickCount
+                0x00000000        0xc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000        0xc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0xc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.pcTaskGetName
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskResumeAll
+                0x00000000      0x174 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskDelayUntil
+                0x00000000       0x68 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskDelay
+                0x00000000       0x32 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskCatchUpTicks
+                0x00000000       0x24 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskSuspend
+                0x00000000       0xcc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskPlaceOnEventList
+                0x00000000       0x1c build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x40 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskRemoveFromEventList
+                0x00000000       0xd8 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskRemoveFromUnorderedEventList
+                0x00000000       0xb0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskSetTimeOutState
+                0x00000000       0x24 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskInternalSetTimeOutState
+                0x00000000       0x18 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskCheckForTimeOut
+                0x00000000       0x60 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskMissedYield
+                0x00000000        0xc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000        0xc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGetCurrentTaskHandleForCore
+                0x00000000       0x10 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskPriorityInherit
+                0x00000000       0xc4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskPriorityDisinherit
+                0x00000000       0x90 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskPriorityDisinheritAfterTimeout
+                0x00000000       0x9c build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x18 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.pvTaskIncrementMutexHeldCount
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.ulTaskGenericNotifyTake
+                0x00000000       0xc0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGenericNotifyWait
+                0x00000000       0xd8 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGenericNotify
+                0x00000000      0x118 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x00000000      0x144 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskGenericNotifyGiveFromISR
+                0x00000000       0xf4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.xTaskGenericNotifyStateClear
+                0x00000000       0x38 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.ulTaskGenericNotifyValueClear
+                0x00000000       0x30 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text.vTaskResetState
+                0x00000000       0x64 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .rodata.uxTopUsedPriority
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xIdleTaskHandles
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.uxTaskNumber
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xSchedulerRunning
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xSuspendedTaskList
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x00000000        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xTasksWaitingTermination
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xPendingReadyList
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xDelayedTaskList2
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .bss.xDelayedTaskList1
+                0x00000000       0x14 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/timers.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/timers.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/timers.o
+ .debug_info    0x00000000       0x79 build/default/debug/_ext/404212886/timers.o
+ .debug_abbrev  0x00000000       0x26 build/default/debug/_ext/404212886/timers.o
+ .debug_aranges
+                0x00000000       0x18 build/default/debug/_ext/404212886/timers.o
+ .debug_line    0x00000000       0x51 build/default/debug/_ext/404212886/timers.o
+ .debug_str     0x00000000      0x2bc build/default/debug/_ext/404212886/timers.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/timers.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/timers.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/event_groups.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/event_groups.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupCreate
+                0x00000000       0x1a build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupWaitBits
+                0x00000000       0xba build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupClearBits
+                0x00000000       0x1a build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x00000000       0x1c build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupSetBits
+                0x00000000       0x66 build/default/debug/_ext/404212886/event_groups.o
+ .text.xEventGroupSync
+                0x00000000       0x90 build/default/debug/_ext/404212886/event_groups.o
+ .text.vEventGroupDelete
+                0x00000000       0x2a build/default/debug/_ext/404212886/event_groups.o
+ .text.vEventGroupSetBitsCallback
+                0x00000000        0x8 build/default/debug/_ext/404212886/event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x00000000        0x8 build/default/debug/_ext/404212886/event_groups.o
+ .debug_info    0x00000000      0xb51 build/default/debug/_ext/404212886/event_groups.o
+ .debug_abbrev  0x00000000      0x2e5 build/default/debug/_ext/404212886/event_groups.o
+ .debug_loc     0x00000000      0xb24 build/default/debug/_ext/404212886/event_groups.o
+ .debug_aranges
+                0x00000000       0x60 build/default/debug/_ext/404212886/event_groups.o
+ .debug_ranges  0x00000000       0x98 build/default/debug/_ext/404212886/event_groups.o
+ .debug_line    0x00000000      0x60e build/default/debug/_ext/404212886/event_groups.o
+ .debug_str     0x00000000      0x748 build/default/debug/_ext/404212886/event_groups.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/event_groups.o
+ .debug_frame   0x00000000      0x100 build/default/debug/_ext/404212886/event_groups.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/event_groups.o
+ .text          0x00000000        0x0 build/default/debug/_ext/404212886/stream_buffer.o
+ .data          0x00000000        0x0 build/default/debug/_ext/404212886/stream_buffer.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.prvBytesInBuffer
+                0x00000000       0x12 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.prvWriteBytesToBuffer
+                0x00000000       0x40 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.prvWriteMessageToBuffer
+                0x00000000       0x4e build/default/debug/_ext/404212886/stream_buffer.o
+ .text.prvReadBytesFromBuffer
+                0x00000000       0x42 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.prvReadMessageFromBuffer
+                0x00000000       0x4e build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferGenericCreate
+                0x00000000       0x4e build/default/debug/_ext/404212886/stream_buffer.o
+ .text.vStreamBufferDelete
+                0x00000000       0x1a build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferReset
+                0x00000000       0x44 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferResetFromISR
+                0x00000000       0x54 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferSetTriggerLevel
+                0x00000000       0x14 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferSpacesAvailable
+                0x00000000       0x20 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferBytesAvailable
+                0x00000000        0x8 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferSend
+                0x00000000       0xd2 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferSendFromISR
+                0x00000000       0x78 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferReceive
+                0x00000000       0xbe build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferNextMessageLengthBytes
+                0x00000000       0x32 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferReceiveFromISR
+                0x00000000       0x6e build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferIsEmpty
+                0x00000000        0xe build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferIsFull
+                0x00000000       0x18 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferSendCompletedFromISR
+                0x00000000       0x40 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.xStreamBufferReceiveCompletedFromISR
+                0x00000000       0x40 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.uxStreamBufferGetStreamBufferNotificationIndex
+                0x00000000        0x4 build/default/debug/_ext/404212886/stream_buffer.o
+ .text.vStreamBufferSetStreamBufferNotificationIndex
+                0x00000000        0x4 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_info    0x00000000     0x193b build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_abbrev  0x00000000      0x386 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_loc     0x00000000     0x1d82 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_aranges
+                0x00000000       0xd0 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_ranges  0x00000000      0x148 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_line    0x00000000      0xd8e build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_str     0x00000000      0xaa4 build/default/debug/_ext/404212886/stream_buffer.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/404212886/stream_buffer.o
+ .debug_frame   0x00000000      0x2c4 build/default/debug/_ext/404212886/stream_buffer.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/404212886/stream_buffer.o
+ .text          0x00000000        0x0 build/default/debug/_ext/1665200909/heap_1.o
+ .data          0x00000000        0x0 build/default/debug/_ext/1665200909/heap_1.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/1665200909/heap_1.o
+ .text.pvPortMalloc
+                0x00000000       0x88 build/default/debug/_ext/1665200909/heap_1.o
+ .text.vPortFree
+                0x00000000        0x2 build/default/debug/_ext/1665200909/heap_1.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0xc build/default/debug/_ext/1665200909/heap_1.o
+ .text.xPortGetFreeHeapSize
+                0x00000000       0x10 build/default/debug/_ext/1665200909/heap_1.o
+ .text.vPortHeapResetState
+                0x00000000        0xc build/default/debug/_ext/1665200909/heap_1.o
+ .bss.pucAlignedHeap.0
+                0x00000000        0x4 build/default/debug/_ext/1665200909/heap_1.o
+ .bss.xNextFreeByte
+                0x00000000        0x4 build/default/debug/_ext/1665200909/heap_1.o
+ .bss.ucHeap    0x00000000     0xa000 build/default/debug/_ext/1665200909/heap_1.o
+ .debug_info    0x00000000      0x23b build/default/debug/_ext/1665200909/heap_1.o
+ .debug_abbrev  0x00000000      0x173 build/default/debug/_ext/1665200909/heap_1.o
+ .debug_loc     0x00000000       0xdf build/default/debug/_ext/1665200909/heap_1.o
+ .debug_aranges
+                0x00000000       0x40 build/default/debug/_ext/1665200909/heap_1.o
+ .debug_ranges  0x00000000       0x48 build/default/debug/_ext/1665200909/heap_1.o
+ .debug_line    0x00000000      0x29e build/default/debug/_ext/1665200909/heap_1.o
+ .debug_str     0x00000000      0x3d3 build/default/debug/_ext/1665200909/heap_1.o
+ .comment       0x00000000       0x36 build/default/debug/_ext/1665200909/heap_1.o
+ .debug_frame   0x00000000       0x6c build/default/debug/_ext/1665200909/heap_1.o
+ .ARM.attributes
+                0x00000000       0x34 build/default/debug/_ext/1665200909/heap_1.o
+ .text          0x00000000        0x0 build/default/debug/_ext/246609638/port.o
+ .data          0x00000000        0x0 build/default/debug/_ext/246609638/port.o
+ .bss           0x00000000        0x0 build/default/debug/_ext/246609638/port.o
+ .text.prvTaskExitError
+                0x00000000       0x20 build/default/debug/_ext/246609638/port.o
+ .text.prvPortStartFirstTask
+                0x00000000       0x28 build/default/debug/_ext/246609638/port.o
+ .text.vPortEnableVFP
+                0x00000000       0x14 build/default/debug/_ext/246609638/port.o
+ .text.pxPortInitialiseStack
+                0x00000000       0x2c build/default/debug/_ext/246609638/port.o
+ .text.vPortEndScheduler
+                0x00000000        0x2 build/default/debug/_ext/246609638/port.o
+ .text.vPortEnterCritical
+                0x00000000       0x20 build/default/debug/_ext/246609638/port.o
+ .text.vPortExitCritical
+                0x00000000       0x14 build/default/debug/_ext/246609638/port.o
+ .text.vPortSetupTimerInterrupt
+                0x00000000       0x18 build/default/debug/_ext/246609638/port.o
+ .text.xPortStartScheduler
+                0x00000000       0x50 build/default/debug/_ext/246609638/port.o
+ .data.uxCriticalNesting
+                0x00000000        0x4 build/default/debug/_ext/246609638/port.o
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .xc_stack_usage
+                0x00000000       0x68 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .xc_stack_usage
+                0x00000000       0x14 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .text.memcpy   0x00000000       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_info    0x00000000       0xff C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_abbrev  0x00000000       0xaa C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_loc     0x00000000      0x10b C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_aranges
+                0x00000000       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_ranges  0x00000000       0x10 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_line    0x00000000      0x165 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_str     0x00000000      0x256 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .comment       0x00000000       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_frame   0x00000000       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .ARM.attributes
+                0x00000000       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .xc_stack_usage
+                0x00000000       0x14 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .text.memset   0x00000000       0x14 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_info    0x00000000       0xc2 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_abbrev  0x00000000       0xa2 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_loc     0x00000000       0xa5 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_aranges
+                0x00000000       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_ranges  0x00000000       0x10 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_line    0x00000000      0x162 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_str     0x00000000      0x242 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .comment       0x00000000       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_frame   0x00000000       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .ARM.attributes
+                0x00000000       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .xc_stack_usage
+                0x00000000       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x00000000       0x24 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .comment       0x00000000       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .xc_stack_usage
+                0x00000000       0x1b C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .xc_stack_usage
+                0x00000000       0x1a C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00100000         xrl
+ram              0x20000000         0x00040000         xw!r
+tcm              0x03000000         0x00000000         xw
+bkupram          0x47000000         0x00002000
+config_00804000  0x00804000         0x00000004
+config_00804004  0x00804004         0x00000004
+config_00804008  0x00804008         0x00000004
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD build/default/debug/_ext/1593096446/plib_nvmctrl.o
+LOAD build/default/debug/_ext/1986646378/plib_evsys.o
+LOAD build/default/debug/_ext/1360937237/main.o
+LOAD build/default/debug/_ext/1171490990/initialization.o
+LOAD build/default/debug/_ext/1171490990/interrupts.o
+LOAD build/default/debug/_ext/1171490990/exceptions.o
+LOAD build/default/debug/_ext/163028504/xc32_monitor.o
+LOAD build/default/debug/_ext/1865521619/plib_port.o
+LOAD build/default/debug/_ext/1984496892/plib_clock.o
+LOAD build/default/debug/_ext/1865468468/plib_nvic.o
+LOAD build/default/debug/_ext/1865131932/plib_cmcc.o
+LOAD build/default/debug/_ext/1171490990/startup_xc32.o
+LOAD build/default/debug/_ext/1171490990/libc_syscalls.o
+LOAD build/default/debug/_ext/1171490990/freertos_hooks.o
+LOAD build/default/debug/_ext/404212886/croutine.o
+LOAD build/default/debug/_ext/404212886/list.o
+LOAD build/default/debug/_ext/404212886/queue.o
+LOAD build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+LOAD build/default/debug/_ext/404212886/timers.o
+LOAD build/default/debug/_ext/404212886/event_groups.o
+LOAD build/default/debug/_ext/404212886/stream_buffer.o
+LOAD build/default/debug/_ext/1665200909/heap_1.o
+LOAD build/default/debug/_ext/246609638/port.o
+                0x00000001                        __MPLAB_BUILD = 0x1
+                0x00100000                        __rom_end = (ORIGIN (rom) + LENGTH (rom))
+                0x20040000                        __ram_end = (ORIGIN (ram) + LENGTH (ram))
+
+.config_00804000
+                0x00804000        0x4
+ *(.config_00804000)
+ .config_00804000
+                0x00804000        0x4 build/default/debug/_ext/1171490990/initialization.o
+                0x00804000                __config_00804000
+
+.config_00804004
+                0x00804004        0x4
+ *(.config_00804004)
+ .config_00804004
+                0x00804004        0x4 build/default/debug/_ext/1171490990/initialization.o
+                0x00804004                __config_00804004
+
+.config_00804008
+                0x00804008        0x4
+ *(.config_00804008)
+ .config_00804008
+                0x00804008        0x4 build/default/debug/_ext/1171490990/initialization.o
+                0x00804008                __config_00804008
+
+.vectors        0x00000000      0x264
+                0x00000000                        . = ALIGN (0x4)
+                0x00000000                        _sfixed = .
+ *(.vectors .vectors.* .vectors_default .vectors_default.*)
+ .vectors       0x00000000      0x264 build/default/debug/_ext/1171490990/interrupts.o
+                0x00000000                exception_table
+ *(.isr_vector)
+ *(.reset*)
+ *(.after_vectors)
+
+.text           0x00000264       0x20
+                0x00000264                        . = ALIGN (0x4)
+ *(.glue_7t)
+ .glue_7t       0x00000264        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000264        0x0 linker stubs
+ *(.gnu.linkonce.r.*)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000264                        . = ALIGN (0x4)
+ *(.init)
+ .init          0x00000264        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x00000264                _init
+ .init          0x00000268        0x8 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000270                        . = ALIGN (0x4)
+                0x00000270                        __preinit_array_start = .
+ *(.preinit_array)
+                0x00000270                        __preinit_array_end = .
+                0x00000270                        . = ALIGN (0x4)
+                0x00000270                        __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x00000270        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x00000274                        __init_array_end = .
+                0x00000274                        . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+                0x00000274                        . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00000274        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x00000274                _fini
+ .fini          0x00000278        0x8 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000280                        . = ALIGN (0x4)
+                0x00000280                        __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00000280        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(SORT_BY_NAME(.fini_array.*))
+                0x00000284                        __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+                0x00000284                        . = ALIGN (0x4)
+                0x00000284                        _efixed = .
+                [!provide]                        PROVIDE (__exidx_start = .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end = .)
+                0x00000284                        . = ALIGN (0x4)
+                0x00000284                        _etext = .
+
+.bss            0x20000000        0x0
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        __bss_start__ = .
+                0x20000000                        _sbss = .
+                0x20000000                        _szero = .
+ *(COMMON)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        __bss_end__ = .
+                0x20000000                        _ebss = .
+                0x20000000                        _ezero = .
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _end = .
+                0x2003ffff                        _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
+
+.bkupram_bss
+ *(.bkupram_bss .bkupram_bss.*)
+ *(.pbss .pbss.*)
+                0x00000001                        __ICD2RAM = 0x1
+                0x00000001                        __MPLAB_DEBUG = 0x1
+                0x00000001                        __DEBUG = 0x1
+                0x00000200                        _min_heap_size = 0x200
+START GROUP
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\liblmalloc-musl.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libm-fast-emfloat.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libm-musl.a
+END GROUP
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(dist/default/debug/Firmware.debug.elf elf32-littlearm)
+LOAD linker stubs
+LOAD data_init
+
+.note           0x00000000      0x3d8
+ .note          0x00000000       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .note          0x00000018       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .note          0x00000030       0x18 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .note          0x00000048       0x18 build/default/debug/_ext/1986646378/plib_evsys.o
+ .note          0x00000060       0x18 build/default/debug/_ext/1360937237/main.o
+ .note          0x00000078       0xa8 build/default/debug/_ext/1171490990/initialization.o
+ .note          0x00000120       0x18 build/default/debug/_ext/1171490990/interrupts.o
+ .note          0x00000138       0x18 build/default/debug/_ext/1171490990/exceptions.o
+ .note          0x00000150       0x18 build/default/debug/_ext/163028504/xc32_monitor.o
+ .note          0x00000168       0x18 build/default/debug/_ext/1865521619/plib_port.o
+ .note          0x00000180       0x18 build/default/debug/_ext/1984496892/plib_clock.o
+ .note          0x00000198       0x18 build/default/debug/_ext/1865468468/plib_nvic.o
+ .note          0x000001b0       0x18 build/default/debug/_ext/1865131932/plib_cmcc.o
+ .note          0x000001c8       0x18 build/default/debug/_ext/1171490990/startup_xc32.o
+ .note          0x000001e0       0x18 build/default/debug/_ext/1171490990/libc_syscalls.o
+ .note          0x000001f8       0x18 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .note          0x00000210       0x18 build/default/debug/_ext/404212886/croutine.o
+ .note          0x00000228       0x18 build/default/debug/_ext/404212886/list.o
+ .note          0x00000240       0x18 build/default/debug/_ext/404212886/queue.o
+ .note          0x00000258       0x18 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .note          0x00000270       0x18 build/default/debug/_ext/404212886/timers.o
+ .note          0x00000288       0x18 build/default/debug/_ext/404212886/event_groups.o
+ .note          0x000002a0       0x18 build/default/debug/_ext/404212886/stream_buffer.o
+ .note          0x000002b8       0x18 build/default/debug/_ext/1665200909/heap_1.o
+ .note          0x000002d0       0x18 build/default/debug/_ext/246609638/port.o
+ .note          0x000002e8       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .note          0x00000300       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .note          0x00000318       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .note          0x00000330       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .note          0x00000348       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .note          0x00000360       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .note          0x00000378       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .note          0x00000390       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .note          0x000003a8       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .note          0x000003c0       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x22 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x00000022       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x00000056       0x34 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .ARM.attributes
+                0x0000008a       0x34 build/default/debug/_ext/1986646378/plib_evsys.o
+ .ARM.attributes
+                0x000000be       0x34 build/default/debug/_ext/1360937237/main.o
+ .ARM.attributes
+                0x000000f2       0x34 build/default/debug/_ext/1171490990/initialization.o
+ .ARM.attributes
+                0x00000126       0x34 build/default/debug/_ext/1171490990/interrupts.o
+ .ARM.attributes
+                0x0000015a       0x34 build/default/debug/_ext/1171490990/exceptions.o
+ .ARM.attributes
+                0x0000018e       0x34 build/default/debug/_ext/1984496892/plib_clock.o
+ .ARM.attributes
+                0x000001c2       0x34 build/default/debug/_ext/1865468468/plib_nvic.o
+ .ARM.attributes
+                0x000001f6       0x34 build/default/debug/_ext/1171490990/startup_xc32.o
+ .ARM.attributes
+                0x0000022a       0x34 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .ARM.attributes
+                0x0000025e       0x34 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .ARM.attributes
+                0x00000292       0x34 build/default/debug/_ext/246609638/port.o
+ .ARM.attributes
+                0x000002c6       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .ARM.attributes
+                0x000002fa       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .ARM.attributes
+                0x00000330       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .ARM.attributes
+                0x00000366       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .ARM.attributes
+                0x0000039c       0x22 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .ARM.attributes
+                0x000003be       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .ARM.attributes
+                0x000003f2       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.comment        0x00000000       0x35
+ .comment       0x00000000       0x35 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                                 0x36 (size before relaxing)
+ .comment       0x00000035       0x36 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1986646378/plib_evsys.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1360937237/main.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1171490990/initialization.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1171490990/interrupts.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1171490990/exceptions.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1984496892/plib_clock.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1865468468/plib_nvic.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1171490990/startup_xc32.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .comment       0x00000035       0x36 build/default/debug/_ext/246609638/port.o
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .comment       0x00000035       0x36 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_info     0x00000000     0x6a7f
+ .debug_info    0x00000000      0x92d build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_info    0x0000092d       0x9b build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_info    0x000009c8       0xc7 build/default/debug/_ext/1360937237/main.o
+ .debug_info    0x00000a8f      0x103 build/default/debug/_ext/1171490990/initialization.o
+ .debug_info    0x00000b92      0xad4 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_info    0x00001666      0x10f build/default/debug/_ext/1171490990/exceptions.o
+ .debug_info    0x00001775      0x639 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_info    0x00001dae      0xbe5 build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_info    0x00002993      0x573 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_info    0x00002f06      0x205 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_info    0x0000310b     0x2b81 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_info    0x00005c8c      0x3a3 build/default/debug/_ext/246609638/port.o
+ .debug_info    0x0000602f      0x212 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_info    0x00006241      0x2fb C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_info    0x0000653c      0x276 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_info    0x000067b2       0x97 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_info    0x00006849      0x110 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_info    0x00006959      0x126 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_abbrev   0x00000000     0x1752
+ .debug_abbrev  0x00000000      0x266 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_abbrev  0x00000266       0x46 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_abbrev  0x000002ac       0x82 build/default/debug/_ext/1360937237/main.o
+ .debug_abbrev  0x0000032e       0x7f build/default/debug/_ext/1171490990/initialization.o
+ .debug_abbrev  0x000003ad       0xd3 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_abbrev  0x00000480       0x49 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_abbrev  0x000004c9      0x10b build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_abbrev  0x000005d4      0x24a build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_abbrev  0x0000081e      0x1ee build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_abbrev  0x00000a0c      0x14d build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_abbrev  0x00000b59      0x49b build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_abbrev  0x00000ff4      0x233 build/default/debug/_ext/246609638/port.o
+ .debug_abbrev  0x00001227      0x156 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_abbrev  0x0000137d      0x133 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_abbrev  0x000014b0       0xd4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_abbrev  0x00001584       0x62 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_abbrev  0x000015e6       0xa2 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_abbrev  0x00001688       0xca C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_loc      0x00000000     0x3cfb
+ .debug_loc     0x00000000      0x874 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_loc     0x00000874       0x20 build/default/debug/_ext/1360937237/main.o
+ .debug_loc     0x00000894       0x4b build/default/debug/_ext/1171490990/initialization.o
+ .debug_loc     0x000008df      0x236 build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_loc     0x00000b15       0x4a build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_loc     0x00000b5f       0x8e build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_loc     0x00000bed     0x2ce5 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_loc     0x000038d2      0x140 build/default/debug/_ext/246609638/port.o
+ .debug_loc     0x00003a12      0x113 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_loc     0x00003b25       0x51 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_loc     0x00003b76       0x94 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_loc     0x00003c0a       0xf1 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_aranges  0x00000000      0x550
+ .debug_aranges
+                0x00000000       0xd8 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_aranges
+                0x000000d8       0x20 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_aranges
+                0x000000f8       0x20 build/default/debug/_ext/1360937237/main.o
+ .debug_aranges
+                0x00000118       0x20 build/default/debug/_ext/1171490990/initialization.o
+ .debug_aranges
+                0x00000138       0x20 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_aranges
+                0x00000158       0x48 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_aranges
+                0x000001a0       0x20 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_aranges
+                0x000001c0       0x48 build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_aranges
+                0x00000208       0x28 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_aranges
+                0x00000230       0x40 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_aranges
+                0x00000270      0x1a0 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_aranges
+                0x00000410       0x78 build/default/debug/_ext/246609638/port.o
+ .debug_aranges
+                0x00000488       0x30 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_aranges
+                0x000004b8       0x28 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_aranges
+                0x000004e0       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_aranges
+                0x000004f8       0x18 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_aranges
+                0x00000510       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_aranges
+                0x00000530       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_ranges   0x00000000      0x5d8
+ .debug_ranges  0x00000000       0xc8 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_ranges  0x000000c8       0x10 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_ranges  0x000000d8       0x10 build/default/debug/_ext/1360937237/main.o
+ .debug_ranges  0x000000e8       0x10 build/default/debug/_ext/1171490990/initialization.o
+ .debug_ranges  0x000000f8       0x10 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_ranges  0x00000108       0x38 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_ranges  0x00000140       0x10 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_ranges  0x00000150       0x38 build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_ranges  0x00000188       0x18 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_ranges  0x000001a0       0x30 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_ranges  0x000001d0      0x320 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_ranges  0x000004f0       0x68 build/default/debug/_ext/246609638/port.o
+ .debug_ranges  0x00000558       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_ranges  0x00000578       0x40 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_ranges  0x000005b8       0x10 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_ranges  0x000005c8       0x10 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_line     0x00000000     0x3fa7
+ .debug_line    0x00000000      0x694 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_line    0x00000694       0x66 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_line    0x000006fa       0x70 build/default/debug/_ext/1360937237/main.o
+ .debug_line    0x0000076a      0x144 build/default/debug/_ext/1171490990/initialization.o
+ .debug_line    0x000008ae       0xce build/default/debug/_ext/1171490990/interrupts.o
+ .debug_line    0x0000097c       0xdf build/default/debug/_ext/1171490990/exceptions.o
+ .debug_line    0x00000a5b      0x2d0 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_line    0x00000d2b      0x3f9 build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_line    0x00001124      0x299 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_line    0x000013bd      0x1d6 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_line    0x00001593     0x1f77 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_line    0x0000350a      0x36e build/default/debug/_ext/246609638/port.o
+ .debug_line    0x00003878      0x163 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_line    0x000039db      0x1da C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_line    0x00003bb5       0xb5 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_line    0x00003c6a       0xfb C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_line    0x00003d65      0x11c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_line    0x00003e81      0x126 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_str      0x00000000     0x3a57
+ .debug_str     0x00000000     0x3a57 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+                                0x6d8 (size before relaxing)
+ .debug_str     0x00003a57      0x2d0 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_str     0x00003a57      0x2ad build/default/debug/_ext/1360937237/main.o
+ .debug_str     0x00003a57      0x30b build/default/debug/_ext/1171490990/initialization.o
+ .debug_str     0x00003a57      0xfba build/default/debug/_ext/1171490990/interrupts.o
+ .debug_str     0x00003a57      0x329 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_str     0x00003a57      0x674 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_str     0x00003a57      0xd6d build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_str     0x00003a57      0x498 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_str     0x00003a57      0x3b2 build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_str     0x00003a57     0x11a6 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_str     0x00003a57      0x4a0 build/default/debug/_ext/246609638/port.o
+ .debug_str     0x00003a57      0x2f6 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_str     0x00003a57      0x3e4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_str     0x00003a57      0x34f C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_str     0x00003a57      0x24f C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_str     0x00003a57      0x287 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_str     0x00003a57      0x28e C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.debug_frame    0x00000000      0xab4
+ .debug_frame   0x00000000      0x1bc build/default/debug/_ext/1593096446/plib_nvmctrl.o
+ .debug_frame   0x000001bc       0x20 build/default/debug/_ext/1986646378/plib_evsys.o
+ .debug_frame   0x000001dc       0x28 build/default/debug/_ext/1360937237/main.o
+ .debug_frame   0x00000204       0x28 build/default/debug/_ext/1171490990/initialization.o
+ .debug_frame   0x0000022c       0x20 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_frame   0x0000024c       0x70 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_frame   0x000002bc       0x20 build/default/debug/_ext/1984496892/plib_clock.o
+ .debug_frame   0x000002dc       0x7c build/default/debug/_ext/1865468468/plib_nvic.o
+ .debug_frame   0x00000358       0x38 build/default/debug/_ext/1171490990/startup_xc32.o
+ .debug_frame   0x00000390       0x6c build/default/debug/_ext/1171490990/freertos_hooks.o
+ .debug_frame   0x000003fc      0x4fc build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+ .debug_frame   0x000008f8       0xec build/default/debug/_ext/246609638/port.o
+ .debug_frame   0x000009e4       0x4c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_frame   0x00000a30       0x3c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_frame   0x00000a6c       0x20 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_frame   0x00000a8c       0x28 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+
+.vfp11_veneer%z1
+
+.v4_bx%z2
+
+.iplt%z3
+
+.rel.iplt%z4
+
+.igot.plt%z5
+
+.bss.pxReadyTasksLists%1
+                0x20000000       0x64
+ .bss.pxReadyTasksLists
+                0x20000000       0x64 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss%2          0x20000064       0x50
+ .bss           0x20000064       0x50 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+                0x20000064                __progname_full
+                0x20000064                program_invocation_name
+                0x20000068                program_invocation_short_name
+                0x20000068                __progname
+                0x2000006c                __sysinfo
+                0x20000070                __hwcap
+                0x20000074                __libc
+
+.bss%3          0x200000b4       0x1c
+ .bss           0x200000b4       0x1c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.bss.uxSchedulerSuspended%4
+                0x200000d0        0x4
+ .bss.uxSchedulerSuspended
+                0x200000d0        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.xNextTaskUnblockTime%5
+                0x200000d4        0x4
+ .bss.xNextTaskUnblockTime
+                0x200000d4        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.xNumOfOverflows%6
+                0x200000d8        0x4
+ .bss.xNumOfOverflows
+                0x200000d8        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.xYieldPendings%7
+                0x200000dc        0x4
+ .bss.xYieldPendings
+                0x200000dc        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.xPendedTicks%8
+                0x200000e0        0x4
+ .bss.xPendedTicks
+                0x200000e0        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.uxTopReadyPriority%9
+                0x200000e4        0x4
+ .bss.uxTopReadyPriority
+                0x200000e4        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.xTickCount%10
+                0x200000e8        0x4
+ .bss.xTickCount
+                0x200000e8        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.pxOverflowDelayedTaskList%11
+                0x200000ec        0x4
+ .bss.pxOverflowDelayedTaskList
+                0x200000ec        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.pxDelayedTaskList%12
+                0x200000f0        0x4
+ .bss.pxDelayedTaskList
+                0x200000f0        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.bss.pxCurrentTCB%13
+                0x200000f4        0x4
+ .bss.pxCurrentTCB
+                0x200000f4        0x4 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+                0x200000f4                pxCurrentTCB
+
+.bss%14         0x200000f8        0x4
+ .bss           0x200000f8        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+
+.bss%15         0x200000fc        0x4
+ .bss           0x200000fc        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+                0x200000fc                __environ
+                0x200000fc                environ
+                0x200000fc                ___environ
+                0x200000fc                _environ
+
+.eh_frame%z6    0x00000000        0x0
+ .eh_frame      0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.text.xTaskIncrementTick%16
+                0x00000284      0x19c
+ .text.xTaskIncrementTick
+                0x00000284      0x19c build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+                0x00000284                xTaskIncrementTick
+
+.text.CLOCK_Initialize%17
+                0x00000420       0xbc
+ .text.CLOCK_Initialize
+                0x00000420       0xbc build/default/debug/_ext/1984496892/plib_clock.o
+                0x00000420                CLOCK_Initialize
+
+.text.vTaskSwitchContext%18
+                0x000004dc       0xb8
+ .text.vTaskSwitchContext
+                0x000004dc       0xb8 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+                0x000004dc                vTaskSwitchContext
+
+.dinit%19       0x00000594       0x90
+ .dinit         0x00000594       0x90 data_init
+
+.text.Reset_Handler%20
+                0x00000624       0x88
+ .text.Reset_Handler
+                0x00000624       0x88 build/default/debug/_ext/1171490990/startup_xc32.o
+                0x00000624                Reset_Handler
+
+.text.xPortPendSVHandler%21
+                0x000006ac       0x60
+ .text.xPortPendSVHandler
+                0x000006ac       0x60 build/default/debug/_ext/246609638/port.o
+                0x000006ac                xPortPendSVHandler
+
+.text.__libc_start_init%22
+                0x0000070c       0x5c
+ .text.__libc_start_init
+                0x0000070c       0x5c C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+                0x0000070c                __libc_init_array
+
+.text.NVIC_Initialize%23
+                0x00000768       0x48
+ .text.NVIC_Initialize
+                0x00000768       0x48 build/default/debug/_ext/1865468468/plib_nvic.o
+                0x00000768                NVIC_Initialize
+
+.text%24        0x000007b0       0x40
+ .text          0x000007b0       0x40 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.text.__pic32c_data_initialization%25
+                0x000007f0       0x34
+ .text.__pic32c_data_initialization
+                0x000007f0       0x34 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x000007f0                __pic32c_data_initialization
+                0x000007f0                __pic32_data_init
+
+.text.xPortSysTickHandler%26
+                0x00000824       0x2c
+ .text.xPortSysTickHandler
+                0x00000824       0x2c build/default/debug/_ext/246609638/port.o
+                0x00000824                xPortSysTickHandler
+
+.text.prvResetNextTaskUnblockTime%27
+                0x00000850       0x28
+ .text.prvResetNextTaskUnblockTime
+                0x00000850       0x28 build/default/debug/_ext/404212886/FreeRTOS_tasks.o
+
+.text.vPortSVCHandler%28
+                0x00000878       0x20
+ .text.vPortSVCHandler
+                0x00000878       0x20 build/default/debug/_ext/246609638/port.o
+                0x00000878                vPortSVCHandler
+
+.text.__dinit_copy%29
+                0x00000898       0x1e
+ .text.__dinit_copy
+                0x00000898       0x1e C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+                0x00000898                __dinit_copy_needed
+                0x00000898                __dinit_copy
+
+.text.SYS_Initialize%30
+                0x000008b6       0x14
+ .text.SYS_Initialize
+                0x000008b6       0x14 build/default/debug/_ext/1171490990/initialization.o
+                0x000008b6                SYS_Initialize
+
+.rodata%31      0x000008cc       0x14
+ .rodata        0x000008cc       0x14 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+
+.text.vApplicationStackOverflowHook%32
+                0x000008e0       0x12
+ .text.vApplicationStackOverflowHook
+                0x000008e0       0x12 build/default/debug/_ext/1171490990/freertos_hooks.o
+                0x000008e0                vApplicationStackOverflowHook
+
+.text.__dinit_clear%33
+                0x000008f2       0x12
+ .text.__dinit_clear
+                0x000008f2       0x12 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+                0x000008f2                __dinit_clear
+                0x000008f2                __dinit_clear_needed
+
+.text.NVMCTRL_Initialize%34
+                0x00000904       0x10
+ .text.NVMCTRL_Initialize
+                0x00000904       0x10 build/default/debug/_ext/1593096446/plib_nvmctrl.o
+                0x00000904                NVMCTRL_Initialize
+
+.text.main%35   0x00000914        0xa
+ .text.main     0x00000914        0xa build/default/debug/_ext/1360937237/main.o
+                0x00000914                main
+
+.text.Dummy_Handler%36
+                0x0000091e        0x4
+ .text.Dummy_Handler
+                0x0000091e        0x4 build/default/debug/_ext/1171490990/interrupts.o
+                0x0000091e                EIC_EXTINT_9_Handler
+                0x0000091e                TCC0_MC5_Handler
+                0x0000091e                SERCOM0_2_Handler
+                0x0000091e                USB_SOF_HSOF_Handler
+                0x0000091e                TCC4_OTHER_Handler
+                0x0000091e                TCC2_MC2_Handler
+                0x0000091e                EVSYS_0_Handler
+                0x0000091e                TRNG_Handler
+                0x0000091e                TC2_Handler
+                0x0000091e                USB_TRCPT0_Handler
+                0x0000091e                DAC_OTHER_Handler
+                0x0000091e                AC_Handler
+                0x0000091e                DAC_EMPTY_0_Handler
+                0x0000091e                DMAC_OTHER_Handler
+                0x0000091e                EIC_EXTINT_5_Handler
+                0x0000091e                SERCOM3_1_Handler
+                0x0000091e                SERCOM4_OTHER_Handler
+                0x0000091e                SERCOM3_2_Handler
+                0x0000091e                EIC_EXTINT_6_Handler
+                0x0000091e                TC7_Handler
+                0x0000091e                TCC4_MC0_Handler
+                0x0000091e                EVSYS_3_Handler
+                0x0000091e                QSPI_Handler
+                0x0000091e                TCC2_MC0_Handler
+                0x0000091e                PDEC_OTHER_Handler
+                0x0000091e                TCC3_MC0_Handler
+                0x0000091e                PDEC_MC1_Handler
+                0x0000091e                TCC2_MC1_Handler
+                0x0000091e                OSCCTRL_XOSC1_Handler
+                0x0000091e                PDEC_MC0_Handler
+                0x0000091e                EIC_EXTINT_4_Handler
+                0x0000091e                EIC_EXTINT_7_Handler
+                0x0000091e                SERCOM0_OTHER_Handler
+                0x0000091e                EVSYS_OTHER_Handler
+                0x0000091e                SERCOM0_0_Handler
+                0x0000091e                RTC_Handler
+                0x0000091e                SERCOM4_0_Handler
+                0x0000091e                TCC1_MC0_Handler
+                0x0000091e                SERCOM1_OTHER_Handler
+                0x0000091e                TCC2_OTHER_Handler
+                0x0000091e                EIC_EXTINT_11_Handler
+                0x0000091e                SUPC_BODDET_Handler
+                0x0000091e                EIC_EXTINT_14_Handler
+                0x0000091e                OSC32KCTRL_Handler
+                0x0000091e                SERCOM6_2_Handler
+                0x0000091e                EVSYS_1_Handler
+                0x0000091e                TC6_Handler
+                0x0000091e                TCC4_MC1_Handler
+                0x0000091e                DMAC_0_Handler
+                0x0000091e                SUPC_OTHER_Handler
+                0x0000091e                WDT_Handler
+                0x0000091e                EIC_EXTINT_15_Handler
+                0x0000091e                SERCOM6_0_Handler
+                0x0000091e                EIC_EXTINT_1_Handler
+                0x0000091e                TCC3_MC1_Handler
+                0x0000091e                SERCOM5_0_Handler
+                0x0000091e                TC4_Handler
+                0x0000091e                TC1_Handler
+                0x0000091e                TCC1_MC1_Handler
+                0x0000091e                EIC_EXTINT_0_Handler
+                0x0000091e                TCC1_OTHER_Handler
+                0x0000091e                PAC_Handler
+                0x0000091e                SERCOM4_1_Handler
+                0x0000091e                TC3_Handler
+                0x0000091e                Dummy_Handler
+                0x0000091e                DAC_RESRDY_0_Handler
+                0x0000091e                SERCOM5_1_Handler
+                0x0000091e                DMAC_2_Handler
+                0x0000091e                TCC0_MC4_Handler
+                0x0000091e                USB_TRCPT1_Handler
+                0x0000091e                SERCOM0_1_Handler
+                0x0000091e                TCC0_MC3_Handler
+                0x0000091e                EIC_EXTINT_12_Handler
+                0x0000091e                OSCCTRL_DPLL0_Handler
+                0x0000091e                SERCOM6_OTHER_Handler
+                0x0000091e                SERCOM7_1_Handler
+                0x0000091e                SERCOM5_OTHER_Handler
+                0x0000091e                PM_Handler
+                0x0000091e                OSCCTRL_DFLL_Handler
+                0x0000091e                SERCOM7_0_Handler
+                0x0000091e                DAC_RESRDY_1_Handler
+                0x0000091e                DMAC_1_Handler
+                0x0000091e                USB_OTHER_Handler
+                0x0000091e                SDHC1_Handler
+                0x0000091e                SERCOM7_2_Handler
+                0x0000091e                TCC0_OTHER_Handler
+                0x0000091e                EIC_EXTINT_10_Handler
+                0x0000091e                TCC1_MC3_Handler
+                0x0000091e                OSCCTRL_XOSC0_Handler
+                0x0000091e                SERCOM6_1_Handler
+                0x0000091e                TCC0_MC0_Handler
+                0x0000091e                EIC_EXTINT_2_Handler
+                0x0000091e                SDHC0_Handler
+                0x0000091e                SERCOM1_1_Handler
+                0x0000091e                I2S_Handler
+                0x0000091e                PCC_Handler
+                0x0000091e                TCC3_OTHER_Handler
+                0x0000091e                EIC_EXTINT_13_Handler
+                0x0000091e                SERCOM1_0_Handler
+                0x0000091e                PUKCC_Handler
+                0x0000091e                SERCOM2_1_Handler
+                0x0000091e                SERCOM1_2_Handler
+                0x0000091e                SERCOM3_0_Handler
+                0x0000091e                SERCOM4_2_Handler
+                0x0000091e                TCC1_MC2_Handler
+                0x0000091e                ADC1_RESRDY_Handler
+                0x0000091e                NVMCTRL_1_Handler
+                0x0000091e                SERCOM5_2_Handler
+                0x0000091e                SERCOM2_2_Handler
+                0x0000091e                DAC_EMPTY_1_Handler
+                0x0000091e                ADC1_OTHER_Handler
+                0x0000091e                OSCCTRL_DPLL1_Handler
+                0x0000091e                EIC_EXTINT_3_Handler
+                0x0000091e                SERCOM3_OTHER_Handler
+                0x0000091e                EIC_EXTINT_8_Handler
+                0x0000091e                NVMCTRL_0_Handler
+                0x0000091e                ADC0_RESRDY_Handler
+                0x0000091e                ADC0_OTHER_Handler
+                0x0000091e                MCLK_Handler
+                0x0000091e                SERCOM7_OTHER_Handler
+                0x0000091e                EVSYS_2_Handler
+                0x0000091e                SERCOM2_OTHER_Handler
+                0x0000091e                FREQM_Handler
+                0x0000091e                TC0_Handler
+                0x0000091e                TCC0_MC1_Handler
+                0x0000091e                DMAC_3_Handler
+                0x0000091e                RAMECC_Handler
+                0x0000091e                TC5_Handler
+                0x0000091e                SERCOM2_0_Handler
+                0x0000091e                AES_Handler
+                0x0000091e                ICM_Handler
+                0x0000091e                TCC0_MC2_Handler
+
+.text.NonMaskableInt_Handler%37
+                0x00000922        0x4
+ .text.NonMaskableInt_Handler
+                0x00000922        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x00000922                NonMaskableInt_Handler
+
+.text.HardFault_Handler%38
+                0x00000926        0x4
+ .text.HardFault_Handler
+                0x00000926        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x00000926                HardFault_Handler
+
+.text.DebugMonitor_Handler%39
+                0x0000092a        0x4
+ .text.DebugMonitor_Handler
+                0x0000092a        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x0000092a                DebugMonitor_Handler
+
+.text.MemoryManagement_Handler%40
+                0x0000092e        0x4
+ .text.MemoryManagement_Handler
+                0x0000092e        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x0000092e                MemoryManagement_Handler
+
+.text.BusFault_Handler%41
+                0x00000932        0x4
+ .text.BusFault_Handler
+                0x00000932        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x00000932                BusFault_Handler
+
+.text.UsageFault_Handler%42
+                0x00000936        0x4
+ .text.UsageFault_Handler
+                0x00000936        0x4 build/default/debug/_ext/1171490990/exceptions.o
+                0x00000936                UsageFault_Handler
+
+.text.__dummy_decompress%43
+                0x0000093a        0x4
+ .text.__dummy_decompress
+                0x0000093a        0x4 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x0000093a                __dinit_decompress
+                0x0000093a                __dinit_copy_val_data
+                0x0000093a                __dinit_copy_emb
+
+.text.EVSYS_Initialize%44
+                0x000008ca        0x2
+ .text.EVSYS_Initialize
+                0x000008ca        0x2 build/default/debug/_ext/1986646378/plib_evsys.o
+                0x000008ca                EVSYS_Initialize
+
+.text.Dummy_App_Func%45
+                0x0000093e        0x2
+ .text.Dummy_App_Func
+                0x0000093e        0x2 build/default/debug/_ext/1171490990/startup_xc32.o
+                0x0000093e                _on_reset
+                0x0000093e                _on_bootstrap
+                0x0000093e                __xc32_on_reset
+                0x0000093e                Dummy_App_Func
+                0x0000093e                __xc32_on_bootstrap
+
+.text.__dummy_init_tls%46
+                0x00000940        0x2
+ .text.__dummy_init_tls
+                0x00000940        0x2 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x00000940                xc32_init_tls
+
+.text.__dummy%47
+                0x00000942        0x2
+ .text.__dummy  0x00000942        0x2 C:/Program Files/Microchip/xc32/v5.10/bin/bin/../../lib/gcc/pic32c/13.2.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+                0x00000942                __init_stdio
+                0x00000942                __init_host
