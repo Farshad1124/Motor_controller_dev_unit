@@ -1,5 +1,0 @@
-C:/Users/farsh/Desktop/Firmware/_build/Firmware/default/CMakeFiles/Firmware_default_default_XC32_compile.dir
-C:/Users/farsh/Desktop/Firmware/_build/Firmware/default/CMakeFiles/Firmware_default_image_mIHwBnPn.dir
-C:/Users/farsh/Desktop/Firmware/_build/Firmware/default/CMakeFiles/Firmware_default_Bin2Hex.dir
-C:/Users/farsh/Desktop/Firmware/_build/Firmware/default/CMakeFiles/edit_cache.dir
-C:/Users/farsh/Desktop/Firmware/_build/Firmware/default/CMakeFiles/rebuild_cache.dir
