@@ -155,7 +155,7 @@ __STATIC_INLINE void mcAppI_1msTasksHandler( void )
     //mcUtils_ButtonResponse(&mcAppI_DirectionButton_gds, &mcAppI_DirectionReverse);
 
     /** Field Oriented control - Slow Tasks */
-    mcFocI_FieldOrientedControlFast(&mcFocI_ModuleData_gds);
+    mcFocI_FieldOrientedControlSlow(&mcFocI_ModuleData_gds);
 
 }
 

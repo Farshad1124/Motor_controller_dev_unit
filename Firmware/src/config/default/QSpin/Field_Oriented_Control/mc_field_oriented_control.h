@@ -133,9 +133,8 @@ __STATIC_INLINE void mcFocI_InputsRead( tmcFocI_ModuleData_s * const pModule )
     pInput->iABC.b = (float32_t)mcCurI_ModuleData_gds.dOutput.iABC.b;
 
 
-    pInput->uBus = 8;
-
-
+    pInput->uBus = (float32_t)mcVolI_ModuleData_gds.dOutput.uBus;
+    float temp = (float32_t)mcVolI_ModuleData_gds.dOutput.uBus;
 }
 
 

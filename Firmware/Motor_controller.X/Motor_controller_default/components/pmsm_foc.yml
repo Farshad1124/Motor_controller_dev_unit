@@ -201,7 +201,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '23.333334'
+            value: '13.333333'
           type: Dynamic
         type: Values
       type: Float
@@ -321,7 +321,7 @@ data:
             value: '** Select **'
           type: Dynamic
         - attributes:
-            value: '** Select **'
+            value: '11'
           type: User
         type: Values
       type: Combo
@@ -392,9 +392,6 @@ data:
             id: pmsm_foc
             value: '** Select **'
           type: Dynamic
-        - attributes:
-            value: '** Select **'
-          type: User
         type: Values
       type: Combo
     MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID:
@@ -405,7 +402,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '** select **'
+            value: adc0
           type: Dynamic
         type: Values
       type: String
@@ -421,7 +418,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '** Select **'
+            value: ADC0
           type: User
         type: Values
       type: Combo
@@ -943,7 +940,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '560.0'
+            value: '320.0'
           type: Dynamic
         type: Values
       type: Float
@@ -955,7 +952,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.21'
+            value: '0.12'
           type: Dynamic
         type: Values
       type: Float
@@ -1022,7 +1019,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '560.0'
+            value: '320.0'
           type: Dynamic
         type: Values
       type: Float
@@ -1034,7 +1031,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.21'
+            value: '0.12'
           type: Dynamic
         type: Values
       type: Float
@@ -1724,7 +1721,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '7.0'
+            value: '4.0'
           type: Dynamic
         type: Values
       type: Float
@@ -2525,7 +2522,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '46.666668'
+            value: '26.666666'
           type: Dynamic
         type: Values
       type: Float

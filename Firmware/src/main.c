@@ -91,7 +91,7 @@ void BLDC_motor_test( void *pvParameters )
     switch (BLDC_mode)
     {
       case 0: // wait for the power /enable singal
-      if (LED_count == 1)
+      if (LED_count == 2)
       {
         mcAppI_ApplicationInit();
         BLDC_mode++;
@@ -101,7 +101,7 @@ void BLDC_motor_test( void *pvParameters )
       case 1:
         mcAppI_NonISRTasks();
 
-        if (LED_count != 1)
+        if (LED_count != 2)
         {
           mcAppI_ApplicationReset();
           BLDC_mode++;
@@ -109,7 +109,7 @@ void BLDC_motor_test( void *pvParameters )
       break;
 
       case 2: 
-      if (LED_count != 1)
+      if (LED_count != 2)
       {
         BLDC_mode= 1;
       }

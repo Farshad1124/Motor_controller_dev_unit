@@ -47,11 +47,11 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.c
   hash: 8f122683ae3923a73698df524626a64a8748211ce990aae881aa6ebca5d84230
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.h
-  hash: 49b7eba3d2ad18f46230e966633c8d7f638c33aceb7f7ca847e3dc9114f435f9
+  hash: d140f557de44a79b575efcf5e63fcd3cc36b35c2915b180010783c691c37aefc
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.c
   hash: 005dfc9a868c1bc5ceba081fcf3a7539aa1e53fb24f81b4903ef4b5bb5b6b2e4
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.h
-  hash: 7a3bfc18d85742830ab58dd8aa233bd65dc69e81ae9f4bb6dfcaed69f68f83ce
+  hash: 9ef5691549e99d26b61d256f60b7c259c4927a5831af1a28bfcb135ae0d5ca7d
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.c
   hash: b741ceb241e788343871cb56735ffb8f2a2f15e9130500b95d43b8492caa0d92
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.h
@@ -79,11 +79,11 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_torque_control.c
   hash: 8c27637985a790dfe29e1223b2639e5a4a617e99531d91f75622f46e9570ffce
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_torque_control.h
-  hash: 43523cc5c10a5d48fec121df5781d23924658660bfbd36efbbba6c0c9f753d35
+  hash: f65e1b876d441752dd126f69ad5de5298d50082232413d626d2ca3d72b02d898
 - file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.c
   hash: 1ed2cbb70d64af86eda616dfc17985f7949f0fe1775e7638b579899c50ff3c6f
 - file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.h
-  hash: cc5c826abb621d709f601078b1ce4f9bd972974a3aa0ad1568c743ae437fb7b9
+  hash: c19fc07cccf53217c7ead6ec2198dc3043cdbcb87d8bd0003fb11c9e82e8eb7c
 - file: ..\src\config\default\QSpin\Utilities\mc_utilities.c
   hash: 62f35ea7ed5c15d0a2dd37ad776228950612cfe5d0d7ee69ab50f616bd6f8010
 - file: ..\src\config\default\QSpin\Utilities\mc_utilities.h

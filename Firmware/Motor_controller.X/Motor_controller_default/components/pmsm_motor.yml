@@ -322,7 +322,7 @@ data:
             value: '7.0'
           type: Dynamic
         - attributes:
-            value: '7.0'
+            value: '4.0'
           type: User
         type: Values
       type: Float

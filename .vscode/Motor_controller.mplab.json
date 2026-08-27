@@ -94,7 +94,6 @@
                 "compiler.oXC16gcc-no-isr-warn": false,
                 "compiler.oXC16gcc-sfr-warn": false,
                 "compiler.oXC16gcc-smar-io-lvl": "1",
-                "compiler.optimization-level": "-O1",
                 "compiler.place-data-into-section": true,
                 "compiler.post-instruction-scheduling": "default",
                 "compiler.pre-instruction-scheduling": "default",
@@ -198,7 +197,8 @@
                 "compiler.preprocessor-macros": [
                     "SCOPE_SIZE=4096",
                     "__GENERIC_MICROCHIP_PIC32__"
-                ]
+                ],
+                "compiler.optimization-level": "-O1"
             }
         },
         {
