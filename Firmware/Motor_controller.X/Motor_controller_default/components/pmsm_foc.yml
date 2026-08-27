@@ -272,6 +272,58 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_CHANNEL
         label: ADC channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            - type: Value
+              value: '4'
+            - type: Value
+              value: '5'
+            - type: Value
+              value: '6'
+            - type: Value
+              value: '7'
+            - type: Value
+              value: '8'
+            - type: Value
+              value: '9'
+            - type: Value
+              value: '10'
+            - type: Value
+              value: '11'
+            - type: Value
+              value: '12'
+            - type: Value
+              value: '13'
+            - type: Value
+              value: '14'
+            - type: Value
+              value: '15'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '** Select **'
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_BUS_VOLTAGE_VDC_EOC_INTERRUPT_ENABLE:
       attributes:
@@ -282,11 +334,24 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_NAME
         label: Signal Name
+      children:
+      - children:
+        - attributes:
+            value: VDC
+          type: User
+        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL
         label: Old ADC channel
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '11'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_PAD:
       attributes:
@@ -297,16 +362,52 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_UNIT
         label: Old ADC unit
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: ADC0
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_PAD:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_PAD
         label: Pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA11
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '** Select **'
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID
         label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** select **'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_SLAVE_MODE_ENABLE:
       attributes:
@@ -317,6 +418,12 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_UNIT
         label: ADC unit
+      children:
+      - children:
+        - attributes:
+            value: '** Select **'
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_BUTTONS_AVAILABLE:
       attributes:
@@ -648,6 +755,12 @@ data:
       attributes:
         id: MCPMSMFOC_ENABLE_FLYING_START
         label: Flying Start
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
       type: Boolean
     MCPMSMFOC_ENABLE_FW:
       attributes:
@@ -1661,6 +1774,58 @@ data:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_CHANNEL
         label: ADC channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            - type: Value
+              value: '4'
+            - type: Value
+              value: '5'
+            - type: Value
+              value: '6'
+            - type: Value
+              value: '7'
+            - type: Value
+              value: '8'
+            - type: Value
+              value: '9'
+            - type: Value
+              value: '10'
+            - type: Value
+              value: '11'
+            - type: Value
+              value: '12'
+            - type: Value
+              value: '13'
+            - type: Value
+              value: '14'
+            - type: Value
+              value: '15'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '11'
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_POTENTIOMETER_VPOT_EOC_INTERRUPT_ENABLE:
       attributes:
@@ -1671,11 +1836,24 @@ data:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_NAME
         label: Signal Name
+      children:
+      - children:
+        - attributes:
+            value: VPOT
+          type: User
+        type: Values
       type: String
     MCPMSMFOC_POTENTIOMETER_VPOT_OLD_CHANNEL:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_OLD_CHANNEL
         label: Old ADC channel
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '11'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_POTENTIOMETER_VPOT_OLD_PAD:
       attributes:
@@ -1686,16 +1864,49 @@ data:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_OLD_UNIT
         label: Old ADC unit
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: ADC0
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_POTENTIOMETER_VPOT_PAD:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_PAD
         label: Pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA11
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_POTENTIOMETER_VPOT_PERIPHERAL_ID:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_PERIPHERAL_ID
         label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: adc0
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_POTENTIOMETER_VPOT_SLAVE_MODE_ENABLE:
       attributes:
@@ -1706,6 +1917,12 @@ data:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_UNIT
         label: ADC unit
+      children:
+      - children:
+        - attributes:
+            value: ADC0
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_PWMPLIB:
       attributes:
@@ -2707,6 +2924,32 @@ data:
           children:
           - type: Value
             value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_flying_start.h.ftl:
+      attributes:
+        id: opt_flying_start.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_flying_start.c.ftl:
+      attributes:
+        id: opt_flying_start.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
           type: Boolean
         type: Attributes
       type: File

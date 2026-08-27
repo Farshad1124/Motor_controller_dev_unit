@@ -83,7 +83,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.c
   hash: 1ed2cbb70d64af86eda616dfc17985f7949f0fe1775e7638b579899c50ff3c6f
 - file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.h
-  hash: 9673eca41458313dc8c3faf1789fda55d8b585a4db8d8edb4764eae3fd939299
+  hash: cc5c826abb621d709f601078b1ce4f9bd972974a3aa0ad1568c743ae437fb7b9
 - file: ..\src\config\default\QSpin\Utilities\mc_utilities.c
   hash: 62f35ea7ed5c15d0a2dd37ad776228950612cfe5d0d7ee69ab50f616bd6f8010
 - file: ..\src\config\default\QSpin\Utilities\mc_utilities.h
@@ -133,7 +133,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\libc_syscalls.c
   hash: c9afc1b1257829415a1a6746ce3744f0a768b339d59fff2ab3ca1fab58b2a916
 - file: ..\src\config\default\peripheral\adc\plib_adc0.c
-  hash: 380b2c90d786478a47e9cfb13a26409417099f7b7d38eb38e5589c5609f58aa0
+  hash: d9ed1093d91f4b80ba5f5ac6a485db8dae4fd92e5c1bdfb06f50d43469e9c2d6
 - file: ..\src\config\default\peripheral\adc\plib_adc0.h
   hash: 69cc8e1ef2e75c4d9e09ddba8420d23e3cfa0384077f90727b01cc01233721a7
 - file: ..\src\config\default\peripheral\adc\plib_adc_common.h

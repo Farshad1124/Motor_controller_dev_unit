@@ -148,14 +148,14 @@ __STATIC_INLINE void mcAppI_1msTasksHandler( void )
 
     /** Start-stop button scan  */
     mcAppI_StartStopButton_gds.inputVal = mcHalI_StartStopButtonState();
-    mcUtils_ButtonResponse(&mcAppI_StartStopButton_gds, &mcAppI_MotorStartStop);
+    //mcUtils_ButtonResponse(&mcAppI_StartStopButton_gds, &mcAppI_MotorStartStop);
 
     /** Direction button scan  */
     mcAppI_DirectionButton_gds.inputVal = mcHalI_DirectionButtonState();
-    mcUtils_ButtonResponse(&mcAppI_DirectionButton_gds, &mcAppI_DirectionReverse);
+    //mcUtils_ButtonResponse(&mcAppI_DirectionButton_gds, &mcAppI_DirectionReverse);
 
     /** Field Oriented control - Slow Tasks */
-    mcFocI_FieldOrientedControlSlow(&mcFocI_ModuleData_gds);
+    mcFocI_FieldOrientedControlFast(&mcFocI_ModuleData_gds);
 
 }
 
@@ -217,6 +217,12 @@ void mcAppI_ApplicationInit( void )
     /** Set phase A and phase B current channels */
     mcHalI_PhaseACurrentChannelSelect();
     mcHalI_PhaseBCurrentChannelSelect();
+
+    mcFocI_FieldOrientedControlEnable( &mcFocI_ModuleData_gds );
+
+
+    /** Enable voltage source inverter */
+    mcHalI_InverterPwmEnable();
 
 }
 
@@ -395,4 +401,11 @@ void mcAppI_ApplicationReset( void )
 
     /** PMSM motor control */
     mcFocI_FieldOrientedControlReset( &mcFocI_ModuleData_gds);
+
+     /** Start motor  */
+    mcFocI_FieldOrientedControlDisable( &mcFocI_ModuleData_gds );
+
+
+    /** Enable voltage source inverter */
+    mcHalI_InverterPwmDisable();
 }
