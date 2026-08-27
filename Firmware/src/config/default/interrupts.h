@@ -74,6 +74,8 @@ void EIC_EXTINT_14_InterruptHandler (void);
 void SERCOM0_SPI_InterruptHandler (void);
 void SERCOM1_I2C_InterruptHandler (void);
 void SERCOM4_USART_InterruptHandler (void);
+void TCC0_OTHER_InterruptHandler (void);
+void ADC0_RESRDY_InterruptHandler (void);
 
 
 

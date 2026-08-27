@@ -129,6 +129,18 @@
 #define SPI_DI_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 7U)) & 0x01U)
 #define SPI_DI_PIN                  PORT_PIN_PA07
 
+/*** Macros for AN_A pin ***/
+#define AN_A_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 9U)) & 0x01U)
+#define AN_A_PIN                  PORT_PIN_PA09
+
+/*** Macros for AN_B pin ***/
+#define AN_B_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10U)) & 0x01U)
+#define AN_B_PIN                  PORT_PIN_PA10
+
+/*** Macros for AN_C pin ***/
+#define AN_C_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 11U)) & 0x01U)
+#define AN_C_PIN                  PORT_PIN_PA11
+
 /*** Macros for SM_RX pin ***/
 #define SM_RX_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 12U)) & 0x01U)
 #define SM_RX_PIN                  PORT_PIN_PB12
@@ -140,6 +152,30 @@
 /*** Macros for BLDC_FAULT pin ***/
 #define BLDC_FAULT_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 14U)) & 0x01U)
 #define BLDC_FAULT_PIN                  PORT_PIN_PB14
+
+/*** Macros for PWM_CL pin ***/
+#define PWM_CL_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 12U)) & 0x01U)
+#define PWM_CL_PIN                  PORT_PIN_PC12
+
+/*** Macros for PWM_BL pin ***/
+#define PWM_BL_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 13U)) & 0x01U)
+#define PWM_BL_PIN                  PORT_PIN_PC13
+
+/*** Macros for PWM_AL pin ***/
+#define PWM_AL_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 14U)) & 0x01U)
+#define PWM_AL_PIN                  PORT_PIN_PC14
+
+/*** Macros for PWM_AH pin ***/
+#define PWM_AH_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 15U)) & 0x01U)
+#define PWM_AH_PIN                  PORT_PIN_PC15
+
+/*** Macros for PWM_BH pin ***/
+#define PWM_BH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 12U)) & 0x01U)
+#define PWM_BH_PIN                  PORT_PIN_PA12
+
+/*** Macros for PWM_CH pin ***/
+#define PWM_CH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 13U)) & 0x01U)
+#define PWM_CH_PIN                  PORT_PIN_PA13
 
 /*** Macros for Input_SEL pin ***/
 #define Input_SEL_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 24U)) & 0x01U)

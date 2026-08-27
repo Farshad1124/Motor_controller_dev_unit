@@ -21,9 +21,9 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 22,PC06,,Available,,,,,,NORMAL
 23,PC07,,Available,,,,,,NORMAL
 26,PA08,,Available,,,,,,NORMAL
-27,PA09,,Available,,,,,,NORMAL
-28,PA10,,Available,,,,,,NORMAL
-29,PA11,,Available,,,,,,NORMAL
+27,PA09,AN_A,ADC0_AIN9/X7/Y7,Analog,High Impedance,n/a,,,NORMAL
+28,PA10,AN_B,ADC0_AIN10/X8/Y8,Analog,High Impedance,n/a,,,NORMAL
+29,PA11,AN_C,ADC0_AIN11/X9/Y9,Analog,High Impedance,n/a,,,NORMAL
 32,PB10,,Available,,,,,,NORMAL
 33,PB11,,Available,,,,,,NORMAL
 34,PB12,SM_RX,SERCOM4_PAD0,Digital,High Impedance,n/a,No,No,NORMAL
@@ -32,12 +32,12 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 37,PB15,,Available,,,,,,NORMAL
 40,PC10,,Available,,,,,,NORMAL
 41,PC11,,Available,,,,,,NORMAL
-42,PC12,,Available,,,,,,NORMAL
-43,PC13,,Available,,,,,,NORMAL
-44,PC14,,Available,,,,,,NORMAL
-45,PC15,,Available,,,,,,NORMAL
-46,PA12,,Available,,,,,,NORMAL
-47,PA13,,Available,,,,,,NORMAL
+42,PC12,PWM_CL,TCC0_WO2,Digital,High Impedance,n/a,No,No,NORMAL
+43,PC13,PWM_BL,TCC0_WO3,Digital,High Impedance,n/a,No,No,NORMAL
+44,PC14,PWM_AL,TCC0_WO4,Digital,High Impedance,n/a,No,No,NORMAL
+45,PC15,PWM_AH,TCC0_WO5,Digital,High Impedance,n/a,No,No,NORMAL
+46,PA12,PWM_BH,TCC0_WO6,Digital,High Impedance,n/a,No,No,NORMAL
+47,PA13,PWM_CH,TCC0_WO7,Digital,High Impedance,n/a,No,No,NORMAL
 48,PA14,,Available,,,,,,NORMAL
 49,PA15,,Available,,,,,,NORMAL
 52,PA16,,Available,,,,,,NORMAL

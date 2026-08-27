@@ -28,6 +28,7 @@
 #include "definitions.h"                // SYS function prototypes
 #include "FreeRTOS.h"
 #include "task.h"
+#include "mc_application.h"             // FOC controller
 
 #include "./RTT/SEGGER_RTT.h"
 volatile int _Cnt;
@@ -47,81 +48,75 @@ void RTT_Initialize(void);
 void OUTPUT_SEL_EIC_Handler(uintptr_t context)
 {
 
-      switch (LED_count)
-      {
-        case 0:
-        LED_control_Toggle();
-        Servo_EN_Clear();
-        LED_count++;
-        break;
+  switch (LED_count)
+  {
+    case 0:
+    LED_control_Toggle();
+    Servo_EN_Clear();
+    LED_count++;
+    break;
 
-        case 1:
-        LED_control_Toggle();
-        BLDC_EN_Toggle();
-        LED_count++;
-        break;
+    case 1:
+    LED_control_Toggle();
+    BLDC_EN_Toggle();
+    LED_count++;
+    break;
 
-        case 2:
-        BLDC_EN_Toggle();
-        PM_EN_Toggle();
-        LED_count++;
-        break;
+    case 2:
+    BLDC_EN_Toggle();
+    PM_EN_Toggle();
+    LED_count++;
+    break;
 
-        case 3: 
-        PM_EN_Toggle();
-        SM_EN_Toggle();
-        LED_count++;
-        break;
+    case 3: 
+    PM_EN_Toggle();
+    SM_EN_Toggle();
+    LED_count++;
+    break;
 
-        case 4: 
-        SM_EN_Toggle();
-        Servo_EN_Toggle();
-        LED_count = 0;
-        break;
-      }
-    }
+    case 4: 
+    SM_EN_Toggle();
+    Servo_EN_Toggle();
+    LED_count = 0;
+    break;
+  }
+}
 
 
-void vTask1( void *pvParameters )
+void BLDC_motor_test( void *pvParameters )
 {
-  uint8_t LED_count = 0;
-    while(1)
+  uint8_t BLDC_mode = 0;
+  while(1)
+  {
+    switch (BLDC_mode)
     {
-      switch (LED_count)
+      case 0: // wait for the power /enable singal
+      if (LED_count == 1)
       {
-        case 0:
-        LED_control_Toggle();
-        Servo_EN_Clear();
-        LED_count++;
-        break;
-
-        case 1:
-        LED_control_Toggle();
-        BLDC_EN_Toggle();
-        LED_count++;
-        break;
-
-        case 2:
-        BLDC_EN_Toggle();
-        PM_EN_Toggle();
-        LED_count++;
-        break;
-
-        case 3: 
-        PM_EN_Toggle();
-        SM_EN_Toggle();
-        LED_count++;
-        break;
-
-        case 4: 
-        SM_EN_Toggle();
-        Servo_EN_Toggle();
-        LED_count = 0;
-        break;
+        mcAppI_ApplicationInit();
+        BLDC_mode++;
       }
+      break;
 
-      vTaskDelay(1000 / portTICK_PERIOD_MS);
+      case 1:
+        mcAppI_NonISRTasks();
+
+        if (LED_count != 1)
+        {
+          mcAppI_ApplicationReset();
+          BLDC_mode++;
+        }
+      break;
+
+      case 2: 
+      if (LED_count != 1)
+      {
+        BLDC_mode= 1;
+      }
+      break;
     }
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
 }
 
 
@@ -133,8 +128,7 @@ int main ( void )
     SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
     //RTT_Initialize();
     EIC_CallbackRegister(EIC_PIN_8,OUTPUT_SEL_EIC_Handler, 0);
-
-    //xTaskCreate( vTask1, "Task 1", 1024, NULL, 1, NULL );
+    xTaskCreate( BLDC_motor_test, "BLDC_test", 1024, NULL, 1, NULL );
    
 
     vTaskStartScheduler();

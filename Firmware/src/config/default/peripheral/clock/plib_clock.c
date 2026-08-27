@@ -180,6 +180,20 @@ void CLOCK_Initialize (void)
     {
         /* Wait for synchronization */
     }
+    /* Selection of the Generator and write Lock for EVSYS_0 */
+    GCLK_REGS->GCLK_PCHCTRL[11] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[11] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
+    /* Selection of the Generator and write Lock for EVSYS_1 */
+    GCLK_REGS->GCLK_PCHCTRL[12] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[12] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
     /* Selection of the Generator and write Lock for SERCOM3_CORE */
     GCLK_REGS->GCLK_PCHCTRL[24] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
 
@@ -187,10 +201,24 @@ void CLOCK_Initialize (void)
     {
         /* Wait for synchronization */
     }
+    /* Selection of the Generator and write Lock for TCC0 TCC1 */
+    GCLK_REGS->GCLK_PCHCTRL[25] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[25] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
     /* Selection of the Generator and write Lock for SERCOM4_CORE */
     GCLK_REGS->GCLK_PCHCTRL[34] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
 
     while ((GCLK_REGS->GCLK_PCHCTRL[34] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
+    /* Selection of the Generator and write Lock for ADC0 */
+    GCLK_REGS->GCLK_PCHCTRL[40] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[40] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
         /* Wait for synchronization */
     }
@@ -202,10 +230,10 @@ void CLOCK_Initialize (void)
     MCLK_REGS->MCLK_APBAMASK = 0x37ffU;
 
     /* Configure the APBB Bridge Clocks */
-    MCLK_REGS->MCLK_APBBMASK = 0x18456U;
+    MCLK_REGS->MCLK_APBBMASK = 0x18cd6U;
 
     /* Configure the APBD Bridge Clocks */
-    MCLK_REGS->MCLK_APBDMASK = 0x1U;
+    MCLK_REGS->MCLK_APBDMASK = 0x81U;
 
 
 }

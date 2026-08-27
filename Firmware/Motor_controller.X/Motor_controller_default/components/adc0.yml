@@ -1,0 +1,700 @@
+configVersion: 1.0.0
+componentName: adc0
+coreVersion: 5.9.1
+device: ATSAMD51N20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: adc0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: ADC0_ADC
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: pmsm_foc
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: pmsmfoc_ADC
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: adc0
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: adc0
+          x: '5'
+          y: '283'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    ADC_ADJRES:
+      attributes:
+        id: ADC_ADJRES
+        label: ADC_ADJRES
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ADC_AVGCTRL_ADJRES:
+      attributes:
+        id: ADC_AVGCTRL_ADJRES
+        label: Number of Right Shifts
+      type: Integer
+    ADC_AVGCTRL_SAMPLENUM:
+      attributes:
+        id: ADC_AVGCTRL_SAMPLENUM
+        label: Number of Accumulated Samples
+      type: KeyValueSet
+    ADC_CALLBACK_API:
+      attributes:
+        id: ADC_CALLBACK_API
+        label: ADC_CALLBACK_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_CallbackRegister
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CHANNEL_SELECT_API:
+      attributes:
+        id: ADC_CHANNEL_SELECT_API
+        label: ADC_CHANNEL_SELECT_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_ChannelSelect
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CH_PHASE_U:
+      attributes:
+        id: ADC_CH_PHASE_U
+        label: ADC_CH_PHASE_U
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC_POSINPUT_AIN0
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CH_PHASE_V:
+      attributes:
+        id: ADC_CH_PHASE_V
+        label: ADC_CH_PHASE_V
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC_POSINPUT_AIN0
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CH_POT:
+      attributes:
+        id: ADC_CH_POT
+        label: ADC_CH_POT
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC_POSINPUT_AIN0
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CH_VDC_BUS:
+      attributes:
+        id: ADC_CH_VDC_BUS
+        label: ADC_CH_VDC_BUS
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC_POSINPUT_AIN0
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_CONV_TRIGGER:
+      attributes:
+        id: ADC_CONV_TRIGGER
+        label: Select Conversion Trigger
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: HW Event Trigger
+          type: Dynamic
+        type: Values
+      type: Combo
+    ADC_CTRLA_ONDEMAND:
+      attributes:
+        id: ADC_CTRLA_ONDEMAND
+        label: On Demand Control
+      type: Boolean
+    ADC_CTRLA_PRESCALER:
+      attributes:
+        id: ADC_CTRLA_PRESCALER
+        label: Select Prescaler
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    ADC_CTRLA_RUNSTDBY:
+      attributes:
+        id: ADC_CTRLA_RUNSTDBY
+        label: Run During Standby
+      type: Boolean
+    ADC_CTRLA_SLAVEEN:
+      attributes:
+        id: ADC_CTRLA_SLAVEEN
+        label: Enable Slave
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC_CTRLB_LEFTADJ:
+      attributes:
+        id: ADC_CTRLB_LEFTADJ
+        label: Left Aligned Result
+      type: Boolean
+    ADC_CTRLB_RESSEL:
+      attributes:
+        id: ADC_CTRLB_RESSEL
+        label: Select Result Resolution
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    ADC_CTRLB_WINMODE:
+      attributes:
+        id: ADC_CTRLB_WINMODE
+        label: Select Window Monitor Mode
+      type: KeyValueSet
+    ADC_EVCTRL_FLUSH:
+      attributes:
+        id: ADC_EVCTRL_FLUSH
+        label: Flush Event Input
+      type: KeyValueSet
+    ADC_EVCTRL_RESRDYEO:
+      attributes:
+        id: ADC_EVCTRL_RESRDYEO
+        label: Enable Result Ready Event Out
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC_EVCTRL_START:
+      attributes:
+        id: ADC_EVCTRL_START
+        label: Start Event Input
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: adc0
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    ADC_GET_RESULT_API:
+      attributes:
+        id: ADC_GET_RESULT_API
+        label: ADC_GET_RESULT_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_ConversionResultGet
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_GND:
+      attributes:
+        id: ADC_GND
+        label: ADC_GND
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC_NEGINPUT_GND
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_INPUTCTRL_MUXNEG:
+      attributes:
+        id: ADC_INPUTCTRL_MUXNEG
+        label: Select Negative Input
+      type: KeyValueSet
+    ADC_INPUTCTRL_MUXPOS:
+      attributes:
+        id: ADC_INPUTCTRL_MUXPOS
+        label: Select Positive Input
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '10'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    ADC_INSTANCE_NAME:
+      attributes:
+        id: ADC_INSTANCE_NAME
+        label: ADC_INSTANCE_NAME
+      type: String
+    ADC_INTENSET_RESRDY:
+      attributes:
+        id: ADC_INTENSET_RESRDY
+        label: Enable Result Ready Interrupt
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC_INTENSET_WINMON:
+      attributes:
+        id: ADC_INTENSET_WINMON
+        label: Enable Window Monitor Interrupt
+      type: Boolean
+    ADC_INT_CLEAR_API:
+      attributes:
+        id: ADC_INT_CLEAR_API
+        label: ADC_INT_CLEAR_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_InterruptsClear
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_INT_DISABLE_API:
+      attributes:
+        id: ADC_INT_DISABLE_API
+        label: ADC_INT_DISABLE_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_InterruptsDisable
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_INT_ENABLE_API:
+      attributes:
+        id: ADC_INT_ENABLE_API
+        label: ADC_INT_ENABLE_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_InterruptsEnable
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_IS_RESULT_READY_API:
+      attributes:
+        id: ADC_IS_RESULT_READY_API
+        label: ADC_IS_RESULT_READY_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_ConversionStatusGet
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_MAX_CHANNELS:
+      attributes:
+        id: ADC_MAX_CHANNELS
+        label: ADC_MAX_CHANNELS
+      type: Integer
+    ADC_MUXNEG_ENUM0:
+      attributes:
+        id: ADC_MUXNEG_ENUM0
+        label: ADC_MUXNEG_ENUM0
+      type: String
+    ADC_MUXNEG_ENUM1:
+      attributes:
+        id: ADC_MUXNEG_ENUM1
+        label: ADC_MUXNEG_ENUM1
+      type: String
+    ADC_MUXNEG_ENUM2:
+      attributes:
+        id: ADC_MUXNEG_ENUM2
+        label: ADC_MUXNEG_ENUM2
+      type: String
+    ADC_MUXNEG_ENUM3:
+      attributes:
+        id: ADC_MUXNEG_ENUM3
+        label: ADC_MUXNEG_ENUM3
+      type: String
+    ADC_MUXNEG_ENUM4:
+      attributes:
+        id: ADC_MUXNEG_ENUM4
+        label: ADC_MUXNEG_ENUM4
+      type: String
+    ADC_MUXNEG_ENUM5:
+      attributes:
+        id: ADC_MUXNEG_ENUM5
+        label: ADC_MUXNEG_ENUM5
+      type: String
+    ADC_MUXNEG_ENUM6:
+      attributes:
+        id: ADC_MUXNEG_ENUM6
+        label: ADC_MUXNEG_ENUM6
+      type: String
+    ADC_MUXNEG_ENUM7:
+      attributes:
+        id: ADC_MUXNEG_ENUM7
+        label: ADC_MUXNEG_ENUM7
+      type: String
+    ADC_MUXNEG_ENUM8:
+      attributes:
+        id: ADC_MUXNEG_ENUM8
+        label: ADC_MUXNEG_ENUM8
+      type: String
+    ADC_MUXPOS_ENUM0:
+      attributes:
+        id: ADC_MUXPOS_ENUM0
+        label: ADC_MUXPOS_ENUM0
+      type: String
+    ADC_MUXPOS_ENUM1:
+      attributes:
+        id: ADC_MUXPOS_ENUM1
+        label: ADC_MUXPOS_ENUM1
+      type: String
+    ADC_MUXPOS_ENUM10:
+      attributes:
+        id: ADC_MUXPOS_ENUM10
+        label: ADC_MUXPOS_ENUM10
+      type: String
+    ADC_MUXPOS_ENUM11:
+      attributes:
+        id: ADC_MUXPOS_ENUM11
+        label: ADC_MUXPOS_ENUM11
+      type: String
+    ADC_MUXPOS_ENUM12:
+      attributes:
+        id: ADC_MUXPOS_ENUM12
+        label: ADC_MUXPOS_ENUM12
+      type: String
+    ADC_MUXPOS_ENUM13:
+      attributes:
+        id: ADC_MUXPOS_ENUM13
+        label: ADC_MUXPOS_ENUM13
+      type: String
+    ADC_MUXPOS_ENUM14:
+      attributes:
+        id: ADC_MUXPOS_ENUM14
+        label: ADC_MUXPOS_ENUM14
+      type: String
+    ADC_MUXPOS_ENUM15:
+      attributes:
+        id: ADC_MUXPOS_ENUM15
+        label: ADC_MUXPOS_ENUM15
+      type: String
+    ADC_MUXPOS_ENUM16:
+      attributes:
+        id: ADC_MUXPOS_ENUM16
+        label: ADC_MUXPOS_ENUM16
+      type: String
+    ADC_MUXPOS_ENUM17:
+      attributes:
+        id: ADC_MUXPOS_ENUM17
+        label: ADC_MUXPOS_ENUM17
+      type: String
+    ADC_MUXPOS_ENUM18:
+      attributes:
+        id: ADC_MUXPOS_ENUM18
+        label: ADC_MUXPOS_ENUM18
+      type: String
+    ADC_MUXPOS_ENUM19:
+      attributes:
+        id: ADC_MUXPOS_ENUM19
+        label: ADC_MUXPOS_ENUM19
+      type: String
+    ADC_MUXPOS_ENUM2:
+      attributes:
+        id: ADC_MUXPOS_ENUM2
+        label: ADC_MUXPOS_ENUM2
+      type: String
+    ADC_MUXPOS_ENUM20:
+      attributes:
+        id: ADC_MUXPOS_ENUM20
+        label: ADC_MUXPOS_ENUM20
+      type: String
+    ADC_MUXPOS_ENUM21:
+      attributes:
+        id: ADC_MUXPOS_ENUM21
+        label: ADC_MUXPOS_ENUM21
+      type: String
+    ADC_MUXPOS_ENUM22:
+      attributes:
+        id: ADC_MUXPOS_ENUM22
+        label: ADC_MUXPOS_ENUM22
+      type: String
+    ADC_MUXPOS_ENUM23:
+      attributes:
+        id: ADC_MUXPOS_ENUM23
+        label: ADC_MUXPOS_ENUM23
+      type: String
+    ADC_MUXPOS_ENUM3:
+      attributes:
+        id: ADC_MUXPOS_ENUM3
+        label: ADC_MUXPOS_ENUM3
+      type: String
+    ADC_MUXPOS_ENUM4:
+      attributes:
+        id: ADC_MUXPOS_ENUM4
+        label: ADC_MUXPOS_ENUM4
+      type: String
+    ADC_MUXPOS_ENUM5:
+      attributes:
+        id: ADC_MUXPOS_ENUM5
+        label: ADC_MUXPOS_ENUM5
+      type: String
+    ADC_MUXPOS_ENUM6:
+      attributes:
+        id: ADC_MUXPOS_ENUM6
+        label: ADC_MUXPOS_ENUM6
+      type: String
+    ADC_MUXPOS_ENUM7:
+      attributes:
+        id: ADC_MUXPOS_ENUM7
+        label: ADC_MUXPOS_ENUM7
+      type: String
+    ADC_MUXPOS_ENUM8:
+      attributes:
+        id: ADC_MUXPOS_ENUM8
+        label: ADC_MUXPOS_ENUM8
+      type: String
+    ADC_MUXPOS_ENUM9:
+      attributes:
+        id: ADC_MUXPOS_ENUM9
+        label: ADC_MUXPOS_ENUM9
+      type: String
+    ADC_NUM_CHANNELS:
+      attributes:
+        id: ADC_NUM_CHANNELS
+        label: ADC_NUM_CHANNELS
+      type: Integer
+    ADC_NUM_INT_LINES:
+      attributes:
+        id: ADC_NUM_INT_LINES
+        label: ADC_NUM_INT_LINES
+      type: Integer
+    ADC_NUM_MODULES:
+      attributes:
+        id: ADC_NUM_MODULES
+        label: ADC_NUM_MODULES
+      type: Integer
+    ADC_REFCTRL_REFSEL:
+      attributes:
+        id: ADC_REFCTRL_REFSEL
+        label: Select Reference
+      type: KeyValueSet
+    ADC_RES_BIT:
+      attributes:
+        id: ADC_RES_BIT
+        label: Number of Bits
+      type: Combo
+    ADC_SAMPCTRL_SAMPLEN:
+      attributes:
+        id: ADC_SAMPCTRL_SAMPLEN
+        label: Select Sample Length (cycles)
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '12'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ADC_SAMPLENUM:
+      attributes:
+        id: ADC_SAMPLENUM
+        label: ADC_SAMPLENUM
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ADC_SEQCTRL_SEQ0:
+      attributes:
+        id: ADC_SEQCTRL_SEQ0
+        label: Enable Input Control
+      type: Boolean
+    ADC_SEQCTRL_SEQ1:
+      attributes:
+        id: ADC_SEQCTRL_SEQ1
+        label: Enable Control B
+      type: Boolean
+    ADC_SEQCTRL_SEQ2:
+      attributes:
+        id: ADC_SEQCTRL_SEQ2
+        label: Enable Reference Control
+      type: Boolean
+    ADC_SEQCTRL_SEQ3:
+      attributes:
+        id: ADC_SEQCTRL_SEQ3
+        label: Enable Average Control
+      type: Boolean
+    ADC_SEQCTRL_SEQ4:
+      attributes:
+        id: ADC_SEQCTRL_SEQ4
+        label: Enable Sampling Time Control
+      type: Boolean
+    ADC_SEQCTRL_SEQ5:
+      attributes:
+        id: ADC_SEQCTRL_SEQ5
+        label: Enable Window Monitor Lower Threshold
+      type: Boolean
+    ADC_SEQCTRL_SEQ6:
+      attributes:
+        id: ADC_SEQCTRL_SEQ6
+        label: Enable Window Monitor Upper Threshold
+      type: Boolean
+    ADC_SEQCTRL_SEQ7:
+      attributes:
+        id: ADC_SEQCTRL_SEQ7
+        label: Enable Gain Correction
+      type: Boolean
+    ADC_SEQCTRL_SEQ8:
+      attributes:
+        id: ADC_SEQCTRL_SEQ8
+        label: Enable Offset Correction
+      type: Boolean
+    ADC_SEQCTRL_SEQ9:
+      attributes:
+        id: ADC_SEQCTRL_SEQ9
+        label: Enable ADC Auto-Start Conversion
+      type: Boolean
+    ADC_SEQ_ENABLE:
+      attributes:
+        id: ADC_SEQ_ENABLE
+        label: Enable DMA Sequencing
+      type: Boolean
+    ADC_START_API:
+      attributes:
+        id: ADC_START_API
+        label: ADC_START_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_Enable
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_START_CONV_API:
+      attributes:
+        id: ADC_START_CONV_API
+        label: ADC_START_CONV_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_ConversionStart
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_STOP_API:
+      attributes:
+        id: ADC_STOP_API
+        label: ADC_STOP_API
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_Disable
+          type: Dynamic
+        type: Values
+      type: String
+    ADC_WINDOW_OUTPUT_EVENT:
+      attributes:
+        id: ADC_WINDOW_OUTPUT_EVENT
+        label: Enable Window Monitor Event Out
+      type: Boolean
+    ADC_WINLT:
+      attributes:
+        id: ADC_WINLT
+        label: Window Lower Threshold
+      type: Integer
+    ADC_WINUT:
+      attributes:
+        id: ADC_WINUT
+        label: Window Upper Threshold
+      type: Integer
+    INTERRUPT_ADC_RESULT:
+      attributes:
+        id: INTERRUPT_ADC_RESULT
+        label: INTERRUPT_ADC_RESULT
+      children:
+      - children:
+        - attributes:
+            id: adc0
+            value: ADC0_RESRDY_IRQn
+          type: Dynamic
+        type: Values
+      type: String
+  userData: {}

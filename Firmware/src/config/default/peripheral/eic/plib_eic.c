@@ -106,6 +106,8 @@ void EIC_Initialize (void)
     /* Debouncer enable */
     EIC_REGS->EIC_DEBOUNCEN = 0x102U;
 
+    /* Event Control Output enable */
+    EIC_REGS->EIC_EVCTRL = 0x4000U;
 
     /* Debouncer Setting */
     EIC_REGS->EIC_DPRESCALER = EIC_DPRESCALER_PRESCALER0(0UL) | EIC_DPRESCALER_PRESCALER1(0UL) ;

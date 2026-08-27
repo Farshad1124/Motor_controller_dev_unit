@@ -1,0 +1,2713 @@
+configVersion: 1.0.0
+componentName: pmsm_foc
+coreVersion: 5.9.1
+device: ATSAMD51N20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: pmsm_foc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: motor_control
+  type: package
+  version: v3.11.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: pmsmfoc_ADC
+        children:
+        - children:
+          - attributes:
+              targetAttachmentID: ADC0_ADC
+              targetComponentID: adc0
+            type: TargetAttachment
+          type: TargetAttachments
+        type: MultiCapability
+      - attributes:
+          id: pmsmfoc_MOTOR
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: pmsm_motor
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: motortype_PMSM
+            type: String
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: pmsmfoc_PWM
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: tcc0
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: TCC0_PWM
+            type: String
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: pmsmfoc_X2CSCOPE
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: X2Cscope
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: X2Cscope_Scope
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: pmsm_foc
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: pmsm_foc
+          x: '371'
+          y: '309'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    BoardParameters.sce.ftl:
+      attributes:
+        id: BoardParameters.sce.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    MCPMSMFOC_ADC_IP:
+      attributes:
+        id: MCPMSMFOC_ADC_IP
+        label: ADC IP
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: ADC_U2500
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_ADC_TO_VOLTS_FACTORT:
+      attributes:
+        id: MCPMSMFOC_ADC_TO_VOLTS_FACTORT
+        label: Conversion factor
+      type: Float
+    MCPMSMFOC_ALIGN_OR_DETECT_AXIS:
+      attributes:
+        id: MCPMSMFOC_ALIGN_OR_DETECT_AXIS
+        label: Select algorithm
+      type: KeyValueSet
+    MCPMSMFOC_ANALOG_FRONT_END_IA_GAIN:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IA_GAIN
+        label: Gain
+      children:
+      - children:
+        - attributes:
+            value: '1.0'
+          type: User
+        type: Values
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_IA_OFFSET:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IA_OFFSET
+        label: Offset
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_IA_OPAMP:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IA_OPAMP
+        label: Op-amp
+      type: Combo
+    MCPMSMFOC_ANALOG_FRONT_END_IA_SHUNT:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IA_SHUNT
+        label: Shunt resistance (ohm)
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_IB_GAIN:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IB_GAIN
+        label: Gain
+      children:
+      - children:
+        - attributes:
+            value: '1.0'
+          type: User
+        type: Values
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_IB_OFFSET:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IB_OFFSET
+        label: Offset
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_IB_OPAMP:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IB_OPAMP
+        label: Op-amp
+      type: Combo
+    MCPMSMFOC_ANALOG_FRONT_END_IB_SHUNT:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_IB_SHUNT
+        label: Shunt resistance (ohm)
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_VDC_BOTTOM_RES:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_VDC_BOTTOM_RES
+        label: Bottom resistance
+      type: Float
+    MCPMSMFOC_ANALOG_FRONT_END_VDC_TOP_RES:
+      attributes:
+        id: MCPMSMFOC_ANALOG_FRONT_END_VDC_TOP_RES
+        label: Top resistance
+      type: Float
+    MCPMSMFOC_BEMF_ANGLE_TRACK_F0:
+      attributes:
+        id: MCPMSMFOC_BEMF_ANGLE_TRACK_F0
+        label: Tracking loop cut-off frequency
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '23.333334'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_BEMF_CONST:
+      attributes:
+        id: MCPMSMFOC_BEMF_CONST
+        label: Back EMF Constant (Vrms/KRPM line-line)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '2.8'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_BEMF_KEPS:
+      attributes:
+        id: MCPMSMFOC_BEMF_KEPS
+        label: Tracking loop tuning factor
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '1.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_BEMF_OBSERVER_POLE:
+      attributes:
+        id: MCPMSMFOC_BEMF_OBSERVER_POLE
+        label: Pole location
+      type: Float
+    MCPMSMFOC_BEMF_OBSERVER_ROLO_POLE:
+      attributes:
+        id: MCPMSMFOC_BEMF_OBSERVER_ROLO_POLE
+        label: Pole location
+      type: Float
+    MCPMSMFOC_BEMF_PLL_TRACKING_LOOP_TYPE:
+      attributes:
+        id: MCPMSMFOC_BEMF_PLL_TRACKING_LOOP_TYPE
+        label: Tracking loop type
+      type: Combo
+    MCPMSMFOC_BOARD_SEL:
+      attributes:
+        id: MCPMSMFOC_BOARD_SEL
+        label: Development board
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    MCPMSMFOC_BSP_ID:
+      attributes:
+        id: MCPMSMFOC_BSP_ID
+        label: BSP ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: custom_mc_board
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_CHANNEL
+        label: ADC channel
+      type: Combo
+    MCPMSMFOC_BUS_VOLTAGE_VDC_EOC_INTERRUPT_ENABLE:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_EOC_INTERRUPT_ENABLE
+        label: Enable EOC interrupt
+      type: Boolean
+    MCPMSMFOC_BUS_VOLTAGE_VDC_NAME:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_NAME
+        label: Signal Name
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL
+        label: Old ADC channel
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_PAD:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_PAD
+        label: Old Pad
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_UNIT:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_UNIT
+        label: Old ADC unit
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_PAD:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_PAD
+        label: Pad
+      type: Combo
+    MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID
+        label: Peripheral ID
+      type: String
+    MCPMSMFOC_BUS_VOLTAGE_VDC_SLAVE_MODE_ENABLE:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_SLAVE_MODE_ENABLE
+        label: Slave mode enable
+      type: Boolean
+    MCPMSMFOC_BUS_VOLTAGE_VDC_UNIT:
+      attributes:
+        id: MCPMSMFOC_BUS_VOLTAGE_VDC_UNIT
+        label: ADC unit
+      type: Combo
+    MCPMSMFOC_BUTTONS_AVAILABLE:
+      attributes:
+        id: MCPMSMFOC_BUTTONS_AVAILABLE
+        label: Number of available buttons
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_BUTTON_0_FUNCTION:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_FUNCTION
+        label: Function
+      type: Combo
+    MCPMSMFOC_BUTTON_0_INDEX:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_INDEX
+        label: MCPMSMFOC_BUTTON_0_INDEX
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_BUTTON_0_NAME:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: BUTTON_02
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_BUTTON_0_NUMBER:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_NUMBER
+        label: Pin Number
+      type: Combo
+    MCPMSMFOC_BUTTON_0_OLD_NUMBER:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_OLD_NUMBER
+        label: Old Pin Number
+      type: String
+    MCPMSMFOC_BUTTON_0_TYPE:
+      attributes:
+        id: MCPMSMFOC_BUTTON_0_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Physical
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_BUTTON_1_FUNCTION:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_FUNCTION
+        label: Function
+      type: Combo
+    MCPMSMFOC_BUTTON_1_INDEX:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_INDEX
+        label: MCPMSMFOC_BUTTON_1_INDEX
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_BUTTON_1_NAME:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: BUTTON_1
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_BUTTON_1_NUMBER:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_NUMBER
+        label: Pin Number
+      type: Combo
+    MCPMSMFOC_BUTTON_1_OLD_NUMBER:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_OLD_NUMBER
+        label: Old Pin Number
+      type: String
+    MCPMSMFOC_BUTTON_1_TYPE:
+      attributes:
+        id: MCPMSMFOC_BUTTON_1_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Physical
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_CONTROL_TO_PWM_RATIO:
+      attributes:
+        id: MCPMSMFOC_CONTROL_TO_PWM_RATIO
+        label: Control to PWM ratio
+      type: Combo
+    MCPMSMFOC_CONTROL_TYPE:
+      attributes:
+        id: MCPMSMFOC_CONTROL_TYPE
+        label: Control type
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    MCPMSMFOC_CURRENT_MEAS_ALGORITHM:
+      attributes:
+        id: MCPMSMFOC_CURRENT_MEAS_ALGORITHM
+        label: Select algorithm
+      type: Combo
+    MCPMSMFOC_CURRENT_OOR:
+      attributes:
+        id: MCPMSMFOC_CURRENT_OOR
+        label: Enable current range diagnosis
+      type: Boolean
+    MCPMSMFOC_CURRENT_OOR_DEBOUNCE:
+      attributes:
+        id: MCPMSMFOC_CURRENT_OOR_DEBOUNCE
+        label: Debounce time (ms)
+      type: Float
+    MCPMSMFOC_CURRENT_OOR_FAULT_TYPE:
+      attributes:
+        id: MCPMSMFOC_CURRENT_OOR_FAULT_TYPE
+        label: Fault type
+      type: Combo
+    MCPMSMFOC_CURRENT_OOR_MAXIMUM:
+      attributes:
+        id: MCPMSMFOC_CURRENT_OOR_MAXIMUM
+        label: Maximum current
+      type: Float
+    MCPMSMFOC_CURRENT_SCALING_FACTORT:
+      attributes:
+        id: MCPMSMFOC_CURRENT_SCALING_FACTORT
+        label: Scaling factor
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Infinity
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_CURRENT_SCALING_FORMAT:
+      attributes:
+        id: MCPMSMFOC_CURRENT_SCALING_FORMAT
+        label: Format
+      type: Combo
+    MCPMSMFOC_DATA_MONITOR_ENABLE:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_ENABLE
+        label: Enable data monitoring
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    MCPMSMFOC_DATA_MONITOR_OLD_RECEIVE_PAD:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_OLD_RECEIVE_PAD
+        label: Old Receive pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_DATA_MONITOR_OLD_TRANSMIT_PAD:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_OLD_TRANSMIT_PAD
+        label: Old Transmit pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_DATA_MONITOR_PERIPHERAL:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_PERIPHERAL
+        label: Peripheral
+      children:
+      - children:
+        - attributes:
+            value: SERCOM3
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_DATA_MONITOR_PHYSICAL_PORT:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_PHYSICAL_PORT
+        label: Physical Port
+      type: Combo
+    MCPMSMFOC_DATA_MONITOR_PROTOCOL:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_PROTOCOL
+        label: Protocol
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: X2Cscope
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_DATA_MONITOR_RECEIVE_PAD:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_RECEIVE_PAD
+        label: Receive pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PA23
+            - type: Value
+              value: PB21
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_DATA_MONITOR_TRANSMIT_PAD:
+      attributes:
+        id: MCPMSMFOC_DATA_MONITOR_TRANSMIT_PAD
+        label: Transmit pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PB20
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_DC_BUS_RATIO:
+      attributes:
+        id: MCPMSMFOC_DC_BUS_RATIO
+        label: DC Bus Voltage Divider Ratio
+      type: Float
+    MCPMSMFOC_DEBUG_RX_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_DEBUG_RX_CHANNEL
+        label: Receive Channel
+      type: Combo
+    MCPMSMFOC_DEBUG_X_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_DEBUG_X_CHANNEL
+        label: Receive Channel
+      type: Combo
+    MCPMSMFOC_DEVELOPER_MODE:
+      attributes:
+        id: MCPMSMFOC_DEVELOPER_MODE
+        label: Enable developer mode
+      type: Boolean
+    MCPMSMFOC_ED_FILTER_PARAMETER:
+      attributes:
+        id: MCPMSMFOC_ED_FILTER_PARAMETER
+        label: Filter Parameter
+      type: Float
+    MCPMSMFOC_ENABLE_ALIGN_OR_DETECT:
+      attributes:
+        id: MCPMSMFOC_ENABLE_ALIGN_OR_DETECT
+        label: Field Alignment/ Detection
+      type: Boolean
+    MCPMSMFOC_ENABLE_DECOUPLING:
+      attributes:
+        id: MCPMSMFOC_ENABLE_DECOUPLING
+        label: Enable Inductive Decoupling
+      type: Boolean
+    MCPMSMFOC_ENABLE_FLYING_START:
+      attributes:
+        id: MCPMSMFOC_ENABLE_FLYING_START
+        label: Flying Start
+      type: Boolean
+    MCPMSMFOC_ENABLE_FW:
+      attributes:
+        id: MCPMSMFOC_ENABLE_FW
+        label: Enable field weakening
+      type: Boolean
+    MCPMSMFOC_ENABLE_MTPA:
+      attributes:
+        id: MCPMSMFOC_ENABLE_MTPA
+        label: Enable MTPA
+      type: Boolean
+    MCPMSMFOC_ENABLE_OPEN_LOOP_STARTUP:
+      attributes:
+        id: MCPMSMFOC_ENABLE_OPEN_LOOP_STARTUP
+        label: Open loop speed ramp
+      type: Boolean
+    MCPMSMFOC_ENABLE_REGEN_BRAKE:
+      attributes:
+        id: MCPMSMFOC_ENABLE_REGEN_BRAKE
+        label: Regenerative Braking
+      type: Boolean
+    MCPMSMFOC_ENCODER_DNF_COUNT:
+      attributes:
+        id: MCPMSMFOC_ENCODER_DNF_COUNT
+        label: Filter Count
+      type: Float
+    MCPMSMFOC_ENCODER_OLD_QEA_PAD:
+      attributes:
+        id: MCPMSMFOC_ENCODER_OLD_QEA_PAD
+        label: Old QEA Pad
+      type: String
+    MCPMSMFOC_ENCODER_OLD_QEB_PAD:
+      attributes:
+        id: MCPMSMFOC_ENCODER_OLD_QEB_PAD
+        label: Old QEB Pad
+      type: String
+    MCPMSMFOC_ENCODER_PERIPHERAL:
+      attributes:
+        id: MCPMSMFOC_ENCODER_PERIPHERAL
+        label: Select instance
+      type: Combo
+    MCPMSMFOC_ENCODER_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_ENCODER_PERIPHERAL_ID
+        label: Peripheral ID
+      type: String
+    MCPMSMFOC_ENCODER_QDEC_PULSE_PER_EREV:
+      attributes:
+        id: MCPMSMFOC_ENCODER_QDEC_PULSE_PER_EREV
+        label: Pulse Per electrical rotation
+      children:
+      - children:
+        - attributes:
+            id: pmsm_motor
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_ENCODER_QEA_PAD:
+      attributes:
+        id: MCPMSMFOC_ENCODER_QEA_PAD
+        label: QEA Pad
+      type: Combo
+    MCPMSMFOC_ENCODER_QEB_PAD:
+      attributes:
+        id: MCPMSMFOC_ENCODER_QEB_PAD
+        label: QEB Pad
+      type: Combo
+    MCPMSMFOC_EQ_FILTER_PARAMETER:
+      attributes:
+        id: MCPMSMFOC_EQ_FILTER_PARAMETER
+        label: Filter Parameter
+      type: Float
+    MCPMSMFOC_EVSYS_IP:
+      attributes:
+        id: MCPMSMFOC_EVSYS_IP
+        label: EVSYS IP
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: EVSYS_U2504
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_FLY_START_BRAKE_RAMP_TIME:
+      attributes:
+        id: MCPMSMFOC_FLY_START_BRAKE_RAMP_TIME
+        label: Braking ramp time (s)
+      type: Float
+    MCPMSMFOC_FLY_START_DETECTION_TIME:
+      attributes:
+        id: MCPMSMFOC_FLY_START_DETECTION_TIME
+        label: Detection Time
+      type: Float
+    MCPMSMFOC_FLY_START_FADEOUT_BURST_PERIOD:
+      attributes:
+        id: MCPMSMFOC_FLY_START_FADEOUT_BURST_PERIOD
+        label: Fade-out burst period
+      type: Float
+    MCPMSMFOC_FLY_START_FADEOUT_TIME:
+      attributes:
+        id: MCPMSMFOC_FLY_START_FADEOUT_TIME
+        label: Passive Braking time (s)
+      type: Float
+    MCPMSMFOC_FLY_START_MINIMUM_SPEED:
+      attributes:
+        id: MCPMSMFOC_FLY_START_MINIMUM_SPEED
+        label: Minimum speed (RPM)
+      type: Float
+    MCPMSMFOC_FLY_START_PEAK_BRAKE_CURRENT:
+      attributes:
+        id: MCPMSMFOC_FLY_START_PEAK_BRAKE_CURRENT
+        label: Peak braking current (A)
+      type: Float
+    MCPMSMFOC_FOC_X2C_ENABLE:
+      attributes:
+        id: MCPMSMFOC_FOC_X2C_ENABLE
+        label: 'Enable X2C model based generation '
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: 'false'
+          type: Dynamic
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    MCPMSMFOC_FOC_X2C_ID:
+      attributes:
+        id: MCPMSMFOC_FOC_X2C_ID
+        label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: X2Cscope
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_FRICTION_TORQUE:
+      attributes:
+        id: MCPMSMFOC_FRICTION_TORQUE
+        label: Constant frictional torque (N-m))
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.00747'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_FW_MAX_NEGATIVE_ID:
+      attributes:
+        id: MCPMSMFOC_FW_MAX_NEGATIVE_ID
+        label: Max Negative Current
+      type: Float
+    MCPMSMFOC_GPIO_IP:
+      attributes:
+        id: MCPMSMFOC_GPIO_IP
+        label: GPIO IP
+      type: String
+    MCPMSMFOC_ID_PID_AW:
+      attributes:
+        id: MCPMSMFOC_ID_PID_AW
+        label: Anti-windup
+      type: Combo
+    MCPMSMFOC_ID_PID_KC:
+      attributes:
+        id: MCPMSMFOC_ID_PID_KC
+        label: Kc
+      type: Float
+    MCPMSMFOC_ID_PID_KI:
+      attributes:
+        id: MCPMSMFOC_ID_PID_KI
+        label: Ki
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '560.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_ID_PID_KP:
+      attributes:
+        id: MCPMSMFOC_ID_PID_KP
+        label: Kp
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.21'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_ID_PID_YIMAX:
+      attributes:
+        id: MCPMSMFOC_ID_PID_YIMAX
+        label: Maximum integral
+      type: Float
+    MCPMSMFOC_ID_PID_YMAX:
+      attributes:
+        id: MCPMSMFOC_ID_PID_YMAX
+        label: Maximum output
+      type: Float
+    MCPMSMFOC_INSTANCE_NAME:
+      attributes:
+        id: MCPMSMFOC_INSTANCE_NAME
+        label: MCPMSMFOC_INSTANCE_NAME
+      type: String
+    MCPMSMFOC_IPC_PULSE_DURATION:
+      attributes:
+        id: MCPMSMFOC_IPC_PULSE_DURATION
+        label: IPC pulse duration (in ms)
+      type: Float
+    MCPMSMFOC_IPC_PULSE_DUTY:
+      attributes:
+        id: MCPMSMFOC_IPC_PULSE_DUTY
+        label: IPC pulse duty (in ms)
+      type: Float
+    MCPMSMFOC_IPC_PULSE_MAGNITUDE:
+      attributes:
+        id: MCPMSMFOC_IPC_PULSE_MAGNITUDE
+        label: IPC pulse amplitude
+      type: Float
+    MCPMSMFOC_IPD_PULSE_AMPLITUDE:
+      attributes:
+        id: MCPMSMFOC_IPD_PULSE_AMPLITUDE
+        label: Pulse Amplitude (in volts)
+      type: Float
+    MCPMSMFOC_IPD_PULSE_DURATION:
+      attributes:
+        id: MCPMSMFOC_IPD_PULSE_DURATION
+        label: Pulse Duration (in seconds )
+      type: Float
+    MCPMSMFOC_IPD_PULSE_PERIOD:
+      attributes:
+        id: MCPMSMFOC_IPD_PULSE_PERIOD
+        label: Pulse Period (in seconds )
+      type: Float
+    MCPMSMFOC_IQ_PID_AW:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_AW
+        label: Anti-windup
+      type: Combo
+    MCPMSMFOC_IQ_PID_KC:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_KC
+        label: Kc
+      type: Float
+    MCPMSMFOC_IQ_PID_KI:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_KI
+        label: Ki
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '560.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_IQ_PID_KP:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_KP
+        label: Kp
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.21'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_IQ_PID_YIMAX:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_YIMAX
+        label: Maximum integral
+      type: Float
+    MCPMSMFOC_IQ_PID_YMAX:
+      attributes:
+        id: MCPMSMFOC_IQ_PID_YMAX
+        label: Maximum output
+      type: Float
+    MCPMSMFOC_LD:
+      attributes:
+        id: MCPMSMFOC_LD
+        label: Line-neutral direct-axis inductance Ld (Henry)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.0045'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_LEDS_AVAILABLE:
+      attributes:
+        id: MCPMSMFOC_LEDS_AVAILABLE
+        label: Number of available leds
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_LED_0_FUNCTION:
+      attributes:
+        id: MCPMSMFOC_LED_0_FUNCTION
+        label: Function
+      type: Combo
+    MCPMSMFOC_LED_0_INDEX:
+      attributes:
+        id: MCPMSMFOC_LED_0_INDEX
+        label: Index
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_LED_0_NAME:
+      attributes:
+        id: MCPMSMFOC_LED_0_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: LED_2
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_LED_0_NUMBER:
+      attributes:
+        id: MCPMSMFOC_LED_0_NUMBER
+        label: Pin Number
+      type: Combo
+    MCPMSMFOC_LED_0_OLD_NUMBER:
+      attributes:
+        id: MCPMSMFOC_LED_0_OLD_NUMBER
+        label: Old Pin Number
+      type: String
+    MCPMSMFOC_LED_0_TYPE:
+      attributes:
+        id: MCPMSMFOC_LED_0_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Physical
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_LED_1_FUNCTION:
+      attributes:
+        id: MCPMSMFOC_LED_1_FUNCTION
+        label: Function
+      type: Combo
+    MCPMSMFOC_LED_1_INDEX:
+      attributes:
+        id: MCPMSMFOC_LED_1_INDEX
+        label: Index
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCPMSMFOC_LED_1_NAME:
+      attributes:
+        id: MCPMSMFOC_LED_1_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: LED_1
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_LED_1_NUMBER:
+      attributes:
+        id: MCPMSMFOC_LED_1_NUMBER
+        label: Pin Number
+      type: Combo
+    MCPMSMFOC_LED_1_OLD_NUMBER:
+      attributes:
+        id: MCPMSMFOC_LED_1_OLD_NUMBER
+        label: Old Pin Number
+      type: String
+    MCPMSMFOC_LED_1_TYPE:
+      attributes:
+        id: MCPMSMFOC_LED_1_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Physical
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_LQ:
+      attributes:
+        id: MCPMSMFOC_LQ
+        label: Line-neutral quadrature-axis inductance Lq (Henry)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.0045'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_MAX_MOTOR_CURRENT:
+      attributes:
+        id: MCPMSMFOC_MAX_MOTOR_CURRENT
+        label: Rated continuous current (A)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.11'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_MAX_REF_INPUT:
+      attributes:
+        id: MCPMSMFOC_MAX_REF_INPUT
+        label: Maximum reference value
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '500.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_MAX_SPEED:
+      attributes:
+        id: MCPMSMFOC_MAX_SPEED
+        label: Maximum mechanical speed (RPM)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '2500.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_MIN_REF_INPUT:
+      attributes:
+        id: MCPMSMFOC_MIN_REF_INPUT
+        label: Minimum reference value
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '50.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_MODULATION_TECHNIQUE:
+      attributes:
+        id: MCPMSMFOC_MODULATION_TECHNIQUE
+        label: Modulation Technique
+      type: Combo
+    MCPMSMFOC_MOTOR_CONNECTION:
+      attributes:
+        id: MCPMSMFOC_MOTOR_CONNECTION
+        label: Motor Connection
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    MCPMSMFOC_MOTOR_SEL:
+      attributes:
+        id: MCPMSMFOC_MOTOR_SEL
+        label: Selected Motor
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: Gimbal
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OFFSET_CORRECTION_ALGORITHM:
+      attributes:
+        id: MCPMSMFOC_OFFSET_CORRECTION_ALGORITHM
+        label: Select algorithm
+      type: Combo
+    MCPMSMFOC_OFFSET_CORRECTION_SAMPLE:
+      attributes:
+        id: MCPMSMFOC_OFFSET_CORRECTION_SAMPLE
+        label: Number of samples
+      type: Integer
+    MCPMSMFOC_OFFSET_OOR:
+      attributes:
+        id: MCPMSMFOC_OFFSET_OOR
+        label: Enable Offset range diagnosis
+      type: Boolean
+    MCPMSMFOC_OFFSET_OOR_DEBOUNCE:
+      attributes:
+        id: MCPMSMFOC_OFFSET_OOR_DEBOUNCE
+        label: Debounce time (ms)
+      type: Float
+    MCPMSMFOC_OFFSET_OOR_FAULT_TYPE:
+      attributes:
+        id: MCPMSMFOC_OFFSET_OOR_FAULT_TYPE
+        label: Fault type
+      type: Combo
+    MCPMSMFOC_OFFSET_OOR_MAXIMUM:
+      attributes:
+        id: MCPMSMFOC_OFFSET_OOR_MAXIMUM
+        label: Maximum Offset
+      type: Float
+    MCPMSMFOC_OFFSET_OOR_MINIMUM:
+      attributes:
+        id: MCPMSMFOC_OFFSET_OOR_MINIMUM
+        label: Minimum Offset
+      type: Float
+    MCPMSMFOC_OLD_PWM_AH_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_AH_PAD
+        label: Old PWMAH
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OLD_PWM_AL_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_AL_PAD
+        label: Old PWMAL
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OLD_PWM_BH_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_BH_PAD
+        label: Old PWMBH
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OLD_PWM_BL_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_BL_PAD
+        label: Old PWMBL
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OLD_PWM_CH_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_CH_PAD
+        label: Old PWMCH
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OLD_PWM_CL_PAD:
+      attributes:
+        id: MCPMSMFOC_OLD_PWM_CL_PAD
+        label: Old PWMCL
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_OPEN_LOOP_END_SPEED:
+      attributes:
+        id: MCPMSMFOC_OPEN_LOOP_END_SPEED
+        label: Open loop end-speed (RPM)
+      type: Float
+    MCPMSMFOC_OPEN_LOOP_RAMP_TIME:
+      attributes:
+        id: MCPMSMFOC_OPEN_LOOP_RAMP_TIME
+        label: Ramp time (s)
+      type: Float
+    MCPMSMFOC_OPEN_LOOP_STAB_TIME:
+      attributes:
+        id: MCPMSMFOC_OPEN_LOOP_STAB_TIME
+        label: Stabilization time (s)
+      type: Float
+    MCPMSMFOC_OVER_MODULATION:
+      attributes:
+        id: MCPMSMFOC_OVER_MODULATION
+        label: Enable over modulation
+      type: Boolean
+    MCPMSMFOC_OVER_VOLTAGE:
+      attributes:
+        id: MCPMSMFOC_OVER_VOLTAGE
+        label: Enable over voltage diagnosis
+      type: Boolean
+    MCPMSMFOC_OVER_VOLTAGE_DEBOUNCE:
+      attributes:
+        id: MCPMSMFOC_OVER_VOLTAGE_DEBOUNCE
+        label: Debounce time (ms)
+      type: Float
+    MCPMSMFOC_OVER_VOLTAGE_FAULT_TYPE:
+      attributes:
+        id: MCPMSMFOC_OVER_VOLTAGE_FAULT_TYPE
+        label: Fault type
+      type: Combo
+    MCPMSMFOC_OVER_VOLTAGE_LIMIT:
+      attributes:
+        id: MCPMSMFOC_OVER_VOLTAGE_LIMIT
+        label: Over voltage limit (V)
+      type: Float
+    MCPMSMFOC_PHASE_CURRENT_IA_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_CHANNEL
+        label: ADC channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            - type: Value
+              value: '4'
+            - type: Value
+              value: '5'
+            - type: Value
+              value: '6'
+            - type: Value
+              value: '7'
+            - type: Value
+              value: '8'
+            - type: Value
+              value: '9'
+            - type: Value
+              value: '10'
+            - type: Value
+              value: '11'
+            - type: Value
+              value: '12'
+            - type: Value
+              value: '13'
+            - type: Value
+              value: '14'
+            - type: Value
+              value: '15'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '9'
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_CURRENT_IA_EOC_INTERRUPT_ENABLE:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_EOC_INTERRUPT_ENABLE
+        label: Enable EOC interrupt
+      type: Boolean
+    MCPMSMFOC_PHASE_CURRENT_IA_NAME:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_NAME
+        label: Signal Name
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IA_OLD_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_OLD_CHANNEL
+        label: Old ADC channel
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '9'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IA_OLD_PAD:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_OLD_PAD
+        label: Old Pad
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IA_OLD_UNIT:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_OLD_UNIT
+        label: Old ADC unit
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: ADC0
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IA_PAD:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_PAD
+        label: Pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA09
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_CURRENT_IA_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_PERIPHERAL_ID
+        label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: adc0
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IA_SLAVE_MODE_ENABLE:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_SLAVE_MODE_ENABLE
+        label: Slave mode enable
+      type: Boolean
+    MCPMSMFOC_PHASE_CURRENT_IA_UNIT:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IA_UNIT
+        label: ADC unit
+      children:
+      - children:
+        - attributes:
+            value: ADC0
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_CURRENT_IB_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_CHANNEL
+        label: ADC channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            - type: Value
+              value: '4'
+            - type: Value
+              value: '5'
+            - type: Value
+              value: '6'
+            - type: Value
+              value: '7'
+            - type: Value
+              value: '8'
+            - type: Value
+              value: '9'
+            - type: Value
+              value: '10'
+            - type: Value
+              value: '11'
+            - type: Value
+              value: '12'
+            - type: Value
+              value: '13'
+            - type: Value
+              value: '14'
+            - type: Value
+              value: '15'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '10'
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_CURRENT_IB_EOC_INTERRUPT_ENABLE:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_EOC_INTERRUPT_ENABLE
+        label: Enable EOC interrupt
+      type: Boolean
+    MCPMSMFOC_PHASE_CURRENT_IB_NAME:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_NAME
+        label: Signal Name
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IB_OLD_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_OLD_CHANNEL
+        label: Old ADC channel
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '10'
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IB_OLD_PAD:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_OLD_PAD
+        label: Old Pad
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IB_OLD_UNIT:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_OLD_UNIT
+        label: Old ADC unit
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: ADC0
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IB_PAD:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_PAD
+        label: Pad
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA10
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_CURRENT_IB_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_PERIPHERAL_ID
+        label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: adc0
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PHASE_CURRENT_IB_SLAVE_MODE_ENABLE:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_SLAVE_MODE_ENABLE
+        label: Slave mode enable
+      type: Boolean
+    MCPMSMFOC_PHASE_CURRENT_IB_UNIT:
+      attributes:
+        id: MCPMSMFOC_PHASE_CURRENT_IB_UNIT
+        label: ADC unit
+      children:
+      - children:
+        - attributes:
+            value: ADC0
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PHASE_DETECTION_ALGORITHM:
+      attributes:
+        id: MCPMSMFOC_PHASE_DETECTION_ALGORITHM
+        label: Flux Angle Calculation
+      type: Combo
+    MCPMSMFOC_PHASE_DETECTION_F0:
+      attributes:
+        id: MCPMSMFOC_PHASE_DETECTION_F0
+        label: Cut-off Frequency
+      type: Float
+    MCPMSMFOC_POLE_PAIRS:
+      attributes:
+        id: MCPMSMFOC_POLE_PAIRS
+        label: Pole pairs
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '7.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_POSITION_CALC_ALGORITHM:
+      attributes:
+        id: MCPMSMFOC_POSITION_CALC_ALGORITHM
+        label: Select Position Feedback
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    MCPMSMFOC_POSITION_PID_AW:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_AW
+        label: Anti-windup
+      type: Combo
+    MCPMSMFOC_POSITION_PID_KC:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_KC
+        label: Kc
+      type: Float
+    MCPMSMFOC_POSITION_PID_KI:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_KI
+        label: Ki
+      type: Float
+    MCPMSMFOC_POSITION_PID_KP:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_KP
+        label: Kp
+      type: Float
+    MCPMSMFOC_POSITION_PID_YIMAX:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_YIMAX
+        label: Maximum integral
+      type: Float
+    MCPMSMFOC_POSITION_PID_YMAX:
+      attributes:
+        id: MCPMSMFOC_POSITION_PID_YMAX
+        label: Maximum output
+      type: Float
+    MCPMSMFOC_POTENTIOMETER_VPOT_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_CHANNEL
+        label: ADC channel
+      type: Combo
+    MCPMSMFOC_POTENTIOMETER_VPOT_EOC_INTERRUPT_ENABLE:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_EOC_INTERRUPT_ENABLE
+        label: Enable EOC interrupt
+      type: Boolean
+    MCPMSMFOC_POTENTIOMETER_VPOT_NAME:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_NAME
+        label: Signal Name
+      type: String
+    MCPMSMFOC_POTENTIOMETER_VPOT_OLD_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_OLD_CHANNEL
+        label: Old ADC channel
+      type: String
+    MCPMSMFOC_POTENTIOMETER_VPOT_OLD_PAD:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_OLD_PAD
+        label: Old Pad
+      type: String
+    MCPMSMFOC_POTENTIOMETER_VPOT_OLD_UNIT:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_OLD_UNIT
+        label: Old ADC unit
+      type: String
+    MCPMSMFOC_POTENTIOMETER_VPOT_PAD:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_PAD
+        label: Pad
+      type: Combo
+    MCPMSMFOC_POTENTIOMETER_VPOT_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_PERIPHERAL_ID
+        label: Peripheral ID
+      type: String
+    MCPMSMFOC_POTENTIOMETER_VPOT_SLAVE_MODE_ENABLE:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_SLAVE_MODE_ENABLE
+        label: Slave mode enable
+      type: Boolean
+    MCPMSMFOC_POTENTIOMETER_VPOT_UNIT:
+      attributes:
+        id: MCPMSMFOC_POTENTIOMETER_VPOT_UNIT
+        label: ADC unit
+      type: Combo
+    MCPMSMFOC_PWMPLIB:
+      attributes:
+        id: MCPMSMFOC_PWMPLIB
+        label: MCPMSMFOC_PWMPLIB
+      type: String
+    MCPMSMFOC_PWM_AH_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_AH_PAD
+        label: PWMAH
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA08
+            - type: Value
+              value: PA20
+            - type: Value
+              value: PB12
+            - type: Value
+              value: PC10
+            - type: Value
+              value: PC16
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_AL_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_AL_PAD
+        label: PWMAL
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PB10
+            - type: Value
+              value: PB16
+            - type: Value
+              value: PC14
+            - type: Value
+              value: PC20
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_A_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PWM_A_CHANNEL
+        label: Phase A Channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_BH_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_BH_PAD
+        label: PWMBH
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA09
+            - type: Value
+              value: PA21
+            - type: Value
+              value: PB13
+            - type: Value
+              value: PC11
+            - type: Value
+              value: PC17
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_BL_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_BL_PAD
+        label: PWMBL
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PB11
+            - type: Value
+              value: PB17
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC21
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_B_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PWM_B_CHANNEL
+        label: Phase B Channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_CH_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_CH_PAD
+        label: PWMCH
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA10
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PB14
+            - type: Value
+              value: PC12
+            - type: Value
+              value: PC18
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_CL_PAD:
+      attributes:
+        id: MCPMSMFOC_PWM_CL_PAD
+        label: PWMCL
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA12
+            - type: Value
+              value: PA18
+            - type: Value
+              value: PB30
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_C_CHANNEL:
+      attributes:
+        id: MCPMSMFOC_PWM_C_CHANNEL
+        label: Phase C Channel
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '0'
+            - type: Value
+              value: '1'
+            - type: Value
+              value: '2'
+            - type: Value
+              value: '3'
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_DEAD_TIME:
+      attributes:
+        id: MCPMSMFOC_PWM_DEAD_TIME
+        label: Dead time (uS)
+      type: Float
+    MCPMSMFOC_PWM_FAULT_FILTER:
+      attributes:
+        id: MCPMSMFOC_PWM_FAULT_FILTER
+        label: Fault Filter
+      type: Integer
+    MCPMSMFOC_PWM_FAULT_SELECT:
+      attributes:
+        id: MCPMSMFOC_PWM_FAULT_SELECT
+        label: Fault Type
+      type: Combo
+    MCPMSMFOC_PWM_FAULT_SOURCE:
+      attributes:
+        id: MCPMSMFOC_PWM_FAULT_SOURCE
+        label: Fault Source
+      children:
+      - children:
+        - attributes:
+            value: EIC_CHANNEL_14
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_FAULT_STATE:
+      attributes:
+        id: MCPMSMFOC_PWM_FAULT_STATE
+        label: Fault Polarity
+      type: Combo
+    MCPMSMFOC_PWM_FAULT_TYPE:
+      attributes:
+        id: MCPMSMFOC_PWM_FAULT_TYPE
+        label: Fault Mode
+      type: Combo
+    MCPMSMFOC_PWM_FREQUENCY:
+      attributes:
+        id: MCPMSMFOC_PWM_FREQUENCY
+        label: PWM Frequency (Hz)
+      type: Float
+    MCPMSMFOC_PWM_INSTANCE:
+      attributes:
+        id: MCPMSMFOC_PWM_INSTANCE
+        label: Select Instance
+      children:
+      - children:
+        - attributes:
+            value: TCC0
+          type: User
+        type: Values
+      type: Combo
+    MCPMSMFOC_PWM_IP:
+      attributes:
+        id: MCPMSMFOC_PWM_IP
+        label: PWM IP
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: TCC_U2213
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PWM_PERIOD:
+      attributes:
+        id: MCPMSMFOC_PWM_PERIOD
+        label: PWM Period (in Seconds)
+      type: Float
+    MCPMSMFOC_PWM_PERIPHERAL_ID:
+      attributes:
+        id: MCPMSMFOC_PWM_PERIPHERAL_ID
+        label: Peripheral ID
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: tcc0
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_QEI_IP:
+      attributes:
+        id: MCPMSMFOC_QEI_IP
+        label: QEI IP
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PDEC_U2263
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_R:
+      attributes:
+        id: MCPMSMFOC_R
+        label: Line-neutral resistance (ohms)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '12.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_RAMP_PROFILER_MAX_ACCEL:
+      attributes:
+        id: MCPMSMFOC_RAMP_PROFILER_MAX_ACCEL
+        label: Maximum acceleration (RPM/s)
+      type: Float
+    MCPMSMFOC_RAMP_PROFILER_MAX_SPEED:
+      attributes:
+        id: MCPMSMFOC_RAMP_PROFILER_MAX_SPEED
+        label: 'Ramp rate ( RPM/ s) '
+      type: Float
+    MCPMSMFOC_RAMP_PROFILES:
+      attributes:
+        id: MCPMSMFOC_RAMP_PROFILES
+        label: Profile
+      type: Combo
+    MCPMSMFOC_RATED_SPEED:
+      attributes:
+        id: MCPMSMFOC_RATED_SPEED
+        label: Base mechanical speed (RPM)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '2000.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_RATED_VOLTAGE:
+      attributes:
+        id: MCPMSMFOC_RATED_VOLTAGE
+        label: Rated voltage (V)
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '7.4'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_REF_INPUT:
+      attributes:
+        id: MCPMSMFOC_REF_INPUT
+        label: Select reference input
+      type: Combo
+    MCPMSMFOC_ROLO_PHASE_DETECTION_ALGORITHM:
+      attributes:
+        id: MCPMSMFOC_ROLO_PHASE_DETECTION_ALGORITHM
+        label: Flux Angle Calculation
+      type: Combo
+    MCPMSMFOC_ROLO_PHASE_DETECTION_F0:
+      attributes:
+        id: MCPMSMFOC_ROLO_PHASE_DETECTION_F0
+        label: Cut-off Frequency
+      type: Float
+    MCPMSMFOC_ROTOR_INERTIA:
+      attributes:
+        id: MCPMSMFOC_ROTOR_INERTIA
+        label: Rotor inertia (N-m /(rad/s^2))
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '1.4E-45'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_SPEED_FILTER_PARAMETER:
+      attributes:
+        id: MCPMSMFOC_SPEED_FILTER_PARAMETER
+        label: Filter Parameter
+      type: Float
+    MCPMSMFOC_SPEED_PID_AW:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_AW
+        label: Anti-windup
+      type: Combo
+    MCPMSMFOC_SPEED_PID_KC:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_KC
+        label: Kc
+      type: Float
+    MCPMSMFOC_SPEED_PID_KI:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_KI
+        label: Ki
+      type: Float
+    MCPMSMFOC_SPEED_PID_KP:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_KP
+        label: Kp
+      type: Float
+    MCPMSMFOC_SPEED_PID_YIMAX:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_YIMAX
+        label: Maximum integral
+      type: Float
+    MCPMSMFOC_SPEED_PID_YMAX:
+      attributes:
+        id: MCPMSMFOC_SPEED_PID_YMAX
+        label: Maximum output
+      type: Float
+    MCPMSMFOC_STARTUP_CURRENT:
+      attributes:
+        id: MCPMSMFOC_STARTUP_CURRENT
+        label: Alignment current
+      type: Float
+    MCPMSMFOC_STARTUP_TIME:
+      attributes:
+        id: MCPMSMFOC_STARTUP_TIME
+        label: Alignment time
+      type: Float
+    MCPMSMFOC_SWITCHING_FUNCTION_BOUNDARY:
+      attributes:
+        id: MCPMSMFOC_SWITCHING_FUNCTION_BOUNDARY
+        label: Boundary
+      type: Float
+    MCPMSMFOC_SWITCHING_FUNCTION_GAIN:
+      attributes:
+        id: MCPMSMFOC_SWITCHING_FUNCTION_GAIN
+        label: Gain
+      type: Float
+    MCPMSMFOC_UNDER_VOLTAGE:
+      attributes:
+        id: MCPMSMFOC_UNDER_VOLTAGE
+        label: Enable under voltage diagnosis
+      type: Boolean
+    MCPMSMFOC_UNDER_VOLTAGE_DEBOUNCE:
+      attributes:
+        id: MCPMSMFOC_UNDER_VOLTAGE_DEBOUNCE
+        label: Debounce time (ms)
+      type: Float
+    MCPMSMFOC_UNDER_VOLTAGE_FAULT_TYPE:
+      attributes:
+        id: MCPMSMFOC_UNDER_VOLTAGE_FAULT_TYPE
+        label: Fault type
+      type: Combo
+    MCPMSMFOC_UNDER_VOLTAGE_LIMIT:
+      attributes:
+        id: MCPMSMFOC_UNDER_VOLTAGE_LIMIT
+        label: Under voltage limit (V)
+      type: Float
+    MCPMSMFOC_USED_PIN_LIST:
+      attributes:
+        id: MCPMSMFOC_USED_PIN_LIST
+        label: Used pin list
+      type: Combo
+    MCPMSMFOC_VISCOUS_DAMPING:
+      attributes:
+        id: MCPMSMFOC_VISCOUS_DAMPING
+        label: Viscous damping coefficient (N-m /(rad/s))
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '1.4E-45'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_VOLTAGE_MAGNITUDE:
+      attributes:
+        id: MCPMSMFOC_VOLTAGE_MAGNITUDE
+        label: Voltage magnitude
+      children:
+      - children:
+        - attributes:
+            value: '8.0'
+          type: User
+        type: Values
+      type: Float
+    MCPMSMFOC_VOLTAGE_PROCESSING:
+      attributes:
+        id: MCPMSMFOC_VOLTAGE_PROCESSING
+        label: ' Filter Parameter'
+      type: Float
+    MCPMSMFOC_VOLTAGE_SCALING_FACTORT:
+      attributes:
+        id: MCPMSMFOC_VOLTAGE_SCALING_FACTORT
+        label: Scaling factor
+      type: Float
+    MCPMSMFOC_VOLTAGE_SCALING_FORMAT:
+      attributes:
+        id: MCPMSMFOC_VOLTAGE_SCALING_FORMAT
+        label: Format
+      type: Combo
+    MCPMSMFOC_X2CSCOPE:
+      attributes:
+        id: MCPMSMFOC_X2CSCOPE
+        label: MCPMSMFOC_X2CSCOPE
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: X2Cscope
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_ZSMT_HYB_ANGLE_TRACK_F0:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_ANGLE_TRACK_F0
+        label: Tracking loop cut-off frequency
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '46.666668'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_ZSMT_HYB_BEMF_FILT_PARAM:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_BEMF_FILT_PARAM
+        label: Back EMF Filter Parameters
+      type: Float
+    MCPMSMFOC_ZSMT_HYB_HFI_KEPS:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_HFI_KEPS
+        label: Tracking loop tuning factor
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '0.055555556'
+          type: Dynamic
+        type: Values
+      type: Float
+    MCPMSMFOC_ZSMT_HYB_HFI_MAGNITUDE:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_HFI_MAGNITUDE
+        label: HFI Pulse Amplitude
+      type: Float
+    MCPMSMFOC_ZSMT_HYB_LOWER_TH:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_LOWER_TH
+        label: Lower Threshold ( 0-1)
+      type: Float
+    MCPMSMFOC_ZSMT_HYB_PLL_TRACKING_LOOP_TYPE:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_PLL_TRACKING_LOOP_TYPE
+        label: Tracking loop type
+      type: Combo
+    MCPMSMFOC_ZSMT_HYB_PRIM_OBS:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_PRIM_OBS
+        label: Select Primary Observer
+      type: Combo
+    MCPMSMFOC_ZSMT_HYB_SEC_OBS:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_SEC_OBS
+        label: Select Secondary Observer
+      type: Combo
+    MCPMSMFOC_ZSMT_HYB_UPPER_TH:
+      attributes:
+        id: MCPMSMFOC_ZSMT_HYB_UPPER_TH
+        label: Upper Threshold ( 0-1)
+      type: Float
+    Model.zcos:
+      attributes:
+        id: Model.zcos
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    ModelParameters.sce.ftl:
+      attributes:
+        id: ModelParameters.sce.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    MotorParameters.sce.ftl:
+      attributes:
+        id: MotorParameters.sce.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    initProject.sce:
+      attributes:
+        id: initProject.sce
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    launch_x2c_scilab.bat:
+      attributes:
+        id: launch_x2c_scilab.bat
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_flux_control.c.ftl:
+      attributes:
+        id: mc_flux_control.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_flux_control.h.ftl:
+      attributes:
+        id: mc_flux_control.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_motor.c.ftl:
+      attributes:
+        id: mc_motor.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_motor.h.ftl:
+      attributes:
+        id: mc_motor.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_open_loop_startup.c.ftl:
+      attributes:
+        id: mc_open_loop_startup.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_open_loop_startup.h.ftl:
+      attributes:
+        id: mc_open_loop_startup.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_pi_control.c.ftl:
+      attributes:
+        id: mc_pi_control.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_pi_control.h.ftl:
+      attributes:
+        id: mc_pi_control.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_pwm.c.ftl:
+      attributes:
+        id: mc_pwm.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_pwm.h.ftl:
+      attributes:
+        id: mc_pwm.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_reference_control.c.ftl:
+      attributes:
+        id: mc_reference_control.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_reference_control.h.ftl:
+      attributes:
+        id: mc_reference_control.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_speed_control.c.ftl:
+      attributes:
+        id: mc_speed_control.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_speed_control.h.ftl:
+      attributes:
+        id: mc_speed_control.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_torque_control.c.ftl:
+      attributes:
+        id: mc_torque_control.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    mc_torque_control.h.ftl:
+      attributes:
+        id: mc_torque_control.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_foc.c.ftl:
+      attributes:
+        id: opt_foc.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_foc.h.ftl:
+      attributes:
+        id: opt_foc.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_foc_x2cmodel.c.ftl:
+      attributes:
+        id: opt_foc_x2cmodel.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_foc_x2cmodel.h.ftl:
+      attributes:
+        id: opt_foc_x2cmodel.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_rpo_sensorless_pll.c.ftl:
+      attributes:
+        id: opt_rpo_sensorless_pll.c.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    opt_rpo_sensorless_pll.h.ftl:
+      attributes:
+        id: opt_rpo_sensorless_pll.h.ftl
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+  userData: {}

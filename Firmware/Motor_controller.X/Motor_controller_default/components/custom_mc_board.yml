@@ -1,0 +1,56 @@
+configVersion: 1.0.0
+componentName: custom_mc_board
+coreVersion: 5.9.1
+device: ATSAMD51N20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: custom_mc_board
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: motor_control
+  type: package
+  version: v3.11.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    MCPMSMFOC_ADC_IP:
+      attributes:
+        id: MCPMSMFOC_ADC_IP
+        label: ADC IP
+      children:
+      - children:
+        - attributes:
+            id: custom_mc_board
+            value: ADC_U2500
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_PWM_IP:
+      attributes:
+        id: MCPMSMFOC_PWM_IP
+        label: PWM IP
+      children:
+      - children:
+        - attributes:
+            id: custom_mc_board
+            value: TCC_U2213
+          type: Dynamic
+        type: Values
+      type: String
+    MCPMSMFOC_QEI_IP:
+      attributes:
+        id: MCPMSMFOC_QEI_IP
+        label: QEI IP
+      children:
+      - children:
+        - attributes:
+            id: custom_mc_board
+            value: PDEC_U2263
+          type: Dynamic
+        type: Values
+      type: String
+  userData: {}

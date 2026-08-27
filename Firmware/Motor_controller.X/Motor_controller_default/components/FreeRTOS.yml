@@ -11,7 +11,7 @@ dependency:
 - dependencyPackage: ''
   name: FreeRTOS-Kernel
   type: package
-  version: V11.3.0
+  version: V11.3.1
 - dependencyPackage: ''
   name: core
   type: package
@@ -19,7 +19,18 @@ dependency:
 customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
   attachments: {}
-  elementPosition: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: FreeRTOS
+          x: '5'
+          y: '9'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
   symbols:
     FREERTOS_ALLOW_UNPRIVILEGED_CRITICAL_SECTIONS:
       attributes:

@@ -111,29 +111,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*******************************************************************************
-  Function:
-    void STDIO_BufferModeSet ( void )
-
-  Summary:
-    Sets the buffering mode for stdin and stdout
-
-  Remarks:
- ********************************************************************************/
-static void STDIO_BufferModeSet(void)
-{
-    /* MISRAC 2023 deviation block start */
-    /* MISRA C-2023 Rule 21.6 deviated 2 times in this file.  Deviation record ID -  H3_MISRAC_2023_R_21_6_DR_3 */
-
-    /* Make stdin unbuffered */
-    setbuf(stdin, NULL);
-
-    /* Make stdout unbuffered */
-    setbuf(stdout, NULL);
-    /* MISRAC 2023 deviation block end */
-}
-
-
 /* MISRAC 2023 deviation block end */
 
 /*******************************************************************************
@@ -153,9 +130,6 @@ void SYS_Initialize ( void* data )
     /* MISRA C-2023 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2023_R_2_2_DR_1 */
 
     NVMCTRL_Initialize( );
-
-    STDIO_BufferModeSet();
-
 
   
     PORT_Initialize();
@@ -177,7 +151,20 @@ void SYS_Initialize ( void* data )
 
     EIC_Initialize();
 
+    TCC0_PWMInitialize();
 
+    ADC0_Initialize();
+
+    /* MISRAC 2023 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+    /* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
+
+
+
+    X2Cscope_Init();
+
+    /* MISRAC 2023 deviation block end */
     NVIC_Initialize();
 
 

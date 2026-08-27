@@ -1,0 +1,6351 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.9.1
+device: ATSAMD51N20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    SysTick_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SysTick_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-1_0_ENABLE:
+      attributes:
+        id: NVIC_-1_0_ENABLE
+        label: Enable System Tick Timer Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SysTick_INTERRUPT_ENABLE:
+      attributes:
+        id: SysTick_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-1_0_HANDLER:
+      attributes:
+        id: NVIC_-1_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: xPortSysTickHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SysTick_INTERRUPT_HANDLER:
+      attributes:
+        id: SysTick_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: xPortSysTickHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_-1_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_-1_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SysTick_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SysTick_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PendSV_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: PendSV_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-2_0_ENABLE:
+      attributes:
+        id: NVIC_-2_0_ENABLE
+        label: Enable Pendable SerVice Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PendSV_INTERRUPT_ENABLE:
+      attributes:
+        id: PendSV_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-2_0_HANDLER:
+      attributes:
+        id: NVIC_-2_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: xPortPendSVHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PendSV_INTERRUPT_HANDLER:
+      attributes:
+        id: PendSV_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: xPortPendSVHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_-2_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_-2_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PendSV_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: PendSV_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SVCall_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SVCall_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-5_0_ENABLE:
+      attributes:
+        id: NVIC_-5_0_ENABLE
+        label: Enable SuperVisor Call Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SVCall_INTERRUPT_ENABLE:
+      attributes:
+        id: SVCall_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-5_0_HANDLER:
+      attributes:
+        id: NVIC_-5_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: vPortSVCHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SVCall_INTERRUPT_HANDLER:
+      attributes:
+        id: SVCall_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: vPortSVCHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_-5_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_-5_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SVCall_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SVCall_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-1_0_PRIORITY_LOCK:
+      attributes:
+        id: NVIC_-1_0_PRIORITY_LOCK
+        label: Priority Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_-1_0_PRIORITY:
+      attributes:
+        id: NVIC_-1_0_PRIORITY
+        label: Priority
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '7'
+          type: Dynamic
+        type: Values
+      type: Combo
+    NVIC_-5_0_PRIORITY_LOCK:
+      attributes:
+        id: NVIC_-5_0_PRIORITY_LOCK
+        label: Priority Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    MCLK_APBA_INITIAL_VALUE:
+      attributes:
+        id: MCLK_APBA_INITIAL_VALUE
+        label: MCLK_APBA_INITIAL_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x37ff'
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_CLOCK_FREQUENCY:
+      attributes:
+        id: EIC_CLOCK_FREQUENCY
+        label: EIC Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_4_FREQ:
+      attributes:
+        id: GCLK_ID_4_FREQ
+        label: 'Peripheral Channel 4 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_4_CHEN:
+      attributes:
+        id: GCLK_ID_4_CHEN
+        label: Peripheral Channel 4 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_CLOCK_ENABLE:
+      attributes:
+        id: EIC_CLOCK_ENABLE
+        label: EIC Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    XOSC0_FREQ:
+      attributes:
+        id: XOSC0_FREQ
+        label: XOSC0 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC0_ENABLE:
+      attributes:
+        id: CONFIG_CLOCK_XOSC0_ENABLE
+        label: External Multipurpose Crystal Oscillator(XOSC) Enable
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    XOSC0_IMULT:
+      attributes:
+        id: XOSC0_IMULT
+        label: Oscillator Current Multiplier
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '6'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XOSC0_IPTAT:
+      attributes:
+        id: XOSC0_IPTAT
+        label: Oscillator Current Reference
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC0_FREQUENCY:
+      attributes:
+        id: CONFIG_CLOCK_XOSC0_FREQUENCY
+        label: Frequency
+      children:
+      - children:
+        - attributes:
+            value: '16000000'
+          type: User
+        type: Values
+      type: Integer
+    XOSC0_OSCILLATOR_MODE:
+      attributes:
+        id: XOSC0_OSCILLATOR_MODE
+        label: 'External Oscillator Mode '
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_14_MODE:
+      attributes:
+        id: PIN_14_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_14_FUNCTION_TYPE:
+      attributes:
+        id: PIN_14_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG7:
+      attributes:
+        id: PORT_GROUP_1_PINCFG7
+        label: PORT GROUP B PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x40'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_7_USED
+        label: PORT_GROUP_1_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_14_INEN:
+      attributes:
+        id: PIN_14_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_DIR:
+      attributes:
+        id: PORT_GROUP_1_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x380'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_14_DIR:
+      attributes:
+        id: PIN_14_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX3:
+      attributes:
+        id: PORT_GROUP_1_PMUX3
+        label: PORT GROUP B PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_7:
+      attributes:
+        id: PORT_GROUP_1_PAD_7
+        label: PORT_GROUP_1_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB07
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_14_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_14_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_14_FUNCTION_NAME:
+      attributes:
+        id: PIN_14_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: PM_EN
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_OUT:
+      attributes:
+        id: PORT_GROUP_1_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_14_LAT:
+      attributes:
+        id: PIN_14_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_14_DRVSTR:
+      attributes:
+        id: PIN_14_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_15_MODE:
+      attributes:
+        id: PIN_15_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_15_FUNCTION_TYPE:
+      attributes:
+        id: PIN_15_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG8:
+      attributes:
+        id: PORT_GROUP_1_PINCFG8
+        label: PORT GROUP B PINCFG8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x40'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_8_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_8_USED
+        label: PORT_GROUP_1_PIN_8_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_15_INEN:
+      attributes:
+        id: PIN_15_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_15_DIR:
+      attributes:
+        id: PIN_15_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX4:
+      attributes:
+        id: PORT_GROUP_1_PMUX4
+        label: PORT GROUP B PMUX4
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_8:
+      attributes:
+        id: PORT_GROUP_1_PAD_8
+        label: PORT_GROUP_1_PAD_8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB08
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_15_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_15_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_15_FUNCTION_NAME:
+      attributes:
+        id: PIN_15_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: BLDC_EN
+          type: User
+        type: Values
+      type: String
+    PIN_15_LAT:
+      attributes:
+        id: PIN_15_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_15_DRVSTR:
+      attributes:
+        id: PIN_15_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_16_MODE:
+      attributes:
+        id: PIN_16_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_16_FUNCTION_TYPE:
+      attributes:
+        id: PIN_16_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG9:
+      attributes:
+        id: PORT_GROUP_1_PINCFG9
+        label: PORT GROUP B PINCFG9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x40'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_9_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_9_USED
+        label: PORT_GROUP_1_PIN_9_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_16_INEN:
+      attributes:
+        id: PIN_16_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_16_DIR:
+      attributes:
+        id: PIN_16_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_9:
+      attributes:
+        id: PORT_GROUP_1_PAD_9
+        label: PORT_GROUP_1_PAD_9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB09
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_16_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_16_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_16_FUNCTION_NAME:
+      attributes:
+        id: PIN_16_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SM_EN
+          type: User
+        type: Values
+      type: String
+    PIN_16_DRVSTR:
+      attributes:
+        id: PIN_16_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_85_MODE:
+      attributes:
+        id: PIN_85_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_85_FUNCTION_TYPE:
+      attributes:
+        id: PIN_85_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG27:
+      attributes:
+        id: PORT_GROUP_2_PINCFG27
+        label: PORT GROUP C PINCFG27
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x40'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_27_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_27_USED
+        label: PORT_GROUP_2_PIN_27_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_85_INEN:
+      attributes:
+        id: PIN_85_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_DIR:
+      attributes:
+        id: PORT_GROUP_2_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x8000002'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_85_DIR:
+      attributes:
+        id: PIN_85_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX13:
+      attributes:
+        id: PORT_GROUP_2_PMUX13
+        label: PORT GROUP C PMUX13
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_27:
+      attributes:
+        id: PORT_GROUP_2_PAD_27
+        label: PORT_GROUP_2_PAD_27
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC27
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_85_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_85_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_85_FUNCTION_NAME:
+      attributes:
+        id: PIN_85_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Servo_EN
+          type: User
+        type: Values
+      type: String
+    PIN_85_DRVSTR:
+      attributes:
+        id: PIN_85_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_4_MODE:
+      attributes:
+        id: PIN_4_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_4_FUNCTION_TYPE:
+      attributes:
+        id: PIN_4_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG1:
+      attributes:
+        id: PORT_GROUP_2_PINCFG1
+        label: PORT GROUP C PINCFG1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_1_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_1_USED
+        label: PORT_GROUP_2_PIN_1_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_4_INEN:
+      attributes:
+        id: PIN_4_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_4_DIR:
+      attributes:
+        id: PIN_4_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX0:
+      attributes:
+        id: PORT_GROUP_2_PMUX0
+        label: PORT GROUP C PMUX0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_1:
+      attributes:
+        id: PORT_GROUP_2_PAD_1
+        label: PORT_GROUP_2_PAD_1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC01
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_4_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_4_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_4_FUNCTION_NAME:
+      attributes:
+        id: PIN_4_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: LED_control
+          type: User
+        type: Values
+      type: String
+    PIN_74_MODE:
+      attributes:
+        id: PIN_74_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_74_FUNCTION_TYPE:
+      attributes:
+        id: PIN_74_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: USB_DM
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX12:
+      attributes:
+        id: PORT_GROUP_0_PMUX12
+        label: PORT GROUP A PMUX12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x77'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_24:
+      attributes:
+        id: PORT_GROUP_0_PAD_24
+        label: PORT_GROUP_0_PAD_24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA24
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG24:
+      attributes:
+        id: PORT_GROUP_0_PINCFG24
+        label: PORT GROUP A PINCFG24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_24_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_24_USED
+        label: PORT_GROUP_0_PIN_24_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_74_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_74_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_75_MODE:
+      attributes:
+        id: PIN_75_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_75_FUNCTION_TYPE:
+      attributes:
+        id: PIN_75_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: USB_DP
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG25:
+      attributes:
+        id: PORT_GROUP_0_PINCFG25
+        label: PORT GROUP A PINCFG25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_25_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_25_USED
+        label: PORT_GROUP_0_PIN_25_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_0_PAD_25:
+      attributes:
+        id: PORT_GROUP_0_PAD_25
+        label: PORT_GROUP_0_PAD_25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA25
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_75_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_75_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_78_MODE:
+      attributes:
+        id: PIN_78_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_78_FUNCTION_TYPE:
+      attributes:
+        id: PIN_78_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: OSCCTRL_XIN1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX11:
+      attributes:
+        id: PORT_GROUP_1_PMUX11
+        label: PORT GROUP B PMUX11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x60'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_22:
+      attributes:
+        id: PORT_GROUP_1_PAD_22
+        label: PORT_GROUP_1_PAD_22
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB22
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG22:
+      attributes:
+        id: PORT_GROUP_1_PINCFG22
+        label: PORT GROUP B PINCFG22
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_22_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_22_USED
+        label: PORT_GROUP_1_PIN_22_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_78_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_78_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: XIN1
+          type: User
+        type: Values
+      type: String
+    XOSC1_FREQ:
+      attributes:
+        id: XOSC1_FREQ
+        label: XOSC1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '16000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC1_ENABLE:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_ENABLE
+        label: External Multipurpose Crystal Oscillator(XOSC) Enable
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XOSC1_IMULT:
+      attributes:
+        id: XOSC1_IMULT
+        label: Oscillator Current Multiplier
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '6'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XOSC1_IPTAT:
+      attributes:
+        id: XOSC1_IPTAT
+        label: Oscillator Current Reference
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC1_FREQUENCY:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_FREQUENCY
+        label: Frequency
+      children:
+      - children:
+        - attributes:
+            value: '16000000'
+          type: User
+        type: Values
+      type: Integer
+    XOSC1_OSCILLATOR_MODE:
+      attributes:
+        id: XOSC1_OSCILLATOR_MODE
+        label: 'External Oscillator Mode '
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_79_MODE:
+      attributes:
+        id: PIN_79_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_79_FUNCTION_TYPE:
+      attributes:
+        id: PIN_79_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: PDEC_QDI0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_23:
+      attributes:
+        id: PORT_GROUP_1_PAD_23
+        label: PORT_GROUP_1_PAD_23
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB23
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG23:
+      attributes:
+        id: PORT_GROUP_1_PINCFG23
+        label: PORT GROUP B PINCFG23
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_23_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_23_USED
+        label: PORT_GROUP_1_PIN_23_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_79_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_79_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: G
+          type: User
+        type: Values
+      type: String
+    PIN_80_MODE:
+      attributes:
+        id: PIN_80_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_80_FUNCTION_TYPE:
+      attributes:
+        id: PIN_80_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: PDEC_QDI1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX12:
+      attributes:
+        id: PORT_GROUP_1_PMUX12
+        label: PORT GROUP B PMUX12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x66'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_24:
+      attributes:
+        id: PORT_GROUP_1_PAD_24
+        label: PORT_GROUP_1_PAD_24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB24
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG24:
+      attributes:
+        id: PORT_GROUP_1_PINCFG24
+        label: PORT GROUP B PINCFG24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_24_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_24_USED
+        label: PORT_GROUP_1_PIN_24_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_80_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_80_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: G
+          type: User
+        type: Values
+      type: String
+    PIN_81_MODE:
+      attributes:
+        id: PIN_81_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_81_FUNCTION_TYPE:
+      attributes:
+        id: PIN_81_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: PDEC_QDI2
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_25:
+      attributes:
+        id: PORT_GROUP_1_PAD_25
+        label: PORT_GROUP_1_PAD_25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB25
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG25:
+      attributes:
+        id: PORT_GROUP_1_PINCFG25
+        label: PORT GROUP B PINCFG25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_25_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_25_USED
+        label: PORT_GROUP_1_PIN_25_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_81_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_81_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: G
+          type: User
+        type: Values
+      type: String
+    PIN_64_MODE:
+      attributes:
+        id: PIN_64_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_64_FUNCTION_TYPE:
+      attributes:
+        id: PIN_64_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDCD
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX8:
+      attributes:
+        id: PORT_GROUP_1_PMUX8
+        label: PORT GROUP B PMUX8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x8'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_16:
+      attributes:
+        id: PORT_GROUP_1_PAD_16
+        label: PORT_GROUP_1_PAD_16
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB16
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG16:
+      attributes:
+        id: PORT_GROUP_1_PINCFG16
+        label: PORT GROUP B PINCFG16
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_16_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_16_USED
+        label: PORT_GROUP_1_PIN_16_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_64_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_64_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_71_MODE:
+      attributes:
+        id: PIN_71_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_71_FUNCTION_TYPE:
+      attributes:
+        id: PIN_71_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDCK
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX10:
+      attributes:
+        id: PORT_GROUP_0_PMUX10
+        label: PORT GROUP A PMUX10
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x88'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_21:
+      attributes:
+        id: PORT_GROUP_0_PAD_21
+        label: PORT_GROUP_0_PAD_21
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA21
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG21:
+      attributes:
+        id: PORT_GROUP_0_PINCFG21
+        label: PORT GROUP A PINCFG21
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_21_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_21_USED
+        label: PORT_GROUP_0_PIN_21_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_71_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_71_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_70_MODE:
+      attributes:
+        id: PIN_70_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_70_FUNCTION_TYPE:
+      attributes:
+        id: PIN_70_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDCMD
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_20:
+      attributes:
+        id: PORT_GROUP_0_PAD_20
+        label: PORT_GROUP_0_PAD_20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA20
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG20:
+      attributes:
+        id: PORT_GROUP_0_PINCFG20
+        label: PORT GROUP A PINCFG20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_20_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_20_USED
+        label: PORT_GROUP_0_PIN_20_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_70_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_70_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_66_MODE:
+      attributes:
+        id: PIN_66_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_66_FUNCTION_TYPE:
+      attributes:
+        id: PIN_66_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDDAT0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX9:
+      attributes:
+        id: PORT_GROUP_1_PMUX9
+        label: PORT GROUP B PMUX9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x88'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_18:
+      attributes:
+        id: PORT_GROUP_1_PAD_18
+        label: PORT_GROUP_1_PAD_18
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB18
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG18:
+      attributes:
+        id: PORT_GROUP_1_PINCFG18
+        label: PORT GROUP B PINCFG18
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_18_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_18_USED
+        label: PORT_GROUP_1_PIN_18_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_66_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_66_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_67_MODE:
+      attributes:
+        id: PIN_67_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_67_FUNCTION_TYPE:
+      attributes:
+        id: PIN_67_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDDAT1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG19:
+      attributes:
+        id: PORT_GROUP_1_PINCFG19
+        label: PORT GROUP B PINCFG19
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_19_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_19_USED
+        label: PORT_GROUP_1_PIN_19_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_1_PAD_19:
+      attributes:
+        id: PORT_GROUP_1_PAD_19
+        label: PORT_GROUP_1_PAD_19
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB19
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_67_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_67_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_68_MODE:
+      attributes:
+        id: PIN_68_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_68_FUNCTION_TYPE:
+      attributes:
+        id: PIN_68_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDDAT2
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX10:
+      attributes:
+        id: PORT_GROUP_1_PMUX10
+        label: PORT GROUP B PMUX10
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x88'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_20:
+      attributes:
+        id: PORT_GROUP_1_PAD_20
+        label: PORT_GROUP_1_PAD_20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB20
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG20:
+      attributes:
+        id: PORT_GROUP_1_PINCFG20
+        label: PORT GROUP B PINCFG20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_20_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_20_USED
+        label: PORT_GROUP_1_PIN_20_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_68_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_68_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_69_MODE:
+      attributes:
+        id: PIN_69_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_69_FUNCTION_TYPE:
+      attributes:
+        id: PIN_69_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SDHC1_SDDAT3
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_21:
+      attributes:
+        id: PORT_GROUP_1_PAD_21
+        label: PORT_GROUP_1_PAD_21
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB21
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG21:
+      attributes:
+        id: PORT_GROUP_1_PINCFG21
+        label: PORT GROUP B PINCFG21
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_21_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_21_USED
+        label: PORT_GROUP_1_PIN_21_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_69_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_69_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: I
+          type: User
+        type: Values
+      type: String
+    PIN_17_MODE:
+      attributes:
+        id: PIN_17_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_17_FUNCTION_TYPE:
+      attributes:
+        id: PIN_17_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM0_PAD0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX2:
+      attributes:
+        id: PORT_GROUP_0_PMUX2
+        label: PORT GROUP A PMUX2
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x33'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_4:
+      attributes:
+        id: PORT_GROUP_0_PAD_4
+        label: PORT_GROUP_0_PAD_4
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA04
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG4:
+      attributes:
+        id: PORT_GROUP_0_PINCFG4
+        label: PORT GROUP A PINCFG4
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_4_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_4_USED
+        label: PORT_GROUP_0_PIN_4_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_17_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_17_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    PIN_18_MODE:
+      attributes:
+        id: PIN_18_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_18_FUNCTION_TYPE:
+      attributes:
+        id: PIN_18_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM0_PAD1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_5:
+      attributes:
+        id: PORT_GROUP_0_PAD_5
+        label: PORT_GROUP_0_PAD_5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA05
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG5:
+      attributes:
+        id: PORT_GROUP_0_PINCFG5
+        label: PORT GROUP A PINCFG5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_5_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_5_USED
+        label: PORT_GROUP_0_PIN_5_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_18_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_18_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    PIN_19_MODE:
+      attributes:
+        id: PIN_19_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_19_FUNCTION_TYPE:
+      attributes:
+        id: PIN_19_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM0_PAD2
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX3:
+      attributes:
+        id: PORT_GROUP_0_PMUX3
+        label: PORT GROUP A PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x33'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_6:
+      attributes:
+        id: PORT_GROUP_0_PAD_6
+        label: PORT_GROUP_0_PAD_6
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA06
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG6:
+      attributes:
+        id: PORT_GROUP_0_PINCFG6
+        label: PORT GROUP A PINCFG6
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_6_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_6_USED
+        label: PORT_GROUP_0_PIN_6_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_19_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_19_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    PIN_20_MODE:
+      attributes:
+        id: PIN_20_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_20_FUNCTION_TYPE:
+      attributes:
+        id: PIN_20_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM0_PAD3
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_7:
+      attributes:
+        id: PORT_GROUP_0_PAD_7
+        label: PORT_GROUP_0_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA07
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG7:
+      attributes:
+        id: PORT_GROUP_0_PINCFG7
+        label: PORT GROUP A PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_7_USED
+        label: PORT_GROUP_0_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_20_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_20_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    SERCOM0_CORE_CLOCK_FREQUENCY:
+      attributes:
+        id: SERCOM0_CORE_CLOCK_FREQUENCY
+        label: SERCOM0_CORE Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_7_FREQ:
+      attributes:
+        id: GCLK_ID_7_FREQ
+        label: 'Peripheral Channel 7 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_7_CHEN:
+      attributes:
+        id: GCLK_ID_7_CHEN
+        label: Peripheral Channel 7 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_CORE_CLOCK_ENABLE:
+      attributes:
+        id: SERCOM0_CORE_CLOCK_ENABLE
+        label: SERCOM0_CORE Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM0_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_46_0_ENABLE:
+      attributes:
+        id: NVIC_46_0_ENABLE
+        label: Enable Serial Communication Interface 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_0_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM0_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM0_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_47_0_ENABLE:
+      attributes:
+        id: NVIC_47_0_ENABLE
+        label: Enable Serial Communication Interface 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_1_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM0_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM0_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_48_0_ENABLE:
+      attributes:
+        id: NVIC_48_0_ENABLE
+        label: Enable Serial Communication Interface 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_2_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM0_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM0_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_49_0_ENABLE:
+      attributes:
+        id: NVIC_49_0_ENABLE
+        label: Enable Serial Communication Interface 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM0_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_46_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_46_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM0_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_47_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_47_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM0_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_48_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_48_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM0_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_49_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_49_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM0_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM0_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_46_0_HANDLER:
+      attributes:
+        id: NVIC_46_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM0_0_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM0_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_47_0_HANDLER:
+      attributes:
+        id: NVIC_47_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM0_1_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM0_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_48_0_HANDLER:
+      attributes:
+        id: NVIC_48_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM0_2_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM0_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_49_0_HANDLER:
+      attributes:
+        id: NVIC_49_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM0_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM0_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: SERCOM0_SPI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_17_FUNCTION_NAME:
+      attributes:
+        id: PIN_17_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SPI_DO
+          type: User
+        type: Values
+      type: String
+    PIN_18_FUNCTION_NAME:
+      attributes:
+        id: PIN_18_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SPI_SCK
+          type: User
+        type: Values
+      type: String
+    PIN_19_FUNCTION_NAME:
+      attributes:
+        id: PIN_19_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SPI_CS
+          type: User
+        type: Values
+      type: String
+    PIN_20_FUNCTION_NAME:
+      attributes:
+        id: PIN_20_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SPI_DI
+          type: User
+        type: Values
+      type: String
+    PIN_1_MODE:
+      attributes:
+        id: PIN_1_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_1_FUNCTION_TYPE:
+      attributes:
+        id: PIN_1_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM1_PAD0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX0:
+      attributes:
+        id: PORT_GROUP_0_PMUX0
+        label: PORT GROUP A PMUX0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x33'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_0:
+      attributes:
+        id: PORT_GROUP_0_PAD_0
+        label: PORT_GROUP_0_PAD_0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA00
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG0:
+      attributes:
+        id: PORT_GROUP_0_PINCFG0
+        label: PORT GROUP A PINCFG0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_0_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_0_USED
+        label: PORT_GROUP_0_PIN_0_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_1_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_1_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    PIN_2_MODE:
+      attributes:
+        id: PIN_2_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_2_FUNCTION_TYPE:
+      attributes:
+        id: PIN_2_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM1_PAD1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_1:
+      attributes:
+        id: PORT_GROUP_0_PAD_1
+        label: PORT_GROUP_0_PAD_1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA01
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG1:
+      attributes:
+        id: PORT_GROUP_0_PINCFG1
+        label: PORT GROUP A PINCFG1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_1_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_1_USED
+        label: PORT_GROUP_0_PIN_1_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_2_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_2_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: D
+          type: User
+        type: Values
+      type: String
+    PIN_1_FUNCTION_NAME:
+      attributes:
+        id: PIN_1_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: I2C_SDA
+          type: User
+        type: Values
+      type: String
+    PIN_2_FUNCTION_NAME:
+      attributes:
+        id: PIN_2_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: I2C_SCL
+          type: User
+        type: Values
+      type: String
+    SERCOM1_CORE_CLOCK_FREQUENCY:
+      attributes:
+        id: SERCOM1_CORE_CLOCK_FREQUENCY
+        label: SERCOM1_CORE Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_8_FREQ:
+      attributes:
+        id: GCLK_ID_8_FREQ
+        label: 'Peripheral Channel 8 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_8_CHEN:
+      attributes:
+        id: GCLK_ID_8_CHEN
+        label: Peripheral Channel 8 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_CORE_CLOCK_ENABLE:
+      attributes:
+        id: SERCOM1_CORE_CLOCK_ENABLE
+        label: SERCOM1_CORE Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM1_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_50_0_ENABLE:
+      attributes:
+        id: NVIC_50_0_ENABLE
+        label: Enable Serial Communication Interface 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_0_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM1_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM1_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_51_0_ENABLE:
+      attributes:
+        id: NVIC_51_0_ENABLE
+        label: Enable Serial Communication Interface 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_1_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM1_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM1_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_52_0_ENABLE:
+      attributes:
+        id: NVIC_52_0_ENABLE
+        label: Enable Serial Communication Interface 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_2_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM1_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM1_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_53_0_ENABLE:
+      attributes:
+        id: NVIC_53_0_ENABLE
+        label: Enable Serial Communication Interface 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM1_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_50_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_50_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM1_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_51_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_51_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM1_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_52_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_52_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM1_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_53_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_53_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM1_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM1_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_50_0_HANDLER:
+      attributes:
+        id: NVIC_50_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM1_0_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM1_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_51_0_HANDLER:
+      attributes:
+        id: NVIC_51_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM1_1_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM1_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_52_0_HANDLER:
+      attributes:
+        id: NVIC_52_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM1_2_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM1_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_53_0_HANDLER:
+      attributes:
+        id: NVIC_53_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM1_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM1_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom1
+            value: SERCOM1_I2C_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_98_MODE:
+      attributes:
+        id: PIN_98_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_98_FUNCTION_TYPE:
+      attributes:
+        id: PIN_98_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX0:
+      attributes:
+        id: PORT_GROUP_1_PMUX0
+        label: PORT GROUP B PMUX0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_1:
+      attributes:
+        id: PORT_GROUP_1_PAD_1
+        label: PORT_GROUP_1_PAD_1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB01
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG1:
+      attributes:
+        id: PORT_GROUP_1_PINCFG1
+        label: PORT GROUP B PINCFG1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_1_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_1_USED
+        label: PORT_GROUP_1_PIN_1_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_98_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_98_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    EIC_EXTINT_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_ENABLE:
+      attributes:
+        id: NVIC_13_0_ENABLE
+        label: Enable EIC Channel 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_1_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_13_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_HANDLER:
+      attributes:
+        id: NVIC_13_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_1_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_1_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_1_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_34_MODE:
+      attributes:
+        id: PIN_34_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_34_FUNCTION_TYPE:
+      attributes:
+        id: PIN_34_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM4_PAD0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX6:
+      attributes:
+        id: PORT_GROUP_1_PMUX6
+        label: PORT GROUP B PMUX6
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x22'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_12:
+      attributes:
+        id: PORT_GROUP_1_PAD_12
+        label: PORT_GROUP_1_PAD_12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB12
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG12:
+      attributes:
+        id: PORT_GROUP_1_PINCFG12
+        label: PORT GROUP B PINCFG12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_12_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_12_USED
+        label: PORT_GROUP_1_PIN_12_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_34_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_34_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: C
+          type: User
+        type: Values
+      type: String
+    PIN_35_MODE:
+      attributes:
+        id: PIN_35_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_35_FUNCTION_TYPE:
+      attributes:
+        id: PIN_35_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM4_PAD1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_13:
+      attributes:
+        id: PORT_GROUP_1_PAD_13
+        label: PORT_GROUP_1_PAD_13
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB13
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG13:
+      attributes:
+        id: PORT_GROUP_1_PINCFG13
+        label: PORT GROUP B PINCFG13
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_13_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_13_USED
+        label: PORT_GROUP_1_PIN_13_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_35_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_35_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: C
+          type: User
+        type: Values
+      type: String
+    MCLK_APBD_INITIAL_VALUE:
+      attributes:
+        id: MCLK_APBD_INITIAL_VALUE
+        label: MCLK_APBD_INITIAL_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM4_CORE_CLOCK_FREQUENCY:
+      attributes:
+        id: SERCOM4_CORE_CLOCK_FREQUENCY
+        label: SERCOM4_CORE Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_34_FREQ:
+      attributes:
+        id: GCLK_ID_34_FREQ
+        label: 'Peripheral Channel 34 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_34_CHEN:
+      attributes:
+        id: GCLK_ID_34_CHEN
+        label: Peripheral Channel 34 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_CORE_CLOCK_ENABLE:
+      attributes:
+        id: SERCOM4_CORE_CLOCK_ENABLE
+        label: SERCOM4_CORE Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM4_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_62_0_ENABLE:
+      attributes:
+        id: NVIC_62_0_ENABLE
+        label: Enable Serial Communication Interface 4 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_0_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM4_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM4_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_63_0_ENABLE:
+      attributes:
+        id: NVIC_63_0_ENABLE
+        label: Enable Serial Communication Interface 4 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_1_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM4_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM4_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_64_0_ENABLE:
+      attributes:
+        id: NVIC_64_0_ENABLE
+        label: Enable Serial Communication Interface 4 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_2_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM4_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM4_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_65_0_ENABLE:
+      attributes:
+        id: NVIC_65_0_ENABLE
+        label: Enable Serial Communication Interface 4 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM4_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_62_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_62_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM4_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_63_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_63_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM4_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_64_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_64_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM4_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_65_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_65_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM4_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM4_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_62_0_HANDLER:
+      attributes:
+        id: NVIC_62_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM4_0_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM4_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_63_0_HANDLER:
+      attributes:
+        id: NVIC_63_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM4_1_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM4_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_64_0_HANDLER:
+      attributes:
+        id: NVIC_64_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM4_2_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM4_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_65_0_HANDLER:
+      attributes:
+        id: NVIC_65_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM4_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM4_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: SERCOM4_USART_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_34_FUNCTION_NAME:
+      attributes:
+        id: PIN_34_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SM_RX
+          type: User
+        type: Values
+      type: String
+    PIN_35_FUNCTION_NAME:
+      attributes:
+        id: PIN_35_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: SM_TX
+          type: User
+        type: Values
+      type: String
+    PIN_72_MODE:
+      attributes:
+        id: PIN_72_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_72_FUNCTION_TYPE:
+      attributes:
+        id: PIN_72_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM3_PAD0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX11:
+      attributes:
+        id: PORT_GROUP_0_PMUX11
+        label: PORT GROUP A PMUX11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x22'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_22:
+      attributes:
+        id: PORT_GROUP_0_PAD_22
+        label: PORT_GROUP_0_PAD_22
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA22
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG22:
+      attributes:
+        id: PORT_GROUP_0_PINCFG22
+        label: PORT GROUP A PINCFG22
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_22_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_22_USED
+        label: PORT_GROUP_0_PIN_22_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_72_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_72_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: C
+          type: User
+        type: Values
+      type: String
+    PIN_73_MODE:
+      attributes:
+        id: PIN_73_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_73_FUNCTION_TYPE:
+      attributes:
+        id: PIN_73_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: SERCOM3_PAD1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_23:
+      attributes:
+        id: PORT_GROUP_0_PAD_23
+        label: PORT_GROUP_0_PAD_23
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA23
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG23:
+      attributes:
+        id: PORT_GROUP_0_PINCFG23
+        label: PORT GROUP A PINCFG23
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_23_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_23_USED
+        label: PORT_GROUP_0_PIN_23_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_73_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_73_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: C
+          type: User
+        type: Values
+      type: String
+    SERCOM5_CORE_CLOCK_FREQUENCY:
+      attributes:
+        id: SERCOM5_CORE_CLOCK_FREQUENCY
+        label: SERCOM5_CORE Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_35_FREQ:
+      attributes:
+        id: GCLK_ID_35_FREQ
+        label: 'Peripheral Channel 35 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_35_CHEN:
+      attributes:
+        id: GCLK_ID_35_CHEN
+        label: Peripheral Channel 35 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_CORE_CLOCK_ENABLE:
+      attributes:
+        id: SERCOM5_CORE_CLOCK_ENABLE
+        label: SERCOM5_CORE Clock Enable
+      type: Boolean
+    SERCOM5_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM5_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_66_0_ENABLE:
+      attributes:
+        id: NVIC_66_0_ENABLE
+        label: Enable Serial Communication Interface 5 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_0_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM5_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    SERCOM5_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM5_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_67_0_ENABLE:
+      attributes:
+        id: NVIC_67_0_ENABLE
+        label: Enable Serial Communication Interface 5 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_1_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM5_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    SERCOM5_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM5_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_68_0_ENABLE:
+      attributes:
+        id: NVIC_68_0_ENABLE
+        label: Enable Serial Communication Interface 5 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_2_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM5_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    SERCOM5_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM5_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_69_0_ENABLE:
+      attributes:
+        id: NVIC_69_0_ENABLE
+        label: Enable Serial Communication Interface 5 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM5_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_66_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_66_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM5_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_67_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_67_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM5_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_68_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_68_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM5_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_69_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_69_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM5_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM5_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_66_0_HANDLER:
+      attributes:
+        id: NVIC_66_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM5_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM5_0_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM5_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    NVIC_67_0_HANDLER:
+      attributes:
+        id: NVIC_67_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM5_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM5_1_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM5_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    NVIC_68_0_HANDLER:
+      attributes:
+        id: NVIC_68_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM5_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM5_2_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM5_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    NVIC_69_0_HANDLER:
+      attributes:
+        id: NVIC_69_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM5_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM5_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM5_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    MCLK_APBB_INITIAL_VALUE:
+      attributes:
+        id: MCLK_APBB_INITIAL_VALUE
+        label: MCLK_APBB_INITIAL_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x18456'
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM3_CORE_CLOCK_FREQUENCY:
+      attributes:
+        id: SERCOM3_CORE_CLOCK_FREQUENCY
+        label: SERCOM3_CORE Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_24_FREQ:
+      attributes:
+        id: GCLK_ID_24_FREQ
+        label: 'Peripheral Channel 24 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_24_CHEN:
+      attributes:
+        id: GCLK_ID_24_CHEN
+        label: Peripheral Channel 24 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_CORE_CLOCK_ENABLE:
+      attributes:
+        id: SERCOM3_CORE_CLOCK_ENABLE
+        label: SERCOM3_CORE Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM3_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_58_0_ENABLE:
+      attributes:
+        id: NVIC_58_0_ENABLE
+        label: Enable Serial Communication Interface 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_0_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM3_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM3_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_59_0_ENABLE:
+      attributes:
+        id: NVIC_59_0_ENABLE
+        label: Enable Serial Communication Interface 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_1_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM3_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM3_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_60_0_ENABLE:
+      attributes:
+        id: NVIC_60_0_ENABLE
+        label: Enable Serial Communication Interface 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_2_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM3_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SERCOM3_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_61_0_ENABLE:
+      attributes:
+        id: NVIC_61_0_ENABLE
+        label: Enable Serial Communication Interface 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: SERCOM3_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_58_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_58_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM3_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_59_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_59_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM3_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_60_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_60_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM3_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_61_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_61_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SERCOM3_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SERCOM3_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_58_0_HANDLER:
+      attributes:
+        id: NVIC_58_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM3_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM3_0_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM3_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: SERCOM3_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_59_0_HANDLER:
+      attributes:
+        id: NVIC_59_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM3_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM3_1_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM3_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: SERCOM3_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_60_0_HANDLER:
+      attributes:
+        id: NVIC_60_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM3_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM3_2_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM3_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: SERCOM3_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_61_0_HANDLER:
+      attributes:
+        id: NVIC_61_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SERCOM3_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    SERCOM3_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: SERCOM3_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom3
+            value: SERCOM3_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_82_MODE:
+      attributes:
+        id: PIN_82_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_82_FUNCTION_TYPE:
+      attributes:
+        id: PIN_82_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT8
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX12:
+      attributes:
+        id: PORT_GROUP_2_PMUX12
+        label: PORT GROUP C PMUX12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_24:
+      attributes:
+        id: PORT_GROUP_2_PAD_24
+        label: PORT_GROUP_2_PAD_24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC24
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG24:
+      attributes:
+        id: PORT_GROUP_2_PINCFG24
+        label: PORT GROUP C PINCFG24
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_24_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_24_USED
+        label: PORT_GROUP_2_PIN_24_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_82_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_82_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_82_FUNCTION_NAME:
+      attributes:
+        id: PIN_82_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Input_SEL
+          type: User
+        type: Values
+      type: String
+    PIN_98_FUNCTION_NAME:
+      attributes:
+        id: PIN_98_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Output_SEL
+          type: User
+        type: Values
+      type: String
+    PIN_86_MODE:
+      attributes:
+        id: PIN_86_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_86_FUNCTION_TYPE:
+      attributes:
+        id: PIN_86_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT12
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX14:
+      attributes:
+        id: PORT_GROUP_2_PMUX14
+        label: PORT GROUP C PMUX14
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_28:
+      attributes:
+        id: PORT_GROUP_2_PAD_28
+        label: PORT_GROUP_2_PAD_28
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC28
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG28:
+      attributes:
+        id: PORT_GROUP_2_PINCFG28
+        label: PORT GROUP C PINCFG28
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_28_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_28_USED
+        label: PORT_GROUP_2_PIN_28_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_86_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_86_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_87_MODE:
+      attributes:
+        id: PIN_87_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_87_FUNCTION_TYPE:
+      attributes:
+        id: PIN_87_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT11
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX13:
+      attributes:
+        id: PORT_GROUP_0_PMUX13
+        label: PORT GROUP A PMUX13
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_27:
+      attributes:
+        id: PORT_GROUP_0_PAD_27
+        label: PORT_GROUP_0_PAD_27
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA27
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG27:
+      attributes:
+        id: PORT_GROUP_0_PINCFG27
+        label: PORT GROUP A PINCFG27
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_27_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_27_USED
+        label: PORT_GROUP_0_PIN_27_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_87_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_87_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_84_MODE:
+      attributes:
+        id: PIN_84_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_84_FUNCTION_TYPE:
+      attributes:
+        id: PIN_84_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT10
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG26:
+      attributes:
+        id: PORT_GROUP_2_PINCFG26
+        label: PORT GROUP C PINCFG26
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_26_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_26_USED
+        label: PORT_GROUP_2_PIN_26_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_2_PAD_26:
+      attributes:
+        id: PORT_GROUP_2_PAD_26
+        label: PORT_GROUP_2_PAD_26
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC26
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_84_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_84_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_84_FUNCTION_NAME:
+      attributes:
+        id: PIN_84_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: ENC_SEL
+          type: User
+        type: Values
+      type: String
+    PIN_86_FUNCTION_NAME:
+      attributes:
+        id: PIN_86_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: ENC_A
+          type: User
+        type: Values
+      type: String
+    PIN_87_FUNCTION_NAME:
+      attributes:
+        id: PIN_87_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: ENC_B
+          type: User
+        type: Values
+      type: String
+    PIN_3_MODE:
+      attributes:
+        id: PIN_3_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_3_FUNCTION_TYPE:
+      attributes:
+        id: PIN_3_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_0:
+      attributes:
+        id: PORT_GROUP_2_PAD_0
+        label: PORT_GROUP_2_PAD_0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC00
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG0:
+      attributes:
+        id: PORT_GROUP_2_PINCFG0
+        label: PORT GROUP C PINCFG0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_0_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_0_USED
+        label: PORT_GROUP_2_PIN_0_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_3_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_3_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_3_FUNCTION_NAME:
+      attributes:
+        id: PIN_3_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: PD_IRQ
+          type: User
+        type: Values
+      type: String
+    PIN_36_MODE:
+      attributes:
+        id: PIN_36_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_36_FUNCTION_TYPE:
+      attributes:
+        id: PIN_36_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: EIC_EXTINT14
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX7:
+      attributes:
+        id: PORT_GROUP_1_PMUX7
+        label: PORT GROUP B PMUX7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_14:
+      attributes:
+        id: PORT_GROUP_1_PAD_14
+        label: PORT_GROUP_1_PAD_14
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB14
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG14:
+      attributes:
+        id: PORT_GROUP_1_PINCFG14
+        label: PORT GROUP B PINCFG14
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_14_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_14_USED
+        label: PORT_GROUP_1_PIN_14_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_36_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_36_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_36_FUNCTION_NAME:
+      attributes:
+        id: PIN_36_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: BLDC_FAULT
+          type: User
+        type: Values
+      type: String
+    EIC_EXTINT_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_12_0_ENABLE:
+      attributes:
+        id: NVIC_12_0_ENABLE
+        label: Enable EIC Channel 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_0_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_12_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_12_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_12_0_HANDLER:
+      attributes:
+        id: NVIC_12_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_0_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_14_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_14_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_26_0_ENABLE:
+      attributes:
+        id: NVIC_26_0_ENABLE
+        label: Enable EIC Channel 14 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_14_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_14_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_26_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_26_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_14_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_14_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_26_0_HANDLER:
+      attributes:
+        id: NVIC_26_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_14_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_14_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_14_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_14_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_8_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_8_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_20_0_ENABLE:
+      attributes:
+        id: NVIC_20_0_ENABLE
+        label: Enable EIC Channel 8 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_8_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_8_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_20_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_20_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_8_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_8_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_20_0_HANDLER:
+      attributes:
+        id: NVIC_20_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_8_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_8_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_8_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_8_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_10_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_10_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_22_0_ENABLE:
+      attributes:
+        id: NVIC_22_0_ENABLE
+        label: Enable EIC Channel 10 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_10_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_10_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_22_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_22_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_10_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_10_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_22_0_HANDLER:
+      attributes:
+        id: NVIC_22_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_10_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_10_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_10_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_10_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_11_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_11_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_23_0_ENABLE:
+      attributes:
+        id: NVIC_23_0_ENABLE
+        label: Enable EIC Channel 11 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_11_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_11_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_23_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_23_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_11_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_11_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_23_0_HANDLER:
+      attributes:
+        id: NVIC_23_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_11_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_11_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_11_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_11_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_12_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EIC_EXTINT_12_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_24_0_ENABLE:
+      attributes:
+        id: NVIC_24_0_ENABLE
+        label: Enable EIC Channel 12 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_12_INTERRUPT_ENABLE:
+      attributes:
+        id: EIC_EXTINT_12_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_24_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_24_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EIC_EXTINT_12_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EIC_EXTINT_12_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_24_0_HANDLER:
+      attributes:
+        id: NVIC_24_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EIC_EXTINT_12_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    EIC_EXTINT_12_INTERRUPT_HANDLER:
+      attributes:
+        id: EIC_EXTINT_12_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: eic
+            value: EIC_EXTINT_12_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    USB_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: USB_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_80_0_ENABLE:
+      attributes:
+        id: NVIC_80_0_ENABLE
+        label: Enable Universal Serial Bus Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: USB_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_80_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_80_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: USB_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_80_0_HANDLER:
+      attributes:
+        id: NVIC_80_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: USB_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    USB_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: USB_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    USB_SOF_HSOF_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: USB_SOF_HSOF_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_81_0_ENABLE:
+      attributes:
+        id: NVIC_81_0_ENABLE
+        label: Enable USB Start of Frame Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_SOF_HSOF_INTERRUPT_ENABLE:
+      attributes:
+        id: USB_SOF_HSOF_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_81_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_81_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_SOF_HSOF_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: USB_SOF_HSOF_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_81_0_HANDLER:
+      attributes:
+        id: NVIC_81_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: USB_SOF_HSOF_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    USB_SOF_HSOF_INTERRUPT_HANDLER:
+      attributes:
+        id: USB_SOF_HSOF_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    USB_TRCPT0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: USB_TRCPT0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_82_0_ENABLE:
+      attributes:
+        id: NVIC_82_0_ENABLE
+        label: Enable USB Transfer Complete 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_TRCPT0_INTERRUPT_ENABLE:
+      attributes:
+        id: USB_TRCPT0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_82_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_82_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_TRCPT0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: USB_TRCPT0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_82_0_HANDLER:
+      attributes:
+        id: NVIC_82_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: USB_TRCPT0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    USB_TRCPT0_INTERRUPT_HANDLER:
+      attributes:
+        id: USB_TRCPT0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    USB_TRCPT1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: USB_TRCPT1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_83_0_ENABLE:
+      attributes:
+        id: NVIC_83_0_ENABLE
+        label: Enable USB Transfer Complete 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_TRCPT1_INTERRUPT_ENABLE:
+      attributes:
+        id: USB_TRCPT1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_83_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_83_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_TRCPT1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: USB_TRCPT1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_83_0_HANDLER:
+      attributes:
+        id: NVIC_83_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: USB_TRCPT1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    USB_TRCPT1_INTERRUPT_HANDLER:
+      attributes:
+        id: USB_TRCPT1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    USB_CLOCK_FREQUENCY:
+      attributes:
+        id: USB_CLOCK_FREQUENCY
+        label: USB Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_10_FREQ:
+      attributes:
+        id: GCLK_ID_10_FREQ
+        label: 'Peripheral Channel 10 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_10_CHEN:
+      attributes:
+        id: GCLK_ID_10_CHEN
+        label: Peripheral Channel 10 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USB_CLOCK_ENABLE:
+      attributes:
+        id: USB_CLOCK_ENABLE
+        label: USB Clock Enable
+      type: Boolean
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '0'
+        canvasWidth: '0'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData

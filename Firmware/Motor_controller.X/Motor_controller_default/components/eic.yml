@@ -181,6 +181,10 @@ data:
       children:
       - children:
         - attributes:
+            id: pmsm_foc
+            value: 'true'
+          type: Dynamic
+        - attributes:
             value: 'true'
           type: User
         type: Values
@@ -388,6 +392,10 @@ data:
       children:
       - children:
         - attributes:
+            id: pmsm_foc
+            value: '2'
+          type: Dynamic
+        - attributes:
             value: '2'
           type: User
         type: Values
@@ -591,7 +599,7 @@ data:
       - children:
         - attributes:
             id: eic
-            value: '0'
+            value: '16384'
           type: Dynamic
         type: Values
       type: Hex
@@ -629,6 +637,13 @@ data:
       attributes:
         id: EIC_EXTINTEO_14
         label: Enable Event Output
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: 'true'
+          type: Dynamic
+        type: Values
       type: Boolean
     EIC_EXTINTEO_15:
       attributes:
