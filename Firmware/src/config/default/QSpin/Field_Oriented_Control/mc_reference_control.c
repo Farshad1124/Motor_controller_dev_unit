@@ -60,8 +60,6 @@ typedef struct
     bool initDone;
     float32_t lowerLimit;
     float32_t upperLimit;
-    float32_t reference;
-    float32_t rampRate;
 }tmcRef_State_s;
 
 /*******************************************************************************
@@ -178,36 +176,20 @@ void mcRefI_ReferenceControl(  tmcRef_Parameters_s * const pParameters,
      if( pState->enable )
      {
          /** Execute reference control */
-         if( ( pState->reference + pState->rampRate ) < command )
-         {
-             /** Ramp-up*/
-             pState->reference += pState->rampRate;
-         }
-         else if( ( pState->reference - pState->rampRate ) > command )
-         {
-             /** Ramp-down */
-             pState->reference -= pState->rampRate;
-         }
-         else
-         {
-             pState->reference = command;
-         }
-
          /** Clamp the reference  */
-         if( pState->reference > pState->upperLimit )
+         if( command > pState->upperLimit )
          {
-             pState->reference = pState->upperLimit;
+             *pOut = pState->upperLimit;
          }
-         else if( pState->reference < pState->lowerLimit)
+         else if( command < pState->lowerLimit)
          {
-             pState->reference = pState->lowerLimit;
+             *pOut = pState->lowerLimit;
          }
          else
          {
-             /** For MISRA Compliance */
+             *pOut = command;
          }
 
-         *pOut = pState->reference;
      }
      else
      {
@@ -224,10 +206,4 @@ void mcRefI_ReferenceControl(  tmcRef_Parameters_s * const pParameters,
  */
 void mcRefI_ReferenceControlReset( tmcRef_Parameters_s * const pParameters )
 {
-    /** Get the linked state variable */
-    tmcRef_State_s * pState;
-    pState = (tmcRef_State_s *)pParameters->pStatePointer;
-
-    /** Reset reference control state variables  */
-    pState->reference = pState->lowerLimit;
 }

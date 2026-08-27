@@ -8074,6 +8074,76 @@ data:
           type: Dynamic
         type: Values
       type: Boolean
+    MCLK_APBC_INITIAL_VALUE:
+      attributes:
+        id: MCLK_APBC_INITIAL_VALUE
+        label: MCLK_APBC_INITIAL_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x2000'
+          type: Dynamic
+        type: Values
+      type: String
+    TCC3_CLOCK_FREQUENCY:
+      attributes:
+        id: TCC3_CLOCK_FREQUENCY
+        label: TCC3 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_29_FREQ:
+      attributes:
+        id: GCLK_ID_29_FREQ
+        label: 'Peripheral Channel 29 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_29_CHEN:
+      attributes:
+        id: GCLK_ID_29_CHEN
+        label: Peripheral Channel 29 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC3_CLOCK_ENABLE:
+      attributes:
+        id: TCC3_CLOCK_ENABLE
+        label: TCC3 Clock Enable
+      type: Boolean
+    TCC2_CLOCK_FREQUENCY:
+      attributes:
+        id: TCC2_CLOCK_FREQUENCY
+        label: TCC2 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCC2_CLOCK_ENABLE:
+      attributes:
+        id: TCC2_CLOCK_ENABLE
+        label: TCC2 Clock Enable
+      type: Boolean
   userData:
     children:
     - attributes:

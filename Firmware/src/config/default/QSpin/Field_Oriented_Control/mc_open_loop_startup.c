@@ -60,7 +60,7 @@ Local configuration options
 *******************************************************************************/
 typedef enum
 {
-  startupState_Align,
+  startupState_Ipd,
   startupState_Ramp,
   startupState_Stabilize
 }tmcSup_State_e;
@@ -147,7 +147,7 @@ void  mcSupI_OpenLoopStartupInit( tmcSup_Parameters_s * const pParameters )
     pState->openLoopSpeed= 0.0f;
 
     /** Set the initial state of the state machine  */
-    pState->StartupState = startupState_Align;
+    pState->StartupState = startupState_Ipd;
 
     /** Set initialization flag as true */
     pState->initDone = true;
@@ -239,35 +239,12 @@ tmcTypes_StdReturn_e mcSupI_OpenLoopStartup( const tmcSup_Parameters_s * const p
         /** Execute open loop start-up */
         switch(pState->StartupState)
         {
-            case startupState_Align:
+            case startupState_Ipd:
             {
 
-                ++pState->zCounter;
 
-                if( pState->zCounter <= ( pState->alignmentTimeLoopCount >> 1u ) )
-                {
-                *pIQref = direction * pState->alignmentCurrent;
-                *pIDref = 0.0f;
-
-                pState->openLoopAngle = ONE_PI;
-                }
-                else if( pState->zCounter <= pState->alignmentTimeLoopCount )
-                {
-                *pIQref = direction * pState->alignmentCurrent;
-                *pIDref = 0.0f;
-
-                 pState->openLoopAngle = -direction * ONE_PI_BY_TWO;
-                }
-                else
-                {
-                    pState->StartupState = startupState_Ramp;
-
-                    /** Reset counter */
-                    pState->zCounter = 0u;
-                }
-
-                /** Truncate angle from 0 to 2Pi */
-                mcUtils_TruncateAngle0To2Pi(&pState->openLoopAngle);
+                pState->openLoopAngle = *pAngle;
+                pState->StartupState = startupState_Ramp;
 
                 break;
             }
@@ -344,7 +321,7 @@ void mcSupI_OpenLoopStartupReset( const tmcSup_Parameters_s * const pParameters 
     pState = (tmcSup_State_s *)pParameters->pStatePointer;
 
     /** Reset open loop startup state variables  */
-    pState->StartupState = startupState_Align;
+    pState->StartupState = startupState_Ramp;
     pState->openLoopSpeed = 0.0f;
     pState->openLoopAngle = 0.0f;
     pState->zCounter = 0u;

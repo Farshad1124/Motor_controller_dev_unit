@@ -44,8 +44,8 @@ data:
     - children:
       - attributes:
           id: pmsm_motor
-          x: '296'
-          y: '572'
+          x: '98'
+          y: '201'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph

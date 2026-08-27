@@ -148,7 +148,7 @@ __STATIC_FORCEINLINE void mcHalI_PhaseBCurrentGet( void )
 __STATIC_FORCEINLINE void mcHalI_DcLinkVoltageGet( void )
 {
     /** Get ADC value for DC bus voltage */
-    //mcHalI_UbusAdcInput_gdu16 = ** Select **_ConversionResultGet();
+    mcHalI_UbusAdcInput_gdu16 = ADC0_ConversionResultGet();
 }
 
 /**
@@ -206,7 +206,7 @@ __STATIC_FORCEINLINE void mcHalI_PotentiometerChannelSelect( void )
  */
 __STATIC_FORCEINLINE void mcHalI_DcLinkVoltageChannelSelect( void  )
 {
-   // ** Select **_ChannelSelect( ADC_POSINPUT_AIN** Select **, ADC_NEGINPUT_GND);
+   ADC0_ChannelSelect( ADC_POSINPUT_AIN11, ADC_NEGINPUT_GND);
 }
 
 /**

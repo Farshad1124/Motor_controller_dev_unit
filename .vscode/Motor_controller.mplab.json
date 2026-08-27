@@ -128,7 +128,6 @@
                 "compiler++.generate-micro-compressed-code": false,
                 "compiler++.isolate-each-function": true,
                 "compiler++.make-warnings-into-errors": false,
-                "compiler++.optimization-level": "-O1",
                 "compiler++.place-data-into-section": false,
                 "compiler++.post-instruction-scheduling": "default",
                 "compiler++.pre-instruction-scheduling": "default",
@@ -198,7 +197,8 @@
                     "SCOPE_SIZE=4096",
                     "__GENERIC_MICROCHIP_PIC32__"
                 ],
-                "compiler.optimization-level": "-O1"
+                "compiler.optimization-level": "-O1",
+                "compiler++.optimization-level": "-O1"
             }
         },
         {
@@ -447,7 +447,8 @@
                 "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_reference_control.h",
                 "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_rotor_position_estimation.h",
                 "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_speed_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_torque_control.h"
+                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_torque_control.h",
+                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_initial_position_detection.h"
             ]
         }
     ]

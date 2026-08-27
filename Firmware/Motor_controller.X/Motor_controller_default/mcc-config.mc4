@@ -41,19 +41,21 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Current_Calculation\mc_current_calculation.h
   hash: e1f629c666a937a3b56d2ae461d7c7b3dee3677cea7f89ccb9dd1ce8909415c3
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_field_oriented_control.c
-  hash: c3e32d84393815cfd1f8b815920aa04095e9b07a40567d1cba0e27a487606906
+  hash: 598147ee12ae1bc591312b3279846c6dff737951b4f8ca167342bdab9d5ced72
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_field_oriented_control.h
-  hash: 9556c15c786697d1e54e96a886507a0f1f233034ac00aa885f752b39ba3b5494
+  hash: 4373b53e37100d7147af26449f98756b78a06883fd6cf835fbe3347dc91606fd
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.c
   hash: 8f122683ae3923a73698df524626a64a8748211ce990aae881aa6ebca5d84230
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.h
   hash: d140f557de44a79b575efcf5e63fcd3cc36b35c2915b180010783c691c37aefc
+- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_initial_position_detection.h
+  hash: 9aab81414aaf01bca010a816793cf0077023e0ecda1ad5e8da6d552142b6ae7c
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.c
   hash: 005dfc9a868c1bc5ceba081fcf3a7539aa1e53fb24f81b4903ef4b5bb5b6b2e4
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.h
   hash: 9ef5691549e99d26b61d256f60b7c259c4927a5831af1a28bfcb135ae0d5ca7d
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.c
-  hash: b741ceb241e788343871cb56735ffb8f2a2f15e9130500b95d43b8492caa0d92
+  hash: a0a2fff4e2f333cc6d392a7b87aeb89d3166547569456d4c8bd51aeeeebbbc6a
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.h
   hash: 0273de9c8a91072d5a13a0b6baac21d9efc437512ecdb056064132972fb7adfa
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pi_control.c
@@ -63,9 +65,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pwm.c
   hash: bb086fe92956833c5b7daa5520ec3243171f4784993d42934da25a57f0bc8fc7
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pwm.h
-  hash: 0695ab1cad607312346604c22cf459997c75473d0d18dd1f521cb6909d6417ed
+  hash: 9fef330ae9bf9a4a43aff5f11e2dafcf5ad99a555f1334895f550c27b82a66ed
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_reference_control.c
-  hash: 2c2df8be7dc72134671c374beb1cc1ff413a10fabefb19a0b6d8cc3bb3a139a9
+  hash: 139393341ce6c2aa46737486b6b8a125cd92f4d4981685988415e83d612b4191
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_reference_control.h
   hash: fbd97bbe6768c1ddcbe9c15b262f9cc81bb1e9216bc98b98ff8ba778adc2cfa0
 - file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_rotor_position_estimation.c
@@ -93,11 +95,11 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\QSpin\Voltage_Calculation\mc_voltage_measurement.h
   hash: 4e965f2744b575be5ae68f205b532a33a989d6dadc2f17ad82c638f01fe0a181
 - file: ..\src\config\default\QSpin\mc_application.c
-  hash: ace891e635a50afa4b8b755d2279d63a5655c54850f5d919e375dff92f1829fc
+  hash: 28c2169f3b23d2ae164d73dc9b57970fb614022c4440d6d6ce3ea84259c6145f
 - file: ..\src\config\default\QSpin\mc_application.h
-  hash: 8024868b2e8774cfa3293bb2b2fd794156a2b443a8f81fd41b201193c84fe4e5
+  hash: 8f9c916eaff16002b93fdef79f8da2bb0207482f1014210107d16f8f4f68a8d3
 - file: ..\src\config\default\QSpin\mc_key_manager.c
-  hash: 895a7bddc15d389a27ee3b3114f44f125e9896fec52885be3220d82d52c73c4e
+  hash: b00ed72bd250b45c5e832972cffc41e2f314de989918b429a11bf1d020ada3dc
 - file: ..\src\config\default\QSpin\mc_key_manager.h
   hash: c0012a1593b8086b8a059fe07e8a6517dff393a6b7aef11d4c3e16f27455054c
 - file: ..\src\config\default\QSpin\mc_types.h
@@ -151,7 +153,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\eic\plib_eic.h
   hash: e9d207a12eafbaa6e6dad5daf1470bc5a85b06f6bbd2a1e16511669183a4ccc8
 - file: ..\src\config\default\peripheral\evsys\plib_evsys.c
-  hash: f6255972385bb3d5b4eca7fc9f81c3ec232599e65c59726a26a333bbf9bc96ac
+  hash: 3306e6d8def63b5ec1ff3323c2c854d32887dbf217332ea348e6ca090f310f51
 - file: ..\src\config\default\peripheral\evsys\plib_evsys.h
   hash: f13b5b105e66ed783e6eac327265ac338b19acd379df4bd2ea7b92608576d588
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.c

@@ -380,6 +380,7 @@ void mcAppI_NonISRTasks( void )
     {
         mcAppI_1msSyncCounter_gdu32 = 0u;
         mcAppI_1msTasksHandler();
+       
     }
 }
 

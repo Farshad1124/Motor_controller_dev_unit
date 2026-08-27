@@ -469,7 +469,7 @@ void mcFocI_FieldOrientedControlFast( tmcFocI_ModuleData_s * const pModule )
  */
 void mcFocI_FieldOrientedControlSlow( const tmcFocI_ModuleData_s * const pParameters )
 {
-    /** ToDO: Put appropriate tasks */
+     //mcSpeI_SpeedControlManual(&mcFoc_State_mds.bSpeedController,10);
 }
 
 /**

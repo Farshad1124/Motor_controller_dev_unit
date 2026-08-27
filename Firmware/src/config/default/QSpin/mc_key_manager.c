@@ -49,6 +49,7 @@ Headers inclusions
 /*******************************************************************************
  * Constants
  *******************************************************************************/
+#define IPD_ALGORITHM_KEY        "GET_THE_KEY_FROM_LOCAL_SALES"
 
 /*******************************************************************************
  Private data-types
@@ -101,6 +102,8 @@ void mcKeyI_KeyManagerInit(void)
 {
     char * result = NULL;
 
+    /** Initialize IPD key  */
+    result = strcpy(mcKeyI_AlgorithmKeys_gds.Keys[(uint8_t)KEY_IPD], IPD_ALGORITHM_KEY );
 
     if( NULL != result )
     {
