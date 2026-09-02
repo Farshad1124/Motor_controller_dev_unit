@@ -119,11 +119,11 @@ static inline void mcMotI_ParametersSet(tmcMot_PMSM_s * const pParameters )
     pParameters->RsInOhms = (float32_t)(12);
     pParameters->LdInHenry = (float32_t)(0.0045);
     pParameters->LqInHenry = (float32_t)(0.0045);
-    pParameters->PolePairs = (float32_t)(4);
+    pParameters->PolePairs = (float32_t)(7);
     pParameters->KeInVrmsPerKrpm = (float32_t)(2.8);
-    pParameters->IrmsMaxInAmps = (float32_t)(0.11);
-    pParameters->NratedInRpm = (float32_t)(2000);
-    pParameters->NmaxInRpm = (float32_t)(2500);
+    pParameters->IrmsMaxInAmps = (float32_t)(0);
+    pParameters->NratedInRpm = (float32_t)(0);
+    pParameters->NmaxInRpm = (float32_t)(0);
     pParameters->JmInKgPerCmSquare = 0.2f;
 }
 

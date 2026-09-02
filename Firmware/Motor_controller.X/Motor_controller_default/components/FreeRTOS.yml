@@ -66,6 +66,13 @@ data:
       attributes:
         id: FREERTOS_CPU_CLOCK_HZ
         label: CPU Clock Speed (Hz)
+      children:
+      - children:
+        - attributes:
+            id: FreeRTOS
+            value: '120000000'
+          type: Dynamic
+        type: Values
       type: Integer
     FREERTOS_DAEMON_TASK_STARTUP_HOOK:
       attributes:

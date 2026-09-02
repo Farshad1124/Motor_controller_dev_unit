@@ -28,8 +28,8 @@
 #include "definitions.h"                // SYS function prototypes
 #include "FreeRTOS.h"
 #include "task.h"
-#include "mc_application.h"             // FOC controller
-
+//#include "BLDC/FOC_PWM.h"
+#include "mc_application.h"
 #include "./RTT/SEGGER_RTT.h"
 volatile int _Cnt;
 
@@ -45,6 +45,11 @@ uint8_t LED_count = 0;
 
 void RTT_Initialize(void);
 
+/**
+ * @brief 
+ * 
+ * @param context 
+ */
 void OUTPUT_SEL_EIC_Handler(uintptr_t context)
 {
 
@@ -100,17 +105,14 @@ void BLDC_motor_test( void *pvParameters )
 
       case 1:
         mcAppI_NonISRTasks();
-
-        if (LED_count != 2)
-        {
-          mcAppI_ApplicationReset();
-          BLDC_mode++;
-        }
+        //PWM_FOC_Set(6,6,6);
+        BLDC_mode++;
       break;
 
       case 2: 
       if (LED_count != 2)
       {
+        //PWM_FOC_Disable ();
         BLDC_mode= 1;
       }
       break;
@@ -127,6 +129,9 @@ int main ( void )
     SYS_Initialize ( NULL );
     SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
     //RTT_Initialize();
+    //PWM_FOC_Initialize(5,8,20000);
+
+
     EIC_CallbackRegister(EIC_PIN_8,OUTPUT_SEL_EIC_Handler, 0);
     xTaskCreate( BLDC_motor_test, "BLDC_test", 1024, NULL, 1, NULL );
    

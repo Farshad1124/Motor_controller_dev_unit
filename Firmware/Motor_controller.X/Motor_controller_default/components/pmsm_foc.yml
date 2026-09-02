@@ -68,17 +68,11 @@ data:
         children:
         - children:
           - attributes:
-              id: targetComponentID
+              id: enabled
             children:
             - type: Value
-              value: X2Cscope
-            type: String
-          - attributes:
-              id: targetAttachmentID
-            children:
-            - type: Value
-              value: X2Cscope_Scope
-            type: String
+              value: 'false'
+            type: Boolean
           type: Attributes
         type: DirectDependency
       type: Attachments
@@ -90,25 +84,12 @@ data:
     - children:
       - attributes:
           id: pmsm_foc
-          x: '371'
-          y: '309'
+          x: '245'
+          y: '316'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph
   symbols:
-    BoardParameters.sce.ftl:
-      attributes:
-        id: BoardParameters.sce.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
     MCPMSMFOC_ADC_IP:
       attributes:
         id: MCPMSMFOC_ADC_IP
@@ -130,12 +111,6 @@ data:
       attributes:
         id: MCPMSMFOC_ALIGN_OR_DETECT_AXIS
         label: Select algorithm
-      children:
-      - children:
-        - attributes:
-            value: '2'
-          type: User
-        type: Values
       type: KeyValueSet
     MCPMSMFOC_ANALOG_FRONT_END_IA_GAIN:
       attributes:
@@ -207,7 +182,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '13.333333'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -326,9 +301,6 @@ data:
             id: pmsm_foc
             value: '** Select **'
           type: Dynamic
-        - attributes:
-            value: '11'
-          type: User
         type: Values
       type: Combo
     MCPMSMFOC_BUS_VOLTAGE_VDC_EOC_INTERRUPT_ENABLE:
@@ -340,24 +312,11 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_NAME
         label: Signal Name
-      children:
-      - children:
-        - attributes:
-            value: VDC
-          type: User
-        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_CHANNEL
         label: Old ADC channel
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '11'
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_PAD:
       attributes:
@@ -368,37 +327,11 @@ data:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_OLD_UNIT
         label: Old ADC unit
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: ADC0
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_BUS_VOLTAGE_VDC_PAD:
       attributes:
         id: MCPMSMFOC_BUS_VOLTAGE_VDC_PAD
         label: Pad
-      children:
-      - children:
-        - attributes:
-            id: comboValues
-          children:
-          - children:
-            - type: Value
-              value: '** Select **'
-            - type: Value
-              value: PA11
-            type: Values
-          type: StringList
-        type: Attributes
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '** Select **'
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_BUS_VOLTAGE_VDC_PERIPHERAL_ID:
       attributes:
@@ -408,7 +341,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: adc0
+            value: '** select **'
           type: Dynamic
         type: Values
       type: String
@@ -424,7 +357,7 @@ data:
       children:
       - children:
         - attributes:
-            value: ADC0
+            value: '** Select **'
           type: User
         type: Values
       type: Combo
@@ -432,64 +365,217 @@ data:
       attributes:
         id: MCPMSMFOC_BUTTONS_AVAILABLE
         label: Number of available buttons
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '2'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_BUTTON_0_FUNCTION:
       attributes:
         id: MCPMSMFOC_BUTTON_0_FUNCTION
         label: Function
       type: Combo
-    MCPMSMFOC_BUTTON_0_INDEX:
-      attributes:
-        id: MCPMSMFOC_BUTTON_0_INDEX
-        label: MCPMSMFOC_BUTTON_0_INDEX
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '0'
-          type: Dynamic
-        type: Values
-      type: Integer
     MCPMSMFOC_BUTTON_0_NAME:
       attributes:
         id: MCPMSMFOC_BUTTON_0_NAME
         label: Name
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: BUTTON_02
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_BUTTON_0_NUMBER:
       attributes:
         id: MCPMSMFOC_BUTTON_0_NUMBER
         label: Pin Number
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA00
+            - type: Value
+              value: PA01
+            - type: Value
+              value: PA02
+            - type: Value
+              value: PA03
+            - type: Value
+              value: PA04
+            - type: Value
+              value: PA05
+            - type: Value
+              value: PA06
+            - type: Value
+              value: PA07
+            - type: Value
+              value: PA08
+            - type: Value
+              value: PA09
+            - type: Value
+              value: PA10
+            - type: Value
+              value: PA11
+            - type: Value
+              value: PA12
+            - type: Value
+              value: PA13
+            - type: Value
+              value: PA14
+            - type: Value
+              value: PA15
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PA18
+            - type: Value
+              value: PA19
+            - type: Value
+              value: PA20
+            - type: Value
+              value: PA21
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PA23
+            - type: Value
+              value: PA24
+            - type: Value
+              value: PA25
+            - type: Value
+              value: PA27
+            - type: Value
+              value: PA30
+            - type: Value
+              value: PA31
+            - type: Value
+              value: PB00
+            - type: Value
+              value: PB02
+            - type: Value
+              value: PB03
+            - type: Value
+              value: PB04
+            - type: Value
+              value: PB05
+            - type: Value
+              value: PB06
+            - type: Value
+              value: PB07
+            - type: Value
+              value: PB08
+            - type: Value
+              value: PB09
+            - type: Value
+              value: PB10
+            - type: Value
+              value: PB11
+            - type: Value
+              value: PB12
+            - type: Value
+              value: PB13
+            - type: Value
+              value: PB14
+            - type: Value
+              value: PB15
+            - type: Value
+              value: PB16
+            - type: Value
+              value: PB17
+            - type: Value
+              value: PB18
+            - type: Value
+              value: PB19
+            - type: Value
+              value: PB20
+            - type: Value
+              value: PB21
+            - type: Value
+              value: PB22
+            - type: Value
+              value: PB23
+            - type: Value
+              value: PB24
+            - type: Value
+              value: PB25
+            - type: Value
+              value: PB30
+            - type: Value
+              value: PB31
+            - type: Value
+              value: PC00
+            - type: Value
+              value: PC01
+            - type: Value
+              value: PC02
+            - type: Value
+              value: PC03
+            - type: Value
+              value: PC05
+            - type: Value
+              value: PC06
+            - type: Value
+              value: PC07
+            - type: Value
+              value: PC10
+            - type: Value
+              value: PC11
+            - type: Value
+              value: PC12
+            - type: Value
+              value: PC13
+            - type: Value
+              value: PC14
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC16
+            - type: Value
+              value: PC17
+            - type: Value
+              value: PC18
+            - type: Value
+              value: PC19
+            - type: Value
+              value: PC20
+            - type: Value
+              value: PC21
+            - type: Value
+              value: PC24
+            - type: Value
+              value: PC25
+            - type: Value
+              value: PC26
+            - type: Value
+              value: PC27
+            - type: Value
+              value: PC28
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PC24
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_BUTTON_0_OLD_NUMBER:
       attributes:
         id: MCPMSMFOC_BUTTON_0_OLD_NUMBER
         label: Old Pin Number
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PC24
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_BUTTON_0_TYPE:
       attributes:
         id: MCPMSMFOC_BUTTON_0_TYPE
         label: Type
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: Physical
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_BUTTON_1_FUNCTION:
       attributes:
@@ -500,47 +586,215 @@ data:
       attributes:
         id: MCPMSMFOC_BUTTON_1_INDEX
         label: MCPMSMFOC_BUTTON_1_INDEX
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '1'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_BUTTON_1_NAME:
       attributes:
         id: MCPMSMFOC_BUTTON_1_NAME
         label: Name
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: BUTTON_1
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_BUTTON_1_NUMBER:
       attributes:
         id: MCPMSMFOC_BUTTON_1_NUMBER
         label: Pin Number
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA00
+            - type: Value
+              value: PA01
+            - type: Value
+              value: PA02
+            - type: Value
+              value: PA03
+            - type: Value
+              value: PA04
+            - type: Value
+              value: PA05
+            - type: Value
+              value: PA06
+            - type: Value
+              value: PA07
+            - type: Value
+              value: PA08
+            - type: Value
+              value: PA09
+            - type: Value
+              value: PA10
+            - type: Value
+              value: PA11
+            - type: Value
+              value: PA12
+            - type: Value
+              value: PA13
+            - type: Value
+              value: PA14
+            - type: Value
+              value: PA15
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PA18
+            - type: Value
+              value: PA19
+            - type: Value
+              value: PA20
+            - type: Value
+              value: PA21
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PA23
+            - type: Value
+              value: PA24
+            - type: Value
+              value: PA25
+            - type: Value
+              value: PA27
+            - type: Value
+              value: PA30
+            - type: Value
+              value: PA31
+            - type: Value
+              value: PB00
+            - type: Value
+              value: PB01
+            - type: Value
+              value: PB02
+            - type: Value
+              value: PB03
+            - type: Value
+              value: PB04
+            - type: Value
+              value: PB05
+            - type: Value
+              value: PB06
+            - type: Value
+              value: PB07
+            - type: Value
+              value: PB08
+            - type: Value
+              value: PB09
+            - type: Value
+              value: PB10
+            - type: Value
+              value: PB11
+            - type: Value
+              value: PB12
+            - type: Value
+              value: PB13
+            - type: Value
+              value: PB14
+            - type: Value
+              value: PB15
+            - type: Value
+              value: PB16
+            - type: Value
+              value: PB17
+            - type: Value
+              value: PB18
+            - type: Value
+              value: PB19
+            - type: Value
+              value: PB20
+            - type: Value
+              value: PB21
+            - type: Value
+              value: PB22
+            - type: Value
+              value: PB23
+            - type: Value
+              value: PB24
+            - type: Value
+              value: PB25
+            - type: Value
+              value: PB30
+            - type: Value
+              value: PB31
+            - type: Value
+              value: PC00
+            - type: Value
+              value: PC01
+            - type: Value
+              value: PC02
+            - type: Value
+              value: PC03
+            - type: Value
+              value: PC05
+            - type: Value
+              value: PC06
+            - type: Value
+              value: PC07
+            - type: Value
+              value: PC10
+            - type: Value
+              value: PC11
+            - type: Value
+              value: PC12
+            - type: Value
+              value: PC13
+            - type: Value
+              value: PC14
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC16
+            - type: Value
+              value: PC17
+            - type: Value
+              value: PC18
+            - type: Value
+              value: PC19
+            - type: Value
+              value: PC20
+            - type: Value
+              value: PC21
+            - type: Value
+              value: PC25
+            - type: Value
+              value: PC26
+            - type: Value
+              value: PC27
+            - type: Value
+              value: PC28
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PB01
+          type: Dynamic
+        - attributes:
+            value: PB01
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_BUTTON_1_OLD_NUMBER:
       attributes:
         id: MCPMSMFOC_BUTTON_1_OLD_NUMBER
         label: Old Pin Number
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PB01
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_BUTTON_1_TYPE:
       attributes:
         id: MCPMSMFOC_BUTTON_1_TYPE
         label: Type
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: Physical
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_CONTROL_TO_PWM_RATIO:
       attributes:
@@ -551,12 +805,6 @@ data:
       attributes:
         id: MCPMSMFOC_CONTROL_TYPE
         label: Control type
-      children:
-      - children:
-        - attributes:
-            value: '2'
-          type: User
-        type: Values
       type: KeyValueSet
     MCPMSMFOC_CURRENT_MEAS_ALGORITHM:
       attributes:
@@ -607,7 +855,7 @@ data:
       children:
       - children:
         - attributes:
-            value: 'true'
+            value: 'false'
           type: User
         type: Values
       type: Boolean
@@ -615,36 +863,16 @@ data:
       attributes:
         id: MCPMSMFOC_DATA_MONITOR_OLD_RECEIVE_PAD
         label: Old Receive pad
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '** Select **'
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_DATA_MONITOR_OLD_TRANSMIT_PAD:
       attributes:
         id: MCPMSMFOC_DATA_MONITOR_OLD_TRANSMIT_PAD
         label: Old Transmit pad
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '** Select **'
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_DATA_MONITOR_PERIPHERAL:
       attributes:
         id: MCPMSMFOC_DATA_MONITOR_PERIPHERAL
         label: Peripheral
-      children:
-      - children:
-        - attributes:
-            value: SERCOM3
-          type: User
-        type: Values
       type: Combo
     MCPMSMFOC_DATA_MONITOR_PHYSICAL_PORT:
       attributes:
@@ -658,6 +886,14 @@ data:
       children:
       - children:
         - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
             id: pmsm_foc
             value: X2Cscope
           type: Dynamic
@@ -667,57 +903,11 @@ data:
       attributes:
         id: MCPMSMFOC_DATA_MONITOR_RECEIVE_PAD
         label: Receive pad
-      children:
-      - children:
-        - attributes:
-            id: comboValues
-          children:
-          - children:
-            - type: Value
-              value: '** Select **'
-            - type: Value
-              value: PA16
-            - type: Value
-              value: PA23
-            - type: Value
-              value: PB21
-            type: Values
-          type: StringList
-        type: Attributes
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '** Select **'
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_DATA_MONITOR_TRANSMIT_PAD:
       attributes:
         id: MCPMSMFOC_DATA_MONITOR_TRANSMIT_PAD
         label: Transmit pad
-      children:
-      - children:
-        - attributes:
-            id: comboValues
-          children:
-          - children:
-            - type: Value
-              value: '** Select **'
-            - type: Value
-              value: PA17
-            - type: Value
-              value: PA22
-            - type: Value
-              value: PB20
-            type: Values
-          type: StringList
-        type: Attributes
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '** Select **'
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_DC_BUS_RATIO:
       attributes:
@@ -758,12 +948,6 @@ data:
       attributes:
         id: MCPMSMFOC_ENABLE_FLYING_START
         label: Flying Start
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     MCPMSMFOC_ENABLE_FW:
       attributes:
@@ -794,11 +978,25 @@ data:
       attributes:
         id: MCPMSMFOC_ENCODER_OLD_QEA_PAD
         label: Old QEA Pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_ENCODER_OLD_QEB_PAD:
       attributes:
         id: MCPMSMFOC_ENCODER_OLD_QEB_PAD
         label: Old QEB Pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_ENCODER_PERIPHERAL:
       attributes:
@@ -814,23 +1012,30 @@ data:
       attributes:
         id: MCPMSMFOC_ENCODER_QDEC_PULSE_PER_EREV
         label: Pulse Per electrical rotation
-      children:
-      - children:
-        - attributes:
-            id: pmsm_motor
-            value: '0'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_ENCODER_QEA_PAD:
       attributes:
         id: MCPMSMFOC_ENCODER_QEA_PAD
         label: QEA Pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_ENCODER_QEB_PAD:
       attributes:
         id: MCPMSMFOC_ENCODER_QEB_PAD
         label: QEB Pad
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_EQ_FILTER_PARAMETER:
       attributes:
@@ -886,12 +1091,17 @@ data:
       children:
       - children:
         - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
             id: pmsm_foc
             value: 'false'
           type: Dynamic
-        - attributes:
-            value: 'false'
-          type: User
         type: Values
       type: Boolean
     MCPMSMFOC_FOC_X2C_ID:
@@ -914,7 +1124,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.00747'
+            value: '0.00314'
           type: Dynamic
         type: Values
       type: Float
@@ -946,7 +1156,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '320.0'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -958,7 +1168,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.12'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -1025,7 +1235,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '320.0'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -1037,7 +1247,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.12'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -1067,13 +1277,6 @@ data:
       attributes:
         id: MCPMSMFOC_LEDS_AVAILABLE
         label: Number of available leds
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '2'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_LED_0_FUNCTION:
       attributes:
@@ -1084,47 +1287,210 @@ data:
       attributes:
         id: MCPMSMFOC_LED_0_INDEX
         label: Index
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '0'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_LED_0_NAME:
       attributes:
         id: MCPMSMFOC_LED_0_NAME
         label: Name
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: LED_2
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_LED_0_NUMBER:
       attributes:
         id: MCPMSMFOC_LED_0_NUMBER
         label: Pin Number
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA00
+            - type: Value
+              value: PA01
+            - type: Value
+              value: PA02
+            - type: Value
+              value: PA03
+            - type: Value
+              value: PA04
+            - type: Value
+              value: PA05
+            - type: Value
+              value: PA06
+            - type: Value
+              value: PA07
+            - type: Value
+              value: PA08
+            - type: Value
+              value: PA09
+            - type: Value
+              value: PA10
+            - type: Value
+              value: PA11
+            - type: Value
+              value: PA12
+            - type: Value
+              value: PA13
+            - type: Value
+              value: PA14
+            - type: Value
+              value: PA15
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PA18
+            - type: Value
+              value: PA19
+            - type: Value
+              value: PA20
+            - type: Value
+              value: PA21
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PA23
+            - type: Value
+              value: PA24
+            - type: Value
+              value: PA25
+            - type: Value
+              value: PA27
+            - type: Value
+              value: PA30
+            - type: Value
+              value: PA31
+            - type: Value
+              value: PB00
+            - type: Value
+              value: PB02
+            - type: Value
+              value: PB03
+            - type: Value
+              value: PB04
+            - type: Value
+              value: PB05
+            - type: Value
+              value: PB06
+            - type: Value
+              value: PB07
+            - type: Value
+              value: PB08
+            - type: Value
+              value: PB09
+            - type: Value
+              value: PB10
+            - type: Value
+              value: PB11
+            - type: Value
+              value: PB12
+            - type: Value
+              value: PB13
+            - type: Value
+              value: PB14
+            - type: Value
+              value: PB15
+            - type: Value
+              value: PB16
+            - type: Value
+              value: PB17
+            - type: Value
+              value: PB18
+            - type: Value
+              value: PB19
+            - type: Value
+              value: PB20
+            - type: Value
+              value: PB21
+            - type: Value
+              value: PB22
+            - type: Value
+              value: PB23
+            - type: Value
+              value: PB24
+            - type: Value
+              value: PB25
+            - type: Value
+              value: PB30
+            - type: Value
+              value: PB31
+            - type: Value
+              value: PC00
+            - type: Value
+              value: PC01
+            - type: Value
+              value: PC02
+            - type: Value
+              value: PC03
+            - type: Value
+              value: PC05
+            - type: Value
+              value: PC06
+            - type: Value
+              value: PC07
+            - type: Value
+              value: PC10
+            - type: Value
+              value: PC11
+            - type: Value
+              value: PC12
+            - type: Value
+              value: PC13
+            - type: Value
+              value: PC14
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC16
+            - type: Value
+              value: PC17
+            - type: Value
+              value: PC18
+            - type: Value
+              value: PC19
+            - type: Value
+              value: PC20
+            - type: Value
+              value: PC21
+            - type: Value
+              value: PC25
+            - type: Value
+              value: PC26
+            - type: Value
+              value: PC27
+            - type: Value
+              value: PC28
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_LED_0_OLD_NUMBER:
       attributes:
         id: MCPMSMFOC_LED_0_OLD_NUMBER
         label: Old Pin Number
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_LED_0_TYPE:
       attributes:
         id: MCPMSMFOC_LED_0_TYPE
         label: Type
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: Physical
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_LED_1_FUNCTION:
       attributes:
@@ -1135,47 +1501,210 @@ data:
       attributes:
         id: MCPMSMFOC_LED_1_INDEX
         label: Index
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '1'
-          type: Dynamic
-        type: Values
       type: Integer
     MCPMSMFOC_LED_1_NAME:
       attributes:
         id: MCPMSMFOC_LED_1_NAME
         label: Name
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: LED_1
-          type: Dynamic
-        type: Values
       type: String
     MCPMSMFOC_LED_1_NUMBER:
       attributes:
         id: MCPMSMFOC_LED_1_NUMBER
         label: Pin Number
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: '** Select **'
+            - type: Value
+              value: PA00
+            - type: Value
+              value: PA01
+            - type: Value
+              value: PA02
+            - type: Value
+              value: PA03
+            - type: Value
+              value: PA04
+            - type: Value
+              value: PA05
+            - type: Value
+              value: PA06
+            - type: Value
+              value: PA07
+            - type: Value
+              value: PA08
+            - type: Value
+              value: PA09
+            - type: Value
+              value: PA10
+            - type: Value
+              value: PA11
+            - type: Value
+              value: PA12
+            - type: Value
+              value: PA13
+            - type: Value
+              value: PA14
+            - type: Value
+              value: PA15
+            - type: Value
+              value: PA16
+            - type: Value
+              value: PA17
+            - type: Value
+              value: PA18
+            - type: Value
+              value: PA19
+            - type: Value
+              value: PA20
+            - type: Value
+              value: PA21
+            - type: Value
+              value: PA22
+            - type: Value
+              value: PA23
+            - type: Value
+              value: PA24
+            - type: Value
+              value: PA25
+            - type: Value
+              value: PA27
+            - type: Value
+              value: PA30
+            - type: Value
+              value: PA31
+            - type: Value
+              value: PB00
+            - type: Value
+              value: PB02
+            - type: Value
+              value: PB03
+            - type: Value
+              value: PB04
+            - type: Value
+              value: PB05
+            - type: Value
+              value: PB06
+            - type: Value
+              value: PB07
+            - type: Value
+              value: PB08
+            - type: Value
+              value: PB09
+            - type: Value
+              value: PB10
+            - type: Value
+              value: PB11
+            - type: Value
+              value: PB12
+            - type: Value
+              value: PB13
+            - type: Value
+              value: PB14
+            - type: Value
+              value: PB15
+            - type: Value
+              value: PB16
+            - type: Value
+              value: PB17
+            - type: Value
+              value: PB18
+            - type: Value
+              value: PB19
+            - type: Value
+              value: PB20
+            - type: Value
+              value: PB21
+            - type: Value
+              value: PB22
+            - type: Value
+              value: PB23
+            - type: Value
+              value: PB24
+            - type: Value
+              value: PB25
+            - type: Value
+              value: PB30
+            - type: Value
+              value: PB31
+            - type: Value
+              value: PC00
+            - type: Value
+              value: PC01
+            - type: Value
+              value: PC02
+            - type: Value
+              value: PC03
+            - type: Value
+              value: PC05
+            - type: Value
+              value: PC06
+            - type: Value
+              value: PC07
+            - type: Value
+              value: PC10
+            - type: Value
+              value: PC11
+            - type: Value
+              value: PC12
+            - type: Value
+              value: PC13
+            - type: Value
+              value: PC14
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC16
+            - type: Value
+              value: PC17
+            - type: Value
+              value: PC18
+            - type: Value
+              value: PC19
+            - type: Value
+              value: PC20
+            - type: Value
+              value: PC21
+            - type: Value
+              value: PC25
+            - type: Value
+              value: PC26
+            - type: Value
+              value: PC27
+            - type: Value
+              value: PC28
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_LED_1_OLD_NUMBER:
       attributes:
         id: MCPMSMFOC_LED_1_OLD_NUMBER
         label: Old Pin Number
+      children:
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: '** Select **'
+          type: Dynamic
+        type: Values
       type: String
     MCPMSMFOC_LED_1_TYPE:
       attributes:
         id: MCPMSMFOC_LED_1_TYPE
         label: Type
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: Physical
-          type: Dynamic
-        type: Values
       type: Combo
     MCPMSMFOC_LQ:
       attributes:
@@ -1197,7 +1726,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '0.11'
+            value: '1.4E-45'
           type: Dynamic
         type: Values
       type: Float
@@ -1205,13 +1734,6 @@ data:
       attributes:
         id: MCPMSMFOC_MAX_REF_INPUT
         label: Maximum reference value
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '500.0'
-          type: Dynamic
-        type: Values
       type: Float
     MCPMSMFOC_MAX_SPEED:
       attributes:
@@ -1221,7 +1743,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '2500.0'
+            value: '1.4E-45'
           type: Dynamic
         type: Values
       type: Float
@@ -1229,13 +1751,6 @@ data:
       attributes:
         id: MCPMSMFOC_MIN_REF_INPUT
         label: Minimum reference value
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '50.0'
-          type: Dynamic
-        type: Values
       type: Float
     MCPMSMFOC_MODULATION_TECHNIQUE:
       attributes:
@@ -1262,7 +1777,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: Gimbal
+            value: Custom
           type: Dynamic
         type: Values
       type: String
@@ -1733,7 +2248,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '4.0'
+            value: '7.0'
           type: Dynamic
         type: Values
       type: Float
@@ -1747,6 +2262,9 @@ data:
             id: pmsm_foc
             value: '0'
           type: Dynamic
+        - attributes:
+            value: '0'
+          type: User
         type: Values
       type: KeyValueSet
     MCPMSMFOC_POSITION_PID_AW:
@@ -1845,12 +2363,6 @@ data:
       attributes:
         id: MCPMSMFOC_POTENTIOMETER_VPOT_NAME
         label: Signal Name
-      children:
-      - children:
-        - attributes:
-            value: VPOT
-          type: User
-        type: Values
       type: String
     MCPMSMFOC_POTENTIOMETER_VPOT_OLD_CHANNEL:
       attributes:
@@ -1951,15 +2463,15 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA08
+              value: PA11
             - type: Value
-              value: PA20
+              value: PA23
             - type: Value
-              value: PB12
+              value: PB15
             - type: Value
-              value: PC10
+              value: PC13
             - type: Value
-              value: PC16
+              value: PC19
             type: Values
           type: StringList
         type: Attributes
@@ -1983,15 +2495,11 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA16
+              value: PA13
             - type: Value
-              value: PB10
+              value: PA19
             - type: Value
-              value: PB16
-            - type: Value
-              value: PC14
-            - type: Value
-              value: PC20
+              value: PB31
             type: Values
           type: StringList
         type: Attributes
@@ -2031,7 +2539,7 @@ data:
             value: '** Select **'
           type: Dynamic
         - attributes:
-            value: '0'
+            value: '3'
           type: User
         type: Values
       type: Combo
@@ -2048,15 +2556,15 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA09
+              value: PA10
             - type: Value
-              value: PA21
+              value: PA22
             - type: Value
-              value: PB13
+              value: PB14
             - type: Value
-              value: PC11
+              value: PC12
             - type: Value
-              value: PC17
+              value: PC18
             type: Values
           type: StringList
         type: Attributes
@@ -2080,15 +2588,11 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA17
+              value: PA12
             - type: Value
-              value: PB11
+              value: PA18
             - type: Value
-              value: PB17
-            - type: Value
-              value: PC15
-            - type: Value
-              value: PC21
+              value: PB30
             type: Values
           type: StringList
         type: Attributes
@@ -2128,7 +2632,7 @@ data:
             value: '** Select **'
           type: Dynamic
         - attributes:
-            value: '1'
+            value: '2'
           type: User
         type: Values
       type: Combo
@@ -2145,15 +2649,15 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA10
+              value: PA09
             - type: Value
-              value: PA22
+              value: PA21
             - type: Value
-              value: PB14
+              value: PB13
             - type: Value
-              value: PC12
+              value: PC11
             - type: Value
-              value: PC18
+              value: PC17
             type: Values
           type: StringList
         type: Attributes
@@ -2177,11 +2681,15 @@ data:
             - type: Value
               value: '** Select **'
             - type: Value
-              value: PA12
+              value: PA17
             - type: Value
-              value: PA18
+              value: PB11
             - type: Value
-              value: PB30
+              value: PB17
+            - type: Value
+              value: PC15
+            - type: Value
+              value: PC21
             type: Values
           type: StringList
         type: Attributes
@@ -2221,7 +2729,7 @@ data:
             value: '** Select **'
           type: Dynamic
         - attributes:
-            value: '2'
+            value: '1'
           type: User
         type: Values
       type: Combo
@@ -2344,12 +2852,6 @@ data:
       attributes:
         id: MCPMSMFOC_RAMP_PROFILES
         label: Profile
-      children:
-      - children:
-        - attributes:
-            value: Step
-          type: User
-        type: Values
       type: Combo
     MCPMSMFOC_RATED_SPEED:
       attributes:
@@ -2359,7 +2861,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '2000.0'
+            value: '1.4E-45'
           type: Dynamic
         type: Values
       type: Float
@@ -2371,7 +2873,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '7.4'
+            value: '1.4E-45'
           type: Dynamic
         type: Values
       type: Float
@@ -2379,6 +2881,12 @@ data:
       attributes:
         id: MCPMSMFOC_REF_INPUT
         label: Select reference input
+      children:
+      - children:
+        - attributes:
+            value: From API
+          type: User
+        type: Values
       type: Combo
     MCPMSMFOC_ROLO_PHASE_DETECTION_ALGORITHM:
       attributes:
@@ -2481,6 +2989,25 @@ data:
       attributes:
         id: MCPMSMFOC_USED_PIN_LIST
         label: Used pin list
+      children:
+      - children:
+        - attributes:
+            id: comboValues
+          children:
+          - children:
+            - type: Value
+              value: PB01
+            - type: Value
+              value: PC24
+            type: Values
+          type: StringList
+        type: Attributes
+      - children:
+        - attributes:
+            id: pmsm_foc
+            value: PB01
+          type: Dynamic
+        type: Values
       type: Combo
     MCPMSMFOC_VISCOUS_DAMPING:
       attributes:
@@ -2520,18 +3047,6 @@ data:
         id: MCPMSMFOC_VOLTAGE_SCALING_FORMAT
         label: Format
       type: Combo
-    MCPMSMFOC_X2CSCOPE:
-      attributes:
-        id: MCPMSMFOC_X2CSCOPE
-        label: MCPMSMFOC_X2CSCOPE
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: X2Cscope
-          type: Dynamic
-        type: Values
-      type: String
     MCPMSMFOC_ZSMT_HYB_ANGLE_TRACK_F0:
       attributes:
         id: MCPMSMFOC_ZSMT_HYB_ANGLE_TRACK_F0
@@ -2540,7 +3055,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '26.666666'
+            value: '0.0'
           type: Dynamic
         type: Values
       type: Float
@@ -2591,9 +3106,9 @@ data:
         id: MCPMSMFOC_ZSMT_HYB_UPPER_TH
         label: Upper Threshold ( 0-1)
       type: Float
-    Model.zcos:
+    opt_rpo_sensorless_zsmt_hybrid_params.h.ftl:
       attributes:
-        id: Model.zcos
+        id: opt_rpo_sensorless_zsmt_hybrid_params.h.ftl
       children:
       - children:
         - attributes:
@@ -2604,9 +3119,9 @@ data:
           type: Boolean
         type: Attributes
       type: File
-    ModelParameters.sce.ftl:
+    opt_rpo_sensorless_zsmt_hybrid_params.c.ftl:
       attributes:
-        id: ModelParameters.sce.ftl
+        id: opt_rpo_sensorless_zsmt_hybrid_params.c.ftl
       children:
       - children:
         - attributes:
@@ -2617,9 +3132,9 @@ data:
           type: Boolean
         type: Attributes
       type: File
-    MotorParameters.sce.ftl:
+    opt_rpo_sensored_encoder.h.ftl:
       attributes:
-        id: MotorParameters.sce.ftl
+        id: opt_rpo_sensored_encoder.h.ftl
       children:
       - children:
         - attributes:
@@ -2630,9 +3145,9 @@ data:
           type: Boolean
         type: Attributes
       type: File
-    initProject.sce:
+    opt_rpo_sensored_encoder.c.ftl:
       attributes:
-        id: initProject.sce
+        id: opt_rpo_sensored_encoder.c.ftl
       children:
       - children:
         - attributes:
@@ -2643,342 +3158,16 @@ data:
           type: Boolean
         type: Attributes
       type: File
-    launch_x2c_scilab.bat:
+    MCPMSMFOC_X2CSCOPE:
       attributes:
-        id: launch_x2c_scilab.bat
+        id: MCPMSMFOC_X2CSCOPE
+        label: MCPMSMFOC_X2CSCOPE
       children:
       - children:
         - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_flux_control.c.ftl:
-      attributes:
-        id: mc_flux_control.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_flux_control.h.ftl:
-      attributes:
-        id: mc_flux_control.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_motor.c.ftl:
-      attributes:
-        id: mc_motor.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_motor.h.ftl:
-      attributes:
-        id: mc_motor.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_open_loop_startup.c.ftl:
-      attributes:
-        id: mc_open_loop_startup.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_open_loop_startup.h.ftl:
-      attributes:
-        id: mc_open_loop_startup.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_pi_control.c.ftl:
-      attributes:
-        id: mc_pi_control.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_pi_control.h.ftl:
-      attributes:
-        id: mc_pi_control.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_pwm.c.ftl:
-      attributes:
-        id: mc_pwm.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_pwm.h.ftl:
-      attributes:
-        id: mc_pwm.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_reference_control.c.ftl:
-      attributes:
-        id: mc_reference_control.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_reference_control.h.ftl:
-      attributes:
-        id: mc_reference_control.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_speed_control.c.ftl:
-      attributes:
-        id: mc_speed_control.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_speed_control.h.ftl:
-      attributes:
-        id: mc_speed_control.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_torque_control.c.ftl:
-      attributes:
-        id: mc_torque_control.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    mc_torque_control.h.ftl:
-      attributes:
-        id: mc_torque_control.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_foc.c.ftl:
-      attributes:
-        id: opt_foc.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_foc.h.ftl:
-      attributes:
-        id: opt_foc.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_foc_x2cmodel.c.ftl:
-      attributes:
-        id: opt_foc_x2cmodel.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_foc_x2cmodel.h.ftl:
-      attributes:
-        id: opt_foc_x2cmodel.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_rpo_sensorless_pll.c.ftl:
-      attributes:
-        id: opt_rpo_sensorless_pll.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_rpo_sensorless_pll.h.ftl:
-      attributes:
-        id: opt_rpo_sensorless_pll.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_flying_start.h.ftl:
-      attributes:
-        id: opt_flying_start.h.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
-    opt_flying_start.c.ftl:
-      attributes:
-        id: opt_flying_start.c.ftl
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      type: File
-    MCPMSMFOC_IPD_HEADER:
-      attributes:
-        id: MCPMSMFOC_IPD_HEADER
-      children:
-      - children:
-        - attributes:
-            id: enabled
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
-      type: File
+            id: pmsm_foc
+            value: None
+          type: Dynamic
+        type: Values
+      type: String
   userData: {}

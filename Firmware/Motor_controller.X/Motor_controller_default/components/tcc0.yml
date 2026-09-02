@@ -56,8 +56,8 @@ data:
     - children:
       - attributes:
           id: tcc0
-          x: '39'
-          y: '359'
+          x: '13'
+          y: '379'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph
@@ -155,7 +155,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '119'
+            value: '238'
           type: Dynamic
         type: Values
       type: Hex
@@ -167,7 +167,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '7'
+            value: '14'
           type: Dynamic
         type: Values
       type: Hex
@@ -179,7 +179,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: TCC0_CHANNEL0
+            value: TCC0_CHANNEL3
           type: Dynamic
         type: Values
       type: String
@@ -191,7 +191,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: TCC0_CHANNEL1
+            value: TCC0_CHANNEL2
           type: Dynamic
         type: Values
       type: String
@@ -203,7 +203,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: TCC0_CHANNEL2
+            value: TCC0_CHANNEL1
           type: Dynamic
         type: Values
       type: String
@@ -267,13 +267,6 @@ data:
       attributes:
         id: TCC_0_CC
         label: Duty Value
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: '0'
-          type: Dynamic
-        type: Values
       type: Integer
     TCC_0_DRVCTRL_NRE_NRV:
       attributes:
@@ -319,13 +312,6 @@ data:
       attributes:
         id: TCC_0_WEXCTRL_DTIEN
         label: Enable Dead Time
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     TCC_1PATT_PGE:
       attributes:
@@ -489,6 +475,13 @@ data:
       attributes:
         id: TCC_3_CC
         label: Duty Value
+      children:
+      - children:
+        - attributes:
+            id: tcc0
+            value: '0'
+          type: Dynamic
+        type: Values
       type: Integer
     TCC_3_DRVCTRL_NRE_NRV:
       attributes:
@@ -534,6 +527,13 @@ data:
       attributes:
         id: TCC_3_WEXCTRL_DTIEN
         label: Enable Dead Time
+      children:
+      - children:
+        - attributes:
+            id: tcc0
+            value: 'true'
+          type: Dynamic
+        type: Values
       type: Boolean
     TCC_4PATT_PGE:
       attributes:
@@ -1014,6 +1014,20 @@ data:
       attributes:
         id: TCC_CTRLBSET_DIR
         label: PWM Direction - Count Down
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
       type: Boolean
     TCC_DRVCTRL_FILTERVAL:
       attributes:
@@ -1258,6 +1272,13 @@ data:
       attributes:
         id: TCC_MODULE_FREQUENCY
         label: TCC_MODULE_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: tcc0
+            value: '120000000'
+          type: Dynamic
+        type: Values
       type: Integer
     TCC_NUM_CHANNELS:
       attributes:
@@ -1302,8 +1323,11 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '1500'
+            value: '3000'
           type: Dynamic
+        - attributes:
+            value: '150'
+          type: User
         type: Values
       type: Integer
     TCC_PWM_INTERRUPT_MODE:
@@ -1355,7 +1379,7 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '1500'
+            value: '150'
           type: Dynamic
         type: Values
       type: Integer
@@ -1413,11 +1437,27 @@ data:
       attributes:
         id: TCC_TIMER_PERIOD
         label: Period Register
+      children:
+      - children:
+        - attributes:
+            id: tcc0
+            value: '119999'
+          type: Dynamic
+        type: Values
       type: Long
     TCC_TIMER_TIME_MS:
       attributes:
         id: TCC_TIMER_TIME_MS
         label: Time
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '139.81013'
+          type: Float
+        type: Attributes
       type: Float
     TCC_TIMER_UNIT:
       attributes:
@@ -1449,6 +1489,9 @@ data:
             id: tcc0
             value: '1'
           type: Dynamic
+        - attributes:
+            value: '3'
+          type: User
         type: Values
       type: KeyValueSet
     TCC_WEXCTRL_DTHS:
@@ -1459,8 +1502,11 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '38'
+            value: '76'
           type: Dynamic
+        - attributes:
+            value: '36'
+          type: User
         type: Values
       type: Integer
     TCC_WEXCTRL_DTLS:
@@ -1471,8 +1517,11 @@ data:
       - children:
         - attributes:
             id: tcc0
-            value: '38'
+            value: '76'
           type: Dynamic
+        - attributes:
+            value: '36'
+          type: User
         type: Values
       type: Integer
     TCC_WEXCTRL_OTMX:

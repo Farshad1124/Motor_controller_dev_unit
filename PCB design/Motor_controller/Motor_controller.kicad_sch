@@ -5659,6 +5659,10 @@
 		(uuid "2a5ef364-44ac-40ec-89f4-8365a9c4e5fe")
 	)
 	(no_connect
+		(at 93.345 86.36)
+		(uuid "30e19718-1662-4a23-bf98-5d86680e79aa")
+	)
+	(no_connect
 		(at 37.465 34.925)
 		(uuid "31188268-f6a5-4e0c-9f01-38e2eef564ae")
 	)
@@ -6906,16 +6910,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.345 86.36) (xy 100.965 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62640359-776b-42f7-9c11-b20de6086975")
-	)
-	(wire
-		(pts
 			(xy 17.78 41.275) (xy 17.78 42.545)
 		)
 		(stroke
@@ -6946,7 +6940,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 153.67) (xy 140.97 153.67)
+			(xy 125.73 153.67) (xy 140.97 153.67)
 		)
 		(stroke
 			(width 0)
@@ -7146,6 +7140,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.345 81.28) (xy 100.584 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70c509dc-2838-4c17-9d77-c4f58ed25401")
+	)
+	(wire
+		(pts
 			(xy 190.5 152.4) (xy 190.5 153.67)
 		)
 		(stroke
@@ -7193,6 +7197,16 @@
 			(type default)
 		)
 		(uuid "79b5642a-b1e2-4c8c-8386-d34eb045c6c0")
+	)
+	(wire
+		(pts
+			(xy 93.345 83.82) (xy 100.838 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b1162df-2ec8-4664-879b-2277ab339c7c")
 	)
 	(wire
 		(pts
@@ -7343,6 +7357,16 @@
 			(type default)
 		)
 		(uuid "8627a524-9a23-4439-ba93-bb5777e7e61f")
+	)
+	(wire
+		(pts
+			(xy 29.845 60.325) (xy 37.465 60.325)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b18e2b-f531-4aa5-b4c3-fbfb854b31fd")
 	)
 	(wire
 		(pts
@@ -7543,16 +7567,6 @@
 			(type default)
 		)
 		(uuid "9643e626-cfc3-49ce-93ae-06652822b4ba")
-	)
-	(wire
-		(pts
-			(xy 93.345 83.82) (xy 100.965 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96c95ae7-e7f9-4e3c-8c0f-10ced8328505")
 	)
 	(wire
 		(pts
@@ -7896,7 +7910,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.345 78.74) (xy 101.6 78.74)
+			(xy 93.345 78.74) (xy 107.315 78.74)
 		)
 		(stroke
 			(width 0)
@@ -7963,16 +7977,6 @@
 			(type default)
 		)
 		(uuid "ae2f0fd2-f0e8-420a-90ee-d6bea44bc765")
-	)
-	(wire
-		(pts
-			(xy 93.345 81.28) (xy 100.965 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aec7a837-95a6-4af9-92e7-e7d34d16420e")
 	)
 	(wire
 		(pts
@@ -8443,16 +8447,6 @@
 			(type default)
 		)
 		(uuid "db71166e-2435-4b24-b6d1-455896c91f5f")
-	)
-	(wire
-		(pts
-			(xy 37.465 60.325) (xy 29.845 60.325)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db71a593-2069-4a16-b81f-609a0f354449")
 	)
 	(wire
 		(pts
@@ -9284,16 +9278,6 @@
 		)
 		(uuid "51db5f79-660e-48fe-8750-b4d50c897b19")
 	)
-	(label "PWMCL"
-		(at 207.01 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "538ded1d-3200-448c-87d3-7148d7af320b")
-	)
 	(label "Servo2"
 		(at 29.21 70.485 0)
 		(effects
@@ -9374,6 +9358,16 @@
 		)
 		(uuid "5e3fd318-cc52-48c8-8768-20aa16e54135")
 	)
+	(label "SMDIR{slash}PWMCL"
+		(at 125.73 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ed00ef5-4289-495c-8032-2bd89a0c2cfa")
+	)
 	(label "SD_SCLK"
 		(at 28.575 80.645 0)
 		(effects
@@ -9434,16 +9428,6 @@
 		)
 		(uuid "68763816-1733-4f14-a4b2-b6aef49868ab")
 	)
-	(label "SMDIR"
-		(at 133.35 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6bee1f7f-c1a6-4d00-9356-cd995e86fd23")
-	)
 	(label "Servo_sel"
 		(at 27.94 32.385 0)
 		(effects
@@ -9483,16 +9467,6 @@
 			(justify left bottom)
 		)
 		(uuid "70344e96-87a5-4ef8-a210-3fa24e6867bb")
-	)
-	(label "PWMCL"
-		(at 100.965 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7185dbde-1b7d-4a1e-b6f4-1a028888d651")
 	)
 	(label "PDED_B"
 		(at 156.21 129.54 0)
@@ -9534,8 +9508,18 @@
 		)
 		(uuid "77af77c8-e7b6-4b06-81e2-22a542853517")
 	)
-	(label "SMDIR"
-		(at 101.6 78.74 180)
+	(label "PWMBL"
+		(at 100.584 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79145904-bcf7-45c8-b93b-fc8c19860200")
+	)
+	(label "SMDIR{slash}PWMCL"
+		(at 107.315 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9704,16 +9688,6 @@
 		)
 		(uuid "97548c11-03d1-469b-a63c-6e9c912ed2ff")
 	)
-	(label "PWMCH"
-		(at 29.845 60.325 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9763bc85-1060-4cb8-88b5-17dbda9c37b7")
-	)
 	(label "PWMBH"
 		(at 29.845 57.785 0)
 		(effects
@@ -9764,6 +9738,26 @@
 		)
 		(uuid "9c6e8f46-4594-4b36-857a-a94236dc74c1")
 	)
+	(label "PWMAH"
+		(at 29.845 60.325 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c887999-5539-44b3-b382-c1c6f43b2bb7")
+	)
+	(label "SMDIR{slash}PWMCL"
+		(at 213.36 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9dff1d1a-5e66-4bb6-b427-db91e9416e1e")
+	)
 	(label "SMTX"
 		(at 133.35 158.115 0)
 		(effects
@@ -9813,16 +9807,6 @@
 			(justify left bottom)
 		)
 		(uuid "ae868eb6-2ee3-4451-8364-1befb76086de")
-	)
-	(label "PWMAL"
-		(at 100.965 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b08815a6-3ab2-4f0b-af3d-1ca38a86bb5c")
 	)
 	(label "USB_DN"
 		(at 193.675 156.21 0)
@@ -9934,16 +9918,6 @@
 		)
 		(uuid "cc63e44d-ffab-4deb-b0fd-49d504ad541f")
 	)
-	(label "PWMAH"
-		(at 100.965 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ce252cd9-0ca9-4222-b389-ebc3113637ec")
-	)
 	(label "SPI_SCK"
 		(at 29.21 40.005 0)
 		(effects
@@ -10014,16 +9988,6 @@
 		)
 		(uuid "da669437-efda-400b-83ea-e4b5e8bfd337")
 	)
-	(label "PWMBL"
-		(at 100.965 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dabcff1a-4f26-4329-955a-1fc8a380733a")
-	)
 	(label "ServoEN"
 		(at 204.47 87.63 0)
 		(effects
@@ -10043,6 +10007,16 @@
 			(justify left bottom)
 		)
 		(uuid "de2c2f33-8215-4735-99a2-b12dd266625b")
+	)
+	(label "PWMAL"
+		(at 100.838 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dfed4d3b-55c2-43cf-957b-a39ef7c24e18")
 	)
 	(label "PDED_B"
 		(at 29.845 164.465 0)
@@ -10243,6 +10217,16 @@
 			(justify right bottom)
 		)
 		(uuid "fe3fe40b-fbdb-4b3f-9753-fbe68c7bdd7b")
+	)
+	(label "PWMCH"
+		(at 100.965 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ffda8e00-10d7-4978-9a62-179c856f3cf6")
 	)
 	(symbol
 		(lib_id "PCM_Capacitor_AKL:C_0603")

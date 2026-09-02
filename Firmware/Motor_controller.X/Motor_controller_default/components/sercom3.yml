@@ -25,7 +25,7 @@ data:
               id: enabled
             children:
             - type: Value
-              value: 'false'
+              value: 'true'
             type: Boolean
           type: Attributes
         type: DirectCapability
@@ -37,26 +37,8 @@ data:
               id: enabled
             children:
             - type: Value
-              value: 'false'
+              value: 'true'
             type: Boolean
-          type: Attributes
-        type: DirectCapability
-      - attributes:
-          id: SERCOM3_UART
-        children:
-        - children:
-          - attributes:
-              id: targetComponentID
-            children:
-            - type: Value
-              value: X2Cscope
-            type: String
-          - attributes:
-              id: targetAttachmentID
-            children:
-            - type: Value
-              value: X2CscopeUartDependency
-            type: String
           type: Attributes
         type: DirectCapability
       type: Attachments
@@ -68,8 +50,8 @@ data:
     - children:
       - attributes:
           id: sercom3
-          x: '9'
-          y: '435'
+          x: '15'
+          y: '156'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph
@@ -326,7 +308,7 @@ data:
             id: readOnly
           children:
           - type: Value
-            value: 'true'
+            value: 'false'
           type: Boolean
         type: Attributes
       - children:
@@ -781,12 +763,6 @@ data:
             value: '---'
           type: String
         type: Attributes
-      - children:
-        - attributes:
-            id: X2Cscope
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     USART_INTERRUPT_MODE_ENABLE:
       attributes:
@@ -913,13 +889,6 @@ data:
       attributes:
         id: USART_RXPO
         label: Receive Pinout
-      children:
-      - children:
-        - attributes:
-            id: X2Cscope
-            value: '1'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
     USART_RX_ENABLE:
       attributes:

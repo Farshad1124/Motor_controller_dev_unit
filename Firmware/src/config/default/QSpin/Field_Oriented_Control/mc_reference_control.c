@@ -60,6 +60,8 @@ typedef struct
     bool initDone;
     float32_t lowerLimit;
     float32_t upperLimit;
+    float32_t reference;
+    float32_t rampRate;
 }tmcRef_State_s;
 
 /*******************************************************************************
@@ -98,6 +100,11 @@ void  mcRefI_ReferenceControlInit( tmcRef_Parameters_s * const pParameters )
     mcRefI_ParametersSet(pParameters);
 
     /** Update state variables */
+    mcRef_State_mds.lowerLimit = pParameters->minimumRpm;
+    mcRef_State_mds.upperLimit = pParameters->maximumRpm;
+
+    /** Calculate ramp rate per cycle   */
+    mcRef_State_mds.rampRate = pParameters->rpmPerSecond * pParameters->dt;
 
     mcRef_State_mds.initDone = true;
 }
@@ -176,20 +183,36 @@ void mcRefI_ReferenceControl(  tmcRef_Parameters_s * const pParameters,
      if( pState->enable )
      {
          /** Execute reference control */
-         /** Clamp the reference  */
-         if( command > pState->upperLimit )
+         if( ( pState->reference + pState->rampRate ) < command )
          {
-             *pOut = pState->upperLimit;
+             /** Ramp-up*/
+             pState->reference += pState->rampRate;
          }
-         else if( command < pState->lowerLimit)
+         else if( ( pState->reference - pState->rampRate ) > command )
          {
-             *pOut = pState->lowerLimit;
+             /** Ramp-down */
+             pState->reference -= pState->rampRate;
          }
          else
          {
-             *pOut = command;
+             pState->reference = command;
          }
 
+         /** Clamp the reference  */
+         if( pState->reference > pState->upperLimit )
+         {
+             pState->reference = pState->upperLimit;
+         }
+         else if( pState->reference < pState->lowerLimit)
+         {
+             pState->reference = pState->lowerLimit;
+         }
+         else
+         {
+             /** For MISRA Compliance */
+         }
+
+         *pOut = pState->reference;
      }
      else
      {
@@ -206,4 +229,10 @@ void mcRefI_ReferenceControl(  tmcRef_Parameters_s * const pParameters,
  */
 void mcRefI_ReferenceControlReset( tmcRef_Parameters_s * const pParameters )
 {
+    /** Get the linked state variable */
+    tmcRef_State_s * pState;
+    pState = (tmcRef_State_s *)pParameters->pStatePointer;
+
+    /** Reset reference control state variables  */
+    pState->reference = pState->lowerLimit;
 }

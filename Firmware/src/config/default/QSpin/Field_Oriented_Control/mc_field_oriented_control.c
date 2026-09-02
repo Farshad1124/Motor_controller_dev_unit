@@ -382,6 +382,9 @@ void mcFocI_FieldOrientedControlFast( tmcFocI_ModuleData_s * const pModule )
 
             if( StdReturn_Complete == startupStatus )
             {
+                /** Set speed controller state */
+                mcSpeI_SpeedControlManual( &pState->bSpeedController, pState->iQref );
+
                 /** Calculate angle difference */
                 pState->angleDifference = UTIL_AngleDifferenceCalc( pState->openLoopAngle, pOutput->elecAngle );
 
@@ -411,6 +414,8 @@ void mcFocI_FieldOrientedControlFast( tmcFocI_ModuleData_s * const pModule )
                 /** Sine-cosine calculation */
                 mcUtils_SineCosineCalculation( angle, &sine, &cosine );
 
+                /** Execute speed controller */
+                mcSpeI_SpeedControlAuto( &pState->bSpeedController, pState->nRef, pOutput->elecSpeed,  &pState->iQref );
                 break;
             }
 
@@ -421,6 +426,11 @@ void mcFocI_FieldOrientedControlFast( tmcFocI_ModuleData_s * const pModule )
                 mcUtils_SineCosineCalculation( pOutput->elecAngle, &sine, &cosine );
                 /** Reference Control */
                 mcRefI_ReferenceControl( &mcFoc_State_mds.bReferenceController, pModule->dInput.reference, &pState->nRef );
+
+                /** Execute speed controller */
+                pState->nRef *=  pState->commandDirection;
+                mcSpeI_SpeedControlAuto(&pState->bSpeedController,  pState->nRef, pOutput->elecSpeed,
+                                        &pState->iQref );
 
                 break;
             }
@@ -469,7 +479,7 @@ void mcFocI_FieldOrientedControlFast( tmcFocI_ModuleData_s * const pModule )
  */
 void mcFocI_FieldOrientedControlSlow( const tmcFocI_ModuleData_s * const pParameters )
 {
-     //mcSpeI_SpeedControlManual(&mcFoc_State_mds.bSpeedController,10);
+    /** ToDO: Put appropriate tasks */
 }
 
 /**

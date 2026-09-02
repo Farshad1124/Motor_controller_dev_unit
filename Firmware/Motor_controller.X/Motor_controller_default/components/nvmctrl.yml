@@ -16,5 +16,17 @@ customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
   attachments: {}
   elementPosition: {}
-  symbols: {}
+  symbols:
+    NVM_RWS:
+      attributes:
+        id: NVM_RWS
+        label: Wait States
+      children:
+      - children:
+        - attributes:
+            id: nvmctrl
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Integer
   userData: {}

@@ -6369,7 +6369,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '120000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -6381,7 +6381,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '120000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -7042,7 +7042,7 @@ data:
       children:
       - children:
         - attributes:
-            value: TCC0_WO4
+            value: ''
           type: User
         type: Values
       type: String
@@ -7054,7 +7054,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x55'
+            value: '0x50'
           type: Dynamic
         type: Values
       type: String
@@ -7078,7 +7078,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x1'
+            value: '0x0'
           type: Dynamic
         type: Values
       type: String
@@ -7090,7 +7090,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -7101,7 +7101,7 @@ data:
       children:
       - children:
         - attributes:
-            value: F
+            value: ''
           type: User
         type: Values
       type: String
@@ -7331,7 +7331,7 @@ data:
       children:
       - children:
         - attributes:
-            value: PWM_CL
+            value: PWM_BL
           type: User
         type: Values
       type: String
@@ -7342,7 +7342,7 @@ data:
       children:
       - children:
         - attributes:
-            value: PWM_BL
+            value: PWM_AL
           type: User
         type: Values
       type: String
@@ -7353,7 +7353,7 @@ data:
       children:
       - children:
         - attributes:
-            value: PWM_AL
+            value: ''
           type: User
         type: Values
       type: String
@@ -7364,7 +7364,7 @@ data:
       children:
       - children:
         - attributes:
-            value: PWM_AH
+            value: PWM_CH
           type: User
         type: Values
       type: String
@@ -7386,7 +7386,7 @@ data:
       children:
       - children:
         - attributes:
-            value: PWM_CH
+            value: PWM_AH
           type: User
         type: Values
       type: String
@@ -8144,6 +8144,991 @@ data:
         id: TCC2_CLOCK_ENABLE
         label: TCC2 Clock Enable
       type: Boolean
+    PIN_42_DRVSTR:
+      attributes:
+        id: PIN_42_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    PIN_41_MODE:
+      attributes:
+        id: PIN_41_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_41_FUNCTION_TYPE:
+      attributes:
+        id: PIN_41_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: TCC0_WO1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG11:
+      attributes:
+        id: PORT_GROUP_2_PINCFG11
+        label: PORT GROUP C PINCFG11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_11_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_11_USED
+        label: PORT_GROUP_2_PIN_11_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_2_PMUX5:
+      attributes:
+        id: PORT_GROUP_2_PMUX5
+        label: PORT GROUP C PMUX5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x50'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_11:
+      attributes:
+        id: PORT_GROUP_2_PAD_11
+        label: PORT_GROUP_2_PAD_11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC11
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_41_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_41_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: F
+          type: User
+        type: Values
+      type: String
+    PIN_41_FUNCTION_NAME:
+      attributes:
+        id: PIN_41_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: PWM_CL
+          type: User
+        type: Values
+      type: String
+    ADC1_CLOCK_FREQUENCY:
+      attributes:
+        id: ADC1_CLOCK_FREQUENCY
+        label: ADC1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_41_FREQ:
+      attributes:
+        id: GCLK_ID_41_FREQ
+        label: 'Peripheral Channel 41 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_41_CHEN:
+      attributes:
+        id: GCLK_ID_41_CHEN
+        label: Peripheral Channel 41 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC1_CLOCK_ENABLE:
+      attributes:
+        id: ADC1_CLOCK_ENABLE
+        label: ADC1 Clock Enable
+      type: Boolean
+    ADC1_RESRDY_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: ADC1_RESRDY_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_121_0_ENABLE:
+      attributes:
+        id: NVIC_121_0_ENABLE
+        label: Enable ADC1 Result Ready Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC1_RESRDY_INTERRUPT_ENABLE:
+      attributes:
+        id: ADC1_RESRDY_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_121_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_121_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC1_RESRDY_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: ADC1_RESRDY_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_121_0_HANDLER:
+      attributes:
+        id: NVIC_121_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: ADC1_RESRDY_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    ADC1_RESRDY_INTERRUPT_HANDLER:
+      attributes:
+        id: ADC1_RESRDY_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    GCLK_CYCLE_FORMED:
+      attributes:
+        id: GCLK_CYCLE_FORMED
+        label: GCLK_CYCLE_FORMED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SYSTICK_PERIOD:
+      attributes:
+        id: SYSTICK_PERIOD
+        label: SysTick Period
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1D4C0'
+          type: Dynamic
+        type: Values
+      type: String
+    SYSTICK_PERIOD_US:
+      attributes:
+        id: SYSTICK_PERIOD_US
+        label: SYSTICK_PERIOD_US
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CPU_CLOCK_FREQUENCY:
+      attributes:
+        id: CPU_CLOCK_FREQUENCY
+        label: CPU Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    QSPI_CLOCK_FREQUENCY:
+      attributes:
+        id: QSPI_CLOCK_FREQUENCY
+        label: QSPI_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MAIN_CLOCK_FREQUENCY:
+      attributes:
+        id: MAIN_CLOCK_FREQUENCY
+        label: Main Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_0_FREQ:
+      attributes:
+        id: GCLK_0_FREQ
+        label: GCLK0 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_1_FREQ:
+      attributes:
+        id: GCLK_1_FREQ
+        label: GCLK1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DPLL0_CLOCK_FREQ:
+      attributes:
+        id: DPLL0_CLOCK_FREQ
+        label: FDPLL0 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_1_FREQ:
+      attributes:
+        id: GCLK_ID_1_FREQ
+        label: 'Peripheral Channel 1 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_1_GENSEL:
+      attributes:
+        id: GCLK_ID_1_GENSEL
+        label: Generator Selection
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '2'
+          type: Dynamic
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_3_FREQ:
+      attributes:
+        id: GCLK_3_FREQ
+        label: GCLK3 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_INST_NUM3:
+      attributes:
+        id: GCLK_INST_NUM3
+        label: Enable Generic Clock Generator 3
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_IO_0_FREQ:
+      attributes:
+        id: GCLK_IO_0_FREQ
+        label: External Input (GCLK_IO[0]) Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_0_OUTPUTENABLE:
+      attributes:
+        id: GCLK_0_OUTPUTENABLE
+        label: Output GCLK clock signal on IO pin?
+      type: Boolean
+    GCLK_IN_0_FREQ:
+      attributes:
+        id: GCLK_IN_0_FREQ
+        label: Gclk Input Frequency
+      type: Integer
+    GCLK_IO_1_FREQ:
+      attributes:
+        id: GCLK_IO_1_FREQ
+        label: External Input (GCLK_IO[1]) Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_1_OUTPUTENABLE:
+      attributes:
+        id: GCLK_1_OUTPUTENABLE
+        label: Output GCLK clock signal on IO pin?
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_IN_1_FREQ:
+      attributes:
+        id: GCLK_IN_1_FREQ
+        label: Gclk Input Frequency
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    GCLK_IO_2_FREQ:
+      attributes:
+        id: GCLK_IO_2_FREQ
+        label: External Input (GCLK_IO[2]) Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_2_OUTPUTENABLE:
+      attributes:
+        id: GCLK_2_OUTPUTENABLE
+        label: Output GCLK clock signal on IO pin?
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_IN_2_FREQ:
+      attributes:
+        id: GCLK_IN_2_FREQ
+        label: Gclk Input Frequency
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    SYSTICK_PERIOD_MS:
+      attributes:
+        id: SYSTICK_PERIOD_MS
+        label: Systick Period(Milliseconds)
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '139.81012'
+          type: Float
+        type: Attributes
+      type: Float
+    CONFIG_CLOCK_DPLL0_REF_CLOCK:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_REF_CLOCK
+        label: DPLL Reference Clock Source
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_0_SRC:
+      attributes:
+        id: GCLK_0_SRC
+        label: Source Selection
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '7'
+          type: Dynamic
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_0_DIVIDER_VALUE:
+      attributes:
+        id: GCLK_0_DIVIDER_VALUE
+        label: GCLK_0_DIVIDER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_0_DIV:
+      attributes:
+        id: GCLK_0_DIV
+        label: Division Factor
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Integer
+    CONF_CPU_CLOCK_DIVIDER:
+      attributes:
+        id: CONF_CPU_CLOCK_DIVIDER
+        label: CPU Clock Division Factor
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CONFIG_CLOCK_DPLL0_MULTIPLIER_VALUE:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_MULTIPLIER_VALUE
+        label: CONFIG_CLOCK_DPLL0_MULTIPLIER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '15.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    CONFIG_CLOCK_DPLL0_LDR_INTEGER:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_LDR_INTEGER
+        label: DPLL Loop Divider Ratio Integer Part
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '119'
+          type: Dynamic
+        - attributes:
+            value: '14'
+          type: User
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC1_CFDEN:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_CFDEN
+        label: Enable Clock Failure Detection
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_ID_25_GENSEL:
+      attributes:
+        id: GCLK_ID_25_GENSEL
+        label: Generator Selection
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_ID_1_CHEN:
+      attributes:
+        id: GCLK_ID_1_CHEN
+        label: Peripheral Channel 1 Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    CONFIG_CLOCK_DPLL1_REF_CLOCK:
+      attributes:
+        id: CONFIG_CLOCK_DPLL1_REF_CLOCK
+        label: DPLL Reference Clock Source
+      children:
+      - children:
+        - attributes:
+            value: '3'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_ID_2_FREQ:
+      attributes:
+        id: GCLK_ID_2_FREQ
+        label: 'Peripheral Channel 2 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_2_CHEN:
+      attributes:
+        id: GCLK_ID_2_CHEN
+        label: Peripheral Channel 2 Clock Enable
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    CONFIG_CLOCK_DPLL1_MULTIPLIER_VALUE:
+      attributes:
+        id: CONFIG_CLOCK_DPLL1_MULTIPLIER_VALUE
+        label: CONFIG_CLOCK_DPLL1_MULTIPLIER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1.0'
+          type: Dynamic
+        type: Values
+      type: Float
+    CONFIG_CLOCK_DPLL1_LDR_INTEGER:
+      attributes:
+        id: CONFIG_CLOCK_DPLL1_LDR_INTEGER
+        label: DPLL Loop Divider Ratio Integer Part
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_DPLL1_ENABLE:
+      attributes:
+        id: CONFIG_CLOCK_DPLL1_ENABLE
+        label: 'Digital Phase Locked Loop(DPLL) Enable '
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    DPLL1_CLOCK_FREQ:
+      attributes:
+        id: DPLL1_CLOCK_FREQ
+        label: FDPLL1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_3_SRC:
+      attributes:
+        id: GCLK_3_SRC
+        label: Source Selection
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_3_IMPROVE_DUTYCYCLE:
+      attributes:
+        id: GCLK_3_IMPROVE_DUTYCYCLE
+        label: Enable 50/50 Duty Cycle
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_IO_3_FREQ:
+      attributes:
+        id: GCLK_IO_3_FREQ
+        label: External Input (GCLK_IO[3]) Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_3_OUTPUTENABLE:
+      attributes:
+        id: GCLK_3_OUTPUTENABLE
+        label: Output GCLK clock signal on IO pin?
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_3_DIVIDER_VALUE:
+      attributes:
+        id: GCLK_3_DIVIDER_VALUE
+        label: GCLK_3_DIVIDER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_3_DIV:
+      attributes:
+        id: GCLK_3_DIV
+        label: Division Factor
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Integer
+    GCLK_IN_3_FREQ:
+      attributes:
+        id: GCLK_IN_3_FREQ
+        label: Gclk Input Frequency
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC0_CFDEN:
+      attributes:
+        id: CONFIG_CLOCK_XOSC0_CFDEN
+        label: Enable Clock Failure Detection
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_ID_0_GENSEL:
+      attributes:
+        id: GCLK_ID_0_GENSEL
+        label: Generator Selection
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_ID_0_FREQ:
+      attributes:
+        id: GCLK_ID_0_FREQ
+        label: 'Peripheral Channel 0 Frequency '
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_0_CHEN:
+      attributes:
+        id: GCLK_ID_0_CHEN
+        label: Peripheral Channel 0 Clock Enable
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    PIN_52_MODE:
+      attributes:
+        id: PIN_52_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_52_FUNCTION_TYPE:
+      attributes:
+        id: PIN_52_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX8:
+      attributes:
+        id: PORT_GROUP_0_PMUX8
+        label: PORT GROUP A PMUX8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_16:
+      attributes:
+        id: PORT_GROUP_0_PAD_16
+        label: PORT_GROUP_0_PAD_16
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA16
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG16:
+      attributes:
+        id: PORT_GROUP_0_PINCFG16
+        label: PORT GROUP A PINCFG16
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_16_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_16_USED
+        label: PORT_GROUP_0_PIN_16_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_52_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_52_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_53_MODE:
+      attributes:
+        id: PIN_53_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_53_FUNCTION_TYPE:
+      attributes:
+        id: PIN_53_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_17:
+      attributes:
+        id: PORT_GROUP_0_PAD_17
+        label: PORT_GROUP_0_PAD_17
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA17
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG17:
+      attributes:
+        id: PORT_GROUP_0_PINCFG17
+        label: PORT GROUP A PINCFG17
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_17_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_17_USED
+        label: PORT_GROUP_0_PIN_17_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_53_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_53_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_53_DRVSTR:
+      attributes:
+        id: PIN_53_DRVSTR
+        label: Drive Strength
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CONFIG_CLOCK_DPLL0_DIVIDER_VALUE:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_DIVIDER_VALUE
+        label: CONFIG_CLOCK_DPLL0_DIVIDER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_DPLL0_DIVIDER:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_DIVIDER
+        label: DPLL Divider
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
   userData:
     children:
     - attributes:

@@ -117,7 +117,7 @@ void mcHal_DirectionIndication( void )
  */
 void mcHal_FaultIndicationSet( void )
 {
-    //PORT_PinSet( PORT_PIN_** Select **);
+  //  PORT_PinSet( PORT_PIN_** Select **);
 
 }
 
@@ -188,7 +188,7 @@ void mcHalI_PwmCallbackRegister( TCC_CALLBACK callback, uintptr_t context )
  */
 bool mcHalI_StartStopButtonState( void )
 {
-    //return  PORT_PinRead( PORT_PIN_** Select **);
+   // return  PORT_PinRead( PORT_PIN_** Select **);
 }
 
 /**
@@ -201,6 +201,6 @@ bool mcHalI_StartStopButtonState( void )
  */
 bool mcHalI_DirectionButtonState( void )
 {
-    //return  PORT_PinRead( PORT_PIN_** Select **);
+   // return  PORT_PinRead( PORT_PIN_** Select **);
 }
 

@@ -6990,7 +6990,7 @@
 		(fields_autoplaced yes)
 		(uuid "944e8ea8-b63f-4e42-94f6-4b15d488d6a4")
 		(property "Reference" "U13"
-			(at 83.4233 107.315 0)
+			(at 83.4233 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7001,7 +7001,7 @@
 			)
 		)
 		(property "Value" "DRV8311H"
-			(at 83.4233 109.855 0)
+			(at 83.4233 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

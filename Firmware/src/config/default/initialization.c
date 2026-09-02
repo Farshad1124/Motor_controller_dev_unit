@@ -155,16 +155,6 @@ void SYS_Initialize ( void* data )
 
     ADC0_Initialize();
 
-    /* MISRAC 2023 deviation block start */
-    /* Following MISRA-C rules deviated in this block  */
-    /* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
-    /* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
-
-
-
-    X2Cscope_Init();
-
-    /* MISRAC 2023 deviation block end */
     NVIC_Initialize();
 
 

@@ -133,9 +133,10 @@ __STATIC_INLINE void mcFocI_InputsRead( tmcFocI_ModuleData_s * const pModule )
     pInput->iABC.b = (float32_t)mcCurI_ModuleData_gds.dOutput.iABC.b;
 
 
-    //pInput->uBus = 1.9;
     pInput->uBus = (float32_t)mcVolI_ModuleData_gds.dOutput.uBus;
-    //volatile float temp = (float32_t)mcVolI_ModuleData_gds.dOutput.uBus;
+
+    pInput->reference = ((float32_t)mcHalI_Potentiometer_gdu16 ) * pModule->dParameters.potInputToRef;
+
 }
 
 

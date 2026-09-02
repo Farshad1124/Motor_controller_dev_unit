@@ -53,9 +53,7 @@
 #include "mc_voltage_measurement.h"
 #include "mc_motor.h"
 #include "mc_field_oriented_control.h"
-#include "mc_initial_position_detection.h"
 
-#include "mc_key_manager.h"
 
 
 /*******************************************************************************
@@ -110,18 +108,6 @@ void mcAppI_OverCurrentReactionIsr( uint32_t status,  uintptr_t context );
  */
 void mcAppI_AdcCalibrationIsr(ADC_STATUS status, uintptr_t context );
 
-/**
- * @brief ADC finished ISR
- *
- * @details Interrupt service routine for ADC finished IPD tasks.
- *
- * @param[in] status ADC status information
- * @param[in/out] context Interrupt context
- * @param[out] None
- *
- * @return None
- */
-void mcAppI_InitialPositionDetectIsr(ADC_STATUS status, uintptr_t context );
 
 /**
  * @brief ADC finished ISR

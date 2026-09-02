@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: Motor_controller_default
-creation_date: 2026-08-27T02:41:14.297-04:00[America/New_York]
+creation_date: 2026-09-01T22:12:14.009-04:00[America/New_York]
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
@@ -22,5 +22,4 @@ modules:
 - {name: csp, type: HARMONY, version: v3.26.0}
 - {name: core, type: HARMONY, version: v3.17.0}
 - {name: FreeRTOS-Kernel, type: HARMONY, version: V11.3.1}
-- {name: x2c, type: HARMONY, version: v1.5.0}
 - {name: motor_control, type: HARMONY, version: v3.11.0}

@@ -31,13 +31,13 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 36,PB14,BLDC_FAULT,EIC_EXTINT14,Digital,High Impedance,n/a,No,No,NORMAL
 37,PB15,,Available,,,,,,NORMAL
 40,PC10,,Available,,,,,,NORMAL
-41,PC11,,Available,,,,,,NORMAL
-42,PC12,PWM_CL,TCC0_WO2,Digital,High Impedance,n/a,No,No,NORMAL
-43,PC13,PWM_BL,TCC0_WO3,Digital,High Impedance,n/a,No,No,NORMAL
-44,PC14,PWM_AL,TCC0_WO4,Digital,High Impedance,n/a,No,No,NORMAL
-45,PC15,PWM_AH,TCC0_WO5,Digital,High Impedance,n/a,No,No,NORMAL
+41,PC11,PWM_CL,TCC0_WO1,Digital,High Impedance,n/a,No,No,NORMAL
+42,PC12,PWM_BL,TCC0_WO2,Digital,High Impedance,n/a,No,No,NORMAL
+43,PC13,PWM_AL,TCC0_WO3,Digital,High Impedance,n/a,No,No,NORMAL
+44,PC14,,Available,,,,,,NORMAL
+45,PC15,PWM_CH,TCC0_WO5,Digital,High Impedance,n/a,No,No,NORMAL
 46,PA12,PWM_BH,TCC0_WO6,Digital,High Impedance,n/a,No,No,NORMAL
-47,PA13,PWM_CH,TCC0_WO7,Digital,High Impedance,n/a,No,No,NORMAL
+47,PA13,PWM_AH,TCC0_WO7,Digital,High Impedance,n/a,No,No,NORMAL
 48,PA14,,Available,,,,,,NORMAL
 49,PA15,,Available,,,,,,NORMAL
 52,PA16,,Available,,,,,,NORMAL

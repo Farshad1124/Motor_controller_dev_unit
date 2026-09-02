@@ -114,11 +114,27 @@ data:
       attributes:
         id: I2CS_SDASETUP_TIME_NS
         label: SDA Setup Time (ns)
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '2050'
+          type: Integer
+        type: Attributes
       type: Integer
     I2CS_SDASETUP_TIME_REG_VALUE:
       attributes:
         id: I2CS_SDASETUP_TIME_REG_VALUE
         label: SDA Setup Time Register Value
+      children:
+      - children:
+        - attributes:
+            id: sercom4
+            value: '1'
+          type: Dynamic
+        type: Values
       type: Integer
     I2CS_SDASETUP_TIME_SUPPORT:
       attributes:

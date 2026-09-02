@@ -101,9 +101,9 @@ __STATIC_FORCEINLINE void mcHalI_InverterPwmSet( const int16_t * const dutyCycle
     duty[1u] = period - (uint16_t)dutyCycle[1u];
     duty[2u] = period - (uint16_t)dutyCycle[2u];
 
-    status = (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL0, duty[0u] );
-    status &= (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL1, duty[1u] );
-    status &= (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL2, duty[2u] );
+    status = (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL3, duty[0u] );
+    status &= (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL2, duty[1u] );
+    status &= (uint8_t)TCC0_PWM24bitDutySet(TCC0_CHANNEL1, duty[2u] );
 
     if( 0u == status )
     {
@@ -148,7 +148,7 @@ __STATIC_FORCEINLINE void mcHalI_PhaseBCurrentGet( void )
 __STATIC_FORCEINLINE void mcHalI_DcLinkVoltageGet( void )
 {
     /** Get ADC value for DC bus voltage */
-    mcHalI_UbusAdcInput_gdu16 = ADC0_ConversionResultGet();
+    mcHalI_UbusAdcInput_gdu16 = 8.0;
 }
 
 /**
@@ -162,7 +162,7 @@ __STATIC_FORCEINLINE void mcHalI_DcLinkVoltageGet( void )
 __STATIC_FORCEINLINE void mcHalI_PotentiometerInputGet( void )
 {
     /** Get ADC value for DC bus voltage */
-   // mcHalI_Potentiometer_gdu16 = ** Select **_ConversionResultGet();
+    mcHalI_Potentiometer_gdu16 = ADC0_ConversionResultGet();
 }
 
 /**
@@ -195,7 +195,7 @@ __STATIC_FORCEINLINE void mcHalI_PhaseBCurrentChannelSelect( void  )
  */
 __STATIC_FORCEINLINE void mcHalI_PotentiometerChannelSelect( void )
 {
-    //** Select **_ChannelSelect( ADC_POSINPUT_AIN** Select **, ADC_NEGINPUT_GND);
+    ADC0_ChannelSelect( ADC_POSINPUT_AIN11, ADC_NEGINPUT_GND);
 }
 
 /**
@@ -206,7 +206,7 @@ __STATIC_FORCEINLINE void mcHalI_PotentiometerChannelSelect( void )
  */
 __STATIC_FORCEINLINE void mcHalI_DcLinkVoltageChannelSelect( void  )
 {
-   ADC0_ChannelSelect( ADC_POSINPUT_AIN11, ADC_NEGINPUT_GND);
+   // ** Select **_ChannelSelect( ADC_POSINPUT_AIN** Select **, ADC_NEGINPUT_GND);
 }
 
 /**

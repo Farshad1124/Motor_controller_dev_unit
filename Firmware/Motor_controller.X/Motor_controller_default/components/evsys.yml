@@ -517,7 +517,7 @@ data:
       - children:
         - attributes:
             id: evsys
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -1029,24 +1029,10 @@ data:
       attributes:
         id: EVSYS_USER_26
         label: TCC1_EV_1 Channel Selection
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '2'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
     EVSYS_USER_0:
       attributes:
         id: EVSYS_USER_0
         label: RTC_TAMPER Channel Selection
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '2'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
   userData: {}

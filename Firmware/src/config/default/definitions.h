@@ -50,7 +50,6 @@
 #include <stdbool.h>
 #include "peripheral/sercom/usart/plib_sercom3_usart.h"
 #include "peripheral/nvmctrl/plib_nvmctrl.h"
-#include "X2Cscope.h"
 #include "peripheral/sercom/i2c_master/plib_sercom1_i2c_master.h"
 #include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/sercom/spi_master/plib_sercom0_spi_master.h"
