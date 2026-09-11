@@ -78,7 +78,7 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
 }
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 8.6 deviated 112 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
+/* MISRA C-2023 Rule 8.6 deviated 113 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
 extern void vPortSVCHandler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void xPortPendSVHandler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -142,6 +142,7 @@ extern void USB_OTHER_Handler          ( void ) __attribute__((weak, alias("Dumm
 extern void USB_SOF_HSOF_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void USB_TRCPT0_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void USB_TRCPT1_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
+extern void TCC0_OTHER_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void TCC0_MC0_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void TCC0_MC1_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void TCC0_MC2_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -201,7 +202,7 @@ extern void SDHC1_Handler              ( void ) __attribute__((weak, alias("Dumm
 
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 2.8 deviated 112 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
+/* MISRA C-2023 Rule 2.8 deviated 113 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
 
 __attribute__ ((section(".vectors"), used))
 const H3DeviceVectors exception_table=
@@ -298,7 +299,7 @@ const H3DeviceVectors exception_table=
     .pfnUSB_SOF_HSOF_Handler       = USB_SOF_HSOF_Handler,
     .pfnUSB_TRCPT0_Handler         = USB_TRCPT0_Handler,
     .pfnUSB_TRCPT1_Handler         = USB_TRCPT1_Handler,
-    .pfnTCC0_OTHER_Handler         = TCC0_OTHER_InterruptHandler,
+    .pfnTCC0_OTHER_Handler         = TCC0_OTHER_Handler,
     .pfnTCC0_MC0_Handler           = TCC0_MC0_Handler,
     .pfnTCC0_MC1_Handler           = TCC0_MC1_Handler,
     .pfnTCC0_MC2_Handler           = TCC0_MC2_Handler,

@@ -1093,6 +1093,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "SD Card Bus"
+		(exclude_from_sim no)
+		(at 50.165 19.304 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "4337624c-828d-4a58-bc51-76279a8c32f6")
+	)
 	(junction
 		(at 57.15 58.42)
 		(diameter 0)

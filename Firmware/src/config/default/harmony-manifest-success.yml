@@ -4,7 +4,7 @@
 
 
 project: Motor_controller_default
-creation_date: 2026-09-01T22:12:13.795-04:00[America/New_York]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2026-09-06T00:44:15.273-04:00[America/New_York]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 11
 mcc_mode: VSCodePlugin            # [IDE|Standalone|Headless]
 mcc_version: v5.7.1
@@ -18,7 +18,6 @@ modules:
     - {name: "csp", version: "v3.26.0"}
     - {name: "core", version: "v3.17.0"}
     - {name: "FreeRTOS-Kernel", version: "V11.3.1"}
-    - {name: "motor_control", version: "v3.11.0"}
 
 packs:
     - {name: "SAMD51_DFP", version: "3.8.246"}

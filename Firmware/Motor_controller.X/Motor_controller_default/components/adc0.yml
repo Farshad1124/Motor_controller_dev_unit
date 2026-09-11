@@ -14,29 +14,7 @@ dependency:
   version: v3.26.0
 customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
-  attachments:
-    children:
-    - children:
-      - attributes:
-          id: ADC0_ADC
-        children:
-        - children:
-          - attributes:
-              id: targetComponentID
-            children:
-            - type: Value
-              value: pmsm_foc
-            type: String
-          - attributes:
-              id: targetAttachmentID
-            children:
-            - type: Value
-              value: pmsmfoc_ADC
-            type: String
-          type: Attributes
-        type: DirectCapability
-      type: Attachments
-    type: adc0
+  attachments: {}
   elementPosition:
     attributes:
       id: __ROOTVIEW
@@ -44,8 +22,8 @@ data:
     - children:
       - attributes:
           id: adc0
-          x: '9'
-          y: '305'
+          x: '21'
+          y: '158'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph
@@ -151,9 +129,8 @@ data:
       children:
       - children:
         - attributes:
-            id: adc0
             value: HW Event Trigger
-          type: Dynamic
+          type: User
         type: Values
       type: Combo
     ADC_CTRLA_ONDEMAND:
@@ -168,9 +145,8 @@ data:
       children:
       - children:
         - attributes:
-            id: adc0
-            value: '1'
-          type: Dynamic
+            value: '3'
+          type: User
         type: Values
       type: KeyValueSet
     ADC_CTRLA_RUNSTDBY:
@@ -182,13 +158,6 @@ data:
       attributes:
         id: ADC_CTRLA_SLAVEEN
         label: Enable Slave
-      children:
-      - children:
-        - attributes:
-            id: adc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     ADC_CTRLB_LEFTADJ:
       attributes:
@@ -199,13 +168,6 @@ data:
       attributes:
         id: ADC_CTRLB_RESSEL
         label: Select Result Resolution
-      children:
-      - children:
-        - attributes:
-            id: adc0
-            value: '0'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
     ADC_CTRLB_WINMODE:
       attributes:
@@ -216,6 +178,20 @@ data:
       attributes:
         id: ADC_EVCTRL_FLUSH
         label: Flush Event Input
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
       type: KeyValueSet
     ADC_EVCTRL_RESRDYEO:
       attributes:
@@ -224,9 +200,8 @@ data:
       children:
       - children:
         - attributes:
-            id: adc0
             value: 'false'
-          type: Dynamic
+          type: User
         type: Values
       type: Boolean
     ADC_EVCTRL_START:
@@ -244,9 +219,8 @@ data:
         type: Attributes
       - children:
         - attributes:
-            id: adc0
             value: '1'
-          type: Dynamic
+          type: User
         type: Values
       type: KeyValueSet
     ADC_GET_RESULT_API:
@@ -285,9 +259,8 @@ data:
       children:
       - children:
         - attributes:
-            id: adc0
             value: '11'
-          type: Dynamic
+          type: User
         type: Values
       type: KeyValueSet
     ADC_INSTANCE_NAME:
@@ -302,9 +275,8 @@ data:
       children:
       - children:
         - attributes:
-            id: adc0
             value: 'true'
-          type: Dynamic
+          type: User
         type: Values
       type: Boolean
     ADC_INTENSET_WINMON:
@@ -559,13 +531,6 @@ data:
       attributes:
         id: ADC_SAMPCTRL_SAMPLEN
         label: Select Sample Length (cycles)
-      children:
-      - children:
-        - attributes:
-            id: adc0
-            value: '12'
-          type: Dynamic
-        type: Values
       type: Integer
     ADC_SAMPLENUM:
       attributes:
@@ -628,11 +593,31 @@ data:
       attributes:
         id: ADC_SEQCTRL_SEQ9
         label: Enable ADC Auto-Start Conversion
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
       type: Boolean
     ADC_SEQ_ENABLE:
       attributes:
         id: ADC_SEQ_ENABLE
         label: Enable DMA Sequencing
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
       type: Boolean
     ADC_START_API:
       attributes:

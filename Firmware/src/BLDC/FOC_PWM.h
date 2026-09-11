@@ -18,7 +18,7 @@ typedef enum {
 } pwm_phase_t;
 
 
-#define DPLL_FREQ 120000000u
+#define DPLL_FREQ 60000000u
 #define PWM_CLOCK_NUM 3
 #define PWM_PRESCALER_DIV 1
 #define ATSAMD51_TCC0_GCLK_ID 25  // based on how MCC is setup
@@ -43,10 +43,10 @@ typedef enum {
 
 
 // Functions
-bool PWM_FOC_Initialize(float vlim, float vsup, uint32_t pwm_frequency);
-void PWM_FOC_Disable ();
-void PWM_FOC_Enable();
-void PWM_FOC_Set(float Ua, float Ub, float Uc);
+bool FOC_PWM_Initialize(float vlim, float vsup, uint32_t pwm_frequency);
+void FOC_PWM_Disable ();
+void FOC_PWM_Enable();
+void FOC_PWM_Set(float Ua, float Ub, float Uc);
 void setPhaseState(PhaseState sa, PhaseState sb, PhaseState sc);
 
 #endif

@@ -24,12 +24,18 @@
             ],
             "fileSet": "Project files",
             "toolchain": "default-XC32",
+            "userVariables": "default-uservariables_1",
             "includeLegacyMacros": true
         }
     ],
     "propertyGroups": [
         {
             "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {}
+        },
+        {
+            "name": "default-uservariables_1",
             "type": "uservariables",
             "properties": {}
         },
@@ -170,7 +176,7 @@
                 "linker.generate-16-bit-code": false,
                 "linker.generate-cross-reference-file": false,
                 "linker.generate-micro-compressed-code": false,
-                "linker.heap-size": "512",
+                "linker.heap-size": "2048",
                 "linker.no-device-startup-code": true,
                 "linker.no-ivt": false,
                 "linker.no-startup-files": false,
@@ -178,7 +184,7 @@
                 "linker.oXC16ld-no-smart-io": false,
                 "linker.oXC16ld-stackguard": "16",
                 "linker.remove-unused-sections": true,
-                "linker.report-memory-usage": false,
+                "linker.report-memory-usage": true,
                 "linker.warn-section-align": false,
                 "coverage.stack-guidance": false,
                 "global.combine-sourcefiles": false,
@@ -197,7 +203,6 @@
                     "SCOPE_SIZE=4096",
                     "__GENERIC_MICROCHIP_PIC32__"
                 ],
-                "compiler.optimization-level": "-O1",
                 "compiler++.optimization-level": "-O1"
             }
         },
@@ -385,13 +390,11 @@
                 "Firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h",
                 "Firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h",
                 "Firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h",
-                "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c",
                 "Firmware/src/config/default/peripheral/sercom/i2c_master/plib_sercom1_i2c_master.c",
                 "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom0_spi_master.c",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom4_usart.c",
                 "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom_spi_master_common.h",
                 "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom0_spi_master.h",
-                "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom3_usart.h",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom4_usart.h",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom_usart_common.h",
                 "Firmware/src/config/default/peripheral/sercom/i2c_master/plib_sercom1_i2c_master.h",
@@ -409,40 +412,7 @@
                 "Firmware/src/config/default/peripheral/tcc/plib_tcc0.h",
                 "Firmware/src/BLDC/FOC_PWM.c",
                 "Firmware/src/BLDC/FOC_PWM.h",
-                "Firmware/src/config/default/QSpin/mc_application.c",
-                "Firmware/src/config/default/QSpin/mc_key_manager.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_flux_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_motor.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_open_loop_startup.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_pi_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_pwm.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_reference_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_speed_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_torque_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_field_oriented_control.c",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_rotor_position_estimation.c",
-                "Firmware/src/config/default/QSpin/Current_Calculation/mc_current_calculation.c",
-                "Firmware/src/config/default/QSpin/Voltage_Calculation/mc_voltage_measurement.c",
-                "Firmware/src/config/default/QSpin/Utilities/mc_utilities.c",
-                "Firmware/src/config/default/QSpin/Hardware_Abstraction/mc_hardware_abstraction.c",
                 "Firmware/src/config/default/peripheral/adc/plib_adc0.c",
-                "Firmware/src/config/default/QSpin/mc_application.h",
-                "Firmware/src/config/default/QSpin/mc_types.h",
-                "Firmware/src/config/default/QSpin/mc_key_manager.h",
-                "Firmware/src/config/default/QSpin/Voltage_Calculation/mc_voltage_measurement.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_motor.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_flux_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_field_oriented_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_torque_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_speed_control.h",
-                "Firmware/src/config/default/QSpin/Utilities/mc_utilities.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_rotor_position_estimation.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_reference_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_pwm.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_pi_control.h",
-                "Firmware/src/config/default/QSpin/Field_Oriented_Control/mc_open_loop_startup.h",
-                "Firmware/src/config/default/QSpin/Hardware_Abstraction/mc_hardware_abstraction.h",
-                "Firmware/src/config/default/QSpin/Current_Calculation/mc_current_calculation.h",
                 "Firmware/src/config/default/peripheral/adc/plib_adc_common.h",
                 "Firmware/src/config/default/peripheral/adc/plib_adc0.h",
                 "Firmware/src/BLDC/FOC_ADC.h",
@@ -452,7 +422,15 @@
                 },
                 {
                     "exclude": "Firmware/src/BLDC/FOC_utilities.h"
-                }
+                },
+                "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom5_usart.c",
+                "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom5_usart.h",
+                "Firmware/src/BLDC/FOC_Application.c",
+                "Firmware/src/BLDC/FOC_Application.h",
+                "Firmware/src/BW_filter/BW_filter.c",
+                "Firmware/src/BW_filter/BW_filter.h",
+                "Firmware/src/BLDC/FOC_PID.c",
+                "Firmware/src/BLDC/FOC_PID.h"
             ]
         }
     ]

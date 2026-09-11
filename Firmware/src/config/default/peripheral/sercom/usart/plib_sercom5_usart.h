@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name
-    plib_sercom3_usart.h
+    plib_sercom5_usart.h
 
   Summary
     USART peripheral library interface.
@@ -42,8 +42,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef PLIB_SERCOM3_USART_H // Guards against multiple inclusion
-#define PLIB_SERCOM3_USART_H
+#ifndef PLIB_SERCOM5_USART_H // Guards against multiple inclusion
+#define PLIB_SERCOM5_USART_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -67,41 +67,41 @@
 // *****************************************************************************
 // *****************************************************************************
 
-void SERCOM3_USART_Initialize( void );
+void SERCOM5_USART_Initialize( void );
 
-bool SERCOM3_USART_SerialSetup( USART_SERIAL_SETUP * serialSetup, uint32_t clkFrequency );
+bool SERCOM5_USART_SerialSetup( USART_SERIAL_SETUP * serialSetup, uint32_t clkFrequency );
 
-void SERCOM3_USART_Enable( void );
+void SERCOM5_USART_Enable( void );
 
-void SERCOM3_USART_Disable( void );
+void SERCOM5_USART_Disable( void );
 
-void SERCOM3_USART_TransmitterEnable( void );
+void SERCOM5_USART_TransmitterEnable( void );
 
-void SERCOM3_USART_TransmitterDisable( void );
+void SERCOM5_USART_TransmitterDisable( void );
 
-bool SERCOM3_USART_Write( void *buffer, const size_t size );
+bool SERCOM5_USART_Write( void *buffer, const size_t size );
 
-bool SERCOM3_USART_TransmitComplete( void );
-
-
-bool SERCOM3_USART_TransmitterIsReady( void );
-
-void SERCOM3_USART_WriteByte( int data );
+bool SERCOM5_USART_TransmitComplete( void );
 
 
-void SERCOM3_USART_ReceiverEnable( void );
+bool SERCOM5_USART_TransmitterIsReady( void );
 
-void SERCOM3_USART_ReceiverDisable( void );
+void SERCOM5_USART_WriteByte( int data );
 
-bool SERCOM3_USART_Read( void *buffer, const size_t size );
 
-bool SERCOM3_USART_ReceiverIsReady( void );
+void SERCOM5_USART_ReceiverEnable( void );
 
-int SERCOM3_USART_ReadByte( void );
+void SERCOM5_USART_ReceiverDisable( void );
 
-USART_ERROR SERCOM3_USART_ErrorGet( void );
+bool SERCOM5_USART_Read( void *buffer, const size_t size );
 
-uint32_t SERCOM3_USART_FrequencyGet( void );
+bool SERCOM5_USART_ReceiverIsReady( void );
+
+int SERCOM5_USART_ReadByte( void );
+
+USART_ERROR SERCOM5_USART_ErrorGet( void );
+
+uint32_t SERCOM5_USART_FrequencyGet( void );
 
 
 // DOM-IGNORE-BEGIN
@@ -112,4 +112,4 @@ uint32_t SERCOM3_USART_FrequencyGet( void );
 #endif
 // DOM-IGNORE-END
 
-#endif //PLIB_SERCOM3_USART_H
+#endif //PLIB_SERCOM5_USART_H

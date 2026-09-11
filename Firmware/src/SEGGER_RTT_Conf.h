@@ -20,7 +20,7 @@ Purpose : User configuration file for RTT.
 #ifndef SEGGER_RTT_CONF_H
 #define SEGGER_RTT_CONF_H
 
-
+//#define SEGGER_RTT_MODE_DEFAULT    SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
 /*********************************************************************
 *
 *       Defines, configurable

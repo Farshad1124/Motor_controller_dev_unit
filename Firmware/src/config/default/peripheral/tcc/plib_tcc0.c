@@ -55,8 +55,6 @@
 #include "plib_tcc0.h"
 
 
-/* Object to hold callback function and context */
-static volatile TCC_CALLBACK_OBJECT TCC0_CallbackObj;
 
 /* Initialize TCC module */
 void TCC0_PWMInitialize(void)
@@ -73,9 +71,12 @@ void TCC0_PWMInitialize(void)
     TCC0_REGS->TCC_WEXCTRL = TCC_WEXCTRL_OTMX(0UL);
     /* Dead time configurations */
     TCC0_REGS->TCC_WEXCTRL |= TCC_WEXCTRL_DTIEN0_Msk | TCC_WEXCTRL_DTIEN1_Msk | TCC_WEXCTRL_DTIEN2_Msk | TCC_WEXCTRL_DTIEN3_Msk
- 	 	 | TCC_WEXCTRL_DTLS(36UL) | TCC_WEXCTRL_DTHS(36UL);
+ 	 	 | TCC_WEXCTRL_DTLS(64UL) | TCC_WEXCTRL_DTHS(64UL);
 
-    TCC0_REGS->TCC_WAVE = TCC_WAVE_WAVEGEN_DSTOP;
+    TCC0_REGS->TCC_WAVE = TCC_WAVE_WAVEGEN_DSTOP 
+ 	 	 | TCC_WAVE_SWAP1_Msk 
+ 	 	 | TCC_WAVE_SWAP2_Msk 
+ 	 	 | TCC_WAVE_SWAP3_Msk;
 
 
     /* Configure duty cycle values */
@@ -85,22 +86,11 @@ void TCC0_PWMInitialize(void)
     TCC0_REGS->TCC_CC[3] = 0U;
     TCC0_REGS->TCC_CC[4] = 0U;
     TCC0_REGS->TCC_CC[5] = 0U;
-    TCC0_REGS->TCC_PER = 150U;
+    TCC0_REGS->TCC_PER = 1500U;
 
 
-    TCC0_REGS->TCC_DRVCTRL |= TCC_DRVCTRL_FILTERVAL0(0UL)
-          | TCC_DRVCTRL_FILTERVAL1(0UL)| TCC_DRVCTRL_NRE0_Msk
-		 | TCC_DRVCTRL_NRE1_Msk
-		 | TCC_DRVCTRL_NRE2_Msk
-		 | TCC_DRVCTRL_NRE3_Msk
-		 | TCC_DRVCTRL_NRE4_Msk
-		 | TCC_DRVCTRL_NRE5_Msk
-		 | TCC_DRVCTRL_NRE6_Msk
-		 | TCC_DRVCTRL_NRE7_Msk;
-    TCC0_REGS->TCC_INTENSET = TCC_INTENSET_FAULT1_Msk;
 
-    TCC0_REGS->TCC_EVCTRL = TCC_EVCTRL_OVFEO_Msk
- 	 	 | TCC_EVCTRL_TCEI1_Msk | TCC_EVCTRL_EVACT1_FAULT;
+    TCC0_REGS->TCC_EVCTRL = TCC_EVCTRL_OVFEO_Msk;
     while (TCC0_REGS->TCC_SYNCBUSY != 0U)
     {
         /* Wait for sync */
@@ -223,34 +213,16 @@ void TCC0_PWMPeriodInterruptDisable(void)
     TCC0_REGS->TCC_INTENCLR = TCC_INTENCLR_OVF_Msk;
 }
 
- /* Register callback function */
-void TCC0_PWMCallbackRegister(TCC_CALLBACK callback, uintptr_t context)
+/* Read interrupt flags */
+uint32_t TCC0_PWMInterruptStatusGet(void)
 {
-    TCC0_CallbackObj.callback_fn = callback;
-    TCC0_CallbackObj.context = context;
-}
-
-/* Interrupt Handler */
-void __attribute__((used)) TCC0_OTHER_InterruptHandler(void)
-{
-    uint32_t status;
-    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
-    uintptr_t context;
-    context = TCC0_CallbackObj.context;
-    status = (TCC0_REGS->TCC_INTFLAG & 0xFFFFU);
+    uint32_t interrupt_status;
+    interrupt_status = TCC0_REGS->TCC_INTFLAG;
     /* Clear interrupt flags */
-    TCC0_REGS->TCC_INTFLAG = 0xFFFFU;
+    TCC0_REGS->TCC_INTFLAG = interrupt_status;
     (void)TCC0_REGS->TCC_INTFLAG;
-    if (TCC0_CallbackObj.callback_fn != NULL)
-    {
-        TCC0_CallbackObj.callback_fn(status, context);
-    }
-
+    return interrupt_status;
 }
-
-
-     
-
 
 
 /**

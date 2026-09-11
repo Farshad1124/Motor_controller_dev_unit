@@ -1604,6 +1604,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "2 Phase PM motor controller"
+		(exclude_from_sim no)
+		(at 101.473 20.828 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "8f17d2a5-df94-47fa-b9e2-a614fcac8f1c")
+	)
 	(junction
 		(at 103.505 73.025)
 		(diameter 0)

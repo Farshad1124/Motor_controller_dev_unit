@@ -47,7 +47,7 @@ static void OSCCTRL_Initialize(void)
     /****************** XOSC1 Initialization   ********************************/
 
     /* Configure External Oscillator */
-    OSCCTRL_REGS->OSCCTRL_XOSCCTRL[1] = OSCCTRL_XOSCCTRL_STARTUP(0U) | OSCCTRL_XOSCCTRL_IMULT(6U) | OSCCTRL_XOSCCTRL_IPTAT(3U) | OSCCTRL_XOSCCTRL_ENABLE_Msk;
+    OSCCTRL_REGS->OSCCTRL_XOSCCTRL[1] = OSCCTRL_XOSCCTRL_STARTUP(0U) | OSCCTRL_XOSCCTRL_IMULT(6U) | OSCCTRL_XOSCCTRL_IPTAT(3U) | OSCCTRL_XOSCCTRL_ENALC_Msk | OSCCTRL_XOSCCTRL_ENABLE_Msk;
     while((OSCCTRL_REGS->OSCCTRL_STATUS & OSCCTRL_STATUS_XOSCRDY1_Msk) != OSCCTRL_STATUS_XOSCRDY1_Msk)
     {
         /* Waiting for the XOSC Ready state */
@@ -137,7 +137,7 @@ static void GCLK2_Initialize(void)
 
 static void GCLK3_Initialize(void)
 {
-    GCLK_REGS->GCLK_GENCTRL[3] = GCLK_GENCTRL_DIV(1U) | GCLK_GENCTRL_SRC(7U) | GCLK_GENCTRL_IDC_Msk | GCLK_GENCTRL_GENEN_Msk;
+    GCLK_REGS->GCLK_GENCTRL[3] = GCLK_GENCTRL_DIV(2U) | GCLK_GENCTRL_SRC(7U) | GCLK_GENCTRL_IDC_Msk | GCLK_GENCTRL_GENEN_Msk;
 
     while((GCLK_REGS->GCLK_SYNCBUSY & GCLK_SYNCBUSY_GENCTRL_GCLK3) == GCLK_SYNCBUSY_GENCTRL_GCLK3)
     {
@@ -193,22 +193,8 @@ void CLOCK_Initialize (void)
     {
         /* Wait for synchronization */
     }
-    /* Selection of the Generator and write Lock for EVSYS_1 */
-    GCLK_REGS->GCLK_PCHCTRL[12] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
-
-    while ((GCLK_REGS->GCLK_PCHCTRL[12] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
-    {
-        /* Wait for synchronization */
-    }
-    /* Selection of the Generator and write Lock for SERCOM3_CORE */
-    GCLK_REGS->GCLK_PCHCTRL[24] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
-
-    while ((GCLK_REGS->GCLK_PCHCTRL[24] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
-    {
-        /* Wait for synchronization */
-    }
     /* Selection of the Generator and write Lock for TCC0 TCC1 */
-    GCLK_REGS->GCLK_PCHCTRL[25] = GCLK_PCHCTRL_GEN(0x0U)  | GCLK_PCHCTRL_CHEN_Msk;
+    GCLK_REGS->GCLK_PCHCTRL[25] = GCLK_PCHCTRL_GEN(0x3U)  | GCLK_PCHCTRL_CHEN_Msk;
 
     while ((GCLK_REGS->GCLK_PCHCTRL[25] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
@@ -218,6 +204,13 @@ void CLOCK_Initialize (void)
     GCLK_REGS->GCLK_PCHCTRL[34] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
 
     while ((GCLK_REGS->GCLK_PCHCTRL[34] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
+    /* Selection of the Generator and write Lock for SERCOM5_CORE */
+    GCLK_REGS->GCLK_PCHCTRL[35] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[35] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
         /* Wait for synchronization */
     }
@@ -236,10 +229,10 @@ void CLOCK_Initialize (void)
     MCLK_REGS->MCLK_APBAMASK = 0x37ffU;
 
     /* Configure the APBB Bridge Clocks */
-    MCLK_REGS->MCLK_APBBMASK = 0x18cd6U;
+    MCLK_REGS->MCLK_APBBMASK = 0x188d6U;
 
     /* Configure the APBD Bridge Clocks */
-    MCLK_REGS->MCLK_APBDMASK = 0x81U;
+    MCLK_REGS->MCLK_APBDMASK = 0x83U;
 
 
 }

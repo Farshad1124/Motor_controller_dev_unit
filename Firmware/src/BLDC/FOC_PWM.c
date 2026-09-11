@@ -1,5 +1,6 @@
 #include "definitions.h"     
 #include "FOC_PWM.h"
+#include <math.h>
 
 // ================================================
 // 					Global parameters
@@ -66,7 +67,7 @@ bool configure_FOC_PWM(long pwm_frequency, float dead_zone, const int pinA_h, co
  * @return true 
  * @return false 
  */
-bool PWM_FOC_Initialize(float vlim, float vsup, uint32_t pwm_frequency)
+bool FOC_PWM_Initialize(float vlim, float vsup, uint32_t pwm_frequency)
 {
 	voltage_limit = vlim;
 	voltage_power_supply = vsup;
@@ -85,21 +86,6 @@ bool PWM_FOC_Initialize(float vlim, float vsup, uint32_t pwm_frequency)
 	{
 		/* Wait for sync */
 	}
-
-	TCC0_REGS->TCC_CTRLA = TCC_CTRLA_SWRST_Msk; // reset TCC
-    while((TCC0_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_SWRST_Msk) == TCC_SYNCBUSY_SWRST_Msk)
-    {
-        /* Wait for sync */
-    }
-
-
-	GCLK_REGS->GCLK_PCHCTRL[TCC0_GCLK_ID] = GCLK_PCHCTRL_GEN(PWM_CLOCK_NUM)| GCLK_PCHCTRL_CHEN_Msk; // attach TCC0 to GCLK3
-	while((GCLK_REGS->GCLK_SYNCBUSY & GCLK_SYNCBUSY_GENCTRL_GCLK3) == GCLK_SYNCBUSY_GENCTRL_GCLK3)
-    {
-        /* wait for the Generator 3 synchronization */
-    } 
-
-	TCC0_REGS->TCC_CTRLA =  TCC_CTRLA_PRESCALER_DIV1 | TCC_CTRLA_PRESCSYNC_PRESC; // Set TCC0 counter prescaler 
 
 	/* DSTOP PWM. Master (low-side) output n is HIGH while
      * COUNT < CC[n]; DTI generates the complementary high side. */
@@ -146,12 +132,12 @@ bool PWM_FOC_Initialize(float vlim, float vsup, uint32_t pwm_frequency)
         /* Wait for sync */
     }
 	
-    TCC0_REGS->TCC_CTRLA |= TCC_CTRLA_ENABLE_Msk;
-	while((TCC0_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_ENABLE_Msk) != TCC_SYNCBUSY_ENABLE_Msk)
-	{
-		/* Wait for sync */
-	}
-
+    //TCC0_REGS->TCC_CTRLA |= TCC_CTRLA_ENABLE_Msk;
+	//while((TCC0_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_ENABLE_Msk) != TCC_SYNCBUSY_ENABLE_Msk)
+	//{
+	//	/* Wait for sync */
+	//}
+	
 	pwm_resolution = (DPLL_FREQ/2) / pwm_frequency;
 	if (pwm_resolution>MAX_PWM_RESOLUTION) 
 		pwm_resolution = MAX_PWM_RESOLUTION;
@@ -161,39 +147,39 @@ bool PWM_FOC_Initialize(float vlim, float vsup, uint32_t pwm_frequency)
 	return 1;
 }
 
-
-
 /**
  * @brief enable motor drive
  * 
  */
-void PWM_FOC_Enable()
+void FOC_PWM_Enable()
 {
     // todo: set enable pin
     
     // set phase state enabled
     setPhaseState(PHASE_ON, PHASE_ON, PHASE_ON);
     // set zero to PWM
-    PWM_FOC_Set(0, 0, 0);
+    FOC_PWM_Set(0, 0, 0);
 }
 
 /**
  * @brief disable motor drive
  */
-void PWM_FOC_Disable ()
+void FOC_PWM_Disable ()
 {
+
 	setPhaseState(PHASE_OFF, PHASE_OFF, PHASE_OFF);
-	PWM_FOC_Set(0, 0, 0);
+	FOC_PWM_Set(0, 0, 0);
 
 	// todo: clear enable pin
 }
 
-void PWM_FOC_Set(float Ua, float Ub, float Uc)
+void FOC_PWM_Set(float Ua, float Ub, float Uc)
 {
 	// limit the voltage in driver
 	Ua = _constrain(Ua, 0, voltage_limit);
 	Ub = _constrain(Ub, 0, voltage_limit);
 	Uc = _constrain(Uc, 0, voltage_limit);
+	
 	// calculate duty cycle
 	// limited in [0,1]
 	dc_a = _constrain(Ua / voltage_power_supply, 0.0f , 1.0f );
@@ -201,9 +187,14 @@ void PWM_FOC_Set(float Ua, float Ub, float Uc)
 	dc_c = _constrain(Uc / voltage_power_supply, 0.0f , 1.0f );
 
 	
-	TCC0_REGS->TCC_CCBUF[PWM_PHASE_A] =  (uint32_t)((pwm_resolution-1) * dc_a); 
-	TCC0_REGS->TCC_CCBUF[PWM_PHASE_B] =  (uint32_t)((pwm_resolution-1) * dc_b); 
-	TCC0_REGS->TCC_CCBUF[PWM_PHASE_C] =  (uint32_t)((pwm_resolution-1) * dc_c); 
+	TCC0_REGS->TCC_CCBUF[PWM_PHASE_A] =  (uint32_t)((float)(pwm_resolution-1) * dc_a); 
+	TCC0_REGS->TCC_CCBUF[PWM_PHASE_B] =  (uint32_t)((float)(pwm_resolution-1) * dc_b); 
+	TCC0_REGS->TCC_CCBUF[PWM_PHASE_C] =  (uint32_t)((float)(pwm_resolution-1) * dc_c); 
+
+	while (TCC0_REGS->TCC_SYNCBUSY != 0U)
+    {
+        /* Wait for sync */
+    }
 }
 
 

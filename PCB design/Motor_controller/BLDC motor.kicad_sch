@@ -2876,6 +2876,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "3 Phase BLDC motor driver"
+		(exclude_from_sim no)
+		(at 93.853 21.336 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "21fcd115-d2e6-47ba-aa56-0abd76e72600")
+	)
 	(junction
 		(at 167.005 98.425)
 		(diameter 0)

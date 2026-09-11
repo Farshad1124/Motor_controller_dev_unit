@@ -2890,6 +2890,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Stepper Motor Driver"
+		(exclude_from_sim no)
+		(at 72.009 19.812 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "a86da95c-e8d7-4ce0-8176-cada8383abf9")
+	)
 	(junction
 		(at 86.995 112.395)
 		(diameter 0)

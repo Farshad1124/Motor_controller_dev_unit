@@ -83,7 +83,7 @@ void EIC_Initialize (void)
 
     /* Interrupt sense type and filter control for EXTINT channels 0 to 7*/
     EIC_REGS->EIC_CONFIG[0] =  EIC_CONFIG_SENSE0_FALL  |
-                              EIC_CONFIG_SENSE1_FALL  |
+                              EIC_CONFIG_SENSE1_FALL | EIC_CONFIG_FILTEN1_Msk |
                               EIC_CONFIG_SENSE2_NONE  |
                               EIC_CONFIG_SENSE3_NONE  |
                               EIC_CONFIG_SENSE4_NONE  |
@@ -92,7 +92,7 @@ void EIC_Initialize (void)
                               EIC_CONFIG_SENSE7_NONE  ;
 
     /* Interrupt sense type and filter control for EXTINT channels 8 to 15 */
-    EIC_REGS->EIC_CONFIG[1] =  EIC_CONFIG_SENSE0_FALL 
+    EIC_REGS->EIC_CONFIG[1] =  EIC_CONFIG_SENSE0_FALL | EIC_CONFIG_FILTEN0_Msk
          |  EIC_CONFIG_SENSE1_NONE  
          |  EIC_CONFIG_SENSE2_FALL  
          |  EIC_CONFIG_SENSE3_BOTH  
@@ -106,8 +106,6 @@ void EIC_Initialize (void)
     /* Debouncer enable */
     EIC_REGS->EIC_DEBOUNCEN = 0x102U;
 
-    /* Event Control Output enable */
-    EIC_REGS->EIC_EVCTRL = 0x4000U;
 
     /* Debouncer Setting */
     EIC_REGS->EIC_DPRESCALER = EIC_DPRESCALER_PRESCALER0(0UL) | EIC_DPRESCALER_PRESCALER1(0UL) ;

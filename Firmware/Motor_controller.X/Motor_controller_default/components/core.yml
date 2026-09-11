@@ -416,12 +416,6 @@ data:
       attributes:
         id: CONFIG_CLOCK_XOSC0_FREQUENCY
         label: Frequency
-      children:
-      - children:
-        - attributes:
-            value: '16000000'
-          type: User
-        type: Values
       type: Integer
     XOSC0_OSCILLATOR_MODE:
       attributes:
@@ -430,7 +424,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '0'
+            value: '1'
           type: User
         type: Values
       type: KeyValueSet
@@ -3482,7 +3476,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x1'
+            value: '0x3'
           type: Dynamic
         type: Values
       type: String
@@ -3751,7 +3745,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x81'
+            value: '0x83'
           type: Dynamic
         type: Values
       type: String
@@ -4179,7 +4173,7 @@ data:
       children:
       - children:
         - attributes:
-            value: SERCOM3_PAD0
+            value: SERCOM5_PAD1
           type: User
         type: Values
       type: String
@@ -4191,7 +4185,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x22'
+            value: '0x33'
           type: Dynamic
         type: Values
       type: String
@@ -4238,7 +4232,7 @@ data:
       children:
       - children:
         - attributes:
-            value: C
+            value: D
           type: User
         type: Values
       type: String
@@ -4260,7 +4254,7 @@ data:
       children:
       - children:
         - attributes:
-            value: SERCOM3_PAD1
+            value: SERCOM5_PAD0
           type: User
         type: Values
       type: String
@@ -4307,7 +4301,7 @@ data:
       children:
       - children:
         - attributes:
-            value: C
+            value: D
           type: User
         type: Values
       type: String
@@ -4319,7 +4313,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -4331,7 +4325,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -4343,7 +4337,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -4351,6 +4345,13 @@ data:
       attributes:
         id: SERCOM5_CORE_CLOCK_ENABLE
         label: SERCOM5_CORE Clock Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'true'
+          type: Dynamic
+        type: Values
       type: Boolean
     SERCOM5_0_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4380,6 +4381,13 @@ data:
       attributes:
         id: SERCOM5_0_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     SERCOM5_1_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4409,6 +4417,13 @@ data:
       attributes:
         id: SERCOM5_1_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     SERCOM5_2_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4438,6 +4453,13 @@ data:
       attributes:
         id: SERCOM5_2_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     SERCOM5_OTHER_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4467,6 +4489,13 @@ data:
       attributes:
         id: SERCOM5_OTHER_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     NVIC_66_0_HANDLER_LOCK:
       attributes:
@@ -4484,6 +4513,13 @@ data:
       attributes:
         id: SERCOM5_0_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     NVIC_67_0_HANDLER_LOCK:
       attributes:
@@ -4501,6 +4537,13 @@ data:
       attributes:
         id: SERCOM5_1_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     NVIC_68_0_HANDLER_LOCK:
       attributes:
@@ -4518,6 +4561,13 @@ data:
       attributes:
         id: SERCOM5_2_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     NVIC_69_0_HANDLER_LOCK:
       attributes:
@@ -4535,6 +4585,13 @@ data:
       attributes:
         id: SERCOM5_OTHER_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: 'false'
+          type: Dynamic
+        type: Values
       type: Boolean
     NVIC_66_0_HANDLER:
       attributes:
@@ -4552,6 +4609,13 @@ data:
       attributes:
         id: SERCOM5_0_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: SERCOM5_0_Handler
+          type: Dynamic
+        type: Values
       type: String
     NVIC_67_0_HANDLER:
       attributes:
@@ -4569,6 +4633,13 @@ data:
       attributes:
         id: SERCOM5_1_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: SERCOM5_1_Handler
+          type: Dynamic
+        type: Values
       type: String
     NVIC_68_0_HANDLER:
       attributes:
@@ -4586,6 +4657,13 @@ data:
       attributes:
         id: SERCOM5_2_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: SERCOM5_2_Handler
+          type: Dynamic
+        type: Values
       type: String
     NVIC_69_0_HANDLER:
       attributes:
@@ -4603,6 +4681,13 @@ data:
       attributes:
         id: SERCOM5_OTHER_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: sercom5
+            value: SERCOM5_OTHER_Handler
+          type: Dynamic
+        type: Values
       type: String
     MCLK_APBB_INITIAL_VALUE:
       attributes:
@@ -4612,7 +4697,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x18cd6'
+            value: '0x188d6'
           type: Dynamic
         type: Values
       type: String
@@ -4624,7 +4709,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -4636,7 +4721,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -4648,7 +4733,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -4656,13 +4741,6 @@ data:
       attributes:
         id: SERCOM3_CORE_CLOCK_ENABLE
         label: SERCOM3_CORE Clock Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM3_0_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4692,13 +4770,6 @@ data:
       attributes:
         id: SERCOM3_0_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM3_1_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4728,13 +4799,6 @@ data:
       attributes:
         id: SERCOM3_1_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM3_2_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4764,13 +4828,6 @@ data:
       attributes:
         id: SERCOM3_2_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM3_OTHER_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -4800,13 +4857,6 @@ data:
       attributes:
         id: SERCOM3_OTHER_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_58_0_HANDLER_LOCK:
       attributes:
@@ -4824,13 +4874,6 @@ data:
       attributes:
         id: SERCOM3_0_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_59_0_HANDLER_LOCK:
       attributes:
@@ -4848,13 +4891,6 @@ data:
       attributes:
         id: SERCOM3_1_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_60_0_HANDLER_LOCK:
       attributes:
@@ -4872,13 +4908,6 @@ data:
       attributes:
         id: SERCOM3_2_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_61_0_HANDLER_LOCK:
       attributes:
@@ -4896,13 +4925,6 @@ data:
       attributes:
         id: SERCOM3_OTHER_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_58_0_HANDLER:
       attributes:
@@ -4920,13 +4942,6 @@ data:
       attributes:
         id: SERCOM3_0_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: SERCOM3_0_Handler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_59_0_HANDLER:
       attributes:
@@ -4944,13 +4959,6 @@ data:
       attributes:
         id: SERCOM3_1_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: SERCOM3_1_Handler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_60_0_HANDLER:
       attributes:
@@ -4968,13 +4976,6 @@ data:
       attributes:
         id: SERCOM3_2_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: SERCOM3_2_Handler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_61_0_HANDLER:
       attributes:
@@ -4992,13 +4993,6 @@ data:
       attributes:
         id: SERCOM3_OTHER_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom3
-            value: SERCOM3_OTHER_Handler
-          type: Dynamic
-        type: Values
       type: String
     PIN_82_MODE:
       attributes:
@@ -5054,7 +5048,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x1'
+            value: '0x3'
           type: Dynamic
         type: Values
       type: String
@@ -6345,7 +6339,7 @@ data:
             id: enabled
           children:
           - type: Value
-            value: 'false'
+            value: 'true'
           type: Boolean
         type: Attributes
       type: File
@@ -6353,13 +6347,6 @@ data:
       attributes:
         id: CoreMainFile
         label: Generate Main Source File
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     TCC0_CLOCK_FREQUENCY:
       attributes:
@@ -6369,7 +6356,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -6381,7 +6368,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -7398,7 +7385,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -7410,21 +7397,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'false'
+          type: User
         type: Values
       type: Boolean
     TCC0_OTHER_INTERRUPT_ENABLE:
       attributes:
         id: TCC0_OTHER_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_85_0_HANDLER_LOCK:
       attributes:
@@ -7434,7 +7417,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -7442,13 +7425,6 @@ data:
       attributes:
         id: TCC0_OTHER_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_85_0_HANDLER:
       attributes:
@@ -7458,7 +7434,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: TCC0_OTHER_InterruptHandler
+            value: TCC0_OTHER_Handler
           type: Dynamic
         type: Values
       type: String
@@ -7466,13 +7442,6 @@ data:
       attributes:
         id: TCC0_OTHER_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_OTHER_InterruptHandler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC0_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7502,13 +7471,6 @@ data:
       attributes:
         id: TCC0_MC0_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_86_0_HANDLER_LOCK:
       attributes:
@@ -7526,13 +7488,6 @@ data:
       attributes:
         id: TCC0_MC0_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_86_0_HANDLER:
       attributes:
@@ -7550,13 +7505,6 @@ data:
       attributes:
         id: TCC0_MC0_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC0_Handler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC1_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7586,13 +7534,6 @@ data:
       attributes:
         id: TCC0_MC1_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_87_0_HANDLER_LOCK:
       attributes:
@@ -7610,13 +7551,6 @@ data:
       attributes:
         id: TCC0_MC1_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_87_0_HANDLER:
       attributes:
@@ -7634,13 +7568,6 @@ data:
       attributes:
         id: TCC0_MC1_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC1_Handler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC2_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7670,13 +7597,6 @@ data:
       attributes:
         id: TCC0_MC2_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_88_0_HANDLER_LOCK:
       attributes:
@@ -7694,13 +7614,6 @@ data:
       attributes:
         id: TCC0_MC2_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_88_0_HANDLER:
       attributes:
@@ -7718,13 +7631,6 @@ data:
       attributes:
         id: TCC0_MC2_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC2_Handler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC3_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7754,13 +7660,6 @@ data:
       attributes:
         id: TCC0_MC3_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_89_0_HANDLER_LOCK:
       attributes:
@@ -7778,13 +7677,6 @@ data:
       attributes:
         id: TCC0_MC3_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_89_0_HANDLER:
       attributes:
@@ -7802,13 +7694,6 @@ data:
       attributes:
         id: TCC0_MC3_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC3_Handler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC4_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7838,13 +7723,6 @@ data:
       attributes:
         id: TCC0_MC4_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_90_0_HANDLER_LOCK:
       attributes:
@@ -7862,13 +7740,6 @@ data:
       attributes:
         id: TCC0_MC4_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_90_0_HANDLER:
       attributes:
@@ -7886,13 +7757,6 @@ data:
       attributes:
         id: TCC0_MC4_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC4_Handler
-          type: Dynamic
-        type: Values
       type: String
     TCC0_MC5_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -7922,13 +7786,6 @@ data:
       attributes:
         id: TCC0_MC5_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_91_0_HANDLER_LOCK:
       attributes:
@@ -7946,13 +7803,6 @@ data:
       attributes:
         id: TCC0_MC5_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'false'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_91_0_HANDLER:
       attributes:
@@ -7970,13 +7820,6 @@ data:
       attributes:
         id: TCC0_MC5_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: TCC0_MC5_Handler
-          type: Dynamic
-        type: Values
       type: String
     EVSYS_0_CLOCK_FREQUENCY:
       attributes:
@@ -8034,7 +7877,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -8046,7 +7889,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -8058,7 +7901,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -8070,7 +7913,7 @@ data:
       - children:
         - attributes:
             id: evsys
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -8494,7 +8337,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -8547,23 +8390,11 @@ data:
       attributes:
         id: GCLK_1_OUTPUTENABLE
         label: Output GCLK clock signal on IO pin?
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     GCLK_IN_1_FREQ:
       attributes:
         id: GCLK_IN_1_FREQ
         label: Gclk Input Frequency
-      children:
-      - children:
-        - attributes:
-            value: '0'
-          type: User
-        type: Values
       type: Integer
     GCLK_IO_2_FREQ:
       attributes:
@@ -8581,23 +8412,11 @@ data:
       attributes:
         id: GCLK_2_OUTPUTENABLE
         label: Output GCLK clock signal on IO pin?
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     GCLK_IN_2_FREQ:
       attributes:
         id: GCLK_IN_2_FREQ
         label: Gclk Input Frequency
-      children:
-      - children:
-        - attributes:
-            value: '0'
-          type: User
-        type: Values
       type: Integer
     SYSTICK_PERIOD_MS:
       attributes:
@@ -8659,23 +8478,11 @@ data:
       attributes:
         id: GCLK_0_DIV
         label: Division Factor
-      children:
-      - children:
-        - attributes:
-            value: '1'
-          type: User
-        type: Values
       type: Integer
     CONF_CPU_CLOCK_DIVIDER:
       attributes:
         id: CONF_CPU_CLOCK_DIVIDER
         label: CPU Clock Division Factor
-      children:
-      - children:
-        - attributes:
-            value: '0'
-          type: User
-        type: Values
       type: KeyValueSet
     CONFIG_CLOCK_DPLL0_MULTIPLIER_VALUE:
       attributes:
@@ -8722,7 +8529,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '0'
+            value: '3'
           type: User
         type: Values
       type: KeyValueSet
@@ -8745,12 +8552,6 @@ data:
       attributes:
         id: CONFIG_CLOCK_DPLL1_REF_CLOCK
         label: DPLL Reference Clock Source
-      children:
-      - children:
-        - attributes:
-            value: '3'
-          type: User
-        type: Values
       type: KeyValueSet
     GCLK_ID_2_FREQ:
       attributes:
@@ -8791,23 +8592,11 @@ data:
       attributes:
         id: CONFIG_CLOCK_DPLL1_LDR_INTEGER
         label: DPLL Loop Divider Ratio Integer Part
-      children:
-      - children:
-        - attributes:
-            value: '0'
-          type: User
-        type: Values
       type: Integer
     CONFIG_CLOCK_DPLL1_ENABLE:
       attributes:
         id: CONFIG_CLOCK_DPLL1_ENABLE
         label: 'Digital Phase Locked Loop(DPLL) Enable '
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     DPLL1_CLOCK_FREQ:
       attributes:
@@ -8859,12 +8648,6 @@ data:
       attributes:
         id: GCLK_3_OUTPUTENABLE
         label: Output GCLK clock signal on IO pin?
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     GCLK_3_DIVIDER_VALUE:
       attributes:
@@ -8874,7 +8657,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '1'
+            value: '2'
           type: Dynamic
         type: Values
       type: Integer
@@ -8885,7 +8668,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '1'
+            value: '2'
           type: User
         type: Values
       type: Integer
@@ -8893,23 +8676,11 @@ data:
       attributes:
         id: GCLK_IN_3_FREQ
         label: Gclk Input Frequency
-      children:
-      - children:
-        - attributes:
-            value: '0'
-          type: User
-        type: Values
       type: Integer
     CONFIG_CLOCK_XOSC0_CFDEN:
       attributes:
         id: CONFIG_CLOCK_XOSC0_CFDEN
         label: Enable Clock Failure Detection
-      children:
-      - children:
-        - attributes:
-            value: 'false'
-          type: User
-        type: Values
       type: Boolean
     GCLK_ID_0_GENSEL:
       attributes:
@@ -8918,7 +8689,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '1'
+            value: '0'
           type: User
         type: Values
       type: KeyValueSet
@@ -8963,7 +8734,7 @@ data:
       children:
       - children:
         - attributes:
-            value: ''
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -9011,7 +8782,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -9022,7 +8793,7 @@ data:
       children:
       - children:
         - attributes:
-            value: ''
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -9044,7 +8815,7 @@ data:
       children:
       - children:
         - attributes:
-            value: ''
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -9080,7 +8851,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -9091,7 +8862,7 @@ data:
       children:
       - children:
         - attributes:
-            value: ''
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -9122,13 +8893,1840 @@ data:
       attributes:
         id: CONFIG_CLOCK_DPLL0_DIVIDER
         label: DPLL Divider
+      type: Integer
+    TCC1_CLOCK_FREQUENCY:
+      attributes:
+        id: TCC1_CLOCK_FREQUENCY
+        label: TCC1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCC1_CLOCK_ENABLE:
+      attributes:
+        id: TCC1_CLOCK_ENABLE
+        label: TCC1 Clock Enable
+      type: Boolean
+    TCC1_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: TCC1_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_92_0_ENABLE:
+      attributes:
+        id: NVIC_92_0_ENABLE
+        label: Enable Timer Counter Control 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: TCC1_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_92_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_92_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TCC1_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_92_0_HANDLER:
+      attributes:
+        id: NVIC_92_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: TCC1_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    TCC1_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: TCC1_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    TCC1_MC0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: TCC1_MC0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_93_0_ENABLE:
+      attributes:
+        id: NVIC_93_0_ENABLE
+        label: Enable TCC Match/Compare 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC0_INTERRUPT_ENABLE:
+      attributes:
+        id: TCC1_MC0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_93_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_93_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TCC1_MC0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_93_0_HANDLER:
+      attributes:
+        id: NVIC_93_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: TCC1_MC0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    TCC1_MC0_INTERRUPT_HANDLER:
+      attributes:
+        id: TCC1_MC0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    TCC1_MC1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: TCC1_MC1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_94_0_ENABLE:
+      attributes:
+        id: NVIC_94_0_ENABLE
+        label: Enable TCC Match/Compare 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC1_INTERRUPT_ENABLE:
+      attributes:
+        id: TCC1_MC1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_94_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_94_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TCC1_MC1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_94_0_HANDLER:
+      attributes:
+        id: NVIC_94_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: TCC1_MC1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    TCC1_MC1_INTERRUPT_HANDLER:
+      attributes:
+        id: TCC1_MC1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    TCC1_MC2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: TCC1_MC2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_95_0_ENABLE:
+      attributes:
+        id: NVIC_95_0_ENABLE
+        label: Enable TCC Match/Compare 2 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC2_INTERRUPT_ENABLE:
+      attributes:
+        id: TCC1_MC2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_95_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_95_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TCC1_MC2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_95_0_HANDLER:
+      attributes:
+        id: NVIC_95_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: TCC1_MC2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    TCC1_MC2_INTERRUPT_HANDLER:
+      attributes:
+        id: TCC1_MC2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    TCC1_MC3_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: TCC1_MC3_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_96_0_ENABLE:
+      attributes:
+        id: NVIC_96_0_ENABLE
+        label: Enable TCC Match/Compare 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC3_INTERRUPT_ENABLE:
+      attributes:
+        id: TCC1_MC3_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      type: Boolean
+    NVIC_96_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_96_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC1_MC3_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TCC1_MC3_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      type: Boolean
+    NVIC_96_0_HANDLER:
+      attributes:
+        id: NVIC_96_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: TCC1_MC3_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    TCC1_MC3_INTERRUPT_HANDLER:
+      attributes:
+        id: TCC1_MC3_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      type: String
+    PIN_82_INEN:
+      attributes:
+        id: PIN_82_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: 'True'
+          type: User
+        type: Values
+      type: String
+    PIN_82_DIR:
+      attributes:
+        id: PIN_82_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_82_PULLEN:
+      attributes:
+        id: PIN_82_PULLEN
+        label: Pull Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_98_INEN:
+      attributes:
+        id: PIN_98_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: 'True'
+          type: User
+        type: Values
+      type: String
+    PIN_98_DIR:
+      attributes:
+        id: PIN_98_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_98_PULLEN:
+      attributes:
+        id: PIN_98_PULLEN
+        label: Pull Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_82_DRVSTR:
+      attributes:
+        id: PIN_82_DRVSTR
+        label: Drive Strength
       children:
       - children:
         - attributes:
             value: '0'
           type: User
         type: Values
+      type: KeyValueSet
+    GCLK_2_FREQ:
+      attributes:
+        id: GCLK_2_FREQ
+        label: GCLK2 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1000000'
+          type: Dynamic
+        type: Values
       type: Integer
+    DFLL_CLOCK_FREQ:
+      attributes:
+        id: DFLL_CLOCK_FREQ
+        label: DFLL Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '48000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_DFLL_OPMODE:
+      attributes:
+        id: CONFIG_CLOCK_DFLL_OPMODE
+        label: DFLL operation mode
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    RTC_CLOCK_FREQUENCY:
+      attributes:
+        id: RTC_CLOCK_FREQUENCY
+        label: RTC Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1024'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_RTC_SRC:
+      attributes:
+        id: CONFIG_CLOCK_RTC_SRC
+        label: RTC Clock Selection
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CONFIG_CLOCK_DFLL_ENABLE:
+      attributes:
+        id: CONFIG_CLOCK_DFLL_ENABLE
+        label: Enable DFLL
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CONFIG_CLOCK_DFLL_MUL:
+      attributes:
+        id: CONFIG_CLOCK_DFLL_MUL
+        label: DFLL Multiply Factor
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Integer
+    XOSC1_ENALC:
+      attributes:
+        id: XOSC1_ENALC
+        label: 'Automatic Loop Control '
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_2_SRC:
+      attributes:
+        id: GCLK_2_SRC
+        label: Source Selection
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '6'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    GCLK_2_DIVIDER_VALUE:
+      attributes:
+        id: GCLK_2_DIVIDER_VALUE
+        label: GCLK_2_DIVIDER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '48'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_2_DIV:
+      attributes:
+        id: GCLK_2_DIV
+        label: Division Factor
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '48'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EVSYS_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EVSYS_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_36_0_ENABLE:
+      attributes:
+        id: NVIC_36_0_ENABLE
+        label: Enable Event System Channel 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_0_INTERRUPT_ENABLE:
+      attributes:
+        id: EVSYS_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_36_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_36_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EVSYS_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_36_0_HANDLER:
+      attributes:
+        id: NVIC_36_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EVSYS_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_0_INTERRUPT_HANDLER:
+      attributes:
+        id: EVSYS_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: EVSYS_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EVSYS_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_37_0_ENABLE:
+      attributes:
+        id: NVIC_37_0_ENABLE
+        label: Enable Event System Channel 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_1_INTERRUPT_ENABLE:
+      attributes:
+        id: EVSYS_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_37_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_37_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EVSYS_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_37_0_HANDLER:
+      attributes:
+        id: NVIC_37_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EVSYS_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_1_INTERRUPT_HANDLER:
+      attributes:
+        id: EVSYS_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: EVSYS_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EVSYS_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_38_0_ENABLE:
+      attributes:
+        id: NVIC_38_0_ENABLE
+        label: Enable Event System Channel 2 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_2_INTERRUPT_ENABLE:
+      attributes:
+        id: EVSYS_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_38_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_38_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EVSYS_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_38_0_HANDLER:
+      attributes:
+        id: NVIC_38_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EVSYS_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_2_INTERRUPT_HANDLER:
+      attributes:
+        id: EVSYS_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: EVSYS_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_3_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EVSYS_3_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_39_0_ENABLE:
+      attributes:
+        id: NVIC_39_0_ENABLE
+        label: Enable Event System Channel 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_3_INTERRUPT_ENABLE:
+      attributes:
+        id: EVSYS_3_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_39_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_39_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_3_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EVSYS_3_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_39_0_HANDLER:
+      attributes:
+        id: NVIC_39_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EVSYS_3_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_3_INTERRUPT_HANDLER:
+      attributes:
+        id: EVSYS_3_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: EVSYS_3_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: EVSYS_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_40_0_ENABLE:
+      attributes:
+        id: NVIC_40_0_ENABLE
+        label: Enable Event System Channel 4..X Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: EVSYS_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_40_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_40_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: EVSYS_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_40_0_HANDLER:
+      attributes:
+        id: NVIC_40_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: EVSYS_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    EVSYS_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: EVSYS_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: EVSYS_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_52_FUNCTION_NAME:
+      attributes:
+        id: PIN_52_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Servo1
+          type: User
+        type: Values
+      type: String
+    PIN_53_FUNCTION_NAME:
+      attributes:
+        id: PIN_53_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Servo2
+          type: User
+        type: Values
+      type: String
+    PIN_54_MODE:
+      attributes:
+        id: PIN_54_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_54_FUNCTION_TYPE:
+      attributes:
+        id: PIN_54_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX9:
+      attributes:
+        id: PORT_GROUP_0_PMUX9
+        label: PORT GROUP A PMUX9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_18:
+      attributes:
+        id: PORT_GROUP_0_PAD_18
+        label: PORT_GROUP_0_PAD_18
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA18
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG18:
+      attributes:
+        id: PORT_GROUP_0_PINCFG18
+        label: PORT GROUP A PINCFG18
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_18_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_18_USED
+        label: PORT_GROUP_0_PIN_18_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_54_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_54_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_54_FUNCTION_NAME:
+      attributes:
+        id: PIN_54_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Servo3
+          type: User
+        type: Values
+      type: String
+    PIN_55_MODE:
+      attributes:
+        id: PIN_55_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_55_FUNCTION_TYPE:
+      attributes:
+        id: PIN_55_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_19:
+      attributes:
+        id: PORT_GROUP_0_PAD_19
+        label: PORT_GROUP_0_PAD_19
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA19
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG19:
+      attributes:
+        id: PORT_GROUP_0_PINCFG19
+        label: PORT GROUP A PINCFG19
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_19_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_19_USED
+        label: PORT_GROUP_0_PIN_19_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_55_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_55_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_55_FUNCTION_NAME:
+      attributes:
+        id: PIN_55_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: Servo4
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_DIR:
+      attributes:
+        id: PORT_GROUP_0_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0xf0000'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_52_DIR:
+      attributes:
+        id: PIN_52_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PIN_52_INEN:
+      attributes:
+        id: PIN_52_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_53_DIR:
+      attributes:
+        id: PIN_53_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PIN_53_INEN:
+      attributes:
+        id: PIN_53_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_54_DIR:
+      attributes:
+        id: PIN_54_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PIN_54_INEN:
+      attributes:
+        id: PIN_54_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_55_DIR:
+      attributes:
+        id: PIN_55_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PIN_55_INEN:
+      attributes:
+        id: PIN_55_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    DMAC_LL_ENABLE:
+      attributes:
+        id: DMAC_LL_ENABLE
+        label: Use Linked List Mode ?
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    DMAC_0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: DMAC_0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_31_0_ENABLE:
+      attributes:
+        id: NVIC_31_0_ENABLE
+        label: Enable DMA Channel 0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_0_INTERRUPT_ENABLE:
+      attributes:
+        id: DMAC_0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_31_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_31_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: DMAC_0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_31_0_HANDLER:
+      attributes:
+        id: NVIC_31_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_0_INTERRUPT_HANDLER:
+      attributes:
+        id: DMAC_0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_0_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_1_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: DMAC_1_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_32_0_ENABLE:
+      attributes:
+        id: NVIC_32_0_ENABLE
+        label: Enable DMA Channel 1 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_1_INTERRUPT_ENABLE:
+      attributes:
+        id: DMAC_1_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_32_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_32_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_1_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: DMAC_1_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_32_0_HANDLER:
+      attributes:
+        id: NVIC_32_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_1_INTERRUPT_HANDLER:
+      attributes:
+        id: DMAC_1_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_1_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: DMAC_2_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_33_0_ENABLE:
+      attributes:
+        id: NVIC_33_0_ENABLE
+        label: Enable DMA Channel 2 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_2_INTERRUPT_ENABLE:
+      attributes:
+        id: DMAC_2_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_33_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_33_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: DMAC_2_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_33_0_HANDLER:
+      attributes:
+        id: NVIC_33_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_2_INTERRUPT_HANDLER:
+      attributes:
+        id: DMAC_2_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_2_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_3_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: DMAC_3_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_34_0_ENABLE:
+      attributes:
+        id: NVIC_34_0_ENABLE
+        label: Enable DMA Channel 3 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_3_INTERRUPT_ENABLE:
+      attributes:
+        id: DMAC_3_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_34_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_34_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_3_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: DMAC_3_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_34_0_HANDLER:
+      attributes:
+        id: NVIC_34_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_3_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_3_INTERRUPT_HANDLER:
+      attributes:
+        id: DMAC_3_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_3_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_OTHER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: DMAC_OTHER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_35_0_ENABLE:
+      attributes:
+        id: NVIC_35_0_ENABLE
+        label: Enable DMA Channel 4..X Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_OTHER_INTERRUPT_ENABLE:
+      attributes:
+        id: DMAC_OTHER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_35_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_35_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_OTHER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: DMAC_OTHER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_35_0_HANDLER:
+      attributes:
+        id: NVIC_35_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_OTHER_INTERRUPT_HANDLER:
+      attributes:
+        id: DMAC_OTHER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: DMAC_OTHER_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    DMAC_HIGHEST_CHANNEL:
+      attributes:
+        id: DMAC_HIGHEST_CHANNEL
+        label: DMA (DMAC) Highest Active Channel
+      type: Integer
+    DMA_ENABLE:
+      attributes:
+        id: DMA_ENABLE
+        label: Use DMA Service ?
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DMAC_HEADER:
+      attributes:
+        id: DMAC_HEADER
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    DMAC_SOURCE:
+      attributes:
+        id: DMAC_SOURCE
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    DMAC_SYS_INIT:
+      attributes:
+        id: DMAC_SYS_INIT
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    DMAC_SYS_DEF:
+      attributes:
+        id: DMAC_SYS_DEF
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: File
+    DMAC_ENABLE_CH_0:
+      attributes:
+        id: DMAC_ENABLE_CH_0
+        label: Use DMAC Channel 0
+      type: Boolean
+    DMAC_CHCTRLA_BURSTLEN_CH_0:
+      attributes:
+        id: DMAC_CHCTRLA_BURSTLEN_CH_0
+        label: Burst Length
+      type: KeyValueSet
+    DMAC_BTCTRL_DSTINC_CH_0:
+      attributes:
+        id: DMAC_BTCTRL_DSTINC_CH_0
+        label: Destination Address Mode
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    DMAC_BTCTRL_SRCINC_CH_0:
+      attributes:
+        id: DMAC_BTCTRL_SRCINC_CH_0
+        label: Source Address Mode
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    DMAC_CHCTRLA_TRIGACT_CH_0:
+      attributes:
+        id: DMAC_CHCTRLA_TRIGACT_CH_0
+        label: Trigger Action
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    DMAC_BTCTRL_BEATSIZE_CH_0:
+      attributes:
+        id: DMAC_BTCTRL_BEATSIZE_CH_0
+        label: Beat Size
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    DMAC_CHCTRLA_TRIGSRC_CH_0_PERID_VAL:
+      attributes:
+        id: DMAC_CHCTRLA_TRIGSRC_CH_0_PERID_VAL
+        label: PERID Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DMAC_CHCTRLA_TRIGSRC_CH_0:
+      attributes:
+        id: DMAC_CHCTRLA_TRIGSRC_CH_0
+        label: Trigger Source
+      type: Combo
   userData:
     children:
     - attributes:

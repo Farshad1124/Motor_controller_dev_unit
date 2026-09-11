@@ -705,6 +705,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Servo Motor Bus"
+		(exclude_from_sim no)
+		(at 60.706 19.304 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "61ec4c80-9c2f-4c8e-8e26-01ff1925cb96")
+	)
 	(junction
 		(at 86.995 90.805)
 		(diameter 0)

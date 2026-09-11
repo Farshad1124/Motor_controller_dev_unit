@@ -177,6 +177,42 @@
 #define PWM_AH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 13U)) & 0x01U)
 #define PWM_AH_PIN                  PORT_PIN_PA13
 
+/*** Macros for Servo1 pin ***/
+#define Servo1_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 16U))
+#define Servo1_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 16U))
+#define Servo1_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 16U))
+#define Servo1_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 16U))
+#define Servo1_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 16U))
+#define Servo1_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 16U)) & 0x01U)
+#define Servo1_PIN                  PORT_PIN_PA16
+
+/*** Macros for Servo2 pin ***/
+#define Servo2_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 17U))
+#define Servo2_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 17U))
+#define Servo2_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 17U))
+#define Servo2_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 17U))
+#define Servo2_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 17U))
+#define Servo2_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 17U)) & 0x01U)
+#define Servo2_PIN                  PORT_PIN_PA17
+
+/*** Macros for Servo3 pin ***/
+#define Servo3_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 18U))
+#define Servo3_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 18U))
+#define Servo3_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 18U))
+#define Servo3_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 18U))
+#define Servo3_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 18U))
+#define Servo3_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 18U)) & 0x01U)
+#define Servo3_PIN                  PORT_PIN_PA18
+
+/*** Macros for Servo4 pin ***/
+#define Servo4_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 19U))
+#define Servo4_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 19U))
+#define Servo4_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 19U))
+#define Servo4_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 19U))
+#define Servo4_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 19U))
+#define Servo4_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 19U)) & 0x01U)
+#define Servo4_PIN                  PORT_PIN_PA19
+
 /*** Macros for Input_SEL pin ***/
 #define Input_SEL_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 24U)) & 0x01U)
 #define Input_SEL_PIN                  PORT_PIN_PC24

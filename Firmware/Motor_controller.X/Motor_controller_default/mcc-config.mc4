@@ -14,95 +14,27 @@ groupModules:
   modules:
   - sercom4
 - group: Group3
-  modules: []
+  modules:
+  - sercom5
+  - stdio
 modules:
 - FreeRTOS
 - adc0
 - cmsis
 - core
-- custom_mc_board
 - dfp
 - eic
 - evsys
 - nvmctrl
-- pmsm_foc
-- pmsm_motor
 - rstc
-- sercom3
 - tcc0
 generatedFileHashHistoryMap:
 - file: ..\src\config\default\ATSAMD51N20A.ld
   hash: bf40ecfa5f6877dea96f4192aa2aab74d386194f145b6ae58740403e11510ba5
 - file: ..\src\config\default\FreeRTOSConfig.h
   hash: ae2fd8177b842b4baace215c45f2f7179362a839127237d6aa93b4600de7acd7
-- file: ..\src\config\default\QSpin\Current_Calculation\mc_current_calculation.c
-  hash: 5f52f045e2fde847ac48adcdb417568259bf7d0716c5665def2070e274070642
-- file: ..\src\config\default\QSpin\Current_Calculation\mc_current_calculation.h
-  hash: e1f629c666a937a3b56d2ae461d7c7b3dee3677cea7f89ccb9dd1ce8909415c3
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_field_oriented_control.c
-  hash: 5f876b8ebb0e4b1cfd0872d779fd5753f4acf2639737eda0b6def77b9ab8e561
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_field_oriented_control.h
-  hash: 84763413048fe701109957ca1558a804708359bd7eb281bf0063a2098660db02
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.c
-  hash: 8f122683ae3923a73698df524626a64a8748211ce990aae881aa6ebca5d84230
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.h
-  hash: f9d057243f78f1474eee66d58833282d106da909cc30ccfe951d4dbe3d986f12
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.c
-  hash: 005dfc9a868c1bc5ceba081fcf3a7539aa1e53fb24f81b4903ef4b5bb5b6b2e4
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.h
-  hash: 05411d65f5695b6b27636f38d832f1b265e4dad191e938df018f52c028bb8c36
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.c
-  hash: 4d92db7c897451548d0ec9a0bd5cf2ae38f1deeeca4dc7af8a4b6731d8143e8e
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_open_loop_startup.h
-  hash: 0273de9c8a91072d5a13a0b6baac21d9efc437512ecdb056064132972fb7adfa
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pi_control.c
-  hash: 00746100c7e4815fa2f6fda7b0ab644d772e76a0577bba0cd4959f0da052b73f
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pi_control.h
-  hash: 787f0c95bea44849438050c1fa105837881f71eb2e0b2afb9d49a15f0a132e3e
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pwm.c
-  hash: bb086fe92956833c5b7daa5520ec3243171f4784993d42934da25a57f0bc8fc7
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_pwm.h
-  hash: 9fef330ae9bf9a4a43aff5f11e2dafcf5ad99a555f1334895f550c27b82a66ed
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_reference_control.c
-  hash: b80656026351b8726a20ababb5ecd697114a4cc18f9718e2c79b8da056ad6906
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_reference_control.h
-  hash: 89cf27483f1766d497d36fc60518f525bf83d8a240ffa8a8db5674f2ebad7e8f
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_rotor_position_estimation.c
-  hash: 89a790a1b9c6525cb679f6b3b3f4635be53d6551ed82940570a65f36bdd530b3
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_rotor_position_estimation.h
-  hash: 63a096c7555859f6bf4220f6587052bf6617012da1504be1f6cd7dc491683009
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_speed_control.c
-  hash: 7129f4214b48c2d7f71a047dbc2d544d423dbdc1c0571a0af180fdb28c3b7965
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_speed_control.h
-  hash: 745860080a9a06fe34473a33eb8d85ac54f15280989cd258ed34059600984862
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_torque_control.c
-  hash: 8c27637985a790dfe29e1223b2639e5a4a617e99531d91f75622f46e9570ffce
-- file: ..\src\config\default\QSpin\Field_Oriented_Control\mc_torque_control.h
-  hash: 017ce98713772f80e5b2f9cd705e87dc5629d1deee01b0f5e7a358d1662a87d9
-- file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.c
-  hash: 066bc1312f1385fe20e13880aa1eb4c93225da2049d137f01a11408a38a62865
-- file: ..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.h
-  hash: 30b1537317beabc64306e6a16db07e1e49b86b199e73d89fe5875cbfac1326f0
-- file: ..\src\config\default\QSpin\Utilities\mc_utilities.c
-  hash: 62f35ea7ed5c15d0a2dd37ad776228950612cfe5d0d7ee69ab50f616bd6f8010
-- file: ..\src\config\default\QSpin\Utilities\mc_utilities.h
-  hash: facc3d84d6ac01c2c7e9930d045b480bb33154a0d5cfc5af673ee8ff32825835
-- file: ..\src\config\default\QSpin\Voltage_Calculation\mc_voltage_measurement.c
-  hash: 1ef1f93dfd8fd72fd25ae6b77e5cd3f5dd3ab49e5cbd30b2ea5632ae0df4dfed
-- file: ..\src\config\default\QSpin\Voltage_Calculation\mc_voltage_measurement.h
-  hash: 4e965f2744b575be5ae68f205b532a33a989d6dadc2f17ad82c638f01fe0a181
-- file: ..\src\config\default\QSpin\mc_application.c
-  hash: 6ddf0164ee921bdb3a8e3d525e563c5db419f6fa3aeb43a54499cd13e68a919d
-- file: ..\src\config\default\QSpin\mc_application.h
-  hash: 8024868b2e8774cfa3293bb2b2fd794156a2b443a8f81fd41b201193c84fe4e5
-- file: ..\src\config\default\QSpin\mc_key_manager.c
-  hash: 895a7bddc15d389a27ee3b3114f44f125e9896fec52885be3220d82d52c73c4e
-- file: ..\src\config\default\QSpin\mc_key_manager.h
-  hash: c0012a1593b8086b8a059fe07e8a6517dff393a6b7aef11d4c3e16f27455054c
-- file: ..\src\config\default\QSpin\mc_types.h
-  hash: 06ed943a03ed58226b0d7905ea201925f5ecb1fd75e22e9c64909bb07034cea1
 - file: ..\src\config\default\definitions.h
-  hash: dfca9a3fa79b8d66d272d22d963065e293c9d540b350e74cf91ce31d7426f18e
+  hash: 9a29a6f6017e01d1e082ec67d173fea6bc0178cabddccdddca191695cdb27231
 - file: ..\src\config\default\device.h
   hash: 38205755ffbee32799907784fa1c7e0dd00349436055254bd9afe325b14663f4
 - file: ..\src\config\default\device_cache.h
@@ -114,21 +46,21 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\freertos_hooks.c
   hash: c97b8f92ad60ff513a27ac7a27b3c6824b75005eb8f7b85fe5ae18deaf568c4e
 - file: ..\src\config\default\initialization.c
-  hash: 351e1e805496f039df144e6d77845b3d126e4da808b30bd02aeebe0fb6e5adb1
+  hash: ca2245f38bc677416d2251ecba5eb07de0a25dc0ce91b59a4cbfe5a14f383d20
 - file: ..\src\config\default\interrupts.c
-  hash: 57e368faea1dbee5947c8dc282cff0d41bd91216b2a50aa8af25cf8c600d0f35
+  hash: 2cb3aa28c2edd6082f9fb41948e7498a46d6d4314e07bb348d7f0cbb81308b2b
 - file: ..\src\config\default\interrupts.h
-  hash: 228c44315a319beed47cdf9a64119a0aa54a092a359c316e85bf3c72dc6deb7a
+  hash: 681f0bad4a9ed3dcfcf65d4fcd2c05f40b78a958ef69bbfa550a4865ea75d0d1
 - file: ..\src\config\default\libc_syscalls.c
   hash: c9afc1b1257829415a1a6746ce3744f0a768b339d59fff2ab3ca1fab58b2a916
 - file: ..\src\config\default\peripheral\adc\plib_adc0.c
-  hash: d9ed1093d91f4b80ba5f5ac6a485db8dae4fd92e5c1bdfb06f50d43469e9c2d6
+  hash: 0413c4a50f801deb24c421d060d953d02cd5a5980bcba71822ece61c3e699a1c
 - file: ..\src\config\default\peripheral\adc\plib_adc0.h
   hash: 69cc8e1ef2e75c4d9e09ddba8420d23e3cfa0384077f90727b01cc01233721a7
 - file: ..\src\config\default\peripheral\adc\plib_adc_common.h
   hash: b6100059702feb5d6031f6c694dc636b0871d6d256ca47a73f991cb418209500
 - file: ..\src\config\default\peripheral\clock\plib_clock.c
-  hash: 26a37fb2d78238e3474213377fe06a6a97ec3bde7199abd373dae04508b92105
+  hash: 9bf67700d531590ee8aeb60edf0f6dad184d76b3c09eee3c08801880f22a7f9c
 - file: ..\src\config\default\peripheral\clock\plib_clock.h
   hash: 59322a99314cb17c6b595d51d18769582e61189140188aa053acfdc671487f21
 - file: ..\src\config\default\peripheral\cmcc\plib_cmcc.c
@@ -136,15 +68,15 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\cmcc\plib_cmcc.h
   hash: 89b940242bfa0ecdba3ac53666c5996e25fab712227d37d2d6881c8a86b5f497
 - file: ..\src\config\default\peripheral\eic\plib_eic.c
-  hash: 1a14e4e1847a82163f6ed2f0feb261e21a4e7b9b034dcacf14b1959d1dabec46
+  hash: 2f2ece1de0111565506c421ee605ef4e9dacfc12c31d6e3223a90230062a4a0b
 - file: ..\src\config\default\peripheral\eic\plib_eic.h
   hash: e9d207a12eafbaa6e6dad5daf1470bc5a85b06f6bbd2a1e16511669183a4ccc8
 - file: ..\src\config\default\peripheral\evsys\plib_evsys.c
-  hash: f6255972385bb3d5b4eca7fc9f81c3ec232599e65c59726a26a333bbf9bc96ac
+  hash: d9f117fc94d85ebcf37bcab612028f419c429eb20fff2123196ada17dea86ffa
 - file: ..\src\config\default\peripheral\evsys\plib_evsys.h
-  hash: f13b5b105e66ed783e6eac327265ac338b19acd379df4bd2ea7b92608576d588
+  hash: c9e2d9ada80f7c20b22110b68a71c988a48d2f1d1a42e224bfb027442dc323e6
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.c
-  hash: e4ae9f81289e38a32d7e28e430a993a47e4f3931539f124afe97b4ae5d8acfa6
+  hash: 13473084d0f726999c50956a0ad2b6bb6e4e38e85224b6eb51c7b00a30f09e73
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.h
   hash: 9936ac782115af41003255283fa2f603f4ff2212d16275b7c80ea8d067a9e208
 - file: ..\src\config\default\peripheral\nvmctrl\plib_nvmctrl.c
@@ -152,9 +84,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\nvmctrl\plib_nvmctrl.h
   hash: fd7749dc74a885efd7c593394454abc74afc7cf184123f0315425a3600c26ac5
 - file: ..\src\config\default\peripheral\port\plib_port.c
-  hash: 6a9e41f09582a276f479e25dfcf6384d2db921053971fefd48e2a7650ebf3567
+  hash: 418bf9421185e40e4253036b144b78942c9e82b584520930fac8fbd216a6f5ca
 - file: ..\src\config\default\peripheral\port\plib_port.h
-  hash: 75dfd54537237ca867292433d49be80259bd2575699a0f1628807015c4f0985b
+  hash: 8592de90f44cc15d0722259c056b6857b0e10b73320eec0bdda0c17cf3e72fd6
 - file: ..\src\config\default\peripheral\rstc\plib_rstc.c
   hash: b7750df22f10b21c0d28ee46f7127bd0982738f742ccb038a1d2d96ebb7bf4f2
 - file: ..\src\config\default\peripheral\rstc\plib_rstc.h
@@ -171,28 +103,28 @@ generatedFileHashHistoryMap:
   hash: 8e1550559a741d9ace2e6fb145ac015c8457aa417c877996855b73238051babb
 - file: ..\src\config\default\peripheral\sercom\spi_master\plib_sercom_spi_master_common.h
   hash: 06e3c7813e1608b5008e3c8955569f9cff04bef321a34c35421f7979368a4ada
-- file: ..\src\config\default\peripheral\sercom\usart\plib_sercom3_usart.c
-  hash: 821678874935c5773d15bfaed08e060b5bbc9057b37890cb5d5bddc1c8fb72ca
-- file: ..\src\config\default\peripheral\sercom\usart\plib_sercom3_usart.h
-  hash: e6b3c5a74a4cc6d70a66fbe08e802db7436d4ec81921d06c37d35e2ca30fe870
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom4_usart.c
   hash: 6e71d75e1686d7f3d6ff25b3640491f08c123afb5045c371b94dbf2387945352
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom4_usart.h
   hash: 05e5d58beebde6ee9922e3dd2c192792e76a2ba5443969a6696fecbd5414fbf1
+- file: ..\src\config\default\peripheral\sercom\usart\plib_sercom5_usart.c
+  hash: 04bdf5aa7586e6c0b4d9cf61abc6d49a2106420885a2d2fcc0ae29ddafb439be
+- file: ..\src\config\default\peripheral\sercom\usart\plib_sercom5_usart.h
+  hash: 6199a53d33d0db4eae0df327b00b41b8733621c2ca6e25f5ba62bab29057d0d0
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom_usart_common.h
   hash: 3653b66472c558c50f7037a1dd25d2678e9a13aa718f3c53a2195e6f3919ea48
 - file: ..\src\config\default\peripheral\tcc\plib_tcc0.c
-  hash: 9b7b32a384609e6cd146f41fee39e31e718ad3ebf245576b252829a0754df0b3
+  hash: 071e006341a60dea0f4533f63187395619dc82a64cb2338e9211888b050b8ce6
 - file: ..\src\config\default\peripheral\tcc\plib_tcc0.h
-  hash: bdd4f3147e8df10e498a14360b1de7290bd19a42daac391954c6b43817806eaf
+  hash: f1653904453b3cfe5c18fc5e8ae4e057f055f3f33f98676a10eef493e5c1d464
 - file: ..\src\config\default\peripheral\tcc\plib_tcc_common.h
   hash: 2bd78c7b794475007265f122ca57ef54a64efc8894cc2423a1d0f74caa627b2b
 - file: ..\src\config\default\pin_configurations.csv
-  hash: a78e28230a73c0788da5eb429d5be068801ca2309e4d56483f1ce5789e333801
+  hash: fa2e41414f8833898e93dcb7e488558a0955cf3e32a15fe741ab8f5b70b8d71f
 - file: ..\src\config\default\startup_xc32.c
   hash: 2916a631dd72c23f29daf3ec7ebc84abec03a29948825df0b1505d670d73fe50
 - file: ..\src\config\default\stdio\xc32_monitor.c
-  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+  hash: f22930f8c6b125d13886bec2b438e82435fbba6242e31aada0fb6f4ed3d45bb5
 - file: ..\src\config\default\toolchain_specifics.h
   hash: 6fc0551b0fa3362678b3d7a227386fafa343140d31e4da3ad4af972e61cd0acb
 - file: ..\src\main.c

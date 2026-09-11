@@ -15,7 +15,18 @@ dependency:
 customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
   attachments: {}
-  elementPosition: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: evsys
+          x: '678'
+          y: '9'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
   symbols:
     EVSYS_CHANNEL_2_GENERATOR_ACTIVE:
       attributes:
@@ -169,7 +180,7 @@ data:
       - children:
         - attributes:
             id: evsys
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -433,7 +444,7 @@ data:
       - children:
         - attributes:
             id: eic
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -517,7 +528,7 @@ data:
       - children:
         - attributes:
             id: evsys
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -909,13 +920,6 @@ data:
       attributes:
         id: USER_TCC0_EV_1_READY
         label: USER_TCC0_EV_1_READY
-      children:
-      - children:
-        - attributes:
-            id: tcc0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     GENERATOR_TCC0_OVF_ACTIVE:
       attributes:
@@ -936,22 +940,14 @@ data:
       children:
       - children:
         - attributes:
-            id: pmsm_foc
             value: 'true'
-          type: Dynamic
+          type: User
         type: Values
       type: Boolean
     EVSYS_CHANNEL_1:
       attributes:
         id: EVSYS_CHANNEL_1
         label: Enable Channel 1
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     EVSYS_CHANNEL_0_EDGE:
       attributes:
@@ -960,22 +956,14 @@ data:
       children:
       - children:
         - attributes:
-            id: pmsm_foc
             value: '1'
-          type: Dynamic
+          type: User
         type: Values
       type: KeyValueSet
     EVSYS_CHANNEL_1_EDGE:
       attributes:
         id: EVSYS_CHANNEL_1_EDGE
         label: Event Edge Selection
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '1'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
     EVSYS_CHANNEL_0_GENERATOR:
       attributes:
@@ -984,9 +972,8 @@ data:
       children:
       - children:
         - attributes:
-            id: pmsm_foc
             value: '90'
-          type: Dynamic
+          type: User
         type: Values
       type: KeyValueSet
     EVSYS_CHANNEL_1_GENERATOR:
@@ -996,9 +983,8 @@ data:
       children:
       - children:
         - attributes:
-            id: pmsm_foc
-            value: '25'
-          type: Dynamic
+            value: '3'
+          type: User
         type: Values
       type: KeyValueSet
     EVSYS_USER_55:
@@ -1008,22 +994,14 @@ data:
       children:
       - children:
         - attributes:
-            id: pmsm_foc
             value: '1'
-          type: Dynamic
+          type: User
         type: Values
       type: KeyValueSet
     EVSYS_USER_18:
       attributes:
         id: EVSYS_USER_18
         label: TCC0_EV_1 Channel Selection
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: '2'
-          type: Dynamic
-        type: Values
       type: KeyValueSet
     EVSYS_USER_26:
       attributes:
@@ -1034,5 +1012,67 @@ data:
       attributes:
         id: EVSYS_USER_0
         label: RTC_TAMPER Channel Selection
+      type: KeyValueSet
+    USER_TCC1_EV_0_READY:
+      attributes:
+        id: USER_TCC1_EV_0_READY
+        label: USER_TCC1_EV_0_READY
+      type: Boolean
+    GENERATOR_TCC1_OVF_ACTIVE:
+      attributes:
+        id: GENERATOR_TCC1_OVF_ACTIVE
+        label: GENERATOR_TCC1_OVF_ACTIVE
+      type: Boolean
+    EVSYS_INTERRUPT_MODE_OTHER:
+      attributes:
+        id: EVSYS_INTERRUPT_MODE_OTHER
+        label: EVSYS_INTERRUPT_MODE_OTHER
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    INTERRUPT_ACTIVE:
+      attributes:
+        id: INTERRUPT_ACTIVE
+        label: INTERRUPT_ACTIVE
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_INTERRUPT_MODE0:
+      attributes:
+        id: EVSYS_INTERRUPT_MODE0
+        label: EVSYS_INTERRUPT_MODE0
+      children:
+      - children:
+        - attributes:
+            id: evsys
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EVSYS_CHANNEL_0_PATH:
+      attributes:
+        id: EVSYS_CHANNEL_0_PATH
+        label: Path Selection
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    EVSYS_USER_1:
+      attributes:
+        id: EVSYS_USER_1
+        label: PORT_EV_0 Channel Selection
       type: KeyValueSet
   userData: {}

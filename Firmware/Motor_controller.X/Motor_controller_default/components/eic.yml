@@ -182,7 +182,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: 'true'
+            value: 'false'
           type: Dynamic
         - attributes:
             value: 'true'
@@ -254,6 +254,20 @@ data:
       attributes:
         id: EIC_CONFIG_FILTEN_1
         label: Enable filter
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
       type: Boolean
     EIC_CONFIG_FILTEN_10:
       attributes:
@@ -319,6 +333,20 @@ data:
       attributes:
         id: EIC_CONFIG_FILTEN_8
         label: Enable filter
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
       type: Boolean
     EIC_CONFIG_FILTEN_9:
       attributes:
@@ -393,7 +421,7 @@ data:
       - children:
         - attributes:
             id: pmsm_foc
-            value: '2'
+            value: '0'
           type: Dynamic
         - attributes:
             value: '2'
@@ -599,7 +627,7 @@ data:
       - children:
         - attributes:
             id: eic
-            value: '16384'
+            value: '0'
           type: Dynamic
         type: Values
       type: Hex
@@ -637,13 +665,6 @@ data:
       attributes:
         id: EIC_EXTINTEO_14
         label: Enable Event Output
-      children:
-      - children:
-        - attributes:
-            id: pmsm_foc
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     EIC_EXTINTEO_15:
       attributes:
