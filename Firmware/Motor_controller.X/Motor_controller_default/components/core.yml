@@ -15,7 +15,18 @@ dependency:
 customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
   attachments: {}
-  elementPosition: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: core
+          x: '279'
+          y: '17'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
   symbols:
     SysTick_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -313,7 +324,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x37ff'
+            value: '0x27ff'
           type: Dynamic
         type: Values
       type: String
@@ -2306,7 +2317,7 @@ data:
       children:
       - children:
         - attributes:
-            value: SERCOM0_PAD2
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -2318,7 +2329,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x33'
+            value: '0x30'
           type: Dynamic
         type: Values
       type: String
@@ -2342,7 +2353,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x1'
+            value: '0x0'
           type: Dynamic
         type: Values
       type: String
@@ -2365,7 +2376,7 @@ data:
       children:
       - children:
         - attributes:
-            value: D
+            value: GPIO
           type: User
         type: Values
       type: String
@@ -2446,7 +2457,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '60000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -2470,21 +2481,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
         type: Values
       type: Boolean
     SERCOM0_CORE_CLOCK_ENABLE:
       attributes:
         id: SERCOM0_CORE_CLOCK_ENABLE
         label: SERCOM0_CORE Clock Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM0_0_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -2506,21 +2513,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
         type: Values
       type: Boolean
     SERCOM0_0_INTERRUPT_ENABLE:
       attributes:
         id: SERCOM0_0_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM0_1_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -2542,21 +2545,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
         type: Values
       type: Boolean
     SERCOM0_1_INTERRUPT_ENABLE:
       attributes:
         id: SERCOM0_1_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM0_2_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -2578,21 +2577,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
         type: Values
       type: Boolean
     SERCOM0_2_INTERRUPT_ENABLE:
       attributes:
         id: SERCOM0_2_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     SERCOM0_OTHER_INTERRUPT_ENABLE_UPDATE:
       attributes:
@@ -2614,21 +2609,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
         type: Values
       type: Boolean
     SERCOM0_OTHER_INTERRUPT_ENABLE:
       attributes:
         id: SERCOM0_OTHER_INTERRUPT_ENABLE
         label: Vector Peripheral Enable
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_46_0_HANDLER_LOCK:
       attributes:
@@ -2638,7 +2629,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2646,13 +2637,6 @@ data:
       attributes:
         id: SERCOM0_0_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_47_0_HANDLER_LOCK:
       attributes:
@@ -2662,7 +2646,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2670,13 +2654,6 @@ data:
       attributes:
         id: SERCOM0_1_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_48_0_HANDLER_LOCK:
       attributes:
@@ -2686,7 +2663,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2694,13 +2671,6 @@ data:
       attributes:
         id: SERCOM0_2_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_49_0_HANDLER_LOCK:
       attributes:
@@ -2710,7 +2680,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2718,13 +2688,6 @@ data:
       attributes:
         id: SERCOM0_OTHER_INTERRUPT_HANDLER_LOCK
         label: Vector Peripheral Handler Lock
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: 'true'
-          type: Dynamic
-        type: Values
       type: Boolean
     NVIC_46_0_HANDLER:
       attributes:
@@ -2734,21 +2697,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: SERCOM0_SPI_InterruptHandler
+            value: SERCOM0_0_Handler
           type: Dynamic
+        - attributes:
+            value: SERCOM0_SPI_InterruptHandler
+          type: User
         type: Values
       type: String
     SERCOM0_0_INTERRUPT_HANDLER:
       attributes:
         id: SERCOM0_0_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: SERCOM0_SPI_InterruptHandler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_47_0_HANDLER:
       attributes:
@@ -2758,21 +2717,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: SERCOM0_SPI_InterruptHandler
+            value: SERCOM0_1_Handler
           type: Dynamic
+        - attributes:
+            value: SERCOM0_SPI_InterruptHandler
+          type: User
         type: Values
       type: String
     SERCOM0_1_INTERRUPT_HANDLER:
       attributes:
         id: SERCOM0_1_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: SERCOM0_SPI_InterruptHandler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_48_0_HANDLER:
       attributes:
@@ -2782,21 +2737,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: SERCOM0_SPI_InterruptHandler
+            value: SERCOM0_2_Handler
           type: Dynamic
+        - attributes:
+            value: SERCOM0_SPI_InterruptHandler
+          type: User
         type: Values
       type: String
     SERCOM0_2_INTERRUPT_HANDLER:
       attributes:
         id: SERCOM0_2_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: SERCOM0_SPI_InterruptHandler
-          type: Dynamic
-        type: Values
       type: String
     NVIC_49_0_HANDLER:
       attributes:
@@ -2806,21 +2757,17 @@ data:
       - children:
         - attributes:
             id: core
-            value: SERCOM0_SPI_InterruptHandler
+            value: SERCOM0_OTHER_Handler
           type: Dynamic
+        - attributes:
+            value: SERCOM0_SPI_InterruptHandler
+          type: User
         type: Values
       type: String
     SERCOM0_OTHER_INTERRUPT_HANDLER:
       attributes:
         id: SERCOM0_OTHER_INTERRUPT_HANDLER
         label: Vector Peripheral Handler
-      children:
-      - children:
-        - attributes:
-            id: sercom0
-            value: SERCOM0_SPI_InterruptHandler
-          type: Dynamic
-        type: Values
       type: String
     PIN_17_FUNCTION_NAME:
       attributes:
@@ -10060,7 +10007,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0xf0000'
+            value: '0xf0040'
           type: Dynamic
         type: Values
       type: String
@@ -10171,7 +10118,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10183,7 +10130,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10195,7 +10142,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10207,7 +10154,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10219,7 +10166,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10231,7 +10178,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: DMAC_0_Handler
+            value: DMAC_0_InterruptHandler
           type: Dynamic
         type: Values
       type: String
@@ -10243,7 +10190,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: DMAC_0_Handler
+            value: DMAC_0_InterruptHandler
           type: Dynamic
         type: Values
       type: String
@@ -10587,6 +10534,13 @@ data:
       attributes:
         id: DMAC_HIGHEST_CHANNEL
         label: DMA (DMAC) Highest Active Channel
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
       type: Integer
     DMA_ENABLE:
       attributes:
@@ -10596,7 +10550,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -10609,7 +10563,7 @@ data:
             id: enabled
           children:
           - type: Value
-            value: 'false'
+            value: 'true'
           type: Boolean
         type: Attributes
       type: File
@@ -10622,7 +10576,7 @@ data:
             id: enabled
           children:
           - type: Value
-            value: 'false'
+            value: 'true'
           type: Boolean
         type: Attributes
       type: File
@@ -10635,7 +10589,7 @@ data:
             id: enabled
           children:
           - type: Value
-            value: 'false'
+            value: 'true'
           type: Boolean
         type: Attributes
       type: File
@@ -10648,7 +10602,7 @@ data:
             id: enabled
           children:
           - type: Value
-            value: 'false'
+            value: 'true'
           type: Boolean
         type: Attributes
       type: File
@@ -10656,11 +10610,23 @@ data:
       attributes:
         id: DMAC_ENABLE_CH_0
         label: Use DMAC Channel 0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
       type: Boolean
     DMAC_CHCTRLA_BURSTLEN_CH_0:
       attributes:
         id: DMAC_CHCTRLA_BURSTLEN_CH_0
         label: Burst Length
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
       type: KeyValueSet
     DMAC_BTCTRL_DSTINC_CH_0:
       attributes:
@@ -10672,6 +10638,9 @@ data:
             id: core
             value: '1'
           type: Dynamic
+        - attributes:
+            value: '1'
+          type: User
         type: Values
       type: KeyValueSet
     DMAC_BTCTRL_SRCINC_CH_0:
@@ -10682,7 +10651,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '1'
+            value: '0'
           type: Dynamic
         type: Values
       type: KeyValueSet
@@ -10694,7 +10663,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0'
+            value: '1'
           type: Dynamic
         type: Values
       type: KeyValueSet
@@ -10706,7 +10675,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '2'
+            value: '0'
           type: Dynamic
         type: Values
       type: KeyValueSet
@@ -10718,7 +10687,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0'
+            value: '4'
           type: Dynamic
         type: Values
       type: Integer
@@ -10726,6 +10695,101 @@ data:
       attributes:
         id: DMAC_CHCTRLA_TRIGSRC_CH_0
         label: Trigger Source
+      children:
+      - children:
+        - attributes:
+            value: SERCOM0_Receive
+          type: User
+        type: Values
+      type: Combo
+    PIN_19_INEN:
+      attributes:
+        id: PIN_19_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_19_DIR:
+      attributes:
+        id: PIN_19_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_OUT:
+      attributes:
+        id: PORT_GROUP_0_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x40'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_19_LAT:
+      attributes:
+        id: PIN_19_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: High
+          type: User
+        type: Values
+      type: String
+    NVIC_46_0_PRIORITY:
+      attributes:
+        id: NVIC_46_0_PRIORITY
+        label: Priority
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: Combo
+    NVIC_47_0_PRIORITY:
+      attributes:
+        id: NVIC_47_0_PRIORITY
+        label: Priority
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: Combo
+    NVIC_48_0_PRIORITY:
+      attributes:
+        id: NVIC_48_0_PRIORITY
+        label: Priority
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: Combo
+    NVIC_49_0_PRIORITY:
+      attributes:
+        id: NVIC_49_0_PRIORITY
+        label: Priority
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
       type: Combo
   userData:
     children:

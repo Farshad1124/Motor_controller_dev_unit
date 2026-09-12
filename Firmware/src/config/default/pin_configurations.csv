@@ -15,7 +15,7 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 16,PB09,SM_EN,GPIO,Digital,Out,Low,,,STRONG
 17,PA04,SPI_DO,SERCOM0_PAD0,Digital,High Impedance,n/a,No,No,NORMAL
 18,PA05,SPI_SCK,SERCOM0_PAD1,Digital,High Impedance,n/a,No,No,NORMAL
-19,PA06,SPI_CS,SERCOM0_PAD2,Digital,High Impedance,n/a,No,No,NORMAL
+19,PA06,SPI_CS,GPIO,Digital,Out,High,,,NORMAL
 20,PA07,SPI_DI,SERCOM0_PAD3,Digital,High Impedance,n/a,No,No,NORMAL
 21,PC05,,Available,,,,,,NORMAL
 22,PC06,,Available,,,,,,NORMAL

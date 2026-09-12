@@ -66,8 +66,8 @@ data:
     - children:
       - attributes:
           id: Group2
-          x: '165'
-          y: '96'
+          x: '160'
+          y: '87'
         type: ElementPosition
       type: ElementPositions
     type: ComponentGraph

@@ -169,7 +169,7 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
-    SERCOM0_SPI_Initialize();
+    DMAC_Initialize();
 
     SERCOM5_USART_Initialize();
 

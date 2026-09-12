@@ -30,7 +30,9 @@
 #include "task.h"
 #include "./RTT/SEGGER_RTT.h"
 #include "./BLDC/FOC_Application.h"
-volatile int _Cnt;
+
+
+#include "./ENCODER/AS5045.h"
 
 void LOOP(void * pvParameters );
 
@@ -50,6 +52,8 @@ int main ( void )
     
     // RTT terminal 0: value streaming buffer
     SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_NO_BLOCK_SKIP);
+
+    AS5045_ENC_Initialize();
 
     FOC_control_config control = 
     {
@@ -76,7 +80,7 @@ int main ( void )
       .KV_rating = 2.8,
     };
     
-    FOC_Application_Initialize(&control,&motor);
+    //FOC_Application_Initialize(&control,&motor);
     xTaskCreate( LOOP, "loop", 2048, NULL, 1, NULL );
    
     vTaskStartScheduler();
@@ -96,12 +100,12 @@ int main ( void )
 void LOOP(void * pvParameters )
 {
   float angle = 0;
-  FOC_Move(1);
+  //FOC_Move(1);
 
   for(;;)
   {
-    if (active_state_check())
-    {
+   // if (active_state_check())
+//    {
       //FOC_Move(angle);
       
       //angle+=1;
@@ -109,8 +113,9 @@ void LOOP(void * pvParameters )
       //{
       //  angle = 0;
       //}
-    }
-    vTaskDelay(1000);
+ //   }
+    AS5045_ENC_Request();
+    vTaskDelay(100);
   }
 }
 

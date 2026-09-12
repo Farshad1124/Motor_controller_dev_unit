@@ -176,7 +176,7 @@
                 "linker.generate-16-bit-code": false,
                 "linker.generate-cross-reference-file": false,
                 "linker.generate-micro-compressed-code": false,
-                "linker.heap-size": "2048",
+                "linker.heap-size": "512",
                 "linker.no-device-startup-code": true,
                 "linker.no-ivt": false,
                 "linker.no-startup-files": false,
@@ -203,7 +203,8 @@
                     "SCOPE_SIZE=4096",
                     "__GENERIC_MICROCHIP_PIC32__"
                 ],
-                "compiler++.optimization-level": "-O1"
+                "compiler++.optimization-level": "-O1",
+                "compiler.optimization-level": "-O1"
             }
         },
         {
@@ -391,10 +392,7 @@
                 "Firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h",
                 "Firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h",
                 "Firmware/src/config/default/peripheral/sercom/i2c_master/plib_sercom1_i2c_master.c",
-                "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom0_spi_master.c",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom4_usart.c",
-                "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom_spi_master_common.h",
-                "Firmware/src/config/default/peripheral/sercom/spi_master/plib_sercom0_spi_master.h",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom4_usart.h",
                 "Firmware/src/config/default/peripheral/sercom/usart/plib_sercom_usart_common.h",
                 "Firmware/src/config/default/peripheral/sercom/i2c_master/plib_sercom1_i2c_master.h",
@@ -430,7 +428,11 @@
                 "Firmware/src/BW_filter/BW_filter.c",
                 "Firmware/src/BW_filter/BW_filter.h",
                 "Firmware/src/BLDC/FOC_PID.c",
-                "Firmware/src/BLDC/FOC_PID.h"
+                "Firmware/src/BLDC/FOC_PID.h",
+                "Firmware/src/ENCODER/AS5045.c",
+                "Firmware/src/ENCODER/AS5045.h",
+                "Firmware/src/config/default/peripheral/dmac/plib_dmac.c",
+                "Firmware/src/config/default/peripheral/dmac/plib_dmac.h"
             ]
         }
     ]
